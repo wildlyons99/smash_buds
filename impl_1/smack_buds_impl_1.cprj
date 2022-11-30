@@ -1,0 +1,7 @@
+-ver "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd"
+-lib "work" -vhd "//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd" "//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd" "//vs-home/tlyons01/es4/smack_buds/source/impl_1/vga.vhd"
+-vh2008
+-top top
+-isTop
+-a "iCE40UP"

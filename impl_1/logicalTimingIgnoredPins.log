@@ -1,0 +1,99 @@
+FA2/A0 input col_23_add_4_7is connected to a constant net
+FA2/A1 input col_23_add_4_7is connected to a constant net
+FA2/A0 input add_7_add_5_1is connected to a constant net
+FA2/A1 input add_7_add_5_1is connected to a constant net
+FA2/A0 input col_23_add_4_1is connected to a constant net
+FA2/A1 input col_23_add_4_1is connected to a constant net
+FA2/A0 input col_23_add_4_11is connected to a constant net
+FA2/A1 input col_23_add_4_11is connected to a constant net
+FA2/B1 input col_23_add_4_11is connected to a constant net
+FA2/C1 input col_23_add_4_11is connected to a constant net
+FA2/D1 input col_23_add_4_11 has no outgoing device arc
+FA2/CI1 input col_23_add_4_11 has no outgoing device arc
+     ** internalvga/col_23_add_4_11/CO0 is driving a pin on an incomplete path
+FA2/B0 input col_23_add_4_11is connected to a constant net
+FA2/C0 input col_23_add_4_11 is on an incomplete path
+FA2/CI0 input col_23_add_4_11 is on an incomplete path
+FA2/A0 input add_7_add_5_3is connected to a constant net
+FA2/A1 input add_7_add_5_3is connected to a constant net
+VHI/Z VCC  RGB_pad[3].vhi_inst
+     *** internalvga/col_23__i0/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23__i1/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23__i9/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23__i8/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23__i7/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_1/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23__i6/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23__i5/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23__i4/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23__i3/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23__i2/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/RESET_N is driven by constant or a pin on an incomplete path
+     *** RGB_pad[3].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** RGB_pad[4].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** testPLLout_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** RGB_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** RGB_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** RGB_pad[2].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** RGB_pad[5].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** VSYNC_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** HSYNC_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+FA2/A0 input col_23_add_4_9is connected to a constant net
+FA2/A1 input col_23_add_4_9is connected to a constant net
+FA2/A0 input add_7_add_5_7is connected to a constant net
+FA2/A1 input add_7_add_5_7is connected to a constant net
+FA2/A0 input col_23_add_4_5is connected to a constant net
+FA2/A1 input col_23_add_4_5is connected to a constant net
+FA2/A0 input add_7_add_5_9is connected to a constant net
+FA2/A1 input add_7_add_5_9is connected to a constant net
+PLL_B/DYNAMICDELAY7 input u_PLL_Bis connected to a constant net
+PLL_B/DYNAMICDELAY6 input u_PLL_Bis connected to a constant net
+PLL_B/DYNAMICDELAY5 input u_PLL_Bis connected to a constant net
+PLL_B/DYNAMICDELAY4 input u_PLL_Bis connected to a constant net
+PLL_B/DYNAMICDELAY3 input u_PLL_Bis connected to a constant net
+PLL_B/DYNAMICDELAY2 input u_PLL_Bis connected to a constant net
+PLL_B/DYNAMICDELAY1 input u_PLL_Bis connected to a constant net
+PLL_B/DYNAMICDELAY0 input u_PLL_Bis connected to a constant net
+PLL_B/BYPASS input u_PLL_Bis connected to a constant net
+PLL_B/SCLK input u_PLL_Bis connected to a constant net
+PLL_B/SDI input u_PLL_Bis connected to a constant net
+PLL_B/LATCH input u_PLL_Bis connected to a constant net
+PLL_B/INTFBOUT output  u_PLL_B has no incoming device arc
+     *** pll/lscc_pll_inst/u_PLL_B/FEEDBACK is driven by constant or a pin on an incomplete path
+VLO/Z GND  i1
+     *** internalvga/add_7_add_5_5/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_5/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_5/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_5/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_11/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_11/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_11/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_11/B1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_11/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_3/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_3/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_9/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_9/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_7/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_7/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_1/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_1/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_3/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_7_add_5_3/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_23_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** ext12m_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+FA2/D1 input add_7_add_5_11 has no outgoing device arc
+FA2/CI1 input add_7_add_5_11 has no outgoing device arc
+     ** internalvga/add_7_add_5_11/CO0 is driving a pin on an incomplete path
+FA2/B0 input add_7_add_5_11 is on an incomplete path
+FA2/CI0 input add_7_add_5_11 is on an incomplete path

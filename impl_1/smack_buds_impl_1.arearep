@@ -1,0 +1,50 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  20 of 5280 (0.379%)
+I/O cells:      10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        12          100.0
+                            FD1P3XZ        20          100.0
+                                 IB         1          100.0
+                               LUT4        18          100.0
+                                 OB         9          100.0
+                              PLL_B         1          100.0
+SUB MODULES
+                             my_pll         1
+my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                        pattern_gen         1
+                                vga         1
+                              TOTAL        65
+----------------------------------------------------------------------
+Report for cell my_pll.v1
+Instance Path : pll
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+SUB MODULES
+my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000").v1
+Instance Path : pll.lscc_pll_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell vga.v1
+Instance Path : internalvga
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12          100.0
+                            FD1P3XZ        20          100.0
+                               LUT4        15           83.3
+                              TOTAL        47
+----------------------------------------------------------------------
+Report for cell pattern_gen.v1
+Instance Path : patternmaker
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           11.1
+                              TOTAL         2

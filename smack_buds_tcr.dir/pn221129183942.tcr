@@ -1,0 +1,56 @@
+#Start recording tcl command: 11/29/2022 18:09:55
+#Project Location: //vs-home/tlyons01/es4/smack_buds; Project name: smack_buds
+//vs-home/tlyons01/es4/lab7
+lab7
+#Start recording tcl command: 11/29/2022 18:39:42
+#Project Location: //vs-home/tlyons01/es4/lab7; Project name: lab7
+prj_create -name "smack_buds" -impl "impl_1" -dev iCE40UP5K-UWG30ITR -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_set_strategy_value -strategy Strategy1 syn_vhdl2008=True
+prj_set_strategy_value -strategy Strategy1 lse_vhdl2008=True
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/vga.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_device -part iCE40UP5K-SG48I -performance "High-Performance_1.2V"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/my_pll/my_pll.ipx"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/smack_buds.pdc"
+prj_enable_source "//vs-home/tlyons01/es4/smack_buds/smack_buds.pdc"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_save 
+prj_close
+prj_open "//vs-home/tlyons01/es4/lab7/lab7.rdf"
+#Stop recording: 11/29/2022 18:39:42
