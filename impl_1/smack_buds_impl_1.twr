@@ -1,12 +1,12 @@
-Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
+Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.2.1.217.3
 
-Tue Nov 29 19:05:54 2022
+Tue Nov 29 21:58:58 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
 Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt smack_buds_impl_1.twr smack_buds_impl_1.udb -gui
 
@@ -27,6 +27,7 @@ Package Status:                     Preliminary    Version 1.5
     1  DESIGN CHECKING
         1.1  SDC Constraints
         1.2  Combinational Loop
+        1.3  Error/Warning Messages
     2  CLOCK SUMMARY
         2.1  Clock internal25clk
         2.2  Clock testPLLout_c
@@ -59,12 +60,19 @@ Package Status:                     Preliminary    Version 1.5
 
 Operating conditions:
 --------------------
-    Temperature: 85
-    Core voltage: 1.14 V
+    Temperature: 100
 
 1.2  Combinational Loop
 ========================
 None
+
+
+1.3  Error/Warning Messages
+============================
+WARNING - No master clock for
+	generated clock	create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+WARNING - No master clock for
+	generated clock	create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
 
 ==============================================
 2  CLOCK SUMMARY

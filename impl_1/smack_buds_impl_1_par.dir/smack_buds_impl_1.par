@@ -1,5 +1,6 @@
-Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Tue Nov 29 19:05:47 2022
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Tue Nov 29 21:58:50 2022
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	smack_buds_impl_1_map.udb smack_buds_impl_1.udb 
@@ -8,10 +9,10 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -2147483.648 0            -2147483.648 0            06           Completed
+5_1   *      0            1073741.823  0            1073741.823  0            07           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 6 secs 
+Total (real) run time for 1-seed: 7 secs 
 
 par done!

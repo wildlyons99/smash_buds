@@ -1,10 +1,10 @@
-BITGEN: Bitstream Generator Radiant Software (64-bit) 3.0.0.24.1
+BITGEN: Bitstream Generator Radiant Software (64-bit) 3.2.1.217.3
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Nov 29 19:05:55 2022
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Nov 29 21:58:59 2022
 
 
 Command: bitgen -w -freq 0 -gui smack_buds_impl_1.udb 
@@ -21,5 +21,5 @@ Preference Summary:
 
 
 Creating bit map...
-Saving bit stream in "\\vs-home\tlyons01\es4\smack_buds\impl_1\smack_buds_impl_1.bin".
+Saving bit stream in "C:\Users\noahs\my_designs\smash_buds\impl_1\smack_buds_impl_1.bin".
 Bitstream generation complete!

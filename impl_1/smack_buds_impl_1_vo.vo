@@ -1,9 +1,9 @@
 
-// Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 3.0.0.24.1
+// Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 3.2.1.217.3
 
 // backanno -o smack_buds_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui smack_buds_impl_1.udb 
-// Netlist created on Tue Nov 29 19:05:53 2022
-// Netlist written on Tue Nov 29 19:05:57 2022
+// Netlist created on Tue Nov 29 21:58:57 2022
+// Netlist written on Tue Nov 29 21:59:01 2022
 // Design is for device iCE40UP5K
 // Design is for package SG48
 // Design is for performance grade High-Performance_1.2V
@@ -39,12 +39,12 @@ module top ( ext12m, testPLLout, RGB, VSYNC, HSYNC );
          \internalrow[2] , \internalrow[1] , \internalvga.n45[0] , 
          \internalvga.n999 , \internalvga.internalcol[0] , 
          \internalvga.n45[8] , \internalvga.n45[7] , \internalvga.n1011 , 
-         \internalvga.internalcol[8] , \internalvga.internalcol[7] , n705, 
-         \patternmaker.n7 , VSYNC_c, \internalvga.n16 , \internalvga.n17 , 
-         n244, \internalvga.n673 , \internalvga.n5 , \internalvga.n1 , RGB_c_0, 
-         \internalvga.n9 , \internalvga.n11 , \internalvga.n39 , 
-         \internalvga.n19 , HSYNC_c, ext12m_c, \pll.lscc_pll_inst.feedback_w , 
-         testPLLout_c;
+         \internalvga.internalcol[8] , \internalvga.internalcol[7] , 
+         \patternmaker.n7 , n705, VSYNC_c, \internalvga.n16 , 
+         \internalvga.n17 , n244, \internalvga.n673 , \internalvga.n5 , 
+         \internalvga.n1 , RGB_c_0, \internalvga.n9 , \internalvga.n11 , 
+         \internalvga.n39 , \internalvga.n19 , HSYNC_c, ext12m_c, 
+         \pll.lscc_pll_inst.feedback_w , testPLLout_c;
 
   internalvga_SLICE_0 \internalvga.SLICE_0 ( .DI1(\internalvga.n57[4] ), 
     .DI0(\internalvga.n57[3] ), .D1(\internalvga.n987 ), .B1(\internalrow[4] ), 
@@ -132,50 +132,49 @@ module top ( ext12m, testPLLout, RGB, VSYNC, HSYNC );
     .Q0(\internalvga.internalcol[7] ), .Q1(\internalvga.internalcol[8] ), 
     .F0(\internalvga.n45[7] ), .F1(\internalvga.n45[8] ), 
     .COUT1(\internalvga.n577 ), .COUT0(\internalvga.n1011 ));
-  internalvga_SLICE_12 \internalvga.SLICE_12 ( .D1(\internalrow[1] ), 
-    .C1(n705), .B1(\patternmaker.n7 ), .A1(\internalrow[4] ), 
-    .D0(\internalvga.internalrow[6] ), .A0(\internalvga.internalrow[5] ), 
+  internalvga_SLICE_12 \internalvga.SLICE_12 ( .D1(\patternmaker.n7 ), 
+    .C1(n705), .B1(\internalrow[4] ), .A1(\internalrow[1] ), 
+    .D0(\internalvga.internalrow[6] ), .C0(\internalvga.internalrow[5] ), 
     .F0(n705), .F1(VSYNC_c));
   internalvga_SLICE_14 \internalvga.SLICE_14 ( 
-    .D0(\internalvga.internalcol[6] ), .C0(\internalvga.internalcol[7] ), 
-    .B0(\internalvga.internalcol[9] ), .A0(\internalvga.internalcol[3] ), 
+    .D0(\internalvga.internalcol[9] ), .C0(\internalvga.internalcol[7] ), 
+    .B0(\internalvga.internalcol[6] ), .A0(\internalvga.internalcol[3] ), 
     .F0(\internalvga.n16 ));
   internalvga_SLICE_15 \internalvga.SLICE_15 ( 
     .D1(\internalvga.internalcol[4] ), .C1(\internalvga.n17 ), 
     .B1(\internalvga.n16 ), .A1(\internalvga.internalcol[1] ), 
-    .D0(\internalvga.internalcol[5] ), .C0(\internalvga.internalcol[2] ), 
-    .B0(\internalvga.internalcol[0] ), .A0(\internalvga.internalcol[8] ), 
+    .D0(\internalvga.internalcol[8] ), .C0(\internalvga.internalcol[2] ), 
+    .B0(\internalvga.internalcol[0] ), .A0(\internalvga.internalcol[5] ), 
     .F0(\internalvga.n17 ), .F1(col_9__N_31));
   internalvga_SLICE_16 \internalvga.SLICE_16 ( .D1(\internalrow[2] ), 
-    .C1(n244), .B1(\internalrow[3] ), .A1(\internalrow[9] ), 
-    .D0(\internalvga.internalrow[8] ), .C0(\internalvga.internalrow[7] ), 
+    .C1(n244), .B1(\internalrow[9] ), .A1(\internalrow[3] ), 
+    .D0(\internalvga.internalrow[8] ), .B0(\internalvga.internalrow[7] ), 
     .F0(n244), .F1(\patternmaker.n7 ));
-  internalvga_SLICE_18 \internalvga.SLICE_18 ( 
-    .D1(\internalvga.internalrow[5] ), .C1(\internalvga.n673 ), 
-    .B1(\internalvga.internalrow[6] ), .A1(\internalrow[4] ), 
-    .D0(\internalrow[1] ), .C0(\internalrow[3] ), 
-    .B0(\internalvga.internalrow[0] ), .A0(\internalrow[2] ), 
-    .F0(\internalvga.n673 ), .F1(\internalvga.n5 ));
-  internalvga_SLICE_20 \internalvga.SLICE_20 ( .D1(\internalrow[9] ), 
-    .C1(\internalvga.n1 ), .B1(\internalvga.n5 ), .A1(n244), 
-    .D0(\internalvga.internalcol[7] ), .B0(\internalvga.internalcol[9] ), 
-    .A0(\internalvga.internalcol[8] ), .F0(\internalvga.n1 ), .F1(RGB_c_0));
-  internalvga_SLICE_22 \internalvga.SLICE_22 ( .C0(\internalrow[9] ), 
-    .B0(\internalvga.internalrow[7] ), .A0(\internalrow[1] ), 
-    .F0(\internalvga.n9 ));
-  internalvga_SLICE_23 \internalvga.SLICE_23 ( .C1(row_9__N_42), 
-    .B1(col_9__N_31), .D0(\internalrow[3] ), .C0(\internalvga.n11 ), 
-    .B0(\internalvga.n9 ), .A0(\internalrow[2] ), .F0(row_9__N_42), .F1(n78));
-  internalvga_SLICE_24 \internalvga.SLICE_24 ( .D1(\internalrow[4] ), 
-    .C1(\internalvga.n39 ), .B1(\internalvga.internalrow[8] ), 
-    .A1(\internalvga.internalrow[0] ), .D0(\internalvga.internalrow[5] ), 
-    .B0(\internalvga.internalrow[6] ), .F0(\internalvga.n39 ), 
-    .F1(\internalvga.n11 ));
+  internalvga_SLICE_18 \internalvga.SLICE_18 ( .D1(\internalrow[4] ), 
+    .C1(\internalvga.n673 ), .B1(\internalvga.internalrow[6] ), 
+    .A1(\internalvga.internalrow[5] ), .D0(\internalrow[2] ), 
+    .C0(\internalvga.internalrow[0] ), .B0(\internalrow[3] ), 
+    .A0(\internalrow[1] ), .F0(\internalvga.n673 ), .F1(\internalvga.n5 ));
+  internalvga_SLICE_20 \internalvga.SLICE_20 ( .D1(\internalvga.n5 ), 
+    .C1(\internalvga.n1 ), .B1(n244), .A1(\internalrow[9] ), 
+    .D0(\internalvga.internalcol[8] ), .C0(\internalvga.internalcol[7] ), 
+    .B0(\internalvga.internalcol[9] ), .F0(\internalvga.n1 ), .F1(RGB_c_0));
+  internalvga_SLICE_22 \internalvga.SLICE_22 ( 
+    .D0(\internalvga.internalrow[7] ), .C0(\internalrow[9] ), 
+    .B0(\internalrow[1] ), .F0(\internalvga.n9 ));
+  internalvga_SLICE_23 \internalvga.SLICE_23 ( .D1(col_9__N_31), 
+    .C1(row_9__N_42), .D0(\internalvga.n9 ), .C0(\internalvga.n11 ), 
+    .B0(\internalrow[2] ), .A0(\internalrow[3] ), .F0(row_9__N_42), .F1(n78));
+  internalvga_SLICE_24 \internalvga.SLICE_24 ( 
+    .D1(\internalvga.internalrow[0] ), .C1(\internalvga.n39 ), 
+    .B1(\internalvga.internalrow[8] ), .A1(\internalrow[4] ), 
+    .D0(\internalvga.internalrow[6] ), .C0(\internalvga.internalrow[5] ), 
+    .F0(\internalvga.n39 ), .F1(\internalvga.n11 ));
   internalvga_SLICE_26 \internalvga.SLICE_26 ( 
-    .D1(\internalvga.internalcol[8] ), .C1(\internalvga.n19 ), 
-    .B1(\internalvga.internalcol[7] ), .A1(\internalvga.internalcol[9] ), 
-    .D0(\internalvga.internalcol[5] ), .B0(\internalvga.internalcol[6] ), 
-    .A0(\internalvga.internalcol[4] ), .F0(\internalvga.n19 ), .F1(HSYNC_c));
+    .D1(\internalvga.internalcol[7] ), .C1(\internalvga.n19 ), 
+    .B1(\internalvga.internalcol[9] ), .A1(\internalvga.internalcol[8] ), 
+    .D0(\internalvga.internalcol[6] ), .C0(\internalvga.internalcol[4] ), 
+    .A0(\internalvga.internalcol[5] ), .F0(\internalvga.n19 ), .F1(HSYNC_c));
   RGB_pad_3__SLICE_30 \RGB_pad[3].SLICE_30 ( .F0(\RGB_pad[3].vcc ));
   pll_lscc_pll_inst_u_PLL_B \pll.lscc_pll_inst.u_PLL_B ( 
     .REFERENCECLK(ext12m_c), .FEEDBACK(\pll.lscc_pll_inst.feedback_w ), 
@@ -576,11 +575,11 @@ module internalvga_SLICE_11 ( input DI1, DI0, D1, C1, D0, C0, LSR, CLK, CIN0,
 
 endmodule
 
-module internalvga_SLICE_12 ( input D1, C1, B1, A1, D0, A0, output F0, F1 );
+module internalvga_SLICE_12 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
   wire   GNDI;
 
   lut4 \patternmaker/i663_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40001 \internalvga/i1_2_lut ( .A(A0), .B(GNDI), .C(GNDI), .D(D0), .Z(F0));
+  lut40001 \internalvga/i1_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -589,19 +588,19 @@ module internalvga_SLICE_12 ( input D1, C1, B1, A1, D0, A0, output F0, F1 );
     (B1 => F1) = (0:0:0,0:0:0);
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut4 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xBFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xDFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40001 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xAA00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xF000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module internalvga_SLICE_14 ( input D0, C0, B0, A0, output F0 );
@@ -619,7 +618,7 @@ endmodule
 
 module lut40002 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0008") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0200") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module internalvga_SLICE_15 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, 
@@ -648,14 +647,14 @@ endmodule
 
 module lut40004 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0080") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x4000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module internalvga_SLICE_16 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
+module internalvga_SLICE_16 ( input D1, C1, B1, A1, D0, B0, output F0, F1 );
   wire   GNDI;
 
   lut40005 \patternmaker/i2_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40006 \internalvga/i1_2_lut_adj_4 ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), 
+  lut40006 \internalvga/i1_2_lut_adj_4 ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
     .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -665,19 +664,19 @@ module internalvga_SLICE_16 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
     (B1 => F1) = (0:0:0,0:0:0);
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
-    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40005 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0040") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0020") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40006 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xF000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xCC00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module internalvga_SLICE_18 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, 
@@ -702,7 +701,7 @@ endmodule
 
 module lut40007 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFFEC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFEEE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40008 ( input A, B, C, D, output Z );
@@ -710,11 +709,11 @@ module lut40008 ( input A, B, C, D, output Z );
   LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module internalvga_SLICE_20 ( input D1, C1, B1, A1, D0, B0, A0, output F0, F1 );
+module internalvga_SLICE_20 ( input D1, C1, B1, A1, D0, C0, B0, output F0, F1 );
   wire   GNDI;
 
   lut40009 \internalvga/i660_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40010 \internalvga/i1_3_lut ( .A(A0), .B(B0), .C(GNDI), .D(D0), .Z(F0));
+  lut40010 \internalvga/i1_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -723,52 +722,52 @@ module internalvga_SLICE_20 ( input D1, C1, B1, A1, D0, B0, A0, output F0, F1 );
     (B1 => F1) = (0:0:0,0:0:0);
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40009 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x0007") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0105") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40010 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xCC88") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xCCC0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module internalvga_SLICE_22 ( input C0, B0, A0, output F0 );
+module internalvga_SLICE_22 ( input D0, C0, B0, output F0 );
   wire   GNDI;
 
-  lut40011 \internalvga/i2_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  lut40011 \internalvga/i2_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
+    (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
-    (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
 
 module lut40011 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x1010") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x0030") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module internalvga_SLICE_23 ( input C1, B1, D0, C0, B0, A0, output F0, F1 );
+module internalvga_SLICE_23 ( input D1, C1, D0, C0, B0, A0, output F0, F1 );
   wire   GNDI;
 
-  lut40012 i25_2_lut( .A(GNDI), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  lut40012 i25_2_lut( .A(GNDI), .B(GNDI), .C(C1), .D(D1), .Z(F1));
   gnd DRIVEGND( .PWR0(GNDI));
   lut40013 \internalvga/i6_4_lut_adj_5 ( .A(A0), .B(B0), .C(C0), .D(D0), 
     .Z(F0));
 
   specify
+    (D1 => F1) = (0:0:0,0:0:0);
     (C1 => F1) = (0:0:0,0:0:0);
-    (B1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
     (C0 => F0) = (0:0:0,0:0:0);
     (B0 => F0) = (0:0:0,0:0:0);
@@ -779,7 +778,7 @@ endmodule
 
 module lut40012 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFCFC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFFF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40013 ( input A, B, C, D, output Z );
@@ -787,11 +786,11 @@ module lut40013 ( input A, B, C, D, output Z );
   LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module internalvga_SLICE_24 ( input D1, C1, B1, A1, D0, B0, output F0, F1 );
+module internalvga_SLICE_24 ( input D1, C1, B1, A1, D0, C0, output F0, F1 );
   wire   GNDI;
 
   lut40014 \internalvga/i4_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40015 \internalvga/i1_2_lut_adj_6 ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
+  lut40015 \internalvga/i1_2_lut_adj_6 ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), 
     .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
@@ -801,7 +800,7 @@ module internalvga_SLICE_24 ( input D1, C1, B1, A1, D0, B0, output F0, F1 );
     (B1 => F1) = (0:0:0,0:0:0);
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
   endspecify
 
 endmodule
@@ -813,14 +812,14 @@ endmodule
 
 module lut40015 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFFCC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xFFF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
-module internalvga_SLICE_26 ( input D1, C1, B1, A1, D0, B0, A0, output F0, F1 );
+module internalvga_SLICE_26 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
   wire   GNDI;
 
   lut40016 \internalvga/i666_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
-  lut40017 \internalvga/i34_3_lut ( .A(A0), .B(B0), .C(GNDI), .D(D0), .Z(F0));
+  lut40017 \internalvga/i34_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
   gnd DRIVEGND( .PWR0(GNDI));
 
   specify
@@ -829,7 +828,7 @@ module internalvga_SLICE_26 ( input D1, C1, B1, A1, D0, B0, A0, output F0, F1 );
     (B1 => F1) = (0:0:0,0:0:0);
     (A1 => F1) = (0:0:0,0:0:0);
     (D0 => F0) = (0:0:0,0:0:0);
-    (B0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
     (A0 => F0) = (0:0:0,0:0:0);
   endspecify
 
@@ -837,12 +836,12 @@ endmodule
 
 module lut40016 ( input A, B, C, D, output Z );
 
-  LUT4 #("0xFF7F") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0xBFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module lut40017 ( input A, B, C, D, output Z );
 
-  LUT4 #("0x77EE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+  LUT4 #("0x5FFA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
 endmodule
 
 module RGB_pad_3__SLICE_30 ( output F0 );

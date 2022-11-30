@@ -4,14 +4,14 @@ Target Vendor:        LATTICE
 Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
-Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Tue Nov 29 19:05:46 2022
+Mapper:    version Radiant Software (64-bit) 3.2.1.217.3
+Mapped on: Tue Nov 29 21:58:50 2022
 
 Design Information
 ------------------
 
-Command line:   map smack_buds_impl_1_syn.udb
-     //vs-home/tlyons01/es4/smack_buds/smack_buds.pdc -o
+Command line:   map -i smack_buds_impl_1_syn.udb -pdc
+     C:/Users/noahs/my_designs/smash_buds/smack_buds.pdc -o
      smack_buds_impl_1_map.udb -mp smack_buds_impl_1.mrp -hierrpt -gui
 
 Design Summary
@@ -91,25 +91,25 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
+| RGB[3]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[4]              | OUTPUT    | LVCMOS33  |       |       |           |
+| RGB[4]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| ext12m              | INPUT     | LVCMOS33  |       |       |           |
+| ext12m              | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| testPLLout          | OUTPUT    | LVCMOS33  |       |       |           |
+| testPLLout          | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[0]              | OUTPUT    | LVCMOS33  |       |       |           |
+| RGB[0]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[1]              | OUTPUT    | LVCMOS33  |       |       |           |
+| RGB[1]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
+| RGB[2]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[5]              | OUTPUT    | LVCMOS33  |       |       |           |
+| RGB[5]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| VSYNC               | OUTPUT    | LVCMOS33  |       |       |           |
+| VSYNC               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| HSYNC               | OUTPUT    | LVCMOS33  |       |       |           |
+| HSYNC               | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 Removed logic
@@ -143,19 +143,19 @@ PLL/DLL Summary (cont)
   Lock Signal:                                  NONE
   Input Clock Frequency (MHz):                  NA
   Reference Divider:                            0
-  Feedback Divider:                             0
-  VCO Divider:                                  1
+  Feedback Divider:                             66
+  VCO Divider:                                  5
   ENABLE_ICEGATE_PORTA:                         0
   ENABLE_ICEGATE_PORTB:                         0
-  PLLOUT_SELECT_PORTA:                          SHIFTREG_0deg
-  PLLOUT_SELECT_PORTB:                          SHIFTREG_0deg
+  PLLOUT_SELECT_PORTA:                          GENCLK
+  PLLOUT_SELECT_PORTB:                          GENCLK
   SHIFTREG_DIV_MODE:                            0
   DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
   FDA_RELATIVE:                                 0
   FEEDBACK_PATH:                                SIMPLE
   DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
   FDA_FEEDBACK:                                 0
-  FILTER_RANGE:                                 0
+  FILTER_RANGE:                                 1
   EXTERNAL_DIVIDE_FACTOR:                       NONE
   TEST Mode:                                    0
 
@@ -170,7 +170,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 54 MB
+   Peak Memory Usage: 56 MB
 
 
 
@@ -203,5 +203,5 @@ Copyright (c) 1995-2001 Lucent
      Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems
      All rights reserved.
-Copyright (c) 2002-2021 Lattice Semiconductor
+Copyright (c) 2002-2022 Lattice Semiconductor
      Corporation,  All rights reserved.

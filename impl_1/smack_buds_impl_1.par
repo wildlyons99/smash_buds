@@ -1,5 +1,6 @@
-Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Tue Nov 29 19:05:47 2022
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Tue Nov 29 21:58:50 2022
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	smack_buds_impl_1_map.udb smack_buds_impl_1.udb 
@@ -8,23 +9,23 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -2147483.648 0            -2147483.648 0            06           Completed
+5_1   *      0            1073741.823  0            1073741.823  0            07           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 6 secs 
+Total (real) run time for 1-seed: 7 secs 
 
 par done!
 
 Lattice Place and Route Report for Design "smack_buds_impl_1_map.udb"
-Tue Nov 29 19:05:47 2022
+Tue Nov 29 21:58:50 2022
 
-PAR: Place And Route Radiant Software (64-bit) 3.0.0.24.1.
+PAR: Place And Route Radiant Software (64-bit) 3.2.1.217.3.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
 	smack_buds_impl_1_map.udb smack_buds_impl_1_par.dir/5_1.udb 
 
 Loading smack_buds_impl_1_map.udb ...
-Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/3.2/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
 Performance Hardware Data Status:   Advanced       Version 1.0.
 
@@ -39,12 +40,10 @@ WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
-WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
+
+WARNING: Database constraint "create_generated_clock -name {testPLLout_c} -source [get_pins pll.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins pll.lscc_pll_inst.u_PLL_B/OUTCORE]" does not have corresponding timing constraint. Please check if the resource objects of the constraint are valid carefully!
 Number of Signals: 85
 Number of Connections: 189
-WARNING - par: Placement timing constraints are hard to meet. However, placement will continue. Use static timing analysis to identify errors. For more information, see online help subjects 'Place and Route Timing Report' or the 'Timing' application
-
 Device utilization summary:
 
    SLICE (est.)      23/2640         <1% used
@@ -92,15 +91,13 @@ WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
-WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
-Finished Placer Phase 1. CPU time: 4 secs , REAL time: 5 secs 
+Finished Placer Phase 1. CPU time: 5 secs , REAL time: 6 secs 
 
 Starting Placer Phase 2.
 .
 
 Placer score =  10942
-Finished Placer Phase 2.  CPU time: 4 secs , REAL time: 5 secs 
+Finished Placer Phase 2.  CPU time: 5 secs , REAL time: 6 secs 
 
 
 ------------------ Clock Report ------------------
@@ -128,12 +125,12 @@ I/O Bank Usage Summary:
 | 2        | 0 / 8 (  0%)  | OFF        |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 4 secs , REAL time: 5 secs 
+Total Placer CPU time: 5 secs , REAL time: 6 secs 
 
 Writing design to file smack_buds_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 19:05:52 11/29/22
+Start NBR router at 21:58:56 11/29/22
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -171,42 +168,42 @@ WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
-WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
 
-Start NBR section for initial routing at 19:05:52 11/29/22
+Start NBR section for initial routing at 21:58:56 11/29/22
 Level 4, iteration 1
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
+3(0.00%) conflicts; 136(71.96%) untouched conns; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 19:05:52 11/29/22
+Start NBR section for normal routing at 21:58:57 11/29/22
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
-Start NBR section for post-routing at 19:05:52 11/29/22
+Start NBR section for post-routing at 21:58:57 11/29/22
+
+End NBR router with 0 unrouted connection
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
-WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
 
-End NBR router with 0 unrouted connection
+Starting full timing analysis...
 
 NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
-  Number of connections with timing violations : 0 (0.00%)
   Estimated worst slack<setup> : <n/a>
+  Estimated worst slack<hold > : <n/a>
   Timing score<setup> : 0
+  Timing score<hold > : 0
+  Number of connections with timing violations<setup> : 0 (0.00%)
+  Number of connections with timing violations<hold > : 0 (0.00%)
 -----------
-Notes: The timing info is calculated for SETUP only.
 
 
-
-Starting full timing analysis...
 Total CPU time 0 secs 
 Total REAL time: 0 secs 
 Completely routed.
@@ -220,15 +217,15 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = -2147483.648
-PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = -2147483.648
-PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 5 secs 
-Total REAL Time: 6 secs 
-Peak Memory Usage: 98 MB
+Total CPU  Time: 6 secs 
+Total REAL Time: 7 secs 
+Peak Memory Usage: 107.12 MB
 
 
 par done!
@@ -239,4 +236,4 @@ Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
