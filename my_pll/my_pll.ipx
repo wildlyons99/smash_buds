@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="iCE40UP" date="2022 11 29 18:22:31" device="iCE40UP5K" generator="ipgen" library="module" module="pll" name="my_pll" package="SG48" source_format="Verilog" speed="High-Performance_1.2V" vendor="latticesemi.com" version="1.0.1">
+ <Package>
+  <File modified="2022 11 29 18:22:31" name="rtl/my_pll_bb.v" type="black_box_verilog"/>
+  <File modified="2022 11 29 18:22:31" name="my_pll.cfg" type="cfg"/>
+  <File modified="2022 11 29 18:22:31" name="misc/my_pll_tmpl.v" type="template_verilog"/>
+  <File modified="2022 11 29 18:22:31" name="misc/my_pll_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2022 11 29 18:22:31" name="rtl/my_pll.v" type="top_level_verilog"/>
+  <File modified="2022 11 29 18:22:31" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2022 11 29 18:22:31" name="design.xml" type="IP-XACT_design"/>
+ </Package>
+</RadiantModule>
