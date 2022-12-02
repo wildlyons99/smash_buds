@@ -13,7 +13,7 @@ end ROM;
 
 architecture synth of ROM is
 
-signal addr : std_logic_vector(3 downto 0);
+signal addr : std_logic_vector(4 downto 0);
 
 begin
 
@@ -26,12 +26,12 @@ begin
 					when "0000" => rgb <= "111111";
 					when "0001" => rgb <= "001100";
 					when "0010" => rgb <= "111111";
+					when "0011" => rgb <= "001100";
 					when "0100" => rgb <= "001100";
 					when "0101" => rgb <= "001100";
-					when "0110" => rgb <= "001100";
+					when "0110" => rgb <= "111111";
+					when "0111" => rgb <= "001100";
 					when "1000" => rgb <= "111111";
-					when "1001" => rgb <= "001100";
-					when "1011" => rgb <= "111111";
 					when others => rgb <= "111111";
 				end case;
 			end if;
