@@ -1,103 +1,111 @@
 
-tmcheck -par "smack_buds_impl_1.par" 
+synthesis -comp -f "smack_buds_impl_1_lattice.synproj"
+synthesis:  version Radiant Software (64-bit) 3.0.0.24.1
 
-bitgen -w "smack_buds_impl_1.udb" -f "smack_buds_impl_1.t2b" 
-Loading smack_buds_impl_1.udb ...
-Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/3.2/ispfpga.
-Package Status:                     Preliminary    Version 1.5.
-Performance Hardware Data Status:   Advanced       Version 1.0.
-
-
-
-Design:  top
-Family:  iCE40UP
-Device:  iCE40UP5K
-Package: SG48
-Performance Grade:   High-Performance_1.2V
-Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
-
-
-
-BITGEN: Bitstream Generator Radiant Software (64-bit) 3.2.1.217.3
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Dec  2 17:45:47 2022
 
 
-Running DRC.
-DRC detected 0 errors and 0 warnings.
+Command Line:  synthesis -comp -f smack_buds_impl_1_lattice.synproj -gui 
 
-Preference Summary:
-+---------------------------------+---------------------------------+
-|  Preference                     |  Current Setting                |
-+---------------------------------+---------------------------------+
- *  Default setting.
- ** The specified setting matches the default setting.
-
-
-Creating bit map...
-Saving bit stream in "C:\Users\noahs\my_designs\smash_buds\impl_1\smack_buds_impl_1.bin".
-Bitstream generation complete!
-
-Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
-Peak Memory Usage: 108 MB
+INFO - synthesis: Lattice Synthesis Engine Launched.
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
 
 
-ibisgen "smack_buds_impl_1.udb" "C:/lscc/radiant/3.2/cae_library/ibis/iCE40UP.ibs"
-IBIS Models Generator: Lattice Radiant Software (64-bit) 3.2.1.217.3
-
-Tue Nov 29 21:59:00 2022
-
-Loading smack_buds_impl_1.udb ...
-Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/3.2/ispfpga.
-Package Status:                     Preliminary    Version 1.5.
-Performance Hardware Data Status:   Advanced       Version 1.0.
+##########################################################
 
 
-
-Design:  top
-Family:  iCE40UP
-Device:  iCE40UP5K
-Package: SG48
-Performance Grade:   High-Performance_1.2V
-Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
-
-Created design models.
+### Lattice Family     : iCE40UP
 
 
-Generating: C:\Users\noahs\my_designs\smash_buds\impl_1\IBIS\smack_buds_impl_1.ibs
+### Device             : iCE40UP5K
 
 
-    <postMsg mid="1191031" type="Info" dynamic="0" navigation="0"  />
-
-backanno "smack_buds_impl_1.udb"  -o "smack_buds_impl_1_vo.vo"      -sp "High-Performance_1.2V"  -w -neg
-backanno: version Radiant Software (64-bit) 3.2.1.217.3
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
-
-Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/3.2/ispfpga.
-Package Status:                     Preliminary    Version 1.5.
-Loading udb::Database ...
-Design:  top
-Family:  iCE40UP
-Device:  iCE40UP5K
-Package: SG48
-Performance Grade:   High-Performance_1.2V
-Performance Hardware Data Status:   Advanced       Version 1.0.
+### Package            : SG48
 
 
+### Performance Grade  : High-Performance_1.2V
 
-Writing a verilog netlist based on the smack_buds_impl_1 design file.
 
-Writing Verilog netlist to file smack_buds_impl_1_vo.vo
-Writing SDF timing to file smack_buds_impl_1_vo.sdf
-Backanno finished with 0 posted error messages.
-Total CPU Time: 0 secs 
-Total REAL Time: 0 secs 
-Peak Memory Usage: 79 MB
+                                                         
+
+
+INFO - User-Selected Strategy SettingsOptimization goal = Area
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = smack_buds_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is TRUE.
+The -syn option is FALSE.
+-vh2008
+
+-path //vs-home/acohen24/smash_buds (searchpath added)
+-path //vs-home/acohen24/smash_buds/impl_1 (searchpath added)
+-path //vs-home/acohen24/smash_buds/my_pll (searchpath added)
+-path C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+Verilog design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
+Verilog design file = //vs-home/acohen24/smash_buds/my_pll/rtl/my_pll.v
+VHDL library = pmi
+VHDL design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd
+VHDL library = work
+VHDL design file = //vs-home/acohen24/smash_buds/source/impl_1/top.vhd
+VHDL library = work
+VHDL design file = //vs-home/acohen24/smash_buds/source/impl_1/pattern_gen.vhd
+VHDL library = work
+VHDL design file = //vs-home/acohen24/smash_buds/source/impl_1/vga.vhd
+VHDL library = work
+VHDL design file = //vs-home/acohen24/smash_buds/source/impl_1/controller.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328Analyzing Verilog file //vs-home/acohen24/smash_buds/my_pll/rtl/my_pll.v. VERI-1482
+Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd
+
+INFO - "c:/programanalyzing package . VHDL-1014Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/top.vhd. VHDL-1481
+Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/top.vhd
+
+INFO - "//vs-home/acohen24/smash_buds/source/impl_1/top.vhd(5):analyzing entity . VHDL-1012INFO - "//vs-home/acohen24/smash_buds/source/impl_1/top.vhd(15):analyzing architecture . VHDL-1010Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/pattern_gen.vhd. VHDL-1481
+Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/pattern_gen.vhd
+
+INFO - "//vs-home/acohen24/smash_buds/source/impl_1/pattern_gen.vhd(5):analyzing entity . VHDL-1012INFO - "//vs-home/acohen24/smash_buds/source/impl_1/pattern_gen.vhd(15):analyzing architecture . VHDL-1010Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/vga.vhd. VHDL-1481
+Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/vga.vhd
+
+INFO - "//vs-home/acohen24/smash_buds/source/impl_1/vga.vhd(5):analyzing entity . VHDL-1012INFO - "//vs-home/acohen24/smash_buds/source/impl_1/vga.vhd(16):analyzing architecture . VHDL-1010Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/controller.vhd. VHDL-1481
+Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/controller.vhd
+
+INFO - "//vs-home/acohen24/smash_buds/source/impl_1/controller.vhd(5):analyzing entity . VHDL-1012INFO - "//vs-home/acohen24/smash_buds/source/impl_1/controller.vhd(13):analyzing architecture . VHDL-1010
