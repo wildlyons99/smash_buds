@@ -1,0 +1,39 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         43        100.0
+                                 IOBUF	         10        100.0
+                                PFUREG	         20        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                                my_pll	          1         0.0
+                           pattern_gen	          1         4.7
+                                   vga	          1        90.7
+---------------------------------------------------
+Report for cell my_pll
+   Instance path: top/pll
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")	          1         0.0
+---------------------------------------------------
+Report for cell my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")
+   Instance path: top/pll/lscc_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell vga
+   Instance path: top/internalvga
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         39        90.7
+                                PFUREG	         20        100.0
+---------------------------------------------------
+Report for cell pattern_gen
+   Instance path: top/patternmaker
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         4.7

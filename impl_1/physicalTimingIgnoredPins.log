@@ -1,0 +1,22 @@
+SLICE/D1 input internalvga.SLICE_1 has no outgoing device arc
+SLICE/CIN1 input internalvga.SLICE_1 has no outgoing device arc
+     ** internalvga.SLICE_1/COUT0 is driving a pin on an incomplete path
+SLICE/B0 input internalvga.SLICE_1 is on an incomplete path
+SLICE/CIN0 input internalvga.SLICE_1 is on an incomplete path
+SLICE/COUT0 GND  internalvga.SLICE_6
+     *** internalvga.SLICE_6/D1 is driven by constant or a pin on an incomplete path
+     *** internalvga.SLICE_6/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/COUT0 GND  internalvga.SLICE_10
+     *** internalvga.SLICE_10/D1 is driven by constant or a pin on an incomplete path
+     *** internalvga.SLICE_10/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input internalvga.SLICE_8 has no outgoing device arc
+SLICE/CIN1 input internalvga.SLICE_8 has no outgoing device arc
+     ** internalvga.SLICE_8/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input internalvga.SLICE_8 is on an incomplete path
+SLICE/CIN0 input internalvga.SLICE_8 is on an incomplete path
+PLL/RESET_N input pll.lscc_pll_inst.u_PLL_Bis connected to a constant net
+PLL/INTFBOUT output  pll.lscc_pll_inst.u_PLL_B has no incoming device arc
+     *** pll.lscc_pll_inst.u_PLL_B/FEEDBACK is driven by constant or a pin on an incomplete path
+SLICE/F0 VCC  RGB_pad[3].SLICE_30
+     *** internalvga.SLICE_6/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga.SLICE_10/B1 is driven by constant or a pin on an incomplete path

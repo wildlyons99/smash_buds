@@ -1,0 +1,207 @@
+<HTML>
+<HEAD>
+<TITLE>Lattice TCL Log</TITLE>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="pn221129183942"></A><B><U><big>pn221129183942</big></U></B>
+#Start recording tcl command: 11/29/2022 18:09:55
+#Project Location: //vs-home/tlyons01/es4/smack_buds; Project name: smack_buds
+//vs-home/tlyons01/es4/lab7
+lab7
+#Start recording tcl command: 11/29/2022 18:39:42
+#Project Location: //vs-home/tlyons01/es4/lab7; Project name: lab7
+prj_create -name "smack_buds" -impl "impl_1" -dev iCE40UP5K-UWG30ITR -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_set_strategy_value -strategy Strategy1 syn_vhdl2008=True
+prj_set_strategy_value -strategy Strategy1 lse_vhdl2008=True
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/vga.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_device -part iCE40UP5K-SG48I -performance "High-Performance_1.2V"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/my_pll/my_pll.ipx"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/smack_buds.pdc"
+prj_enable_source "//vs-home/tlyons01/es4/smack_buds/smack_buds.pdc"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_save 
+prj_close
+prj_open "//vs-home/tlyons01/es4/lab7/lab7.rdf"
+#Stop recording: 11/29/2022 18:39:42
+
+
+
+<A name="pn221129184145"></A><B><U><big>pn221129184145</big></U></B>
+#Start recording tcl command: 11/29/2022 18:41:44
+#Project Location: //vs-home/tlyons01/es4/smack_buds; Project name: smack_buds
+prj_open "//vs-home/tlyons01/es4/smack_buds/smack_buds.rdf"
+#Stop recording: 11/29/2022 18:41:45
+
+
+
+<A name="pn221129185746"></A><B><U><big>pn221129185746</big></U></B>
+#Start recording tcl command: 11/29/2022 18:49:15
+#Project Location: //vs-home/tlyons01/es4/smack_buds; Project name: smack_buds
+prj_open "//vs-home/tlyons01/es4/smack_buds/smack_buds.rdf"
+#Stop recording: 11/29/2022 18:57:46
+
+
+
+<A name="pn221129191605"></A><B><U><big>pn221129191605</big></U></B>
+#Start recording tcl command: 11/29/2022 18:59:53
+#Project Location: //vs-home/tlyons01/es4/smack_buds; Project name: smack_buds
+prj_open "//vs-home/tlyons01/es4/smack_buds/smack_buds.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+#Stop recording: 11/29/2022 19:16:05
+
+
+
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#pn221129183942>pn221129183942</A></LI>
+<LI><A href=#pn221129184145>pn221129184145</A></LI>
+<LI><A href=#pn221129185746>pn221129185746</A></LI>
+<LI><A href=#pn221129191605>pn221129191605</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+
