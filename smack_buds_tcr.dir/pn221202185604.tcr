@@ -1,0 +1,12 @@
+#Start recording tcl command: 12/2/2022 18:18:02
+#Project Location: C:/Users/noahs/my_designs/smash_buds; Project name: smack_buds
+prj_open "C:/Users/noahs/my_designs/smash_buds/smack_buds.rdf"
+prj_add_source "C:/Users/noahs/my_designs/smash_buds/source/impl_1/controller.vhd"
+prj_add_source "C:/Users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/3.2"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/2/2022 18:56:04

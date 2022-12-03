@@ -25,6 +25,8 @@
 
 
 
+
+
 -use_io_reg auto
 -vh2008
 
@@ -34,18 +36,22 @@
 
 -use_io_insertion 1
 -resolve_mixed_drivers 0
--path "//vs-home/acohen24/smash_buds/my_pll"
--path "C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data" "//vs-home/acohen24/smash_buds/impl_1" "//vs-home/acohen24/smash_buds"
--ver "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v"
--lib pmi -vhd "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd"
--lib "work" -vhd "//vs-home/acohen24/smash_buds/source/impl_1/top.vhd"
-"//vs-home/acohen24/smash_buds/source/impl_1/pattern_gen.vhd"
-"//vs-home/acohen24/smash_buds/source/impl_1/vga.vhd"
--ver "//vs-home/acohen24/smash_buds/my_pll/rtl/my_pll.v"
--lib "work" -vhd "//vs-home/acohen24/smash_buds/source/impl_1/controller.vhd"
+-sdc "smack_buds_impl_1_cpe.ldc"
+-path "C:/Users/noahs/my_designs/smash_buds/my_pll"
+-path "C:/lscc/radiant/3.2/ispfpga/ice40tp/data" "C:/Users/noahs/my_designs/smash_buds/impl_1" "C:/Users/noahs/my_designs/smash_buds"
+-ver "C:/lscc/radiant/3.2/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/3.2/ip/pmi/pmi_iCE40UP.vhd"
+-lib "work" -vhd "C:/Users/noahs/my_designs/smash_buds/source/impl_1/top.vhd"
+"C:/Users/noahs/my_designs/smash_buds/source/impl_1/pattern_gen.vhd"
+"C:/Users/noahs/my_designs/smash_buds/source/impl_1/vga.vhd"
+-ver "C:/Users/noahs/my_designs/smash_buds/my_pll/rtl/my_pll.v"
+-lib "work" -vhd "C:/Users/noahs/my_designs/smash_buds/source/impl_1/pllclock_to_60hz.vhd"
+"C:/Users/noahs/my_designs/smash_buds/source/impl_1/controller.vhd"
+"C:/Users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd"
+"C:/Users/noahs/my_designs/smash_buds/source/impl_1/greensquareROM.vhd"
 
 
--path "//vs-home/acohen24/smash_buds"
+-path "C:/Users/noahs/my_designs/smash_buds"
 -top top
 -udb "smack_buds_impl_1_rtl.udb"
 -output_hdl "smack_buds_impl_1.vm"

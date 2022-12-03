@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Synthesis Report</TITLE>
-<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///C:/lscc/radiant/3.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/3.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -41,6 +41,18 @@ if (a)
 
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
+synthesis:  version Radiant Software (64-bit) 3.2.1.217.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Dec  2 20:45:33 2022
+
+
+Command Line:  C:\lscc\radiant\3.2\ispfpga\bin\nt64\synthesis.exe -f smack_buds_impl_1_lattice.synproj -gui -msgset C:/Users/noahs/my_designs/smash_buds/promote.xml 
+
 Synthesis options:
 The -a option is iCE40UP.
 The -t option is SG48.
@@ -96,90 +108,199 @@ Remove Duplicate Registers = TRUE
 Output HDL file name = smack_buds_impl_1.vm.
 ROM style = auto
 RAM style = auto
-The -comp option is TRUE.
+The -comp option is FALSE.
 The -syn option is FALSE.
+-sdc option: SDC file input is smack_buds_impl_1_cpe.ldc.
 -vh2008
 
--path //vs-home/acohen24/smash_buds (searchpath added)
--path //vs-home/acohen24/smash_buds/impl_1 (searchpath added)
--path //vs-home/acohen24/smash_buds/my_pll (searchpath added)
--path C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data (searchpath added)
+-path C:/Users/noahs/my_designs/smash_buds (searchpath added)
+-path C:/Users/noahs/my_designs/smash_buds/impl_1 (searchpath added)
+-path C:/Users/noahs/my_designs/smash_buds/my_pll (searchpath added)
+-path C:/lscc/radiant/3.2/ispfpga/ice40tp/data (searchpath added)
 Mixed language design
-Verilog design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
-Verilog design file = //vs-home/acohen24/smash_buds/my_pll/rtl/my_pll.v
+Verilog design file = C:/lscc/radiant/3.2/ip/pmi/pmi_iCE40UP.v
+Verilog design file = C:/Users/noahs/my_designs/smash_buds/my_pll/rtl/my_pll.v
 VHDL library = pmi
-VHDL design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd
+VHDL design file = C:/lscc/radiant/3.2/ip/pmi/pmi_iCE40UP.vhd
 VHDL library = work
-VHDL design file = //vs-home/acohen24/smash_buds/source/impl_1/top.vhd
+VHDL design file = C:/Users/noahs/my_designs/smash_buds/source/impl_1/top.vhd
 VHDL library = work
-VHDL design file = //vs-home/acohen24/smash_buds/source/impl_1/pattern_gen.vhd
+VHDL design file = C:/Users/noahs/my_designs/smash_buds/source/impl_1/pattern_gen.vhd
 VHDL library = work
-VHDL design file = //vs-home/acohen24/smash_buds/source/impl_1/vga.vhd
+VHDL design file = C:/Users/noahs/my_designs/smash_buds/source/impl_1/vga.vhd
 VHDL library = work
-VHDL design file = //vs-home/acohen24/smash_buds/source/impl_1/controller.vhd
+VHDL design file = C:/Users/noahs/my_designs/smash_buds/source/impl_1/pllclock_to_60hz.vhd
+VHDL library = work
+VHDL design file = C:/Users/noahs/my_designs/smash_buds/source/impl_1/controller.vhd
+VHDL library = work
+VHDL design file = C:/Users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd
+VHDL library = work
+VHDL design file = C:/Users/noahs/my_designs/smash_buds/source/impl_1/greensquareROM.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Compile design.
 Compile Design Begin
-Analyzing Verilog file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v. VERI-1482
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_addsub.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_addsub.v(40): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_add.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_add.v(50): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_complex_mult.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_counter.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_counter.v(39): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo.v(44): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo_dc.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mac.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mac.v(52): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsubsum.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsub.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mult.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mult.v(51): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_rom.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_rom.v(45): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_sub.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_sub.v(50): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file //vs-home/acohen24/smash_buds/my_pll/rtl/my_pll.v. VERI-1482
-Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd. VHDL-1481
-Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd
+Analyzing Verilog file c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_addsub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_add.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_counter.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_fifo.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_mac.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_mult.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_rom.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/rom/rtl/lscc_rom.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_sub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file c:/users/noahs/my_designs/smash_buds/my_pll/rtl/my_pll.v. VERI-1482
+Analyzing VHDL file c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.vhd
 
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
-Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/top.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/top.vhd
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd. VHDL-1481
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd
 
-INFO - synthesis: //vs-home/acohen24/smash_buds/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
-INFO - synthesis: //vs-home/acohen24/smash_buds/source/impl_1/top.vhd(15): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/pattern_gen.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/pattern_gen.vhd
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd(19): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/pattern_gen.vhd. VHDL-1481
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/pattern_gen.vhd
 
-INFO - synthesis: //vs-home/acohen24/smash_buds/source/impl_1/pattern_gen.vhd(5): analyzing entity pattern_gen. VHDL-1012
-INFO - synthesis: //vs-home/acohen24/smash_buds/source/impl_1/pattern_gen.vhd(15): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/vga.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/vga.vhd
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/pattern_gen.vhd(5): analyzing entity pattern_gen. VHDL-1012
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/pattern_gen.vhd(17): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/vga.vhd. VHDL-1481
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/vga.vhd
 
-INFO - synthesis: //vs-home/acohen24/smash_buds/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
-INFO - synthesis: //vs-home/acohen24/smash_buds/source/impl_1/vga.vhd(16): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/controller.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/acohen24/smash_buds/source/impl_1/controller.vhd
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/vga.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/pllclock_to_60hz.vhd. VHDL-1481
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/pllclock_to_60hz.vhd
 
-INFO - synthesis: //vs-home/acohen24/smash_buds/source/impl_1/controller.vhd(5): analyzing entity controller. VHDL-1012
-INFO - synthesis: //vs-home/acohen24/smash_buds/source/impl_1/controller.vhd(13): analyzing architecture synth. VHDL-1010
-ERROR - synthesis: //vs-home/acohen24/smash_buds/source/impl_1/controller.vhd(30): hsosc is already declared in this region. VHDL-1223
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/pllclock_to_60hz.vhd(5): analyzing entity pllclock_to_60_hz. VHDL-1012
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/pllclock_to_60hz.vhd(12): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/controller.vhd. VHDL-1481
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/controller.vhd
+
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/controller.vhd(5): analyzing entity controller. VHDL-1012
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/controller.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd. VHDL-1481
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd
+
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(5): analyzing entity game_logic. VHDL-1012
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/greensquarerom.vhd. VHDL-1481
+Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/greensquarerom.vhd
+
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/greensquarerom.vhd(5): analyzing entity greensquarerom. VHDL-1012
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/greensquarerom.vhd(14): analyzing architecture synth. VHDL-1010
+INFO - synthesis: The default VHDL library search path is now "C:/Users/noahs/my_designs/smash_buds/impl_1". VHDL-1504
+Top module language type = VHDL.
+Top module name (VHDL, mixed language): top
+                                                         
+
+
+### Number of Logic Cells: 5280
+
+
+### Number of RAM Blocks: 30
+
+
+### Number of DSP Blocks: 8
+
+
+### Number of PLLs: 1
+
+
+### Number of IO Pins: 56
+
+
+##########################################################
+
+
+                                                         
+
+
+WARNING - synthesis: c:/users/noahs/my_designs/smash_buds/my_pll/rtl/my_pll.v(139): net \pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/noahs/my_designs/smash_buds/my_pll/rtl/my_pll.v(140): net \pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+######## Missing driver on net \pll/lscc_pll_inst/sclk_i. Patching with GND.
+######## Missing driver on net \pll/lscc_pll_inst/sdi_i. Patching with GND.
+WARNING - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(38): Register \patternmaker/game/first_time is stuck at One. VDB-5014
+
+
+
+INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
+
+
+<A name="lse_area"></A><B><U><big>Area Report</big></U></B>
+
+################### Begin Area Report (top)######################
+Number of register bits => 92 of 5280 (1 % )
+CCU2 => 51
+FD1P3XZ => 92
+HSOSC_CORE => 1
+IB => 2
+IOL_B => 1
+LUT4 => 80
+OB => 11
+PLL_B => 1
+################### End Area Report ##################
+Number of odd-length carry chains : 2
+Number of even-length carry chains : 5
+
+
+<A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 6
+  Net : controller1/controller_latch_c, loads : 1
+  Net : controller1/controller_clock_c, loads : 1
+  Net : ext12m_c, loads : 1
+  Net : sixtyHZclock/internal60hzclk, loads : 0
+  Net : pll/lscc_pll_inst/internal25clk, loads : 0
+  Net : pll/lscc_pll_inst/testPLLout_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : controller1/counter_20__N_51, loads : 21
+  Net : controller1/clk, loads : 21
+  Net : controller1/x_9__N_166, loads : 20
+  Net : internalvga/col_9__N_101, loads : 10
+  Net : internalvga/row_9__N_112, loads : 10
+  Net : n187, loads : 10
+  Net : n189, loads : 10
+  Net : patternmaker/game/n83, loads : 10
+  Net : internalvga/RGB_c_0, loads : 5
+  Net : internalvga/internalcol[9], loads : 5
+################### End Clock Report ##################
+
+Peak Memory Usage: 115 MB
+
+--------------------------------------------------------------
+Total CPU Time: 3 secs 
+Total REAL Time: 4 secs 
+--------------------------------------------------------------
 
 
 
@@ -234,6 +355,14 @@ ERROR - synthesis: //vs-home/acohen24/smash_buds/source/impl_1/controller.vhd(30
 <BR>
 <BR>
 </PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#Syn>Top</A></LI>
+<LI><A href=#lse_area>Area Report</A></LI>
+<LI><A href=#lse_clock>Clock Report</A></LI>
+</UL>
+</DIV>
 
 <button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
 <script type="text/javascript">

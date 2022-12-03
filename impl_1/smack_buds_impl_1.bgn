@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Nov 29 21:58:59 2022
+Fri Dec  2 20:48:51 2022
 
 
 Command: bitgen -w -freq 0 -gui smack_buds_impl_1.udb 
@@ -22,4 +22,5 @@ Preference Summary:
 
 Creating bit map...
 Saving bit stream in "C:\Users\noahs\my_designs\smash_buds\impl_1\smack_buds_impl_1.bin".
+INFO - Bitstream authenticated.
 Bitstream generation complete!

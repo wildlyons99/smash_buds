@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-DRC: Design Rule Check Radiant Software (64-bit) 3.0.0.24.1
-Fri Dec  2 17:45:51 2022
-=======
 DRC: Design Rule Check Radiant Software (64-bit) 3.2.1.217.3
-Fri Dec  2 17:08:50 2022
->>>>>>> 105fb026c5c390a1e350116f1376214e2affe61d
+Fri Dec  2 20:48:25 2022
 
+WARNING - No port matched 'controller_input'.
+WARNING - Can't resolve object 'controller_input' in constraint 'ldc_set_location -site {47} [get_ports controller_input]'.

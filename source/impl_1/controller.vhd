@@ -4,7 +4,8 @@ use IEEE.numeric_std.all;
 
 entity controller is
   port(
- latch, clock : out std_logic;
+ latch : out std_logic;
+ clock : out std_logic;
  data : in std_logic;
  output : out std_logic_vector(7 downto 0)
   );
@@ -27,7 +28,7 @@ signal shift : std_logic_vector(7 downto 0);
 
 begin
 
-hsosc : HSOSC port map ('1', '1', clk);
+the_hsosc : HSOSC port map ('1', '1', clk);
 
 process(clk)
 begin

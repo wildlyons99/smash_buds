@@ -1,43 +1,39 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="0" build_time="1670020876">
-            <Task name="Bitgen" build_result="0" update_result="2" update_time="1670020876"/>
-            <Task name="IBIS" build_result="0" update_result="2" update_time="1670020876"/>
-            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1670020876"/>
+        <Milestone name="Export" build_result="2" build_time="1670032131">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1670032131"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1670032132"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1670032133"/>
         </Milestone>
-        <Milestone name="Map" build_result="0" build_time="1670020876">
-            <Task name="Map" build_result="0" update_result="2" update_time="1670020876"/>
-            <Task name="MapTrace" build_result="0" update_result="2" update_time="1669777118"/>
+        <Milestone name="Map" build_result="2" build_time="1670032118">
+            <Task name="Map" build_result="2" update_result="0" update_time="1670032118"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1670032117"/>
         </Milestone>
-        <Milestone name="PAR" build_result="0" build_time="1670020876">
-            <Task name="PAR" build_result="0" update_result="2" update_time="1670020876"/>
-            <Task name="PARTrace" build_result="0" update_result="2" update_time="1670020876"/>
+        <Milestone name="PAR" build_result="2" build_time="1670032129">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1670032129"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1670032130"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="0" build_time="1670020888">
-            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1670020888"/>
-            <Task name="LSE_Compile" build_result="1" update_result="2" update_time="1670021149"/>
-            <Task name="SynTrace" build_result="0" update_result="2" update_time="1670020888"/>
-            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1670020888"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1670031937">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1670031937"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1670031937"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1670026017"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1670026017"/>
         </Milestone>
-        <Report name="IBIS/smack_buds_impl_1.ibs" last_build_time="1669777140" last_build_size="54306"/>
-        <Report name="smack_buds_impl_1.bgn" last_build_time="1669777140" last_build_size="990"/>
-        <Report name="smack_buds_impl_1.bin" last_build_time="1669777140" last_build_size="104156"/>
+        <Report name="IBIS/smack_buds_impl_1.ibs" last_build_time="1670032132" last_build_size="54477"/>
+        <Report name="smack_buds_impl_1.bgn" last_build_time="1670032131" last_build_size="1023"/>
+        <Report name="smack_buds_impl_1.bin" last_build_time="1670032131" last_build_size="104156"/>
         <Report name="smack_buds_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
         <Report name="smack_buds_impl_1.tw1.html" last_build_time="1669766747" last_build_size="16614"/>
-        <Report name="smack_buds_impl_1.twr.html" last_build_time="1669777138" last_build_size="17340"/>
+        <Report name="smack_buds_impl_1.twr.html" last_build_time="1670032130" last_build_size="177134"/>
         <Report name="smack_buds_impl_1.tws.html" last_build_time="1669766745" last_build_size="16186"/>
-        <Report name="smack_buds_impl_1.udb" last_build_time="1669777137" last_build_size="9528"/>
-        <Report name="smack_buds_impl_1_map.udb" last_build_time="1669777130" last_build_size="6923"/>
-        <Report name="smack_buds_impl_1_rtl.udb" last_build_time="1670020062" last_build_size="4767"/>
-        <Report name="smack_buds_impl_1_syn.udb" last_build_time="1669777129" last_build_size="5186"/>
-        <Report name="smack_buds_impl_1_vo.sdf" last_build_time="1669777141" last_build_size="37919"/>
-        <Report name="smack_buds_impl_1_vo.vo" last_build_time="1669777141" last_build_size="39569"/>
+        <Report name="smack_buds_impl_1.udb" last_build_time="1670032129" last_build_size="29441"/>
+        <Report name="smack_buds_impl_1_map.udb" last_build_time="1670032118" last_build_size="20565"/>
+        <Report name="smack_buds_impl_1_rtl.udb" last_build_time="1670031936" last_build_size="11328"/>
+        <Report name="smack_buds_impl_1_syn.udb" last_build_time="1670031937" last_build_size="14722"/>
+        <Report name="smack_buds_impl_1_vo.sdf" last_build_time="1670032133" last_build_size="155916"/>
+        <Report name="smack_buds_impl_1_vo.vo" last_build_time="1670032133" last_build_size="153595"/>
     </Strategy>
 </BuildStatus>
-   
-=======
-    
->>>>>>> 105fb026c5c390a1e350116f1376214e2affe61d
+             
