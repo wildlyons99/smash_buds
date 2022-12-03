@@ -35,9 +35,9 @@ begin
 							 x => x,
 							 y => y
 							 );
-   --onsquarex <= '1' when (col >= x and col < x + 9) else '0';
-   --onsquarey <= '1' when (row >= y and row < x + 9) else '0';
-   toout <= "000000" when (col = x and row = y) else 
+   onsquarex <= '1' when (col >= x and col < x + 9) else '0';
+   onsquarey <= '1' when (row >= y and row < y + 9) else '0';
+   toout <= "000000" when (onsquarex and onsquarey) else 
 			"111111";
    rgb <= toout when valid else 6d"0";
 end;
