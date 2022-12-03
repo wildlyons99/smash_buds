@@ -6,11 +6,11 @@ entity pattern_gen is
   port(
 	  clk : in std_logic;
 	  clk60hz : in std_logic;
-	  row : in unsigned(9 downto 0); -- 0-1023
-	  col : in unsigned(9 downto 0); -- 0-1023
+	  row : in signed(10 downto 0); -- 0-1023
+	  col : in signed(10 downto 0); -- 0-1023
 	  -- buttons : in std_logic_vector(7 downto 0);
-	  x : in unsigned(9 downto 0);
-	  y : in unsigned(9 downto 0);
+	  x : in signed(10 downto 0);
+	  y : in signed(10 downto 0);
 	  valid : in std_logic;
 	  rgb : out std_logic_vector(5 downto 0)
       );
@@ -22,11 +22,11 @@ signal toout : std_logic_vector(5 downto 0);
 signal onsquarex : std_logic;
 signal onsquarey : std_logic;
 signal fromrom : std_logic_vector(5 downto 0);
-signal diffcolx : std_logic_vector(9 downto 0);
-signal diffrowy : std_logic_vector(9 downto 0);
-signal romx : unsigned(1 downto 0);
-signal romy : unsigned(1 downto 0);
-signal background : unsigned(5 downto 0); 
+--signal diffcolx : std_logic_vector(9 downto 0);
+--signal diffrowy : std_logic_vector(9 downto 0);
+--signal romx : unsigned(1 downto 0);
+--signal romy : unsigned(1 downto 0);
+signal background : signed(6 downto 0); 
 
 begin
    
@@ -40,10 +40,10 @@ begin
    toout <= "000000" when (onsquarex and onsquarey) else 
    		"111111";
    rgb <= toout when valid else 6d"0";
-   diffcolx <= std_logic_vector(col - x - 1);
-   diffrowy <= std_logic_vector(row - y);
-   romx <= unsigned(diffcolx(1 downto 0));
-   romy <= unsigned(diffrowy(1 downto 0));
+   --diffcolx <= std_logic_vector(col - x - 1);
+   --diffrowy <= std_logic_vector(row - y);
+   --romx <= unsigned(diffcolx(1 downto 0));
+   --romy <= unsigned(diffrowy(1 downto 0));
 end;
 
 

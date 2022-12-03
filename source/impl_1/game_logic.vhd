@@ -6,28 +6,28 @@ entity game_logic is
   port(
 	  clk : in std_logic; 
 	  controller_buttons : in std_logic_vector(7 downto 0);
-	  x : out unsigned(9 downto 0); 
-	  y : out unsigned(9 downto 0)
+	  x : out signed(10 downto 0); 
+	  y : out signed(10 downto 0)
       );
 end game_logic;
 
 architecture synth of game_logic is
 	signal first_time : std_logic;
-	signal yVelocity  : unsigned(4 downto 0);
-	signal gravity    : unsigned(1 downto 0);
+	signal yVelocity  : signed(3 downto 0);
+	signal gravity    : signed(1 downto 0);
 begin
    process (clk) begin
 	if rising_edge(clk) then
 		if ((not first_time) or controller_buttons(4)) then
-			x <= 10b"0";
-			y <= 10b"0";
+			x <= 11b"0";
+			y <= 11b"0";
 			first_time <= '1';
 			gravity <= 2d"1";
-			yVelocity <= 5d"0";
+			yVelocity <= 4d"0";
 		else
 		 	if (controller_buttons(1)) then
 		 		if (x = 0) then
-					x <= 10d"639";
+					x <= 11d"639";
 				else
 					x <= (x - 1);
 				end if;
@@ -41,7 +41,7 @@ begin
 				y <= (y + 1) mod 479;
 			elsif (controller_buttons(3)) then
 				if (y = 0) then
-					y <= 10d"479";
+					y <= 11d"479";
 				else
 					y <= (y - 1);
 				end if;
@@ -49,9 +49,9 @@ begin
 				-- do nothing
 			end if;
 			
-			if (yVelocity = 5d"0") then
+			if (yVelocity = 4d"0") then
 				if(controller_buttons(7)) then 
-					yVelocity <= 5d"5";
+					yVelocity <= 4d"5";
 				end if;
 			else 
 				yVelocity <= yVelocity - gravity;

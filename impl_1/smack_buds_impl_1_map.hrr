@@ -4,32 +4,32 @@ Report for cell top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       2.00        100.0
-                                  LUT4	        258        100.0
+                                  LUT4	        347        100.0
                                  IOREG	          2        100.0
                                  IOBUF	         14        100.0
-                                PFUREG	         96        100.0
+                                PFUREG	         99        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                            controller	          1        15.5
-                            game_logic	          1        33.7
+                            controller	          1        11.5
+                            game_logic	          1        46.1
                                 my_pll	          1         0.0
-                           pattern_gen	          1        22.5
-                     pllclock_to_60_hz	          1        10.1
-                                   vga	          1        14.3
+                           pattern_gen	          1        19.0
+                     pllclock_to_60_hz	          1         8.1
+                                   vga	          1        11.5
 ---------------------------------------------------
 Report for cell pllclock_to_60_hz
    Instance path: top/sixtyHZclock
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         26        10.1
-                                PFUREG	         19        19.8
+                                  LUT4	         28         8.1
+                                PFUREG	         19        19.2
 ---------------------------------------------------
 Report for cell vga
    Instance path: top/internalvga
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         37        14.3
-                                PFUREG	         20        20.8
+                                  LUT4	         40        11.5
+                                PFUREG	         22        22.2
 ---------------------------------------------------
 Report for cell my_pll
    Instance path: top/pll
@@ -44,24 +44,24 @@ Report for cell my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
-Report for cell pattern_gen
-   Instance path: top/patternmaker
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         58        22.5
----------------------------------------------------
 Report for cell game_logic
    Instance path: top/game
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         87        33.7
-                                PFUREG	         25        26.0
+                                  LUT4	        160        46.1
+                                PFUREG	         26        26.3
+---------------------------------------------------
+Report for cell pattern_gen
+   Instance path: top/patternmaker
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         66        19.0
 ---------------------------------------------------
 Report for cell controller
    Instance path: top/controller1
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       2.00        100.0
-                                  LUT4	         40        15.5
+                                  LUT4	         40        11.5
                                  IOREG	          2        100.0
-                                PFUREG	         32        33.3
+                                PFUREG	         32        32.3

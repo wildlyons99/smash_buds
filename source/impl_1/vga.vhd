@@ -7,8 +7,8 @@ entity vga is
 	  clk : in std_logic;
 	  HSYNC : out std_logic;
 	  VSYNC : out std_logic;
-	  row : out unsigned(9 downto 0); -- 0-1023
-	  col : out unsigned(9 downto 0); -- 0-1023
+	  row : out signed(10 downto 0); -- 0-1023
+	  col : out signed(10 downto 0); -- 0-1023
 	  valid : out std_logic
       );
 end vga;
@@ -19,15 +19,15 @@ begin
    process (clk) begin
 	if rising_edge(clk) then
 		-- Row logic, counts 0-799 (800 total rows), then resets & increments col
-		if (col = 10d"799") then
-			col <= 10d"0";
+		if (col = 11d"799") then
+			col <= 11d"0";
 			row <= row + 1;
 		else
 			col <= col + 1;
 		end if;
 		-- Col logic, counts 0-524 (525 total cols), then resets
-		if (row = 10d"524") then
-			row <= 10d"0";
+		if (row = 11d"524") then
+			row <= 11d"0";
 		end if;
 	end if;
    end process;

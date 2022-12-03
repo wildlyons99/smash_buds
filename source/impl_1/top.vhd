@@ -45,8 +45,8 @@ architecture synth of top is
 		  clk : in std_logic;
 		  HSYNC : out std_logic;
 		  VSYNC : out std_logic;
-		  row : out unsigned(9 downto 0); -- 0-1023
-		  col : out unsigned(9 downto 0); -- 0-1023
+		  row : out signed(10 downto 0); -- 0-1023
+		  col : out signed(10 downto 0); -- 0-1023
 		  valid : out std_logic
 		  );
 	end component;
@@ -54,10 +54,10 @@ architecture synth of top is
     port(
 		  clk : in std_logic;
 		  clk60hz : in std_logic;
-		  row : in unsigned(9 downto 0); -- 0-1023
-		  col : in unsigned(9 downto 0); -- 0-1023
-		  x : in unsigned(9 downto 0);
-		  y : in unsigned(9 downto 0);
+		  row : in signed(10 downto 0); -- 0-1023
+		  col : in signed(10 downto 0); -- 0-1023
+		  x : in signed(10 downto 0);
+		  y : in signed(10 downto 0);
 		  valid : in std_logic;
 		  rgb : out std_logic_vector(5 downto 0)
 		);
@@ -67,19 +67,19 @@ architecture synth of top is
 	  port(
 		  clk : in std_logic; 
 		  controller_buttons : in std_logic_vector(7 downto 0);
-		  x : out unsigned(9 downto 0); 
-		  y : out unsigned(9 downto 0)
+		  x : out signed(10 downto 0); 
+		  y : out signed(10 downto 0)
 		  );
 	end component;
 
 	signal internal25clk : std_logic;
-	signal internalrow : unsigned(9 downto 0);
-	signal internalcol : unsigned(9 downto 0);
+	signal internalrow : signed(10 downto 0);
+	signal internalcol : signed(10 downto 0);
 	signal internalvalid : std_logic;
 	signal controller_buttons_signal : std_logic_vector(7 downto 0);
 	signal internal60hzclk : std_logic;
-	signal xpos : unsigned(9 downto 0);
-	signal ypos : unsigned(9 downto 0);
+	signal xpos : signed(10 downto 0);
+	signal ypos : signed(10 downto 0);
 begin
    controller1 : controller port map(
                                     latch => controller_latch,
