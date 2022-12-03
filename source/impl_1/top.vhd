@@ -7,6 +7,7 @@ entity top is
 	  ext12m : in std_logic;
 	  HSYNC : out std_logic;
 	  VSYNC : out std_logic;
+	  up : out std_logic;
 	  RGB : out std_logic_vector(5 downto 0);
 	  testPLLout : out std_logic;
 	
@@ -87,6 +88,8 @@ begin
 									   valid => internalvalid,
 									   rgb => RGB
 									   );
+									   
+	up <= controller_buttons_signal(3);
 end;
 
 

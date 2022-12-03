@@ -6,7 +6,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Fri Dec  2 21:27:40 2022
+Fri Dec  2 23:15:09 2022
 
 Pinout by Port Name:
 +------------------+----------+--------------+-------+--------------------+
@@ -25,6 +25,7 @@ Pinout by Port Name:
 | controller_latch | 46/2     | LVCMOS33_OUT | PL6A  | DRIVE:8mA PULL:NA  |
 | ext12m           | 20/1     | LVCMOS33_IN  | PL20B | PULL:100K          |
 | testPLLout       | 34/0     | LVCMOS33_OUT | PR14B | DRIVE:8mA PULL:NA  |
+| up               | 4/2      | LVCMOS33_OUT | PL10A | DRIVE:8mA PULL:NA  |
 +------------------+----------+--------------+-------+--------------------+
 
 Vccio by Bank:
@@ -42,7 +43,7 @@ Pinout by Pin Number:
 +----------+---------------------+------------+--------------+-------+------------------+
 | 2/2      | controller_clock    | LOCATED    | LVCMOS33_OUT | PL9A  |                  |
 | 3/2      |     unused, PULL:UP |            |              | PL10B |                  |
-| 4/2      |     unused, PULL:UP |            |              | PL10A |                  |
+| 4/2      | up                  | LOCATED    | LVCMOS33_OUT | PL10A |                  |
 | 6/1      |     unused, PULL:UP |            |              | PL14B |                  |
 | 9/1      |     unused, PULL:UP |            |              | PL16A |                  |
 | 10/1     |     unused, PULL:UP |            |              | PL17A |                  |
@@ -114,6 +115,7 @@ ldc_set_location -site {47} [ get_ports {controller_in} ]
 ldc_set_location -site {46} [ get_ports {controller_latch} ]
 ldc_set_location -site {20} [ get_ports {ext12m} ]
 ldc_set_location -site {34} [ get_ports {testPLLout} ]
+ldc_set_location -site {4} [ get_ports {up} ]
 
 
 
@@ -121,5 +123,5 @@ ldc_set_location -site {34} [ get_ports {testPLLout} ]
 
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Fri Dec  2 21:27:40 2022
+Fri Dec  2 23:15:09 2022
 

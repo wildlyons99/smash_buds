@@ -629,10 +629,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd(19): </Dynamic>
+            <Dynamic>c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd(20): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>19</Navigation>
+            <Navigation>20</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1023,10 +1023,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd(19): </Dynamic>
+            <Dynamic>c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd(20): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>19</Navigation>
+            <Navigation>20</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1131,6 +1131,18 @@
             <Dynamic>C:/Users/noahs/my_designs/smash_buds/impl_1</Dynamic>
         </Message>
         <Message>
+            <ID>35001747</ID>
+            <Severity>16</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>gravity</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>16</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>gravity</Dynamic>
+        </Message>
+        <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
             <Dynamic>c:/users/noahs/my_designs/smash_buds/my_pll/rtl/my_pll.v(139): </Dynamic>
@@ -1149,10 +1161,10 @@
         <Message>
             <ID>35935014</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(49): </Dynamic>
+            <Dynamic>c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(63): </Dynamic>
             <Dynamic>\patternmaker/game/first_time</Dynamic>
             <Navigation>c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd</Navigation>
-            <Navigation>49</Navigation>
+            <Navigation>63</Navigation>
         </Message>
         <Message>
             <ID>35002039</ID>

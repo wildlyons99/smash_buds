@@ -13,6 +13,8 @@ end game_logic;
 
 architecture synth of game_logic is
 	signal first_time : std_logic;
+	signal yVelocity  : unsigned(4 downto 0);
+	signal gravity    : unsigned(1 downto 0);
 begin
    process (clk) begin
 	if rising_edge(clk) then
@@ -20,9 +22,11 @@ begin
 			x <= 10b"0";
 			y <= 10b"0";
 			first_time <= '1';
+			gravity <= 2d"1";
+			yVelocity <= 5d"0";
 		else
-			if (controller_buttons(1)) then
-				if (x = 0) then
+		 	if (controller_buttons(1)) then
+		 		if (x = 0) then
 					x <= 10d"639";
 				else
 					x <= (x - 1);
@@ -45,7 +49,17 @@ begin
 				-- do nothing
 			end if;
 			
+			if (yVelocity = 5d"0") then
+				if(controller_buttons(7)) then 
+					yVelocity <= 5d"5";
+				end if;
+			else 
+				yVelocity <= yVelocity - gravity;
+			end if;
+			
+			y <= y - yVelocity;
 		end if;
+		
 	end if;
    end process;
 end;

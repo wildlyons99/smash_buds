@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Dec  2 21:27:27 2022
+Fri Dec  2 23:14:57 2022
 
 
 Command Line:  C:\lscc\radiant\3.2\ispfpga\bin\nt64\synthesis.exe -f smack_buds_impl_1_lattice.synproj -gui -msgset C:/Users/noahs/my_designs/smash_buds/promote.xml 
@@ -182,7 +182,7 @@ Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd. 
 Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd
 
 INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
-INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd(19): analyzing architecture synth. VHDL-1010
+INFO - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/top.vhd(20): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/pattern_gen.vhd. VHDL-1481
 Analyzing VHDL file c:/users/noahs/my_designs/smash_buds/source/impl_1/pattern_gen.vhd
 
@@ -240,11 +240,13 @@ Top module name (VHDL, mixed language): top
                                                          
 
 
+WARNING - synthesis: Bit 1 of Register gravity is stuck at Zero
+WARNING - synthesis: Bit 0 of Register gravity is stuck at One
 WARNING - synthesis: c:/users/noahs/my_designs/smash_buds/my_pll/rtl/my_pll.v(139): net \pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
 WARNING - synthesis: c:/users/noahs/my_designs/smash_buds/my_pll/rtl/my_pll.v(140): net \pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
 ######## Missing driver on net \pll/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \pll/lscc_pll_inst/sdi_i. Patching with GND.
-WARNING - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(49): Register \patternmaker/game/first_time is stuck at One. VDB-5014
+WARNING - synthesis: c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(63): Register \patternmaker/game/first_time is stuck at One. VDB-5014
 
 
 
@@ -254,18 +256,18 @@ INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are s
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (top)######################
-Number of register bits => 89 of 5280 (1 % )
-CCU2 => 85
-FD1P3XZ => 89
+Number of register bits => 96 of 5280 (1 % )
+CCU2 => 66
+FD1P3XZ => 96
 HSOSC_CORE => 1
 IB => 2
-IOL_B => 1
-LUT4 => 144
-OB => 11
+IOL_B => 2
+LUT4 => 119
+OB => 12
 PLL_B => 1
 ################### End Area Report ##################
-Number of odd-length carry chains : 3
-Number of even-length carry chains : 10
+Number of odd-length carry chains : 4
+Number of even-length carry chains : 6
 
 
 <A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
@@ -283,19 +285,19 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : controller1/x_9__N_176, loads : 22
+  Net : controller1/x_9__N_193, loads : 25
   Net : controller1/clk, loads : 21
   Net : controller1/counter_20__N_51, loads : 21
-  Net : controller1/controller_buttons_signal[2], loads : 11
   Net : patternmaker/game/n114, loads : 11
   Net : controller1/controller_buttons_signal[1], loads : 10
-  Net : n162, loads : 10
   Net : internalvga/col_9__N_101, loads : 10
   Net : internalvga/row_9__N_112, loads : 10
-  Net : patternmaker/game/n2318, loads : 10
+  Net : n179, loads : 10
+  Net : patternmaker/game/n1793, loads : 10
+  Net : patternmaker/game/n1166, loads : 10
 ################### End Clock Report ##################
 
-Peak Memory Usage: 111 MB
+Peak Memory Usage: 113 MB
 
 --------------------------------------------------------------
 Total CPU Time: 2 secs 

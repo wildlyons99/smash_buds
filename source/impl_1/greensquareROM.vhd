@@ -5,8 +5,8 @@ use IEEE.numeric_std.all;
 entity greensquareROM is
   port(
 	  clk : in std_logic; 
-	  x : in unsigned(2 downto 0);
-	  y : in unsigned(2 downto 0);
+	  x : in unsigned(1 downto 0);
+	  y : in unsigned(1 downto 0);
 	  rgb : out std_logic_vector(5 downto 0)
       );
 end greensquareROM;
@@ -17,7 +17,7 @@ signal addr : std_logic_vector(3 downto 0);
 
 begin
 
-	addr <= std_logic_vector(y(1 downto 0)) & std_logic_vector(x(1 downto 0));
+	addr <= std_logic_vector(y) & std_logic_vector(x);
 
 	process(clk)
 		begin
@@ -31,7 +31,7 @@ begin
 					when "0110" => rgb <= "001100";
 					when "1000" => rgb <= "111111";
 					when "1001" => rgb <= "001100";
-					when "1011" => rgb <= "111111";
+					when "1010" => rgb <= "111111";
 					when others => rgb <= "111111";
 				end case;
 			end if;

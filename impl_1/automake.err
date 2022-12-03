@@ -1,1 +1,23 @@
-ERROR - "//vs-home/acohen24/smash_buds/source/impl_1/controller.vhd(30): is already declared in this region. VHDL-1223
+ERROR - "//vs-home/acohen24/smash_buds/source/impl_1/controller.vhd(30): is already declared in this region. VHDL-1223ERROR - c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(18): syntax error near begin. VHDL-1261
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - Failed to analyze the file c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd.
+ERROR - c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(18): syntax error near begin. VHDL-1261
+ERROR - c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(18): syntax error near begin. VHDL-1261
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - Failed to analyze the file c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd.
+ERROR - c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(18): syntax error near begin. VHDL-1261
+ERROR - c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(18): syntax error near begin. VHDL-1261
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - Failed to analyze the file c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd.
+ERROR - c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(18): syntax error near begin. VHDL-1261
+ERROR - c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(52): syntax error near =. VHDL-1261
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(51): 0 definitions of operator &quot;and&quot; match here. VHDL-1052
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(56): 0 definitions of operator &quot;-&quot; match here. VHDL-1052
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(59): 0 definitions of operator &quot;-&quot; match here. VHDL-1052
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(64): unit synth ignored due to previous errors. VHDL-1284
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - Failed to analyze the file c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd.
