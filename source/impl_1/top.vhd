@@ -56,11 +56,22 @@ architecture synth of top is
 		  clk60hz : in std_logic;
 		  row : in unsigned(9 downto 0); -- 0-1023
 		  col : in unsigned(9 downto 0); -- 0-1023
-		  buttons : in std_logic_vector(7 downto 0);
+		  x : in unsigned(9 downto 0);
+		  y : in unsigned(9 downto 0);
 		  valid : in std_logic;
 		  rgb : out std_logic_vector(5 downto 0)
 		);
-    end component;	
+    end component;
+
+	component game_logic is
+	  port(
+		  clk : in std_logic; 
+		  controller_buttons : in std_logic_vector(7 downto 0);
+		  x : out unsigned(9 downto 0); 
+		  y : out unsigned(9 downto 0)
+		  );
+	end component;
+
 	signal internal25clk : std_logic;
 	signal internalrow : unsigned(9 downto 0);
 	signal internalcol : unsigned(9 downto 0);
@@ -84,10 +95,19 @@ begin
 									   clk60hz => internal60hzclk,
 									   row => internalrow,
 									   col => internalcol,
-									   buttons => controller_buttons_signal,
+									   x => xpos,
+									   y => ypos,
 									   valid => internalvalid,
 									   rgb => RGB
 									   );
+
+
+	game : game_logic port map(
+							 clk => internal60hzclk,
+							 controller_buttons => controller_buttons_signal,
+							 x => xpos,
+							 y => ypos
+							 );
 									   
 	up <= controller_buttons_signal(3);
 end;

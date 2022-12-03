@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Map Report</TITLE>
-<link href="file:///C:/lscc/radiant/3.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/lscc/radiant/3.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -40,27 +40,27 @@ if (a)
 <BODY>
 
 <DIV id="content" onclick="hideTocList()"><PRE>
-<A name="Mrp"></A>      Lattice Mapping Report File for Design Module &apos;smack_buds_impl_1&apos;
+<A name="Mrp"></A>      Lattice Mapping Report File for Design Module 'smack_buds_impl_1'
 
 Target Vendor:        LATTICE
 Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
-Mapper:    version Radiant Software (64-bit) 3.2.1.217.3
-Mapped on: Fri Dec  2 23:15:01 2022
+Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
+Mapped on: Sat Dec  3 16:54:44 2022
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
-Command line:   map -i smack_buds_impl_1_syn.udb -pdc
-     C:/Users/noahs/my_designs/smash_buds/smack_buds.pdc -o
+Command line:   map smack_buds_impl_1_syn.udb
+     //vs-home/tlyons01/es4/smack_buds/smack_buds.pdc -o
      smack_buds_impl_1_map.udb -mp smack_buds_impl_1.mrp -hierrpt -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of slice registers:  96 out of  5280 (2%)
    Number of I/O registers:      2 out of   117 (2%)
-   Number of LUT4s:           259 out of  5280 (5%)
-      Number of logic LUT4s:             120
+   Number of LUT4s:           258 out of  5280 (5%)
+      Number of logic LUT4s:             119
       Number of inserted feedthru LUT4s:   7
       Number of ripple logic:             66 (132 LUT4s)
    Number of IO sites used:   14 out of 39 (36%)
@@ -87,19 +87,19 @@ Command line:   map -i smack_buds_impl_1_syn.udb -pdc
    Number of Clocks:  6
       Net internal25clk: 22 loads, 22 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
       Net internal60hzclk: 20 loads, 20 rising, 0 falling (Driver: Pin
-     sixtyHZclock.i2602_4_lut/Z)
+     sixtyHZclock.i2952_4_lut/OUT)
+      Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
       Net controller1.clk: 11 loads, 11 rising, 0 falling (Driver: Pin
      controller1.the_hsosc/CLKHF)
       Net controller_latch_c: 5 loads, 5 rising, 0 falling (Driver: Pin
-     controller1.i7_4_lut/Z)
+     controller1.i7_4_lut/OUT)
       Net controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
-     controller1.i1_4_lut/Z)
+     controller1.i1_4_lut/OUT)
    Number of Clock Enables:  3
+      Net n220: 6 loads, 6 SLICEs
       Net RGB_pad[2].vcc: 1 loads, 0 SLICEs
-      Net n179: 6 loads, 6 SLICEs
-      Net patternmaker.game.n1166: 10 loads, 10 SLICEs
+      Net game.n1219: 10 loads, 10 SLICEs
 
    Number of LSRs:  4
       Net col_9__N_101: 6 loads, 6 SLICEs
@@ -111,12 +111,12 @@ Command line:   map -i smack_buds_impl_1_syn.udb -pdc
       Net x_9__N_193: 21 loads
       Net controller1.counter_20__N_51: 11 loads
       Net controller_buttons_signal[1]: 11 loads
-      Net patternmaker.game.n114: 11 loads
-      Net patternmaker.game.n1166: 10 loads
-      Net patternmaker.game.n1793: 10 loads
-      Net patternmaker.game.n19: 10 loads
-      Net patternmaker.game.yVelocity[0]: 8 loads
+      Net game.n114: 11 loads
+      Net game.n1219: 10 loads
+      Net game.n1895: 10 loads
+      Net game.n19: 10 loads
       Net col_9__N_101: 7 loads
+      Net game.yVelocity[0]: 7 loads
 
 
 
@@ -139,34 +139,34 @@ Command line:   map -i smack_buds_impl_1_syn.udb -pdc
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[2]              | OUTPUT    |           |       |       |           |
+| RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[3]              | OUTPUT    |           |       |       |           |
+| RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[4]              | OUTPUT    |           |       |       |           |
+| RGB[4]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[5]              | OUTPUT    |           |       |       |           |
+| RGB[1]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| up                  | OUTPUT    |           | O     |       |           |
+| RGB[5]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| VSYNC               | OUTPUT    |           |       |       |           |
+| up                  | OUTPUT    | LVCMOS33  | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| HSYNC               | OUTPUT    |           |       |       |           |
+| VSYNC               | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[1]              | OUTPUT    |           |       |       |           |
+| HSYNC               | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[0]              | OUTPUT    |           |       |       |           |
+| RGB[0]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| testPLLout          | OUTPUT    |           |       |       |           |
+| testPLLout          | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| controller_latch    | OUTPUT    |           |       |       |           |
+| controller_latch    | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
-| controller_clock    | OUTPUT    |           |       |       |           |
+| controller_clock    | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| ext12m              | INPUT     |           |       |       |           |
+| ext12m              | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| controller_in       | INPUT     |           | I     |       |           |
+| controller_in       | INPUT     | LVCMOS33  | I     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 
@@ -194,19 +194,19 @@ PLL 1:                                 Pin/Node Value
   Lock Signal:                                  NONE
   Input Clock Frequency (MHz):                  NA
   Reference Divider:                            0
-  Feedback Divider:                             66
-  VCO Divider:                                  5
+  Feedback Divider:                             0
+  VCO Divider:                                  1
   ENABLE_ICEGATE_PORTA:                         0
   ENABLE_ICEGATE_PORTB:                         0
-  PLLOUT_SELECT_PORTA:                          GENCLK
-  PLLOUT_SELECT_PORTB:                          GENCLK
+  PLLOUT_SELECT_PORTA:                          SHIFTREG_0deg
+  PLLOUT_SELECT_PORTB:                          SHIFTREG_0deg
   SHIFTREG_DIV_MODE:                            0
   DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
   FDA_RELATIVE:                                 0
   FEEDBACK_PATH:                                SIMPLE
   DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
   FDA_FEEDBACK:                                 0
-  FILTER_RANGE:                                 1
+  FILTER_RANGE:                                 0
   EXTERNAL_DIVIDE_FACTOR:                       NONE
   TEST Mode:                                    0
 
@@ -291,12 +291,12 @@ Instance Name: controller1/the_hsosc
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
-     AT&amp;T Corp.   All rights reserved.
+     AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent
      Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems
      All rights reserved.
-Copyright (c) 2002-2022 Lattice Semiconductor
+Copyright (c) 2002-2021 Lattice Semiconductor
      Corporation,  All rights reserved.
 
 

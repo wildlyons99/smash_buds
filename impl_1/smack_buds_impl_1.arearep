@@ -9,7 +9,7 @@ I/O cells:      14
                          HSOSC_CORE         1          100.0
                                  IB         2          100.0
                               IOL_B         2          100.0
-                               LUT4       119          100.0
+                               LUT4       118          100.0
                                  OB        12          100.0
                               PLL_B         1          100.0
 SUB MODULES
@@ -20,7 +20,16 @@ my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT
                         pattern_gen         1
                   pllclock_to_60_hz         1
                                 vga         1
-                              TOTAL       306
+                              TOTAL       305
+----------------------------------------------------------------------
+Report for cell pllclock_to_60_hz.v1
+Instance Path : sixtyHZclock
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        10           15.2
+                            FD1P3XZ        19           19.8
+                               LUT4         6            5.1
+                              TOTAL        35
 ----------------------------------------------------------------------
 Report for cell vga.v1
 Instance Path : internalvga
@@ -28,7 +37,7 @@ Instance Path : internalvga
                                cell     count   Res Usage(%)
                                 FA2        12           18.2
                             FD1P3XZ        20           20.8
-                               LUT4        13           10.9
+                               LUT4        13           11.0
                               TOTAL        45
 ----------------------------------------------------------------------
 Report for cell my_pll.v1
@@ -51,21 +60,18 @@ Report for cell pattern_gen.v1
 Instance Path : patternmaker
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        33           50.0
-                            FD1P3XZ        25           26.0
-                               LUT4        81           68.1
-SUB MODULES
-                         game_logic         1
-                              TOTAL       140
+                                FA2        10           15.2
+                               LUT4        38           32.2
+                              TOTAL        48
 ----------------------------------------------------------------------
 Report for cell game_logic.v1
-Instance Path : patternmaker.game
+Instance Path : game
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2        23           34.8
                             FD1P3XZ        25           26.0
-                               LUT4        43           36.1
-                              TOTAL        91
+                               LUT4        42           35.6
+                              TOTAL        90
 ----------------------------------------------------------------------
 Report for cell controller.v1
 Instance Path : controller1
@@ -75,14 +81,5 @@ Instance Path : controller1
                             FD1P3XZ        32           33.3
                          HSOSC_CORE         1          100.0
                               IOL_B         2          100.0
-                               LUT4        18           15.1
+                               LUT4        18           15.3
                               TOTAL        64
-----------------------------------------------------------------------
-Report for cell pllclock_to_60_hz.v1
-Instance Path : sixtyHZclock
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        10           15.2
-                            FD1P3XZ        19           19.8
-                               LUT4         6            5.0
-                              TOTAL        35
