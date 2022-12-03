@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Sat Dec  3 17:12:31 2022
+Mapped on: Sat Dec  3 18:27:19 2022
 
 Design Information
 ------------------
@@ -17,12 +17,12 @@ Command line:   map smack_buds_impl_1_syn.udb
 Design Summary
 --------------
 
-   Number of slice registers:  99 out of  5280 (2%)
-   Number of I/O registers:      2 out of   117 (2%)
-   Number of LUT4s:           347 out of  5280 (7%)
-      Number of logic LUT4s:             178
+   Number of slice registers: 101 out of  5280 (2%)
+   Number of I/O registers:      1 out of   117 (1%)
+   Number of LUT4s:           503 out of  5280 (10%)
+      Number of logic LUT4s:             276
       Number of inserted feedthru LUT4s:   7
-      Number of ripple logic:             81 (162 LUT4s)
+      Number of ripple logic:            110 (220 LUT4s)
    Number of IO sites used:   14 out of 39 (36%)
       Number of IO sites used for general PIO: 14
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -47,19 +47,19 @@ Design Summary
    Number of Clocks:  6
       Net internal25clk: 22 loads, 22 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net internal60hzclk: 21 loads, 21 rising, 0 falling (Driver: Pin
-     sixtyHZclock.i4_4_lut/OUT)
+      Net internal60hzclk: 26 loads, 26 rising, 0 falling (Driver: Pin
+     sixtyHZclock.i4974_4_lut/OUT)
       Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
-      Net controller_latch_c: 5 loads, 5 rising, 0 falling (Driver: Pin
+      Net controller_latch_c: 6 loads, 6 rising, 0 falling (Driver: Pin
      controller1.i7_4_lut/OUT)
       Net controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
      controller1.i1_4_lut/OUT)
       Net controller1.clk: 11 loads, 11 rising, 0 falling (Driver: Pin
      controller1.the_hsosc/CLKHF)
    Number of Clock Enables:  3
-      Net RGB_pad[2].vcc: 1 loads, 0 SLICEs
-      Net n221: 6 loads, 6 SLICEs
-      Net game.n1468: 11 loads, 11 SLICEs
+      Net RGB_pad[3].vcc: 1 loads, 0 SLICEs
+      Net n401: 6 loads, 6 SLICEs
+      Net game.n2482: 11 loads, 11 SLICEs
 
                                     Page 1
 
@@ -69,22 +69,23 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-   Number of LSRs:  4
+   Number of LSRs:  5
       Net col_10__N_104: 6 loads, 6 SLICEs
       Net row_10__N_116: 6 loads, 6 SLICEs
-      Net x_10__N_191: 21 loads, 21 SLICEs
+      Net controller_buttons_signal[4]: 23 loads, 23 SLICEs
+      Net game.n231: 1 loads, 1 SLICEs
       Net controller1.counter_20__N_51: 11 loads, 11 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net RGB_pad[2].vcc: 30 loads
-      Net x_10__N_191: 22 loads
+      Net RGB_pad[3].vcc: 40 loads
+      Net controller_buttons_signal[4]: 27 loads
+      Net game.n62[10]: 24 loads
       Net game.n644: 19 loads
-      Net game.n62[10]: 15 loads
+      Net game.n609: 15 loads
+      Net game.n62_adj_308[10]: 15 loads
       Net controller_buttons_signal[1]: 12 loads
       Net controller1.counter_20__N_51: 11 loads
-      Net game.n1468: 11 loads
-      Net game.n21: 11 loads
-      Net game.n107: 10 loads
-      Net game.n2059: 10 loads
+      Net game.n21_adj_223: 11 loads
+      Net game.n2482: 11 loads
 
 
 
@@ -104,19 +105,19 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[4]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[5]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| up                  | OUTPUT    | LVCMOS33  | O     |       |           |
+| up                  | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | VSYNC               | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | HSYNC               | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[1]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -125,7 +126,6 @@ IO (PIO) Attributes
 | testPLLout          | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | controller_latch    | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 
                                     Page 2
 
@@ -135,6 +135,7 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
++---------------------+-----------+-----------+-------+-------+-----------+
 | controller_clock    | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | ext12m              | INPUT     | LVCMOS33  |       |       |           |
@@ -185,11 +186,10 @@ OSC Summary
 
 OSC 1:                                 Pin/Node Value
   OSC Instance Name:                            controller1/the_hsosc
-  Power UP:                            NODE     RGB_pad[2].vcc
-  Enable Signal:                       NODE     RGB_pad[2].vcc
+  Power UP:                            NODE     RGB_pad[3].vcc
+  Enable Signal:                       NODE     RGB_pad[3].vcc
   OSC Output:                          NODE     controller1.clk
   DIV Setting:                                  00
-
 
 
 
@@ -206,8 +206,6 @@ Instance Name: pll/lscc_pll_inst/u_PLL_B
          Type: PLL
 Instance Name: controller1/shift_i0
          Type: IOLOGIC
-Instance Name: controller1/output_i3
-         Type: IOLOGIC
 Instance Name: controller1/the_hsosc
          Type: HFOSC
 
@@ -216,7 +214,9 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 60 MB
+   Peak Memory Usage: 61 MB
+
+
 
 
 

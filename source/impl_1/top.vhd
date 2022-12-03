@@ -53,7 +53,6 @@ architecture synth of top is
 	component pattern_gen is
     port(
 		  clk : in std_logic;
-		  clk60hz : in std_logic;
 		  row : in signed(10 downto 0); -- 0-1023
 		  col : in signed(10 downto 0); -- 0-1023
 		  x : in signed(10 downto 0);
@@ -92,7 +91,6 @@ begin
    internalvga : vga port map(internal25clk, HSYNC, VSYNC, internalrow, internalcol, internalvalid);
    patternmaker : pattern_gen port map (
 									   clk => internal25clk,
-									   clk60hz => internal60hzclk,
 									   row => internalrow,
 									   col => internalcol,
 									   x => xpos,

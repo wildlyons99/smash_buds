@@ -107,6 +107,31 @@
             <Severity>16</Severity>
             <Dynamic>pll.lscc_pll_inst.u_PLL_B</Dynamic>
         </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>pll.lscc_pll_inst.u_PLL_B</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>pll.lscc_pll_inst.u_PLL_B</Dynamic>
+        </Message>
+        <Message>
+            <ID>70009502</ID>
+            <Severity>16</Severity>
+            <Dynamic>IO ports are not constrained.</Dynamic>
+        </Message>
     </Task>
     <Task name="Synthesis">
         <Message>
@@ -701,10 +726,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd(19): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd(17): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd</Navigation>
-            <Navigation>19</Navigation>
+            <Navigation>17</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -769,6 +794,38 @@
             <Dynamic>synth</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
             <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35929000</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(83): </Dynamic>
+            <Dynamic>y_platform</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
+            <Navigation>83</Navigation>
+        </Message>
+        <Message>
+            <ID>35921259</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(51): </Dynamic>
+            <Dynamic>y_platform</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(5): </Dynamic>
+            <Dynamic>physics</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(5): </Dynamic>
+            <Dynamic>collisions</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd</Navigation>
+            <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921504</ID>
@@ -1079,10 +1136,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd(19): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd(17): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd</Navigation>
-            <Navigation>19</Navigation>
+            <Navigation>17</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1149,6 +1206,38 @@
             <Navigation>14</Navigation>
         </Message>
         <Message>
+            <ID>35929000</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(83): </Dynamic>
+            <Dynamic>y_platform</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
+            <Navigation>83</Navigation>
+        </Message>
+        <Message>
+            <ID>35921259</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(51): </Dynamic>
+            <Dynamic>y_platform</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(5): </Dynamic>
+            <Dynamic>physics</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(5): </Dynamic>
+            <Dynamic>collisions</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
@@ -1167,6 +1256,72 @@
             <Dynamic>gravity</Dynamic>
         </Message>
         <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[10]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[9]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[8]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[7]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[6]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[5]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[4]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[3]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[2]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[1]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[0]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
             <Dynamic>//vs-home/tlyons01/es4/smack_buds/my_pll/rtl/my_pll.v(139): </Dynamic>
@@ -1183,12 +1338,78 @@
             <Navigation>140</Navigation>
         </Message>
         <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[10]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[9]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[8]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[7]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[6]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[5]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[4]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[3]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[2]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[1]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[0]' is not connected on this instance
+</Dynamic>
+        </Message>
+        <Message>
             <ID>35935014</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(63): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(132): </Dynamic>
             <Dynamic>\game/first_time</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
-            <Navigation>63</Navigation>
+            <Navigation>132</Navigation>
         </Message>
         <Message>
             <ID>35002039</ID>
@@ -1197,7 +1418,7 @@
         <Message>
             <ID>35811145</ID>
             <Severity>1</Severity>
-            <Dynamic>i3925</Dynamic>
+            <Dynamic>i5880</Dynamic>
         </Message>
         <Message>
             <ID>70001944</ID>

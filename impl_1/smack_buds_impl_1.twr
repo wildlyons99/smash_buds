@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Sat Dec  3 17:12:50 2022
+Sat Dec  3 18:27:40 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -142,7 +142,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 10.0683%
+Constraint Coverage: 7.27049%
 
 3.1.2  Timing Errors
 ---------------------
@@ -158,24 +158,24 @@ Total Negative Slack: 0.000 ns (setup), 0.000 ns (hold)
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-controller1/counter_79__i1/SR            |    8.077 ns 
-{controller1/counter_79__i2/SR   controller1/counter_79__i3/SR}              
+controller1/counter_127__i1/SR           |    8.077 ns 
+{controller1/counter_127__i2/SR   controller1/counter_127__i3/SR}              
                                          |    8.077 ns 
-{controller1/counter_79__i4/SR   controller1/counter_79__i5/SR}              
+{controller1/counter_127__i4/SR   controller1/counter_127__i5/SR}              
                                          |    8.077 ns 
-{controller1/counter_79__i6/SR   controller1/counter_79__i7/SR}              
+{controller1/counter_127__i6/SR   controller1/counter_127__i7/SR}              
                                          |    8.077 ns 
-{controller1/counter_79__i18/SR   controller1/counter_79__i19/SR}              
+{controller1/counter_127__i10/SR   controller1/counter_127__i11/SR}              
                                          |    8.673 ns 
-{controller1/counter_79__i20/SR   controller1/counter_79__i21/SR}              
+{controller1/counter_127__i12/SR   controller1/counter_127__i13/SR}              
                                          |    8.673 ns 
-{controller1/counter_79__i8/SR   controller1/counter_79__i9/SR}              
+{controller1/counter_127__i14/SR   controller1/counter_127__i15/SR}              
                                          |    8.673 ns 
-{controller1/counter_79__i10/SR   controller1/counter_79__i11/SR}              
+{controller1/counter_127__i16/SR   controller1/counter_127__i17/SR}              
                                          |    8.673 ns 
-{controller1/counter_79__i12/SR   controller1/counter_79__i13/SR}              
+{controller1/counter_127__i18/SR   controller1/counter_127__i19/SR}              
                                          |    8.673 ns 
-{controller1/counter_79__i14/SR   controller1/counter_79__i15/SR}              
+{controller1/counter_127__i20/SR   controller1/counter_127__i21/SR}              
                                          |    8.673 ns 
 -------------------------------------------------------
                                          |             
@@ -189,16 +189,16 @@ Setup # of endpoints with negative slack:|           0
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-controller1/counter_79__i6/D             |    1.887 ns 
-controller1/counter_79__i7/D             |    1.887 ns 
-controller1/counter_79__i8/D             |    1.887 ns 
-controller1/counter_79__i9/D             |    1.887 ns 
-controller1/counter_79__i10/D            |    1.887 ns 
-controller1/counter_79__i11/D            |    1.887 ns 
-controller1/counter_79__i12/D            |    1.887 ns 
-controller1/counter_79__i13/D            |    1.887 ns 
-controller1/counter_79__i14/D            |    1.887 ns 
-controller1/counter_79__i15/D            |    1.887 ns 
+controller1/counter_127__i12/D           |    1.887 ns 
+controller1/counter_127__i13/D           |    1.887 ns 
+controller1/counter_127__i14/D           |    1.887 ns 
+controller1/counter_127__i15/D           |    1.887 ns 
+controller1/counter_127__i16/D           |    1.887 ns 
+controller1/counter_127__i17/D           |    1.887 ns 
+controller1/counter_127__i18/D           |    1.887 ns 
+controller1/counter_127__i19/D           |    1.887 ns 
+controller1/counter_127__i20/D           |    1.887 ns 
+controller1/counter_127__i21/D           |    1.887 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -220,16 +220,16 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-sixtyHZclock/clock_count_80__i6/D       |    No arrival or required
-sixtyHZclock/clock_count_80__i5/D       |    No arrival or required
-sixtyHZclock/clock_count_80__i18/D      |    No arrival or required
-sixtyHZclock/clock_count_80__i17/D      |    No arrival or required
-sixtyHZclock/clock_count_80__i4/D       |    No arrival or required
-sixtyHZclock/clock_count_80__i3/D       |    No arrival or required
-sixtyHZclock/clock_count_80__i2/D       |    No arrival or required
-sixtyHZclock/clock_count_80__i1/D       |    No arrival or required
-sixtyHZclock/clock_count_80__i0/D       |    No arrival or required
-sixtyHZclock/clock_count_80__i16/D      |    No arrival or required
+sixtyHZclock/clock_count_128__i14/D     |    No arrival or required
+sixtyHZclock/clock_count_128__i13/D     |    No arrival or required
+sixtyHZclock/clock_count_128__i12/D     |    No arrival or required
+sixtyHZclock/clock_count_128__i11/D     |    No arrival or required
+sixtyHZclock/clock_count_128__i10/D     |    No arrival or required
+sixtyHZclock/clock_count_128__i9/D      |    No arrival or required
+sixtyHZclock/clock_count_128__i8/D      |    No arrival or required
+sixtyHZclock/clock_count_128__i7/D      |    No arrival or required
+sixtyHZclock/clock_count_128__i6/D      |    No arrival or required
+sixtyHZclock/clock_count_128__i5/D      |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
@@ -255,13 +255,13 @@ create_generated_clock,
 -------------------------------------------------------------------
 ext12m                                  |                     input
 controller_in                           |                     input
-RGB[2]                                  |                    output
 RGB[3]                                  |                    output
 RGB[4]                                  |                    output
 RGB[5]                                  |                    output
 up                                      |                    output
 VSYNC                                   |                    output
 HSYNC                                   |                    output
+RGB[2]                                  |                    output
 RGB[1]                                  |                    output
 -------------------------------------------------------------------
                                         |                          
@@ -274,20 +274,20 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
+game/y_i10                              |                  No Clock
 game/x__i4                              |                  No Clock
-game/y_82__i7                           |                  No Clock
-game/y_82__i10                          |                  No Clock
-game/y_82__i9                           |                  No Clock
-game/y_82__i1                           |                  No Clock
-game/y_82__i5                           |                  No Clock
-game/y_82__i3                           |                  No Clock
-game/x__i8                              |                  No Clock
+game/x__i7                              |                  No Clock
+game/yVelocity__i1                      |                  No Clock
+game/x__i9                              |                  No Clock
+game/x__i0                              |                  No Clock
 game/x__i2                              |                  No Clock
-game/x__i10                             |                  No Clock
+game/y_i7                               |                  No Clock
+game/y_i3                               |                  No Clock
+game/y_i0                               |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
-ition                                   |                        96
+ition                                   |                       109
                                         |                          
 -------------------------------------------------------------------
 
@@ -311,8 +311,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i6/Q  (SLICE_R12C5D)
-Path End         : controller1/counter_79__i1/SR  (SLICE_R12C5A)
+Path Begin       : controller1/counter_127__i6/Q  (SLICE_R10C4D)
+Path End         : controller1/counter_127__i1/SR  (SLICE_R10C4A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -328,23 +328,23 @@ controller1/clk                                              NET DELAY      5.51
 
 
 
-controller1/counter_79__i6/CK->controller1/counter_79__i6/Q
-                                          SLICE_R12C5D    CLK_TO_Q0_DELAY  1.391         6.901  2       
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE_R10C4D    CLK_TO_Q0_DELAY  1.391         6.901  2       
 controller1/counter[5]                                    NET DELAY        2.079         8.980  2       
 controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE_R11C5A    B0_TO_F0_DELAY   0.450         9.430  1       
+                                          SLICE_R9C4A     B0_TO_F0_DELAY   0.450         9.430  1       
 controller1/n9                                            NET DELAY        2.768        12.198  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE_R11C6A    D1_TO_F1_DELAY   0.477        12.675  1       
-controller1/n3294                                         NET DELAY        0.305        12.980  1       
-controller1/i177_4_lut/A->controller1/i177_4_lut/Z
-                                          SLICE_R11C6B    C0_TO_F0_DELAY   0.477        13.457  1       
+                                          SLICE_R9C5A     D1_TO_F1_DELAY   0.477        12.675  1       
+controller1/n5180                                         NET DELAY        0.305        12.980  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE_R9C5B     C0_TO_F0_DELAY   0.477        13.457  1       
 controller1/n28                                           NET DELAY        0.305        13.762  1       
-controller1/i164_4_lut/A->controller1/i164_4_lut/Z
-                                          SLICE_R11C6B    C1_TO_F1_DELAY   0.477        14.239  1       
+controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+                                          SLICE_R9C5B     C1_TO_F1_DELAY   0.477        14.239  1       
 controller1/n36                                           NET DELAY        0.305        14.544  1       
-controller1/i163_4_lut/D->controller1/i163_4_lut/Z
-                                          SLICE_R11C6C    C0_TO_F0_DELAY   0.450        14.994  11      
+controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+                                          SLICE_R9C5C     C0_TO_F0_DELAY   0.450        14.994  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.742        17.736  11      
 
 
@@ -364,8 +364,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i6/Q  (SLICE_R12C5D)
-Path End         : {controller1/counter_79__i2/SR   controller1/counter_79__i3/SR}  (SLICE_R12C5B)
+Path Begin       : controller1/counter_127__i6/Q  (SLICE_R10C4D)
+Path End         : {controller1/counter_127__i2/SR   controller1/counter_127__i3/SR}  (SLICE_R10C4B)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -381,23 +381,23 @@ controller1/clk                                              NET DELAY      5.51
 
 
 
-controller1/counter_79__i6/CK->controller1/counter_79__i6/Q
-                                          SLICE_R12C5D    CLK_TO_Q0_DELAY  1.391         6.901  2       
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE_R10C4D    CLK_TO_Q0_DELAY  1.391         6.901  2       
 controller1/counter[5]                                    NET DELAY        2.079         8.980  2       
 controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE_R11C5A    B0_TO_F0_DELAY   0.450         9.430  1       
+                                          SLICE_R9C4A     B0_TO_F0_DELAY   0.450         9.430  1       
 controller1/n9                                            NET DELAY        2.768        12.198  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE_R11C6A    D1_TO_F1_DELAY   0.477        12.675  1       
-controller1/n3294                                         NET DELAY        0.305        12.980  1       
-controller1/i177_4_lut/A->controller1/i177_4_lut/Z
-                                          SLICE_R11C6B    C0_TO_F0_DELAY   0.477        13.457  1       
+                                          SLICE_R9C5A     D1_TO_F1_DELAY   0.477        12.675  1       
+controller1/n5180                                         NET DELAY        0.305        12.980  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE_R9C5B     C0_TO_F0_DELAY   0.477        13.457  1       
 controller1/n28                                           NET DELAY        0.305        13.762  1       
-controller1/i164_4_lut/A->controller1/i164_4_lut/Z
-                                          SLICE_R11C6B    C1_TO_F1_DELAY   0.477        14.239  1       
+controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+                                          SLICE_R9C5B     C1_TO_F1_DELAY   0.477        14.239  1       
 controller1/n36                                           NET DELAY        0.305        14.544  1       
-controller1/i163_4_lut/D->controller1/i163_4_lut/Z
-                                          SLICE_R11C6C    C0_TO_F0_DELAY   0.450        14.994  11      
+controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+                                          SLICE_R9C5C     C0_TO_F0_DELAY   0.450        14.994  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.742        17.736  11      
 
 
@@ -417,8 +417,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i6/Q  (SLICE_R12C5D)
-Path End         : {controller1/counter_79__i4/SR   controller1/counter_79__i5/SR}  (SLICE_R12C5C)
+Path Begin       : controller1/counter_127__i6/Q  (SLICE_R10C4D)
+Path End         : {controller1/counter_127__i4/SR   controller1/counter_127__i5/SR}  (SLICE_R10C4C)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -434,23 +434,23 @@ controller1/clk                                              NET DELAY      5.51
 
 
 
-controller1/counter_79__i6/CK->controller1/counter_79__i6/Q
-                                          SLICE_R12C5D    CLK_TO_Q0_DELAY  1.391         6.901  2       
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE_R10C4D    CLK_TO_Q0_DELAY  1.391         6.901  2       
 controller1/counter[5]                                    NET DELAY        2.079         8.980  2       
 controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE_R11C5A    B0_TO_F0_DELAY   0.450         9.430  1       
+                                          SLICE_R9C4A     B0_TO_F0_DELAY   0.450         9.430  1       
 controller1/n9                                            NET DELAY        2.768        12.198  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE_R11C6A    D1_TO_F1_DELAY   0.477        12.675  1       
-controller1/n3294                                         NET DELAY        0.305        12.980  1       
-controller1/i177_4_lut/A->controller1/i177_4_lut/Z
-                                          SLICE_R11C6B    C0_TO_F0_DELAY   0.477        13.457  1       
+                                          SLICE_R9C5A     D1_TO_F1_DELAY   0.477        12.675  1       
+controller1/n5180                                         NET DELAY        0.305        12.980  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE_R9C5B     C0_TO_F0_DELAY   0.477        13.457  1       
 controller1/n28                                           NET DELAY        0.305        13.762  1       
-controller1/i164_4_lut/A->controller1/i164_4_lut/Z
-                                          SLICE_R11C6B    C1_TO_F1_DELAY   0.477        14.239  1       
+controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+                                          SLICE_R9C5B     C1_TO_F1_DELAY   0.477        14.239  1       
 controller1/n36                                           NET DELAY        0.305        14.544  1       
-controller1/i163_4_lut/D->controller1/i163_4_lut/Z
-                                          SLICE_R11C6C    C0_TO_F0_DELAY   0.450        14.994  11      
+controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+                                          SLICE_R9C5C     C0_TO_F0_DELAY   0.450        14.994  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.742        17.736  11      
 
 
@@ -470,8 +470,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i6/Q  (SLICE_R12C5D)
-Path End         : {controller1/counter_79__i6/SR   controller1/counter_79__i7/SR}  (SLICE_R12C5D)
+Path Begin       : controller1/counter_127__i6/Q  (SLICE_R10C4D)
+Path End         : {controller1/counter_127__i6/SR   controller1/counter_127__i7/SR}  (SLICE_R10C4D)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -487,23 +487,23 @@ controller1/clk ( CLK )                                      NET DELAY      5.51
 
 
 
-controller1/counter_79__i6/CK->controller1/counter_79__i6/Q
-                                          SLICE_R12C5D    CLK_TO_Q0_DELAY  1.391         6.901  2       
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE_R10C4D    CLK_TO_Q0_DELAY  1.391         6.901  2       
 controller1/counter[5]                                    NET DELAY        2.079         8.980  2       
 controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE_R11C5A    B0_TO_F0_DELAY   0.450         9.430  1       
+                                          SLICE_R9C4A     B0_TO_F0_DELAY   0.450         9.430  1       
 controller1/n9                                            NET DELAY        2.768        12.198  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE_R11C6A    D1_TO_F1_DELAY   0.477        12.675  1       
-controller1/n3294                                         NET DELAY        0.305        12.980  1       
-controller1/i177_4_lut/A->controller1/i177_4_lut/Z
-                                          SLICE_R11C6B    C0_TO_F0_DELAY   0.477        13.457  1       
+                                          SLICE_R9C5A     D1_TO_F1_DELAY   0.477        12.675  1       
+controller1/n5180                                         NET DELAY        0.305        12.980  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE_R9C5B     C0_TO_F0_DELAY   0.477        13.457  1       
 controller1/n28                                           NET DELAY        0.305        13.762  1       
-controller1/i164_4_lut/A->controller1/i164_4_lut/Z
-                                          SLICE_R11C6B    C1_TO_F1_DELAY   0.477        14.239  1       
+controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+                                          SLICE_R9C5B     C1_TO_F1_DELAY   0.477        14.239  1       
 controller1/n36                                           NET DELAY        0.305        14.544  1       
-controller1/i163_4_lut/D->controller1/i163_4_lut/Z
-                                          SLICE_R11C6C    C0_TO_F0_DELAY   0.450        14.994  11      
+controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+                                          SLICE_R9C5C     C0_TO_F0_DELAY   0.450        14.994  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.742        17.736  11      
 
 
@@ -523,8 +523,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i6/Q  (SLICE_R12C5D)
-Path End         : {controller1/counter_79__i18/SR   controller1/counter_79__i19/SR}  (SLICE_R12C7B)
+Path Begin       : controller1/counter_127__i6/Q  (SLICE_R10C4D)
+Path End         : {controller1/counter_127__i10/SR   controller1/counter_127__i11/SR}  (SLICE_R10C5B)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -540,23 +540,23 @@ controller1/clk                                              NET DELAY      5.51
 
 
 
-controller1/counter_79__i6/CK->controller1/counter_79__i6/Q
-                                          SLICE_R12C5D    CLK_TO_Q0_DELAY  1.391         6.901  2       
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE_R10C4D    CLK_TO_Q0_DELAY  1.391         6.901  2       
 controller1/counter[5]                                    NET DELAY        2.079         8.980  2       
 controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE_R11C5A    B0_TO_F0_DELAY   0.450         9.430  1       
+                                          SLICE_R9C4A     B0_TO_F0_DELAY   0.450         9.430  1       
 controller1/n9                                            NET DELAY        2.768        12.198  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE_R11C6A    D1_TO_F1_DELAY   0.477        12.675  1       
-controller1/n3294                                         NET DELAY        0.305        12.980  1       
-controller1/i177_4_lut/A->controller1/i177_4_lut/Z
-                                          SLICE_R11C6B    C0_TO_F0_DELAY   0.477        13.457  1       
+                                          SLICE_R9C5A     D1_TO_F1_DELAY   0.477        12.675  1       
+controller1/n5180                                         NET DELAY        0.305        12.980  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE_R9C5B     C0_TO_F0_DELAY   0.477        13.457  1       
 controller1/n28                                           NET DELAY        0.305        13.762  1       
-controller1/i164_4_lut/A->controller1/i164_4_lut/Z
-                                          SLICE_R11C6B    C1_TO_F1_DELAY   0.477        14.239  1       
+controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+                                          SLICE_R9C5B     C1_TO_F1_DELAY   0.477        14.239  1       
 controller1/n36                                           NET DELAY        0.305        14.544  1       
-controller1/i163_4_lut/D->controller1/i163_4_lut/Z
-                                          SLICE_R11C6C    C0_TO_F0_DELAY   0.450        14.994  11      
+controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+                                          SLICE_R9C5C     C0_TO_F0_DELAY   0.450        14.994  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.146        17.140  11      
 
 
@@ -576,8 +576,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i6/Q  (SLICE_R12C5D)
-Path End         : {controller1/counter_79__i20/SR   controller1/counter_79__i21/SR}  (SLICE_R12C7C)
+Path Begin       : controller1/counter_127__i6/Q  (SLICE_R10C4D)
+Path End         : {controller1/counter_127__i12/SR   controller1/counter_127__i13/SR}  (SLICE_R10C5C)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -593,23 +593,23 @@ controller1/clk                                              NET DELAY      5.51
 
 
 
-controller1/counter_79__i6/CK->controller1/counter_79__i6/Q
-                                          SLICE_R12C5D    CLK_TO_Q0_DELAY  1.391         6.901  2       
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE_R10C4D    CLK_TO_Q0_DELAY  1.391         6.901  2       
 controller1/counter[5]                                    NET DELAY        2.079         8.980  2       
 controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE_R11C5A    B0_TO_F0_DELAY   0.450         9.430  1       
+                                          SLICE_R9C4A     B0_TO_F0_DELAY   0.450         9.430  1       
 controller1/n9                                            NET DELAY        2.768        12.198  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE_R11C6A    D1_TO_F1_DELAY   0.477        12.675  1       
-controller1/n3294                                         NET DELAY        0.305        12.980  1       
-controller1/i177_4_lut/A->controller1/i177_4_lut/Z
-                                          SLICE_R11C6B    C0_TO_F0_DELAY   0.477        13.457  1       
+                                          SLICE_R9C5A     D1_TO_F1_DELAY   0.477        12.675  1       
+controller1/n5180                                         NET DELAY        0.305        12.980  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE_R9C5B     C0_TO_F0_DELAY   0.477        13.457  1       
 controller1/n28                                           NET DELAY        0.305        13.762  1       
-controller1/i164_4_lut/A->controller1/i164_4_lut/Z
-                                          SLICE_R11C6B    C1_TO_F1_DELAY   0.477        14.239  1       
+controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+                                          SLICE_R9C5B     C1_TO_F1_DELAY   0.477        14.239  1       
 controller1/n36                                           NET DELAY        0.305        14.544  1       
-controller1/i163_4_lut/D->controller1/i163_4_lut/Z
-                                          SLICE_R11C6C    C0_TO_F0_DELAY   0.450        14.994  11      
+controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+                                          SLICE_R9C5C     C0_TO_F0_DELAY   0.450        14.994  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.146        17.140  11      
 
 
@@ -629,8 +629,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i6/Q  (SLICE_R12C5D)
-Path End         : {controller1/counter_79__i8/SR   controller1/counter_79__i9/SR}  (SLICE_R12C6A)
+Path Begin       : controller1/counter_127__i6/Q  (SLICE_R10C4D)
+Path End         : {controller1/counter_127__i14/SR   controller1/counter_127__i15/SR}  (SLICE_R10C5D)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -646,23 +646,23 @@ controller1/clk                                              NET DELAY      5.51
 
 
 
-controller1/counter_79__i6/CK->controller1/counter_79__i6/Q
-                                          SLICE_R12C5D    CLK_TO_Q0_DELAY  1.391         6.901  2       
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE_R10C4D    CLK_TO_Q0_DELAY  1.391         6.901  2       
 controller1/counter[5]                                    NET DELAY        2.079         8.980  2       
 controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE_R11C5A    B0_TO_F0_DELAY   0.450         9.430  1       
+                                          SLICE_R9C4A     B0_TO_F0_DELAY   0.450         9.430  1       
 controller1/n9                                            NET DELAY        2.768        12.198  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE_R11C6A    D1_TO_F1_DELAY   0.477        12.675  1       
-controller1/n3294                                         NET DELAY        0.305        12.980  1       
-controller1/i177_4_lut/A->controller1/i177_4_lut/Z
-                                          SLICE_R11C6B    C0_TO_F0_DELAY   0.477        13.457  1       
+                                          SLICE_R9C5A     D1_TO_F1_DELAY   0.477        12.675  1       
+controller1/n5180                                         NET DELAY        0.305        12.980  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE_R9C5B     C0_TO_F0_DELAY   0.477        13.457  1       
 controller1/n28                                           NET DELAY        0.305        13.762  1       
-controller1/i164_4_lut/A->controller1/i164_4_lut/Z
-                                          SLICE_R11C6B    C1_TO_F1_DELAY   0.477        14.239  1       
+controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+                                          SLICE_R9C5B     C1_TO_F1_DELAY   0.477        14.239  1       
 controller1/n36                                           NET DELAY        0.305        14.544  1       
-controller1/i163_4_lut/D->controller1/i163_4_lut/Z
-                                          SLICE_R11C6C    C0_TO_F0_DELAY   0.450        14.994  11      
+controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+                                          SLICE_R9C5C     C0_TO_F0_DELAY   0.450        14.994  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.146        17.140  11      
 
 
@@ -682,8 +682,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i6/Q  (SLICE_R12C5D)
-Path End         : {controller1/counter_79__i10/SR   controller1/counter_79__i11/SR}  (SLICE_R12C6B)
+Path Begin       : controller1/counter_127__i6/Q  (SLICE_R10C4D)
+Path End         : {controller1/counter_127__i16/SR   controller1/counter_127__i17/SR}  (SLICE_R10C6A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -699,23 +699,23 @@ controller1/clk                                              NET DELAY      5.51
 
 
 
-controller1/counter_79__i6/CK->controller1/counter_79__i6/Q
-                                          SLICE_R12C5D    CLK_TO_Q0_DELAY  1.391         6.901  2       
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE_R10C4D    CLK_TO_Q0_DELAY  1.391         6.901  2       
 controller1/counter[5]                                    NET DELAY        2.079         8.980  2       
 controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE_R11C5A    B0_TO_F0_DELAY   0.450         9.430  1       
+                                          SLICE_R9C4A     B0_TO_F0_DELAY   0.450         9.430  1       
 controller1/n9                                            NET DELAY        2.768        12.198  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE_R11C6A    D1_TO_F1_DELAY   0.477        12.675  1       
-controller1/n3294                                         NET DELAY        0.305        12.980  1       
-controller1/i177_4_lut/A->controller1/i177_4_lut/Z
-                                          SLICE_R11C6B    C0_TO_F0_DELAY   0.477        13.457  1       
+                                          SLICE_R9C5A     D1_TO_F1_DELAY   0.477        12.675  1       
+controller1/n5180                                         NET DELAY        0.305        12.980  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE_R9C5B     C0_TO_F0_DELAY   0.477        13.457  1       
 controller1/n28                                           NET DELAY        0.305        13.762  1       
-controller1/i164_4_lut/A->controller1/i164_4_lut/Z
-                                          SLICE_R11C6B    C1_TO_F1_DELAY   0.477        14.239  1       
+controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+                                          SLICE_R9C5B     C1_TO_F1_DELAY   0.477        14.239  1       
 controller1/n36                                           NET DELAY        0.305        14.544  1       
-controller1/i163_4_lut/D->controller1/i163_4_lut/Z
-                                          SLICE_R11C6C    C0_TO_F0_DELAY   0.450        14.994  11      
+controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+                                          SLICE_R9C5C     C0_TO_F0_DELAY   0.450        14.994  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.146        17.140  11      
 
 
@@ -735,8 +735,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i6/Q  (SLICE_R12C5D)
-Path End         : {controller1/counter_79__i12/SR   controller1/counter_79__i13/SR}  (SLICE_R12C6C)
+Path Begin       : controller1/counter_127__i6/Q  (SLICE_R10C4D)
+Path End         : {controller1/counter_127__i18/SR   controller1/counter_127__i19/SR}  (SLICE_R10C6B)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -752,23 +752,23 @@ controller1/clk                                              NET DELAY      5.51
 
 
 
-controller1/counter_79__i6/CK->controller1/counter_79__i6/Q
-                                          SLICE_R12C5D    CLK_TO_Q0_DELAY  1.391         6.901  2       
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE_R10C4D    CLK_TO_Q0_DELAY  1.391         6.901  2       
 controller1/counter[5]                                    NET DELAY        2.079         8.980  2       
 controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE_R11C5A    B0_TO_F0_DELAY   0.450         9.430  1       
+                                          SLICE_R9C4A     B0_TO_F0_DELAY   0.450         9.430  1       
 controller1/n9                                            NET DELAY        2.768        12.198  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE_R11C6A    D1_TO_F1_DELAY   0.477        12.675  1       
-controller1/n3294                                         NET DELAY        0.305        12.980  1       
-controller1/i177_4_lut/A->controller1/i177_4_lut/Z
-                                          SLICE_R11C6B    C0_TO_F0_DELAY   0.477        13.457  1       
+                                          SLICE_R9C5A     D1_TO_F1_DELAY   0.477        12.675  1       
+controller1/n5180                                         NET DELAY        0.305        12.980  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE_R9C5B     C0_TO_F0_DELAY   0.477        13.457  1       
 controller1/n28                                           NET DELAY        0.305        13.762  1       
-controller1/i164_4_lut/A->controller1/i164_4_lut/Z
-                                          SLICE_R11C6B    C1_TO_F1_DELAY   0.477        14.239  1       
+controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+                                          SLICE_R9C5B     C1_TO_F1_DELAY   0.477        14.239  1       
 controller1/n36                                           NET DELAY        0.305        14.544  1       
-controller1/i163_4_lut/D->controller1/i163_4_lut/Z
-                                          SLICE_R11C6C    C0_TO_F0_DELAY   0.450        14.994  11      
+controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+                                          SLICE_R9C5C     C0_TO_F0_DELAY   0.450        14.994  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.146        17.140  11      
 
 
@@ -788,8 +788,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i6/Q  (SLICE_R12C5D)
-Path End         : {controller1/counter_79__i14/SR   controller1/counter_79__i15/SR}  (SLICE_R12C6D)
+Path Begin       : controller1/counter_127__i6/Q  (SLICE_R10C4D)
+Path End         : {controller1/counter_127__i20/SR   controller1/counter_127__i21/SR}  (SLICE_R10C6C)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -805,23 +805,23 @@ controller1/clk                                              NET DELAY      5.51
 
 
 
-controller1/counter_79__i6/CK->controller1/counter_79__i6/Q
-                                          SLICE_R12C5D    CLK_TO_Q0_DELAY  1.391         6.901  2       
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE_R10C4D    CLK_TO_Q0_DELAY  1.391         6.901  2       
 controller1/counter[5]                                    NET DELAY        2.079         8.980  2       
 controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE_R11C5A    B0_TO_F0_DELAY   0.450         9.430  1       
+                                          SLICE_R9C4A     B0_TO_F0_DELAY   0.450         9.430  1       
 controller1/n9                                            NET DELAY        2.768        12.198  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE_R11C6A    D1_TO_F1_DELAY   0.477        12.675  1       
-controller1/n3294                                         NET DELAY        0.305        12.980  1       
-controller1/i177_4_lut/A->controller1/i177_4_lut/Z
-                                          SLICE_R11C6B    C0_TO_F0_DELAY   0.477        13.457  1       
+                                          SLICE_R9C5A     D1_TO_F1_DELAY   0.477        12.675  1       
+controller1/n5180                                         NET DELAY        0.305        12.980  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE_R9C5B     C0_TO_F0_DELAY   0.477        13.457  1       
 controller1/n28                                           NET DELAY        0.305        13.762  1       
-controller1/i164_4_lut/A->controller1/i164_4_lut/Z
-                                          SLICE_R11C6B    C1_TO_F1_DELAY   0.477        14.239  1       
+controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+                                          SLICE_R9C5B     C1_TO_F1_DELAY   0.477        14.239  1       
 controller1/n36                                           NET DELAY        0.305        14.544  1       
-controller1/i163_4_lut/D->controller1/i163_4_lut/Z
-                                          SLICE_R11C6C    C0_TO_F0_DELAY   0.450        14.994  11      
+controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+                                          SLICE_R9C5C     C0_TO_F0_DELAY   0.450        14.994  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.146        17.140  11      
 
 
@@ -861,8 +861,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i6/Q  (SLICE_R12C5D)
-Path End         : controller1/counter_79__i6/D  (SLICE_R12C5D)
+Path Begin       : controller1/counter_127__i12/Q  (SLICE_R10C5C)
+Path End         : controller1/counter_127__i12/D  (SLICE_R10C5C)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -878,12 +878,12 @@ controller1/clk ( CLK )                                      NET DELAY      3.04
 
 
 
-controller1/counter_79__i6/CK->controller1/counter_79__i6/Q
-                                          SLICE_R12C5D    CLK_TO_Q0_DELAY  0.768         3.809  2       
-controller1/counter[5]                                    NET DELAY        0.870         4.679  2       
-controller1/counter_79_add_4_7/C0->controller1/counter_79_add_4_7/S0
-                                          SLICE_R12C5D    C0_TO_F0_DELAY   0.249         4.928  1       
-controller1/n89[5] ( DI0 )                                NET DELAY        0.000         4.928  1       
+controller1/counter_127__i12/CK->controller1/counter_127__i12/Q
+                                          SLICE_R10C5C    CLK_TO_Q0_DELAY  0.768         3.809  3       
+controller1/counter[11]                                   NET DELAY        0.870         4.679  3       
+controller1/counter_127_add_4_13/C0->controller1/counter_127_add_4_13/S0
+                                          SLICE_R10C5C    C0_TO_F0_DELAY   0.249         4.928  1       
+controller1/n89[11] ( DI0 )                               NET DELAY        0.000         4.928  1       
 
 
                                                              CONSTRAINT     0.000         0.000  1       
@@ -902,8 +902,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i7/Q  (SLICE_R12C5D)
-Path End         : controller1/counter_79__i7/D  (SLICE_R12C5D)
+Path Begin       : controller1/counter_127__i13/Q  (SLICE_R10C5C)
+Path End         : controller1/counter_127__i13/D  (SLICE_R10C5C)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -919,12 +919,12 @@ controller1/clk ( CLK )                                      NET DELAY      3.04
 
 
 
-controller1/counter_79__i7/CK->controller1/counter_79__i7/Q
-                                          SLICE_R12C5D    CLK_TO_Q1_DELAY  0.768         3.809  2       
-controller1/counter[6]                                    NET DELAY        0.870         4.679  2       
-controller1/counter_79_add_4_7/C1->controller1/counter_79_add_4_7/S1
-                                          SLICE_R12C5D    C1_TO_F1_DELAY   0.249         4.928  1       
-controller1/n89[6] ( DI1 )                                NET DELAY        0.000         4.928  1       
+controller1/counter_127__i13/CK->controller1/counter_127__i13/Q
+                                          SLICE_R10C5C    CLK_TO_Q1_DELAY  0.768         3.809  4       
+controller1/counter[12]                                   NET DELAY        0.870         4.679  4       
+controller1/counter_127_add_4_13/C1->controller1/counter_127_add_4_13/S1
+                                          SLICE_R10C5C    C1_TO_F1_DELAY   0.249         4.928  1       
+controller1/n89[12] ( DI1 )                               NET DELAY        0.000         4.928  1       
 
 
                                                              CONSTRAINT     0.000         0.000  1       
@@ -943,8 +943,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i8/Q  (SLICE_R12C6A)
-Path End         : controller1/counter_79__i8/D  (SLICE_R12C6A)
+Path Begin       : controller1/counter_127__i14/Q  (SLICE_R10C5D)
+Path End         : controller1/counter_127__i14/D  (SLICE_R10C5D)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -960,12 +960,12 @@ controller1/clk ( CLK )                                      NET DELAY      3.04
 
 
 
-controller1/counter_79__i8/CK->controller1/counter_79__i8/Q
-                                          SLICE_R12C6A    CLK_TO_Q0_DELAY  0.768         3.809  2       
-controller1/counter[7]                                    NET DELAY        0.870         4.679  2       
-controller1/counter_79_add_4_9/C0->controller1/counter_79_add_4_9/S0
-                                          SLICE_R12C6A    C0_TO_F0_DELAY   0.249         4.928  1       
-controller1/n89[7] ( DI0 )                                NET DELAY        0.000         4.928  1       
+controller1/counter_127__i14/CK->controller1/counter_127__i14/Q
+                                          SLICE_R10C5D    CLK_TO_Q0_DELAY  0.768         3.809  4       
+controller1/counter[13]                                   NET DELAY        0.870         4.679  4       
+controller1/counter_127_add_4_15/C0->controller1/counter_127_add_4_15/S0
+                                          SLICE_R10C5D    C0_TO_F0_DELAY   0.249         4.928  1       
+controller1/n89[13] ( DI0 )                               NET DELAY        0.000         4.928  1       
 
 
                                                              CONSTRAINT     0.000         0.000  1       
@@ -984,8 +984,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i9/Q  (SLICE_R12C6A)
-Path End         : controller1/counter_79__i9/D  (SLICE_R12C6A)
+Path Begin       : controller1/counter_127__i15/Q  (SLICE_R10C5D)
+Path End         : controller1/counter_127__i15/D  (SLICE_R10C5D)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1001,12 +1001,12 @@ controller1/clk ( CLK )                                      NET DELAY      3.04
 
 
 
-controller1/counter_79__i9/CK->controller1/counter_79__i9/Q
-                                          SLICE_R12C6A    CLK_TO_Q1_DELAY  0.768         3.809  3       
-controller1/counter[8]                                    NET DELAY        0.870         4.679  3       
-controller1/counter_79_add_4_9/C1->controller1/counter_79_add_4_9/S1
-                                          SLICE_R12C6A    C1_TO_F1_DELAY   0.249         4.928  1       
-controller1/n89[8] ( DI1 )                                NET DELAY        0.000         4.928  1       
+controller1/counter_127__i15/CK->controller1/counter_127__i15/Q
+                                          SLICE_R10C5D    CLK_TO_Q1_DELAY  0.768         3.809  4       
+controller1/counter[14]                                   NET DELAY        0.870         4.679  4       
+controller1/counter_127_add_4_15/C1->controller1/counter_127_add_4_15/S1
+                                          SLICE_R10C5D    C1_TO_F1_DELAY   0.249         4.928  1       
+controller1/n89[14] ( DI1 )                               NET DELAY        0.000         4.928  1       
 
 
                                                              CONSTRAINT     0.000         0.000  1       
@@ -1025,8 +1025,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i10/Q  (SLICE_R12C6B)
-Path End         : controller1/counter_79__i10/D  (SLICE_R12C6B)
+Path Begin       : controller1/counter_127__i16/Q  (SLICE_R10C6A)
+Path End         : controller1/counter_127__i16/D  (SLICE_R10C6A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1042,12 +1042,12 @@ controller1/clk ( CLK )                                      NET DELAY      3.04
 
 
 
-controller1/counter_79__i10/CK->controller1/counter_79__i10/Q
-                                          SLICE_R12C6B    CLK_TO_Q0_DELAY  0.768         3.809  2       
-controller1/counter[9]                                    NET DELAY        0.870         4.679  2       
-controller1/counter_79_add_4_11/C0->controller1/counter_79_add_4_11/S0
-                                          SLICE_R12C6B    C0_TO_F0_DELAY   0.249         4.928  1       
-controller1/n89[9] ( DI0 )                                NET DELAY        0.000         4.928  1       
+controller1/counter_127__i16/CK->controller1/counter_127__i16/Q
+                                          SLICE_R10C6A    CLK_TO_Q0_DELAY  0.768         3.809  4       
+controller1/counter[15]                                   NET DELAY        0.870         4.679  4       
+controller1/counter_127_add_4_17/C0->controller1/counter_127_add_4_17/S0
+                                          SLICE_R10C6A    C0_TO_F0_DELAY   0.249         4.928  1       
+controller1/n89[15] ( DI0 )                               NET DELAY        0.000         4.928  1       
 
 
                                                              CONSTRAINT     0.000         0.000  1       
@@ -1066,8 +1066,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i11/Q  (SLICE_R12C6B)
-Path End         : controller1/counter_79__i11/D  (SLICE_R12C6B)
+Path Begin       : controller1/counter_127__i17/Q  (SLICE_R10C6A)
+Path End         : controller1/counter_127__i17/D  (SLICE_R10C6A)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1083,12 +1083,12 @@ controller1/clk ( CLK )                                      NET DELAY      3.04
 
 
 
-controller1/counter_79__i11/CK->controller1/counter_79__i11/Q
-                                          SLICE_R12C6B    CLK_TO_Q1_DELAY  0.768         3.809  2       
-controller1/counter[10]                                   NET DELAY        0.870         4.679  2       
-controller1/counter_79_add_4_11/C1->controller1/counter_79_add_4_11/S1
-                                          SLICE_R12C6B    C1_TO_F1_DELAY   0.249         4.928  1       
-controller1/n89[10] ( DI1 )                               NET DELAY        0.000         4.928  1       
+controller1/counter_127__i17/CK->controller1/counter_127__i17/Q
+                                          SLICE_R10C6A    CLK_TO_Q1_DELAY  0.768         3.809  4       
+controller1/counter[16]                                   NET DELAY        0.870         4.679  4       
+controller1/counter_127_add_4_17/C1->controller1/counter_127_add_4_17/S1
+                                          SLICE_R10C6A    C1_TO_F1_DELAY   0.249         4.928  1       
+controller1/n89[16] ( DI1 )                               NET DELAY        0.000         4.928  1       
 
 
                                                              CONSTRAINT     0.000         0.000  1       
@@ -1107,8 +1107,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i12/Q  (SLICE_R12C6C)
-Path End         : controller1/counter_79__i12/D  (SLICE_R12C6C)
+Path Begin       : controller1/counter_127__i18/Q  (SLICE_R10C6B)
+Path End         : controller1/counter_127__i18/D  (SLICE_R10C6B)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1124,12 +1124,12 @@ controller1/clk ( CLK )                                      NET DELAY      3.04
 
 
 
-controller1/counter_79__i12/CK->controller1/counter_79__i12/Q
-                                          SLICE_R12C6C    CLK_TO_Q0_DELAY  0.768         3.809  3       
-controller1/counter[11]                                   NET DELAY        0.870         4.679  3       
-controller1/counter_79_add_4_13/C0->controller1/counter_79_add_4_13/S0
-                                          SLICE_R12C6C    C0_TO_F0_DELAY   0.249         4.928  1       
-controller1/n89[11] ( DI0 )                               NET DELAY        0.000         4.928  1       
+controller1/counter_127__i18/CK->controller1/counter_127__i18/Q
+                                          SLICE_R10C6B    CLK_TO_Q0_DELAY  0.768         3.809  4       
+controller1/counter[17]                                   NET DELAY        0.870         4.679  4       
+controller1/counter_127_add_4_19/C0->controller1/counter_127_add_4_19/S0
+                                          SLICE_R10C6B    C0_TO_F0_DELAY   0.249         4.928  1       
+controller1/n89[17] ( DI0 )                               NET DELAY        0.000         4.928  1       
 
 
                                                              CONSTRAINT     0.000         0.000  1       
@@ -1148,8 +1148,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i13/Q  (SLICE_R12C6C)
-Path End         : controller1/counter_79__i13/D  (SLICE_R12C6C)
+Path Begin       : controller1/counter_127__i19/Q  (SLICE_R10C6B)
+Path End         : controller1/counter_127__i19/D  (SLICE_R10C6B)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1165,12 +1165,12 @@ controller1/clk ( CLK )                                      NET DELAY      3.04
 
 
 
-controller1/counter_79__i13/CK->controller1/counter_79__i13/Q
-                                          SLICE_R12C6C    CLK_TO_Q1_DELAY  0.768         3.809  4       
-controller1/counter[12]                                   NET DELAY        0.870         4.679  4       
-controller1/counter_79_add_4_13/C1->controller1/counter_79_add_4_13/S1
-                                          SLICE_R12C6C    C1_TO_F1_DELAY   0.249         4.928  1       
-controller1/n89[12] ( DI1 )                               NET DELAY        0.000         4.928  1       
+controller1/counter_127__i19/CK->controller1/counter_127__i19/Q
+                                          SLICE_R10C6B    CLK_TO_Q1_DELAY  0.768         3.809  2       
+controller1/counter[18]                                   NET DELAY        0.870         4.679  2       
+controller1/counter_127_add_4_19/C1->controller1/counter_127_add_4_19/S1
+                                          SLICE_R10C6B    C1_TO_F1_DELAY   0.249         4.928  1       
+controller1/n89[18] ( DI1 )                               NET DELAY        0.000         4.928  1       
 
 
                                                              CONSTRAINT     0.000         0.000  1       
@@ -1189,8 +1189,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i14/Q  (SLICE_R12C6D)
-Path End         : controller1/counter_79__i14/D  (SLICE_R12C6D)
+Path Begin       : controller1/counter_127__i20/Q  (SLICE_R10C6C)
+Path End         : controller1/counter_127__i20/D  (SLICE_R10C6C)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1206,12 +1206,12 @@ controller1/clk ( CLK )                                      NET DELAY      3.04
 
 
 
-controller1/counter_79__i14/CK->controller1/counter_79__i14/Q
-                                          SLICE_R12C6D    CLK_TO_Q0_DELAY  0.768         3.809  4       
-controller1/counter[13]                                   NET DELAY        0.870         4.679  4       
-controller1/counter_79_add_4_15/C0->controller1/counter_79_add_4_15/S0
-                                          SLICE_R12C6D    C0_TO_F0_DELAY   0.249         4.928  1       
-controller1/n89[13] ( DI0 )                               NET DELAY        0.000         4.928  1       
+controller1/counter_127__i20/CK->controller1/counter_127__i20/Q
+                                          SLICE_R10C6C    CLK_TO_Q0_DELAY  0.768         3.809  2       
+controller1/counter[19]                                   NET DELAY        0.870         4.679  2       
+controller1/counter_127_add_4_21/C0->controller1/counter_127_add_4_21/S0
+                                          SLICE_R10C6C    C0_TO_F0_DELAY   0.249         4.928  1       
+controller1/n89[19] ( DI0 )                               NET DELAY        0.000         4.928  1       
 
 
                                                              CONSTRAINT     0.000         0.000  1       
@@ -1230,8 +1230,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_79__i15/Q  (SLICE_R12C6D)
-Path End         : controller1/counter_79__i15/D  (SLICE_R12C6D)
+Path Begin       : controller1/counter_127__i21/Q  (SLICE_R10C6C)
+Path End         : controller1/counter_127__i21/D  (SLICE_R10C6C)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1247,12 +1247,12 @@ controller1/clk ( CLK )                                      NET DELAY      3.04
 
 
 
-controller1/counter_79__i15/CK->controller1/counter_79__i15/Q
-                                          SLICE_R12C6D    CLK_TO_Q1_DELAY  0.768         3.809  4       
-controller1/counter[14]                                   NET DELAY        0.870         4.679  4       
-controller1/counter_79_add_4_15/C1->controller1/counter_79_add_4_15/S1
-                                          SLICE_R12C6D    C1_TO_F1_DELAY   0.249         4.928  1       
-controller1/n89[14] ( DI1 )                               NET DELAY        0.000         4.928  1       
+controller1/counter_127__i21/CK->controller1/counter_127__i21/Q
+                                          SLICE_R10C6C    CLK_TO_Q1_DELAY  0.768         3.809  2       
+controller1/counter[20]                                   NET DELAY        0.870         4.679  2       
+controller1/counter_127_add_4_21/C1->controller1/counter_127_add_4_21/S1
+                                          SLICE_R10C6C    C1_TO_F1_DELAY   0.249         4.928  1       
+controller1/n89[20] ( DI1 )                               NET DELAY        0.000         4.928  1       
 
 
                                                              CONSTRAINT     0.000         0.000  1       

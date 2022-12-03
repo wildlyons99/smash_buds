@@ -5,10 +5,8 @@ use IEEE.numeric_std.all;
 entity pattern_gen is
   port(
 	  clk : in std_logic;
-	  clk60hz : in std_logic;
 	  row : in signed(10 downto 0); -- 0-1023
 	  col : in signed(10 downto 0); -- 0-1023
-	  -- buttons : in std_logic_vector(7 downto 0);
 	  x : in signed(10 downto 0);
 	  y : in signed(10 downto 0);
 	  valid : in std_logic;

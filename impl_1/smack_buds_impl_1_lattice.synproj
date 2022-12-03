@@ -46,6 +46,8 @@
 -lib "work" -vhd "//vs-home/tlyons01/es4/smack_buds/source/impl_1/pllclock_to_60hz.vhd"
 "//vs-home/tlyons01/es4/smack_buds/source/impl_1/controller.vhd"
 "//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd"
+"//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd"
+"//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd"
 
 
 -path "//vs-home/tlyons01/es4/smack_buds"
