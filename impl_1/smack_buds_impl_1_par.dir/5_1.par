@@ -1,6 +1,6 @@
 
 Lattice Place and Route Report for Design "smack_buds_impl_1_map.udb"
-Fri Dec  2 20:48:38 2022
+Fri Dec  2 21:23:47 2022
 
 PAR: Place And Route Radiant Software (64-bit) 3.2.1.217.3.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
@@ -24,13 +24,13 @@ WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
 
 WARNING: Database constraint "create_generated_clock -name {testPLLout_c} -source [get_pins pll.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins pll.lscc_pll_inst.u_PLL_B/OUTCORE]" does not have corresponding timing constraint. Please check if the resource objects of the constraint are valid carefully!
-Number of Signals: 372
-Number of Connections: 776
+Number of Signals: 486
+Number of Connections: 1097
 Device utilization summary:
 
-   SLICE (est.)      99/2640          3% used
-     LUT            190/5280          3% used
-     REG             92/5280          1% used
+   SLICE (est.)     144/2640          5% used
+     LUT            273/5280          5% used
+     REG             89/5280          1% used
    PIO               13/56           23% used
                      13/36           36% bonded
    IOLOGIC            1/56            1% used
@@ -53,33 +53,33 @@ Device utilization summary:
 Pin Constraint Summary:
    12 out of 13 pins locked (92% locked).
 .
-..........
+...........
 Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
 
 
 ................
-Finished Placer Phase 0 (AP).  CPU time: 1 secs , REAL time: 0 secs 
+Finished Placer Phase 0 (AP).  CPU time: 0 secs , REAL time: 0 secs 
 
-Starting Placer Phase 1. CPU time: 1 secs , REAL time: 0 secs 
+Starting Placer Phase 1. CPU time: 0 secs , REAL time: 0 secs 
 ..  ..
 ....................
 
-Placer score = 31381.
+Placer score = 44241.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE             98/2640          3% used
+   SLICE            143/2640          5% used
 
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-Finished Placer Phase 1. CPU time: 9 secs , REAL time: 9 secs 
+Finished Placer Phase 1. CPU time: 8 secs , REAL time: 9 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  40154
-Finished Placer Phase 2.  CPU time: 9 secs , REAL time: 9 secs 
+Placer score =  49717
+Finished Placer Phase 2.  CPU time: 8 secs , REAL time: 9 secs 
 
 
 ------------------ Clock Report ------------------
@@ -87,7 +87,7 @@ Finished Placer Phase 2.  CPU time: 9 secs , REAL time: 9 secs
 Global Clocks :
   PRIMARY "internal25clk" from OUTGLOBAL on comp "pll.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 22, ce load = 0, sr load = 0
   PRIMARY "controller1.clk" from comp "controller1.the_hsosc" on site "HFOSC_R1C32", clk load = 11, ce load = 0, sr load = 0
-  PRIMARY "internal60hzclk" from F1 on comp "sixtyHZclock.SLICE_127" on site "R13C3C", clk load = 12, ce load = 0, sr load = 0
+  PRIMARY "internal60hzclk" from F1 on comp "sixtyHZclock.SLICE_153" on site "R13C3B", clk load = 11, ce load = 0, sr load = 0
 
   PRIMARY  : 3 out of 8 (37%)
 
@@ -109,12 +109,12 @@ I/O Bank Usage Summary:
 | 2        | 3 / 8 ( 37%)  | 3.3V       |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 9 secs , REAL time: 9 secs 
+Total Placer CPU time: 8 secs , REAL time: 9 secs 
 
 Writing design to file smack_buds_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 20:48:47 12/02/22
+Start NBR router at 21:23:56 12/02/22
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -132,16 +132,16 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-180 connections routed with dedicated routing resources
+213 connections routed with dedicated routing resources
 3 global clock signals routed
-225 connections routed (of 771 total) (29.18%)
+257 connections routed (of 1066 total) (24.11%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (3 used out of 8 available):
 #4  Signal "controller1.clk"
        Clock   loads: 11    out of    11 routed (100.00%)
 #5  Signal "internal60hzclk"
-       Clock   loads: 12    out of    12 routed (100.00%)
+       Clock   loads: 11    out of    11 routed (100.00%)
 #7  Signal "internal25clk"
        Clock   loads: 22    out of    22 routed (100.00%)
 Other clocks:
@@ -149,10 +149,10 @@ Other clocks:
        Clock   loads: 0     out of     1 routed (  0.00%)
     Signal "pll.lscc_pll_inst.feedback_w"
        Clock   loads: 1     out of     1 routed (100.00%)
-    Signal "controller_clock_c"
-       Clock   loads: 0     out of     5 routed (  0.00%)
-       Data    loads: 0     out of     1 routed (  0.00%)
     Signal "controller_latch_c"
+       Clock   loads: 0     out of     3 routed (  0.00%)
+       Data    loads: 0     out of     1 routed (  0.00%)
+    Signal "controller_clock_c"
        Clock   loads: 0     out of     3 routed (  0.00%)
        Data    loads: 0     out of     1 routed (  0.00%)
 ---------------------------------------------------------
@@ -163,51 +163,48 @@ WARNING - par: No master clock for
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] .
 
-Start NBR section for initial routing at 20:48:48 12/02/22
+Start NBR section for initial routing at 21:23:56 12/02/22
 Level 4, iteration 1
-17(0.01%) conflicts; 546(70.82%) untouched conns; 0 (nbr) score; 
+32(0.01%) conflicts; 809(75.89%) untouched conns; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 6.456ns/0.000ns; real time: 0 secs 
 Level 4, iteration 2
-5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 6.008ns/0.000ns; real time: 0 secs 
+7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.744ns/0.000ns; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 20:48:48 12/02/22
+Start NBR section for normal routing at 21:23:57 12/02/22
 Level 4, iteration 1
 5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 6.008ns/0.000ns; real time: 0 secs 
+Estimated worst slack/total negative slack<setup>: 5.744ns/0.000ns; real time: 0 secs 
 Level 4, iteration 2
 5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 6.008ns/0.000ns; real time: 0 secs 
+Estimated worst slack/total negative slack<setup>: 5.744ns/0.000ns; real time: 0 secs 
 Level 4, iteration 3
 5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 6.008ns/0.000ns; real time: 0 secs 
+Estimated worst slack/total negative slack<setup>: 5.744ns/0.000ns; real time: 0 secs 
 Level 4, iteration 4
 5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 6.008ns/0.000ns; real time: 0 secs 
+Estimated worst slack/total negative slack<setup>: 5.744ns/0.000ns; real time: 0 secs 
 Level 4, iteration 5
-5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 6.008ns/0.000ns; real time: 0 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.744ns/0.000ns; real time: 0 secs 
 Level 4, iteration 6
-4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 6.008ns/0.000ns; real time: 0 secs 
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.744ns/0.000ns; real time: 0 secs 
 Level 4, iteration 7
-4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.744ns/0.000ns; real time: 0 secs 
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 5.361ns/0.000ns; real time: 0 secs 
 Level 4, iteration 8
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.744ns/0.000ns; real time: 0 secs 
-Level 4, iteration 9
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 5.625ns/0.000ns; real time: 0 secs 
+Estimated worst slack/total negative slack<setup>: 5.361ns/0.000ns; real time: 0 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 20:48:48 12/02/22
+Start NBR section for setup/hold timing optimization with effort level 3 at 21:23:57 12/02/22
 
 Starting full timing analysis...
 
-Start NBR section for post-routing at 20:48:49 12/02/22
+Start NBR section for post-routing at 21:23:57 12/02/22
 
 End NBR router with 0 unrouted connection
 WARNING - par: No master clock for
@@ -220,7 +217,7 @@ Starting full timing analysis...
 NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
-  Estimated worst slack<setup> : 7.774ns
+  Estimated worst slack<setup> : 8.845ns
   Estimated worst slack<hold > : 1.882ns
   Timing score<setup> : 0
   Timing score<hold > : 0
@@ -232,7 +229,7 @@ NBR Summary
 Total CPU time 1 secs 
 Total REAL time: 2 secs 
 Completely routed.
-End of route.  771 routed (100.00%); 0 unrouted.
+End of route.  1066 routed (100.00%); 0 unrouted.
 
 Writing design to file smack_buds_impl_1_par.dir/5_1.udb ...
 
@@ -242,15 +239,15 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 7.774
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 8.845
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 1.882
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 11 secs 
+Total CPU  Time: 10 secs 
 Total REAL Time: 11 secs 
-Peak Memory Usage: 119.80 MB
+Peak Memory Usage: 116.79 MB
 
 
 par done!

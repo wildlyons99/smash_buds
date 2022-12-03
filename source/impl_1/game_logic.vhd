@@ -16,24 +16,35 @@ architecture synth of game_logic is
 begin
    process (clk) begin
 	if rising_edge(clk) then
-		if ((not first_time) or controller_buttons(3)) then
+		if ((not first_time) or controller_buttons(4)) then
 			x <= 10b"0";
 			y <= 10b"0";
 			first_time <= '1';
 		else
-			if (controller_buttons(6) and (not controller_buttons(7))) then
-				x <= x - 1;
+			if (controller_buttons(1)) then
+				if (x = 0) then
+					x <= 10d"639";
+				else
+					x <= (x - 1);
+				end if;
+			elsif (controller_buttons(0)) then
+				x <= (x + 1) mod 639;
+			else
+				-- do nothing
 			end if;
-			if (controller_buttons(7) and (not controller_buttons(7))) then
-				x <= x + 1;
-			end if; 
 			
-			if (controller_buttons(4) and (not controller_buttons(5))) then
-				y <= y + 1;
+			if (controller_buttons(2)) then
+				y <= (y + 1) mod 479;
+			elsif (controller_buttons(3)) then
+				if (y = 0) then
+					y <= 10d"479";
+				else
+					y <= (y - 1);
+				end if;
+			else
+				-- do nothing
 			end if;
-			if (controller_buttons(5) and (not controller_buttons(4))) then
-				y <= y - 1;
-			end if;
+			
 		end if;
 	end if;
    end process;

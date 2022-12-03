@@ -4,24 +4,24 @@ Report for cell top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        100.0
-                                  LUT4	        190        100.0
+                                  LUT4	        273        100.0
                                  IOREG	          1        100.0
                                  IOBUF	         13        100.0
-                                PFUREG	         92        100.0
+                                PFUREG	         89        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                            controller	          1        21.1
+                            controller	          1        14.7
                                 my_pll	          1         0.0
-                           pattern_gen	          1        37.9
-                     pllclock_to_60_hz	          1        14.7
-                                   vga	          1        21.1
+                           pattern_gen	          1        53.5
+                     pllclock_to_60_hz	          1         9.9
+                                   vga	          1        19.4
 ---------------------------------------------------
 Report for cell vga
    Instance path: top/internalvga
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         40        21.1
-                                PFUREG	         20        21.7
+                                  LUT4	         53        19.4
+                                PFUREG	         20        22.5
 ---------------------------------------------------
 Report for cell my_pll
    Instance path: top/pll
@@ -40,31 +40,31 @@ Report for cell pattern_gen
    Instance path: top/patternmaker
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         72        37.9
-                                PFUREG	         20        21.7
+                                  LUT4	        146        53.5
+                                PFUREG	         20        22.5
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                            game_logic	          1        13.7
+                            game_logic	          1        53.5
 ---------------------------------------------------
 Report for cell game_logic
    Instance path: top/patternmaker/game
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         26        13.7
-                                PFUREG	         20        21.7
+                                  LUT4	        146        53.5
+                                PFUREG	         20        22.5
+---------------------------------------------------
+Report for cell pllclock_to_60_hz
+   Instance path: top/sixtyHZclock
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         9.9
+                                PFUREG	         19        21.3
 ---------------------------------------------------
 Report for cell controller
    Instance path: top/controller1
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        100.0
-                                  LUT4	         40        21.1
+                                  LUT4	         40        14.7
                                  IOREG	          1        100.0
-                                PFUREG	         33        35.9
----------------------------------------------------
-Report for cell pllclock_to_60_hz
-   Instance path: top/sixtyHZclock
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         28        14.7
-                                PFUREG	         19        20.7
+                                PFUREG	         30        33.7

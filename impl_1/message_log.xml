@@ -1149,10 +1149,10 @@
         <Message>
             <ID>35935014</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(38): </Dynamic>
+            <Dynamic>c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd(49): </Dynamic>
             <Dynamic>\patternmaker/game/first_time</Dynamic>
             <Navigation>c:/users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd</Navigation>
-            <Navigation>38</Navigation>
+            <Navigation>49</Navigation>
         </Message>
         <Message>
             <ID>35002039</ID>
