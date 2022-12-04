@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Dec  3 18:27:07 2022
+Sat Dec  3 18:33:50 2022
 
 
 Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f smack_buds_impl_1_lattice.synproj -gui -msgset //vs-home/tlyons01/es4/smack_buds/promote.xml 
@@ -167,8 +167,6 @@ Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.v
 
 INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(5): analyzing entity game_logic. VHDL-1012
 INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(14): analyzing architecture synth. VHDL-1010
-INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(83): input pin y_platform has no actual or default value. VHDL-9000
-INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(51): y_platform is declared here. VHDL-1259
 Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd. VHDL-1481
 Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd
 
@@ -207,55 +205,11 @@ Top module name (VHDL, mixed language): top
 
 WARNING - synthesis: Bit 1 of Register gravity is stuck at Zero
 WARNING - synthesis: Bit 0 of Register gravity is stuck at One
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[10]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[9]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[8]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[7]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[6]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[5]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[4]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[3]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[2]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[1]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[0]' is not connected on this instance
-
 WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/my_pll/rtl/my_pll.v(139): net \pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
 WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/my_pll/rtl/my_pll.v(140): net \pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[10]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[9]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[8]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[7]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[6]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[5]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[4]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[3]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[2]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[1]' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(74): input port 'y_platform[0]' is not connected on this instance
-
 ######## Missing driver on net \pll/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \pll/lscc_pll_inst/sdi_i. Patching with GND.
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(132): Register \game/first_time is stuck at One. VDB-5014
+WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(134): Register \game/first_time is stuck at One. VDB-5014
 
 
 

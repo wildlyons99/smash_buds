@@ -4,6 +4,7 @@ use IEEE.numeric_std.all;
 
 entity collisions is 
 	port (
+		clk : in std_logic; 
 		coll_left : out std_logic;
 		coll_right : out std_logic;
 		coll_top : out std_logic;

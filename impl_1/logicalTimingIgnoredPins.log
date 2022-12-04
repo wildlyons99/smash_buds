@@ -1,3 +1,5 @@
+FA2/A0 input add_126_add_5_1is connected to a constant net
+FA2/A1 input add_126_add_5_1is connected to a constant net
 FA2/A0 input add_342_5is connected to a constant net
 FA2/A1 input add_342_5is connected to a constant net
 FA2/A0 input add_329_4is connected to a constant net
@@ -34,22 +36,28 @@ FA2/A0 input add_329_8is connected to a constant net
 FA2/A1 input add_329_8is connected to a constant net
 FA2/A0 input add_342_7is connected to a constant net
 FA2/A1 input add_342_7is connected to a constant net
+FA2/A0 input add_329_6is connected to a constant net
+FA2/A1 input add_329_6is connected to a constant net
 FA2/A0 input mod_18_unary_minus_2_add_3_11is connected to a constant net
 FA2/A1 input mod_18_unary_minus_2_add_3_11is connected to a constant net
 FA2/CI1 input mod_18_unary_minus_2_add_3_11 has no outgoing device arc
-FA2/A0 input add_329_6is connected to a constant net
-FA2/A1 input add_329_6is connected to a constant net
-FA2/A0 input add_8_add_5_1is connected to a constant net
-FA2/A1 input add_8_add_5_1is connected to a constant net
-FA2/A0 input add_8_add_5_5is connected to a constant net
-FA2/A1 input add_8_add_5_5is connected to a constant net
 FA2/A0 input add_8_add_5_11is connected to a constant net
 FA2/A1 input add_8_add_5_11is connected to a constant net
 FA2/CI1 input add_8_add_5_11 has no outgoing device arc
+FA2/A0 input add_8_add_5_5is connected to a constant net
+FA2/A1 input add_8_add_5_5is connected to a constant net
 FA2/A0 input add_8_add_5_9is connected to a constant net
 FA2/A1 input add_8_add_5_9is connected to a constant net
 FA2/A0 input add_8_add_5_7is connected to a constant net
 FA2/A1 input add_8_add_5_7is connected to a constant net
+FA2/A0 input add_8_add_5_1is connected to a constant net
+FA2/A1 input add_8_add_5_1is connected to a constant net
+FA2/A0 input add_125_add_5_9is connected to a constant net
+FA2/A1 input add_125_add_5_9is connected to a constant net
+FA2/A0 input add_125_add_5_7is connected to a constant net
+FA2/A1 input add_125_add_5_7is connected to a constant net
+FA2/A0 input add_125_add_5_5is connected to a constant net
+FA2/A1 input add_125_add_5_5is connected to a constant net
 FA2/A0 input add_125_add_5_11is connected to a constant net
 FA2/A1 input add_125_add_5_11is connected to a constant net
 FA2/B1 input add_125_add_5_11is connected to a constant net
@@ -60,12 +68,6 @@ FA2/CI1 input add_125_add_5_11 has no outgoing device arc
 FA2/B0 input add_125_add_5_11 is on an incomplete path
 FA2/C0 input add_125_add_5_11is connected to a constant net
 FA2/CI0 input add_125_add_5_11 is on an incomplete path
-FA2/A0 input add_125_add_5_5is connected to a constant net
-FA2/A1 input add_125_add_5_5is connected to a constant net
-FA2/A0 input add_125_add_5_9is connected to a constant net
-FA2/A1 input add_125_add_5_9is connected to a constant net
-FA2/A0 input add_125_add_5_7is connected to a constant net
-FA2/A1 input add_125_add_5_7is connected to a constant net
 FA2/A0 input add_125_add_5_3is connected to a constant net
 FA2/A1 input add_125_add_5_3is connected to a constant net
 FA2/A0 input add_125_add_5_1is connected to a constant net
@@ -81,33 +83,18 @@ FA2/A0 input col_129_add_4_5is connected to a constant net
 FA2/A1 input col_129_add_4_5is connected to a constant net
 FA2/A0 input col_129_add_4_7is connected to a constant net
 FA2/A1 input col_129_add_4_7is connected to a constant net
-FA2/A0 input col_129_add_4_1is connected to a constant net
-FA2/A1 input col_129_add_4_1is connected to a constant net
 FA2/A0 input col_129_add_4_3is connected to a constant net
 FA2/A1 input col_129_add_4_3is connected to a constant net
+FA2/A0 input col_129_add_4_1is connected to a constant net
+FA2/A1 input col_129_add_4_1is connected to a constant net
 FA2/A0 input add_126_add_5_7is connected to a constant net
 FA2/A1 input add_126_add_5_7is connected to a constant net
-PLL_B/DYNAMICDELAY7 input u_PLL_Bis connected to a constant net
-PLL_B/DYNAMICDELAY6 input u_PLL_Bis connected to a constant net
-PLL_B/DYNAMICDELAY5 input u_PLL_Bis connected to a constant net
-PLL_B/DYNAMICDELAY4 input u_PLL_Bis connected to a constant net
-PLL_B/DYNAMICDELAY3 input u_PLL_Bis connected to a constant net
-PLL_B/DYNAMICDELAY2 input u_PLL_Bis connected to a constant net
-PLL_B/DYNAMICDELAY1 input u_PLL_Bis connected to a constant net
-PLL_B/DYNAMICDELAY0 input u_PLL_Bis connected to a constant net
-PLL_B/BYPASS input u_PLL_Bis connected to a constant net
-PLL_B/RESET_N input u_PLL_Bis connected to a constant net
-PLL_B/SCLK input u_PLL_Bis connected to a constant net
-PLL_B/SDI input u_PLL_Bis connected to a constant net
-PLL_B/LATCH input u_PLL_Bis connected to a constant net
-PLL_B/INTFBOUT output  u_PLL_B has no incoming device arc
-     *** pll/lscc_pll_inst/u_PLL_B/FEEDBACK is driven by constant or a pin on an incomplete path
 FA2/A0 input add_126_add_5_5is connected to a constant net
 FA2/A1 input add_126_add_5_5is connected to a constant net
 FA2/A0 input add_126_add_5_3is connected to a constant net
 FA2/A1 input add_126_add_5_3is connected to a constant net
-FA2/A0 input add_126_add_5_1is connected to a constant net
-FA2/A1 input add_126_add_5_1is connected to a constant net
+FA2/A0 input clock_count_128_add_4_15is connected to a constant net
+FA2/A1 input clock_count_128_add_4_15is connected to a constant net
 VLO/Z GND  i1
      *** controller1/output_i6/SR is driven by constant or a pin on an incomplete path
      *** controller1/output_i5/SR is driven by constant or a pin on an incomplete path
@@ -181,6 +168,18 @@ VLO/Z GND  i1
      *** controller1/the_hsosc/TRIM2 is driven by constant or a pin on an incomplete path
      *** controller1/the_hsosc/TRIM1 is driven by constant or a pin on an incomplete path
      *** controller1/the_hsosc/TRIM0 is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/DYNAMICDELAY7 is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/DYNAMICDELAY6 is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/DYNAMICDELAY5 is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/DYNAMICDELAY4 is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/DYNAMICDELAY3 is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/DYNAMICDELAY2 is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/DYNAMICDELAY1 is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/DYNAMICDELAY0 is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/BYPASS is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/SCLK is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/SDI is driven by constant or a pin on an incomplete path
+     *** pll/lscc_pll_inst/u_PLL_B/LATCH is driven by constant or a pin on an incomplete path
      *** game/mod_13_add_426_3/C0 is driven by constant or a pin on an incomplete path
      *** game/mod_13_add_426_3/C1 is driven by constant or a pin on an incomplete path
      *** game/mod_13_add_426_1/B0 is driven by constant or a pin on an incomplete path
@@ -436,9 +435,7 @@ VLO/Z GND  i1
      *** patternmaker/add_125_add_5_3/C1 is driven by constant or a pin on an incomplete path
      *** patternmaker/add_125_add_5_1/B0 is driven by constant or a pin on an incomplete path
      *** patternmaker/add_125_add_5_1/C0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_15/A0 is driven by constant or a pin on an incomplete path
      *** sixtyHZclock/clock_count_128_add_4_15/B0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_15/A1 is driven by constant or a pin on an incomplete path
      *** sixtyHZclock/clock_count_128_add_4_15/B1 is driven by constant or a pin on an incomplete path
      *** sixtyHZclock/clock_count_128_add_4_13/A0 is driven by constant or a pin on an incomplete path
      *** sixtyHZclock/clock_count_128_add_4_13/B0 is driven by constant or a pin on an incomplete path
@@ -510,22 +507,23 @@ FA2/CI1 input mod_18_add_379_12 has no outgoing device arc
 FA2/B0 input mod_18_add_379_12 is on an incomplete path
 FA2/C0 input mod_18_add_379_12is connected to a constant net
 FA2/CI0 input mod_18_add_379_12 is on an incomplete path
-FA2/CI1 input mod_13_unary_minus_2_add_3_11 has no outgoing device arc
 FA2/D1 input add_239_12 has no outgoing device arc
 FA2/CI1 input add_239_12 has no outgoing device arc
      ** game/add_239_12/CO0 is driving a pin on an incomplete path
 FA2/B0 input add_239_12 is on an incomplete path
 FA2/C0 input add_239_12 is on an incomplete path
 FA2/CI0 input add_239_12 is on an incomplete path
+FA2/CI1 input mod_13_unary_minus_2_add_3_11 has no outgoing device arc
 FA2/D0 input mod_18_add_379_2is connected to a constant net
 FA2/CI1 input add_340_9 has no outgoing device arc
-FA2/CI1 input add_17_add_5_11 has no outgoing device arc
 FA2/CI1 input sub_42_add_2_add_5_11 has no outgoing device arc
+FA2/CI1 input add_17_add_5_11 has no outgoing device arc
 FA2/CI1 input mod_13_add_426_11 has no outgoing device arc
 FA2/CI1 input add_12_add_5_11 has no outgoing device arc
+PLL_B/RESET_N input u_PLL_Bis connected to a constant net
+PLL_B/INTFBOUT output  u_PLL_B has no incoming device arc
+     *** pll/lscc_pll_inst/u_PLL_B/FEEDBACK is driven by constant or a pin on an incomplete path
 FA2/CI1 input counter_127_add_4_21 has no outgoing device arc
-HSOSC_CORE/CLKHFPU input the_hsoscis connected to a constant net
-HSOSC_CORE/CLKHFEN input the_hsoscis connected to a constant net
 VHI/Z VCC  RGB_pad[3].vhi_inst
      *** controller1/output_i6/SP is driven by constant or a pin on an incomplete path
      *** controller1/output_i5/SP is driven by constant or a pin on an incomplete path
@@ -563,6 +561,8 @@ VHI/Z VCC  RGB_pad[3].vhi_inst
      *** controller1/counter_127__i21/SP is driven by constant or a pin on an incomplete path
      *** controller1/shift_i0/CE is driven by constant or a pin on an incomplete path
      *** controller1/counter_127_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** controller1/the_hsosc/CLKHFPU is driven by constant or a pin on an incomplete path
+     *** controller1/the_hsosc/CLKHFEN is driven by constant or a pin on an incomplete path
      *** game/mod_13_add_426_1/C1 is driven by constant or a pin on an incomplete path
      *** game/yVelocity__i0/SP is driven by constant or a pin on an incomplete path
      *** game/add_329_10/C0 is driven by constant or a pin on an incomplete path
