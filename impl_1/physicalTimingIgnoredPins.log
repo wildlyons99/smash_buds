@@ -1,127 +1,262 @@
-SLICE/CIN1 input controller1.SLICE_3 has no outgoing device arc
-SLICE/COUT0 GND  controller1.SLICE_2
-     *** controller1.SLICE_2/D1 is driven by constant or a pin on an incomplete path
-     *** controller1.SLICE_2/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/D1 input patternmaker.SLICE_13 has no outgoing device arc
-SLICE/CIN1 input patternmaker.SLICE_13 has no outgoing device arc
-     ** patternmaker.SLICE_13/COUT0 is driving a pin on an incomplete path
-SLICE/B0 input patternmaker.SLICE_13 is on an incomplete path
-SLICE/CIN0 input patternmaker.SLICE_13 is on an incomplete path
-SLICE/COUT0 GND  patternmaker.SLICE_12
-     *** patternmaker.SLICE_12/D1 is driven by constant or a pin on an incomplete path
-     *** patternmaker.SLICE_12/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/D1 input patternmaker.SLICE_19 has no outgoing device arc
-SLICE/CIN1 input patternmaker.SLICE_19 has no outgoing device arc
-     ** patternmaker.SLICE_19/COUT0 is driving a pin on an incomplete path
-SLICE/B0 input patternmaker.SLICE_19 is on an incomplete path
-SLICE/CIN0 input patternmaker.SLICE_19 is on an incomplete path
-SLICE/COUT0 GND  patternmaker.SLICE_18
-     *** patternmaker.SLICE_18/D1 is driven by constant or a pin on an incomplete path
-     *** patternmaker.SLICE_18/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/CIN1 input game.phys_map.SLICE_26 has no outgoing device arc
-SLICE/D1 input game.phys_map.SLICE_35 has no outgoing device arc
-SLICE/CIN1 input game.phys_map.SLICE_35 has no outgoing device arc
-     ** game.phys_map.SLICE_35/COUT0 is driving a pin on an incomplete path
-SLICE/B0 input game.phys_map.SLICE_35 is on an incomplete path
-SLICE/CIN0 input game.phys_map.SLICE_35 is on an incomplete path
-SLICE/CIN1 input game.phys_map.SLICE_37 has no outgoing device arc
-SLICE/CIN1 input game.phys_map.SLICE_39 has no outgoing device arc
-SLICE/COUT0 GND  game.phys_map.SLICE_34
-     *** game.phys_map.SLICE_34/D1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_34/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/COUT0 GND  game.phys_map.SLICE_33
-     *** game.phys_map.SLICE_33/D1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_33/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/COUT0 GND  game.phys_map.SLICE_50
-     *** game.phys_map.SLICE_50/D1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_50/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/CIN1 input internalvga.SLICE_0 has no outgoing device arc
+SLICE/COUT0 GND  internalvga.SLICE_5
+     *** internalvga.SLICE_5/D1 is driven by constant or a pin on an incomplete path
+     *** internalvga.SLICE_5/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/CIN1 input internalvga.SLICE_6 has no outgoing device arc
+SLICE/COUT0 GND  internalvga.SLICE_11
+     *** internalvga.SLICE_11/D1 is driven by constant or a pin on an incomplete path
+     *** internalvga.SLICE_11/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/COUT0 GND  controller1.SLICE_18
+     *** controller1.SLICE_18/D1 is driven by constant or a pin on an incomplete path
+     *** controller1.SLICE_18/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/CIN1 input controller1.SLICE_19 has no outgoing device arc
+SLICE/COUT0 GND  patternmaker.SLICE_25
+     *** patternmaker.SLICE_25/D1 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_25/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/CIN1 input patternmaker.SLICE_26 has no outgoing device arc
+SLICE/CIN1 input patternmaker.SLICE_32 has no outgoing device arc
+SLICE/COUT0 GND  patternmaker.SLICE_31
+     *** patternmaker.SLICE_31/D1 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_31/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/CIN1 input patternmaker.SLICE_33 has no outgoing device arc
+SLICE/COUT0 GND  game.phys_map.SLICE_41
+     *** game.phys_map.SLICE_41/D1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_41/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/CIN1 input game.phys_map.SLICE_42 has no outgoing device arc
+SLICE/CIN1 input game.phys_map.SLICE_50 has no outgoing device arc
+SLICE/COUT0 GND  game.phys_map.SLICE_49
+     *** game.phys_map.SLICE_49/D1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_49/CIN1 is driven by constant or a pin on an incomplete path
 SLICE/D1 input game.phys_map.SLICE_51 has no outgoing device arc
 SLICE/CIN1 input game.phys_map.SLICE_51 has no outgoing device arc
      ** game.phys_map.SLICE_51/COUT0 is driving a pin on an incomplete path
-SLICE/C0 input game.phys_map.SLICE_51is connected to a constant net
 SLICE/B0 input game.phys_map.SLICE_51 is on an incomplete path
 SLICE/CIN0 input game.phys_map.SLICE_51 is on an incomplete path
-SLICE/COUT0 GND  game.phys_map.SLICE_63
-     *** game.phys_map.SLICE_63/D1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_63/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/COUT0 GND  game.phys_map.SLICE_60
-     *** game.phys_map.SLICE_60/D1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_60/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/D1 input game.phys_map.SLICE_61 has no outgoing device arc
-SLICE/CIN1 input game.phys_map.SLICE_61 has no outgoing device arc
-     ** game.phys_map.SLICE_61/COUT0 is driving a pin on an incomplete path
-SLICE/C0 input game.phys_map.SLICE_61is connected to a constant net
-SLICE/B0 input game.phys_map.SLICE_61 is on an incomplete path
-SLICE/CIN0 input game.phys_map.SLICE_61 is on an incomplete path
-SLICE/COUT0 GND  game.phys_map.SLICE_58
-     *** game.phys_map.SLICE_58/D1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_58/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/D1 input game.phys_map.SLICE_65 has no outgoing device arc
-SLICE/CIN1 input game.phys_map.SLICE_65 has no outgoing device arc
-     ** game.phys_map.SLICE_65/COUT0 is driving a pin on an incomplete path
-SLICE/C0 input game.phys_map.SLICE_65 is on an incomplete path
-SLICE/B0 input game.phys_map.SLICE_65 is on an incomplete path
-SLICE/CIN0 input game.phys_map.SLICE_65 is on an incomplete path
-SLICE/CIN1 input game.phys_map.SLICE_73 has no outgoing device arc
-SLICE/COUT0 GND  game.phys_map.SLICE_79
-     *** game.phys_map.SLICE_79/D1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_79/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/COUT0 GND  game.phys_map.SLICE_82
-     *** game.phys_map.SLICE_82/D1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_82/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/CIN1 input game.phys_map.SLICE_81 has no outgoing device arc
-SLICE/CIN1 input game.phys_map.SLICE_83 has no outgoing device arc
-SLICE/CIN1 input game.phys_map.SLICE_87 has no outgoing device arc
-SLICE/CIN1 input internalvga.SLICE_88 has no outgoing device arc
-SLICE/COUT0 GND  internalvga.SLICE_93
-     *** internalvga.SLICE_93/D1 is driven by constant or a pin on an incomplete path
-     *** internalvga.SLICE_93/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/CIN1 input internalvga.SLICE_97 has no outgoing device arc
-SLICE/COUT0 GND  internalvga.SLICE_96
-     *** internalvga.SLICE_96/D1 is driven by constant or a pin on an incomplete path
-     *** internalvga.SLICE_96/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/CIN1 input sixtyHZclock.SLICE_100 has no outgoing device arc
-SLICE/COUT0 GND  sixtyHZclock.SLICE_109
-     *** sixtyHZclock.SLICE_109/D1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock.SLICE_109/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/F0 VCC  RGB_pad[3].SLICE_394
-     *** controller1.SLICE_2/B1 is driven by constant or a pin on an incomplete path
-     *** patternmaker.SLICE_12/C1 is driven by constant or a pin on an incomplete path
-     *** patternmaker.SLICE_18/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_33/B1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_34/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_40/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_40/C0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_44/C0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_50/B1 is driven by constant or a pin on an incomplete path
+SLICE/COUT0 GND  game.phys_map.SLICE_46
+     *** game.phys_map.SLICE_46/D1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_46/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input game.phys_map.SLICE_58 has no outgoing device arc
+SLICE/CIN1 input game.phys_map.SLICE_58 has no outgoing device arc
+     ** game.phys_map.SLICE_58/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input game.phys_map.SLICE_58 is on an incomplete path
+SLICE/B0 input game.phys_map.SLICE_58 is on an incomplete path
+SLICE/CIN0 input game.phys_map.SLICE_58 is on an incomplete path
+SLICE/COUT0 GND  game.phys_map.SLICE_61
+     *** game.phys_map.SLICE_61/D1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_61/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input game.phys_map.SLICE_64 has no outgoing device arc
+SLICE/CIN1 input game.phys_map.SLICE_64 has no outgoing device arc
+     ** game.phys_map.SLICE_64/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input game.phys_map.SLICE_64is connected to a constant net
+SLICE/B0 input game.phys_map.SLICE_64 is on an incomplete path
+SLICE/CIN0 input game.phys_map.SLICE_64 is on an incomplete path
+SLICE/CIN1 input game.phys_map.SLICE_69 has no outgoing device arc
+SLICE/COUT0 GND  game.phys_map.SLICE_73
+     *** game.phys_map.SLICE_73/D1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_73/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input game.phys_map.SLICE_74 has no outgoing device arc
+SLICE/CIN1 input game.phys_map.SLICE_74 has no outgoing device arc
+     ** game.phys_map.SLICE_74/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input game.phys_map.SLICE_74is connected to a constant net
+SLICE/B0 input game.phys_map.SLICE_74 is on an incomplete path
+SLICE/CIN0 input game.phys_map.SLICE_74 is on an incomplete path
+SLICE/CIN1 input game.phys_map.SLICE_82 has no outgoing device arc
+SLICE/CIN1 input game.phys_map.SLICE_86 has no outgoing device arc
+SLICE/COUT0 GND  game.phys_map.SLICE_89
+     *** game.phys_map.SLICE_89/D1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_89/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/COUT0 GND  game.phys_map.SLICE_97
+     *** game.phys_map.SLICE_97/D1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_97/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/CIN1 input game.phys_map.SLICE_93 has no outgoing device arc
+SLICE/COUT0 GND  game.phys_map.SLICE_98
+     *** game.phys_map.SLICE_98/D1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_98/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/CIN1 input sixtyHZclock.SLICE_103 has no outgoing device arc
+SLICE/CIN1 input game.phys_map.SLICE_99 has no outgoing device arc
+SLICE/COUT0 GND  sixtyHZclock.SLICE_112
+     *** sixtyHZclock.SLICE_112/D1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock.SLICE_112/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/F0 VCC  RGB_pad[3].SLICE_418
+     *** internalvga.SLICE_5/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga.SLICE_11/B1 is driven by constant or a pin on an incomplete path
+     *** controller1.SLICE_18/B1 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_23/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_23/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_25/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_28/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_29/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_29/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_30/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_30/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_31/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_35/D0 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_41/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_46/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_49/B1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_53/C1 is driven by constant or a pin on an incomplete path
      *** game.phys_map.SLICE_53/C0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_58/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_60/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_63/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_64/C0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_70/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_70/C0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_71/C0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_74/C0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_78/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_78/C0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_79/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_80/D0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_81/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_61/B1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_62/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_62/C0 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_66/C0 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_67/C0 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_73/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_76/C0 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_79/C0 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_81/D0 is driven by constant or a pin on an incomplete path
      *** game.phys_map.SLICE_82/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_83/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_83/C0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_84/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_84/C0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_85/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_85/C0 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_86/C1 is driven by constant or a pin on an incomplete path
-     *** game.phys_map.SLICE_86/C0 is driven by constant or a pin on an incomplete path
-     *** internalvga.SLICE_93/B1 is driven by constant or a pin on an incomplete path
-     *** internalvga.SLICE_96/C1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock.SLICE_109/B1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_82/C0 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_87/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_87/C0 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_89/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_90/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_90/C0 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_91/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_91/C0 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_92/C0 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_97/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_98/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_99/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_101/C1 is driven by constant or a pin on an incomplete path
+     *** game.phys_map.SLICE_101/C0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock.SLICE_112/B1 is driven by constant or a pin on an incomplete path
      *** controller1.the_hsosc/CLKHFPU is driven by constant or a pin on an incomplete path
      *** controller1.the_hsosc/CLKHFEN is driven by constant or a pin on an incomplete path
+     *** patternmaker.tony_map.mux_20/RCLKE is driven by constant or a pin on an incomplete path
+     *** patternmaker.tony_map.mux_20/RE is driven by constant or a pin on an incomplete path
+     *** patternmaker.tony_map.mux_20/WCLKE is driven by constant or a pin on an incomplete path
+     *** patternmaker.tony_map.mux_19/RCLKE is driven by constant or a pin on an incomplete path
+     *** patternmaker.tony_map.mux_19/RE is driven by constant or a pin on an incomplete path
+     *** patternmaker.tony_map.mux_19/WCLKE is driven by constant or a pin on an incomplete path
+     *** patternmaker.tony_map.mux_18/RCLKE is driven by constant or a pin on an incomplete path
+     *** patternmaker.tony_map.mux_18/RE is driven by constant or a pin on an incomplete path
+     *** patternmaker.tony_map.mux_18/WCLKE is driven by constant or a pin on an incomplete path
      *** pll.lscc_pll_inst.u_PLL_B/RESET_N is driven by constant or a pin on an incomplete path
 PLL/INTFBOUT output  pll.lscc_pll_inst.u_PLL_B has no incoming device arc
      *** pll.lscc_pll_inst.u_PLL_B/FEEDBACK is driven by constant or a pin on an incomplete path
+EBR/RADDR10 input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RADDR9 input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RADDR8 input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RADDR7 input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RADDR6 input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RADDR5 input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RADDR4 input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RADDR3 input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RADDR2 input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RADDR1 input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RADDR0 input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RCLK input patternmaker.tony_map.mux_19 has no outgoing device arc
+EBR/RDATA11 output  patternmaker.tony_map.mux_19 has no incoming device arc
+EBR/RDATA3 output  patternmaker.tony_map.mux_19 has no incoming device arc
+     *** patternmaker.SLICE_349/D1 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_172/B1 is driven by constant or a pin on an incomplete path
+EBR/RADDR10 input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RADDR9 input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RADDR8 input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RADDR7 input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RADDR6 input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RADDR5 input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RADDR4 input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RADDR3 input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RADDR2 input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RADDR1 input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RADDR0 input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RCLK input patternmaker.tony_map.mux_18 has no outgoing device arc
+EBR/RDATA11 output  patternmaker.tony_map.mux_18 has no incoming device arc
+EBR/RDATA3 output  patternmaker.tony_map.mux_18 has no incoming device arc
+     *** patternmaker.SLICE_347/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga.SLICE_171/B1 is driven by constant or a pin on an incomplete path
+EBR/RADDR10 input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RADDR9 input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RADDR8 input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RADDR7 input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RADDR6 input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RADDR5 input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RADDR4 input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RADDR3 input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RADDR2 input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RADDR1 input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RADDR0 input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RCLK input patternmaker.tony_map.mux_20 has no outgoing device arc
+EBR/RDATA11 output  patternmaker.tony_map.mux_20 has no incoming device arc
+EBR/RDATA3 output  patternmaker.tony_map.mux_20 has no incoming device arc
+     *** patternmaker.SLICE_347/D1 is driven by constant or a pin on an incomplete path
+     *** patternmaker.SLICE_349/C0 is driven by constant or a pin on an incomplete path
+     ** patternmaker.SLICE_338/F0 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_226/F0 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_338/F1 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_216/F0 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_227/F1 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_33/F0 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_34/F1 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_35/F1 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_34/F0 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_35/F0 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_33/F1 is driving a pin on an incomplete path
+SLICE/D1 input patternmaker.SLICE_33 is on an incomplete path
+SLICE/C1 input patternmaker.SLICE_33 is on an incomplete path
+SLICE/B1 input patternmaker.SLICE_33 is on an incomplete path
+SLICE/D0 input patternmaker.SLICE_33 is on an incomplete path
+     ** game.phys_map.SLICE_386/F0 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_33/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input patternmaker.SLICE_33 is on an incomplete path
+SLICE/B0 input patternmaker.SLICE_33 is on an incomplete path
+SLICE/CIN0 input patternmaker.SLICE_33 is on an incomplete path
+     ** game.phys_map.SLICE_387/F0 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_34/COUT1 is driving a pin on an incomplete path
+SLICE/D1 input patternmaker.SLICE_35 is on an incomplete path
+SLICE/D1 input patternmaker.SLICE_34 is on an incomplete path
+SLICE/C1 input patternmaker.SLICE_34 is on an incomplete path
+SLICE/B1 input patternmaker.SLICE_34 is on an incomplete path
+SLICE/D0 input patternmaker.SLICE_34 is on an incomplete path
+SLICE/CIN1 input patternmaker.SLICE_34 is on an incomplete path
+     ** game.phys_map.SLICE_384/F0 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_34/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input patternmaker.SLICE_34 is on an incomplete path
+SLICE/B0 input patternmaker.SLICE_34 is on an incomplete path
+SLICE/CIN0 input patternmaker.SLICE_34 is on an incomplete path
+     ** patternmaker.SLICE_35/COUT1 is driving a pin on an incomplete path
+     ** game.phys_map.SLICE_342/F1 is driving a pin on an incomplete path
+SLICE/C1 input patternmaker.SLICE_35 is on an incomplete path
+SLICE/B1 input patternmaker.SLICE_35 is on an incomplete path
+SLICE/CIN1 input patternmaker.SLICE_35 is on an incomplete path
+     ** game.phys_map.SLICE_381/F0 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_35/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input patternmaker.SLICE_35 is on an incomplete path
+SLICE/B0 input patternmaker.SLICE_35 is on an incomplete path
+     ** game.phys_map.SLICE_247/F1 is driving a pin on an incomplete path
+SLICE/D0 input patternmaker.SLICE_216 is on an incomplete path
+SLICE/B0 input patternmaker.SLICE_216 is on an incomplete path
+SLICE/A0 input patternmaker.SLICE_216 is on an incomplete path
+SLICE/C0 input patternmaker.SLICE_226 is on an incomplete path
+SLICE/B0 input patternmaker.SLICE_226 is on an incomplete path
+SLICE/A0 input patternmaker.SLICE_226 is on an incomplete path
+SLICE/D1 input patternmaker.SLICE_227 is on an incomplete path
+SLICE/C1 input patternmaker.SLICE_227 is on an incomplete path
+SLICE/B1 input patternmaker.SLICE_227 is on an incomplete path
+SLICE/A1 input patternmaker.SLICE_227 is on an incomplete path
+     ** patternmaker.SLICE_215/F1 is driving a pin on an incomplete path
+     ** patternmaker.SLICE_227/F0 is driving a pin on an incomplete path
+SLICE/D1 input patternmaker.SLICE_215 is on an incomplete path
+SLICE/C1 input patternmaker.SLICE_215 is on an incomplete path
+SLICE/A1 input patternmaker.SLICE_215 is on an incomplete path
+     ** patternmaker.SLICE_215/F0 is driving a pin on an incomplete path
+SLICE/D0 input patternmaker.SLICE_215 is on an incomplete path
+SLICE/C0 input patternmaker.SLICE_215 is on an incomplete path
+SLICE/B0 input patternmaker.SLICE_215 is on an incomplete path
+SLICE/A0 input patternmaker.SLICE_215 is on an incomplete path
+SLICE/D0 input patternmaker.SLICE_227 is on an incomplete path
+SLICE/C0 input patternmaker.SLICE_227 is on an incomplete path
+SLICE/C1 input game.phys_map.SLICE_247 is on an incomplete path
+SLICE/B1 input game.phys_map.SLICE_342 is on an incomplete path
+SLICE/C1 input patternmaker.SLICE_338 is on an incomplete path
+SLICE/A1 input patternmaker.SLICE_338 is on an incomplete path
+SLICE/D0 input patternmaker.SLICE_338 is on an incomplete path
+SLICE/C0 input patternmaker.SLICE_338 is on an incomplete path
+SLICE/B0 input patternmaker.SLICE_338 is on an incomplete path
+SLICE/A0 input patternmaker.SLICE_338 is on an incomplete path
+SLICE/B0 input game.phys_map.SLICE_381 is on an incomplete path
+SLICE/B0 input game.phys_map.SLICE_384 is on an incomplete path
+SLICE/B0 input game.phys_map.SLICE_386 is on an incomplete path
+SLICE/C0 input game.phys_map.SLICE_387 is on an incomplete path

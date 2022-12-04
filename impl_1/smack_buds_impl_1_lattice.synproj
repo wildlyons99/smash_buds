@@ -48,6 +48,7 @@
 "//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd"
 "//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd"
 "//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd"
+"//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd"
 
 
 -path "//vs-home/tlyons01/es4/smack_buds"

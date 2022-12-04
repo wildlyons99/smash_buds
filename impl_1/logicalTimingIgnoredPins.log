@@ -1,88 +1,75 @@
-FA2/A0 input mod_13_add_426_3is connected to a constant net
-FA2/A1 input mod_13_add_426_3is connected to a constant net
-FA2/A0 input mod_18_unary_minus_2_add_3_1is connected to a constant net
-FA2/A1 input mod_18_unary_minus_2_add_3_1is connected to a constant net
-FA2/A0 input mod_13_add_426_1is connected to a constant net
-FA2/A1 input mod_13_add_426_1is connected to a constant net
-FA2/A0 input add_329_12is connected to a constant net
-FA2/A1 input add_329_12is connected to a constant net
-FA2/B1 input add_329_12is connected to a constant net
-FA2/C1 input add_329_12is connected to a constant net
-FA2/D1 input add_329_12 has no outgoing device arc
-FA2/CI1 input add_329_12 has no outgoing device arc
-     ** game/phys_map/add_329_12/CO0 is driving a pin on an incomplete path
-FA2/B0 input add_329_12 is on an incomplete path
-FA2/C0 input add_329_12is connected to a constant net
-FA2/CI0 input add_329_12 is on an incomplete path
-FA2/A0 input add_17_add_5_11is connected to a constant net
-FA2/A1 input add_17_add_5_11is connected to a constant net
-FA2/CI1 input add_17_add_5_11 has no outgoing device arc
+FA2/A0 input add_6_add_5_1is connected to a constant net
+FA2/A1 input add_6_add_5_1is connected to a constant net
 FA2/A0 input add_12_add_5_5is connected to a constant net
 FA2/A1 input add_12_add_5_5is connected to a constant net
-FA2/A0 input mod_13_unary_minus_2_add_3_11is connected to a constant net
-FA2/A1 input mod_13_unary_minus_2_add_3_11is connected to a constant net
-FA2/CI1 input mod_13_unary_minus_2_add_3_11 has no outgoing device arc
-FA2/A0 input add_329_10is connected to a constant net
-FA2/A1 input add_329_10is connected to a constant net
-FA2/A0 input add_12_add_5_3is connected to a constant net
-FA2/A1 input add_12_add_5_3is connected to a constant net
-FA2/A0 input add_329_8is connected to a constant net
-FA2/A1 input add_329_8is connected to a constant net
-FA2/A0 input mod_13_unary_minus_2_add_3_7is connected to a constant net
-FA2/A1 input mod_13_unary_minus_2_add_3_7is connected to a constant net
-FA2/A0 input add_329_4is connected to a constant net
-FA2/A1 input add_329_4is connected to a constant net
-FA2/A0 input mod_13_unary_minus_2_add_3_9is connected to a constant net
-FA2/A1 input mod_13_unary_minus_2_add_3_9is connected to a constant net
-FA2/A0 input add_329_2is connected to a constant net
-FA2/D0 input add_329_2is connected to a constant net
-FA2/A1 input add_329_2is connected to a constant net
-FA2/A0 input add_329_6is connected to a constant net
-FA2/A1 input add_329_6is connected to a constant net
-FA2/A0 input mod_13_unary_minus_2_add_3_5is connected to a constant net
-FA2/A1 input mod_13_unary_minus_2_add_3_5is connected to a constant net
-FA2/A0 input mod_13_unary_minus_2_add_3_1is connected to a constant net
-FA2/A1 input mod_13_unary_minus_2_add_3_1is connected to a constant net
-FA2/A0 input add_17_add_5_9is connected to a constant net
-FA2/A1 input add_17_add_5_9is connected to a constant net
-FA2/A0 input mod_13_unary_minus_2_add_3_3is connected to a constant net
-FA2/A1 input mod_13_unary_minus_2_add_3_3is connected to a constant net
-FA2/A0 input mod_13_add_426_7is connected to a constant net
-FA2/A1 input mod_13_add_426_7is connected to a constant net
+FA2/A0 input add_12_add_5_7is connected to a constant net
+FA2/A1 input add_12_add_5_7is connected to a constant net
+FA2/A0 input add_12_add_5_11is connected to a constant net
+FA2/A1 input add_12_add_5_11is connected to a constant net
+FA2/CI1 input add_12_add_5_11 has no outgoing device arc
 FA2/A0 input add_12_add_5_9is connected to a constant net
 FA2/A1 input add_12_add_5_9is connected to a constant net
-FA2/A0 input add_125_add_5_9is connected to a constant net
-FA2/A1 input add_125_add_5_9is connected to a constant net
-FA2/A0 input add_125_add_5_5is connected to a constant net
-FA2/A1 input add_125_add_5_5is connected to a constant net
-FA2/A0 input add_125_add_5_7is connected to a constant net
-FA2/A1 input add_125_add_5_7is connected to a constant net
-FA2/A0 input add_125_add_5_11is connected to a constant net
-FA2/A1 input add_125_add_5_11is connected to a constant net
-FA2/B1 input add_125_add_5_11is connected to a constant net
-FA2/C1 input add_125_add_5_11is connected to a constant net
-FA2/D1 input add_125_add_5_11 has no outgoing device arc
-FA2/CI1 input add_125_add_5_11 has no outgoing device arc
-     ** patternmaker/add_125_add_5_11/CO0 is driving a pin on an incomplete path
-FA2/B0 input add_125_add_5_11 is on an incomplete path
-FA2/C0 input add_125_add_5_11is connected to a constant net
-FA2/CI0 input add_125_add_5_11 is on an incomplete path
-FA2/A0 input add_125_add_5_3is connected to a constant net
-FA2/A1 input add_125_add_5_3is connected to a constant net
-FA2/A0 input add_125_add_5_1is connected to a constant net
-FA2/A1 input add_125_add_5_1is connected to a constant net
-FA2/A0 input add_126_add_5_9is connected to a constant net
-FA2/A1 input add_126_add_5_9is connected to a constant net
-FA2/A0 input add_126_add_5_11is connected to a constant net
-FA2/A1 input add_126_add_5_11is connected to a constant net
-FA2/B1 input add_126_add_5_11is connected to a constant net
-FA2/C1 input add_126_add_5_11is connected to a constant net
-FA2/D1 input add_126_add_5_11 has no outgoing device arc
-FA2/CI1 input add_126_add_5_11 has no outgoing device arc
-     ** patternmaker/add_126_add_5_11/CO0 is driving a pin on an incomplete path
-FA2/B0 input add_126_add_5_11 is on an incomplete path
-FA2/C0 input add_126_add_5_11is connected to a constant net
-FA2/CI0 input add_126_add_5_11 is on an incomplete path
+FA2/A0 input add_276_4is connected to a constant net
+FA2/A1 input add_276_4is connected to a constant net
+FA2/A0 input add_12_add_5_3is connected to a constant net
+FA2/A1 input add_12_add_5_3is connected to a constant net
+FA2/A0 input add_12_add_5_1is connected to a constant net
+FA2/A1 input add_12_add_5_1is connected to a constant net
+FA2/A0 input add_6_add_5_11is connected to a constant net
+FA2/A1 input add_6_add_5_11is connected to a constant net
+FA2/CI1 input add_6_add_5_11 has no outgoing device arc
+FA2/A0 input add_276_6is connected to a constant net
+FA2/A1 input add_276_6is connected to a constant net
+FA2/CI1 input add_276_6 has no outgoing device arc
+FA2/A0 input add_6_add_5_7is connected to a constant net
+FA2/A1 input add_6_add_5_7is connected to a constant net
+FA2/A0 input add_276_2is connected to a constant net
+FA2/A1 input add_276_2is connected to a constant net
+FA2/A0 input add_6_add_5_9is connected to a constant net
+FA2/A1 input add_6_add_5_9is connected to a constant net
+FA2/A0 input counter_125_add_4_1is connected to a constant net
+FA2/A1 input counter_125_add_4_1is connected to a constant net
+FA2/A0 input counter_125_add_4_17is connected to a constant net
+FA2/A1 input counter_125_add_4_17is connected to a constant net
+FA2/A0 input counter_125_add_4_19is connected to a constant net
+FA2/A1 input counter_125_add_4_19is connected to a constant net
+FA2/A0 input counter_125_add_4_15is connected to a constant net
+FA2/A1 input counter_125_add_4_15is connected to a constant net
+FA2/A0 input counter_125_add_4_21is connected to a constant net
+FA2/A1 input counter_125_add_4_21is connected to a constant net
+FA2/CI1 input counter_125_add_4_21 has no outgoing device arc
+HSOSC_CORE/CLKHFPU input the_hsoscis connected to a constant net
+HSOSC_CORE/CLKHFEN input the_hsoscis connected to a constant net
+HSOSC_CORE/TRIM9 input the_hsoscis connected to a constant net
+HSOSC_CORE/TRIM8 input the_hsoscis connected to a constant net
+HSOSC_CORE/TRIM7 input the_hsoscis connected to a constant net
+HSOSC_CORE/TRIM6 input the_hsoscis connected to a constant net
+HSOSC_CORE/TRIM5 input the_hsoscis connected to a constant net
+HSOSC_CORE/TRIM4 input the_hsoscis connected to a constant net
+HSOSC_CORE/TRIM3 input the_hsoscis connected to a constant net
+HSOSC_CORE/TRIM2 input the_hsoscis connected to a constant net
+HSOSC_CORE/TRIM1 input the_hsoscis connected to a constant net
+HSOSC_CORE/TRIM0 input the_hsoscis connected to a constant net
+FA2/A0 input add_6_add_5_5is connected to a constant net
+FA2/A1 input add_6_add_5_5is connected to a constant net
+FA2/A0 input counter_125_add_4_9is connected to a constant net
+FA2/A1 input counter_125_add_4_9is connected to a constant net
+FA2/A0 input counter_125_add_4_11is connected to a constant net
+FA2/A1 input counter_125_add_4_11is connected to a constant net
+IOL_B/DO1 input shift_i0is connected to a constant net
+IOL_B/HOLD input shift_i0is connected to a constant net
+FA2/A0 input counter_125_add_4_13is connected to a constant net
+FA2/A1 input counter_125_add_4_13is connected to a constant net
+FA2/A0 input sub_42_add_2_add_5_3is connected to a constant net
+FA2/A1 input sub_42_add_2_add_5_3is connected to a constant net
+FA2/A0 input add_366_4is connected to a constant net
+FA2/A1 input add_366_4is connected to a constant net
+FA2/A0 input counter_125_add_4_7is connected to a constant net
+FA2/A1 input counter_125_add_4_7is connected to a constant net
+FA2/A0 input counter_125_add_4_5is connected to a constant net
+FA2/A1 input counter_125_add_4_5is connected to a constant net
+FA2/A0 input counter_125_add_4_3is connected to a constant net
+FA2/A1 input counter_125_add_4_3is connected to a constant net
 PLL_B/DYNAMICDELAY7 input u_PLL_Bis connected to a constant net
 PLL_B/DYNAMICDELAY6 input u_PLL_Bis connected to a constant net
 PLL_B/DYNAMICDELAY5 input u_PLL_Bis connected to a constant net
@@ -98,241 +85,199 @@ PLL_B/SDI input u_PLL_Bis connected to a constant net
 PLL_B/LATCH input u_PLL_Bis connected to a constant net
 PLL_B/INTFBOUT output  u_PLL_B has no incoming device arc
      *** pll/lscc_pll_inst/u_PLL_B/FEEDBACK is driven by constant or a pin on an incomplete path
-FA2/A0 input add_126_add_5_7is connected to a constant net
-FA2/A1 input add_126_add_5_7is connected to a constant net
-FA2/A0 input add_126_add_5_5is connected to a constant net
-FA2/A1 input add_126_add_5_5is connected to a constant net
-FA2/A0 input mod_18_unary_minus_2_add_3_5is connected to a constant net
-FA2/A1 input mod_18_unary_minus_2_add_3_5is connected to a constant net
-FA2/A0 input mod_18_unary_minus_2_add_3_3is connected to a constant net
-FA2/A1 input mod_18_unary_minus_2_add_3_3is connected to a constant net
-FA2/A0 input mod_18_unary_minus_2_add_3_7is connected to a constant net
-FA2/A1 input mod_18_unary_minus_2_add_3_7is connected to a constant net
-FA2/A0 input add_12_add_5_7is connected to a constant net
-FA2/A1 input add_12_add_5_7is connected to a constant net
-FA2/A0 input mod_18_unary_minus_2_add_3_11is connected to a constant net
-FA2/A1 input mod_18_unary_minus_2_add_3_11is connected to a constant net
-FA2/CI1 input mod_18_unary_minus_2_add_3_11 has no outgoing device arc
-FA2/A0 input mod_18_unary_minus_2_add_3_9is connected to a constant net
-FA2/A1 input mod_18_unary_minus_2_add_3_9is connected to a constant net
-FA2/A0 input mod_13_add_426_5is connected to a constant net
-FA2/A1 input mod_13_add_426_5is connected to a constant net
-FA2/A0 input add_8_add_5_3is connected to a constant net
-FA2/A1 input add_8_add_5_3is connected to a constant net
-FA2/A0 input add_126_add_5_1is connected to a constant net
-FA2/A1 input add_126_add_5_1is connected to a constant net
-FA2/A0 input add_8_add_5_9is connected to a constant net
-FA2/A1 input add_8_add_5_9is connected to a constant net
-FA2/A0 input add_126_add_5_3is connected to a constant net
-FA2/A1 input add_126_add_5_3is connected to a constant net
-HSOSC_CORE/CLKHFPU input the_hsoscis connected to a constant net
-HSOSC_CORE/CLKHFEN input the_hsoscis connected to a constant net
-HSOSC_CORE/TRIM9 input the_hsoscis connected to a constant net
-HSOSC_CORE/TRIM8 input the_hsoscis connected to a constant net
-HSOSC_CORE/TRIM7 input the_hsoscis connected to a constant net
-HSOSC_CORE/TRIM6 input the_hsoscis connected to a constant net
-HSOSC_CORE/TRIM5 input the_hsoscis connected to a constant net
-HSOSC_CORE/TRIM4 input the_hsoscis connected to a constant net
-HSOSC_CORE/TRIM3 input the_hsoscis connected to a constant net
-HSOSC_CORE/TRIM2 input the_hsoscis connected to a constant net
-HSOSC_CORE/TRIM1 input the_hsoscis connected to a constant net
-HSOSC_CORE/TRIM0 input the_hsoscis connected to a constant net
-FA2/A0 input counter_127_add_4_5is connected to a constant net
-FA2/A1 input counter_127_add_4_5is connected to a constant net
+FA2/A0 input col_127_add_4_1is connected to a constant net
+FA2/A1 input col_127_add_4_1is connected to a constant net
+FA2/A0 input add_6_add_5_3is connected to a constant net
+FA2/A1 input add_6_add_5_3is connected to a constant net
 VLO/Z GND  i1
-     *** sixtyHZclock/clock_count_128__i1/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_19/A0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_19/B0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_19/A1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_19/B1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_17/A0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_17/B0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_17/A1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_17/B1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_15/A0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_15/B0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_15/A1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_15/B1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_13/A0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_13/B0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_13/A1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_13/B1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_11/A0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_11/B0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_11/A1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_11/B1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_9/A0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_9/B0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_9/A1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_9/B1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_7/A0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_7/B0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_7/A1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_7/B1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_5/A0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_5/B0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_5/A1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_5/B1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_3/A0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_3/B0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_3/A1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_3/B1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_1/A0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_1/B0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_1/C0 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_1/A1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i2/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i3/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i4/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i5/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i6/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i7/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i8/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i9/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i10/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i11/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i12/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i13/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i14/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i15/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i16/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i17/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i18/SR is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i0/SR is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_11/A0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_11/B0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_11/A1 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_11/B1 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_9/A0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_9/B0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_9/A1 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_9/B1 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_7/A0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_7/B0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_7/A1 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_7/B1 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_5/A0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_5/B0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_5/A1 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_5/B1 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_3/A0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_3/B0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_3/A1 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_3/B1 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_1/A0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_1/B0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_1/C0 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_1/A1 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_7/A0 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_7/C0 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_7/A1 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_7/C1 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_5/A0 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_5/C0 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_5/A1 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_5/C1 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_1/A0 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_1/B0 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_1/C0 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_1/A1 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_11/A0 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_11/C0 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_11/A1 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_11/C1 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_9/C0 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_9/C1 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_3/C0 is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_3/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_7/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_7/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_12_add_5_9/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_12_add_5_9/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_12_add_5_7/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_12_add_5_7/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_11/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_11/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_9/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_9/B1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i1/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_19/A0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_19/B0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_19/A1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_19/B1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_17/A0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_17/B0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_17/A1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_17/B1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_15/A0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_15/B0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_15/A1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_15/B1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_13/A0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_13/B0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_13/A1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_13/B1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_11/A0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_11/B0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_11/A1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_11/B1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_9/A0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_9/A1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i2/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i3/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i4/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i5/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i6/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i7/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i8/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i9/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i10/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i11/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i12/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i13/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i14/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i15/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i16/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i17/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i18/SR is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_7/A0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_7/A1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_5/A0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_5/A1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_3/A0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_3/A1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_1/A0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_1/A1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i0/SR is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_5/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_13_add_426_5/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_5/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_13_add_426_5/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_7/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_7/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_5/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_5/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_3/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_3/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_3/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_3/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_1/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_1/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_1/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_1/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_5/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_5/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_5/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_5/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_11/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_11/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_3/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_3/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_3/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_3/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_11/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_11/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_329_8/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_329_8/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_329_6/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_329_6/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_329_4/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_329_4/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_329_2/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_9/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_9/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_7/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_7/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_5/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_5/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_9/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_9/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_3/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_3/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_1/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_1/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_11/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_11/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_11/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_11/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_9/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_9/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_9/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_9/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_7/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_7/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_7/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_5/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_5/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_5/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_5/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_7/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_7/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_7/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_7/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_5/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_5/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_5/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_5/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_3/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_3/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_3/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_3/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_1/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_1/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_1/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_1/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_3/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_3/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_3/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_3/C1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_1/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_1/B0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_1/C0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_1/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_11/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_11/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_11/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_11/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_9/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_9/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_9/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_9/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_7/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_7/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_7/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_7/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_3/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_3/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_3/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_3/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_1/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_1/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_1/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_1/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_5/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_5/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_5/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_5/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_3/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_3/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_3/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_3/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_1/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_1/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_1/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_1/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_11/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_11/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_11/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_11/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_12/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_12/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_12/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_12/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_12/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_9/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_9/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_9/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_9/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_10/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_10/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_8/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_8/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_8/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_8/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_7/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_7/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_7/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_7/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_5/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_5/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_5/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_5/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_3/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_3/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_3/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_3/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_12/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_12/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_12/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_12/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_6/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_6/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_6/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_6/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_10/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_10/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_1/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_1/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_1/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_1/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_4/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_4/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_11/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_11/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_11/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_11/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_9/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_9/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_9/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_9/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_7/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_7/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_7/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_2/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_2/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_2/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_5/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_5/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_5/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_5/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_11/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_11/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_11/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_11/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_8/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_8/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_6/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_6/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_3/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_3/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_3/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_3/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_1/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_1/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_1/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_1/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_12/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_12/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_12/B1 is driven by constant or a pin on an incomplete path
@@ -341,111 +286,251 @@ VLO/Z GND  i1
      *** game/phys_map/mod_18_add_379_10/C0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_10/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_10/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_1/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_1/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_1/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_1/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_8/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_8/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_8/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_12/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_12/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_12/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_12/C1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_6/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_6/C0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_6/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_6/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_10/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_10/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_8/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_8/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_4/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_4/C0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_4/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_4/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_5/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_5/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_2/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_2/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_18_add_379_2/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_6/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_6/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_9/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_9/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_9/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_9/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_7/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_7/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_7/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_4/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_4/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_5/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_5/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_5/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_5/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_3/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_3/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_3/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_3/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_3/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_3/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_1/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_1/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_1/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_1/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_2/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_2/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_11/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_11/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_11/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_1/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_1/B0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_1/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_1/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_4/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_4/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/y_i5/SR is driven by constant or a pin on an incomplete path
+     *** game/phys_map/y_i9/SR is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_2/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_2/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_11/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_11/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_9/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_9/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_9/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_9/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_7/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_7/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_7/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_7/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_5/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_5/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_5/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_5/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_9/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_9/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_9/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_9/C1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_9/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_9/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_3/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_3/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_3/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_3/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_1/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_1/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_1/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_1/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_7/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_7/A1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_9/A0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_9/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/sub_42_add_2_add_5_5/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/sub_42_add_2_add_5_5/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_7/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_7/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_7/C1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_11/A0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_11/C0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_11/A1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_11/C1 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_126_add_5_3/C0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_126_add_5_3/C1 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_126_add_5_1/B0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_126_add_5_1/C0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_125_add_5_9/C0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_125_add_5_9/C1 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_125_add_5_7/C0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_125_add_5_7/C1 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_125_add_5_5/C0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_125_add_5_5/C1 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_125_add_5_3/C0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_125_add_5_3/C1 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_125_add_5_1/B0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_125_add_5_1/C0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_126_add_5_9/C0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_126_add_5_9/C1 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_126_add_5_7/C0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_126_add_5_7/C1 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_126_add_5_5/C0 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_126_add_5_5/C1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_5/B0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_5/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_5/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_5/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_5/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_9/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_9/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_9/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_9/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_3/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_3/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_3/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_3/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/sub_42_add_2_add_5_1/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/sub_42_add_2_add_5_1/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/sub_42_add_2_add_5_1/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/sub_42_add_2_add_5_1/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_1/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_1/B0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_1/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_1/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_11/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_11/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_11/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_7/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_7/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_7/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_12_add_5_7/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_9/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_9/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_7/A0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_7/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_7/A1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_7/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WADDR10 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WADDR9 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WADDR8 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WADDR7 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WADDR6 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WADDR5 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WADDR4 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WADDR3 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WADDR2 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WADDR1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WADDR0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N15 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N14 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N13 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N12 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N11 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N10 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N9 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N8 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N7 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N6 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N5 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N4 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N3 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N2 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/MASK_N0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA15 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA14 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA13 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA12 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA11 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA10 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA9 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA8 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA7 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA6 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA5 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA4 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA3 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA2 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WDATA0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WCLK is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/WE is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WADDR10 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WADDR9 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WADDR8 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WADDR7 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WADDR6 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WADDR5 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WADDR4 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WADDR3 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WADDR2 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WADDR1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WADDR0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N15 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N14 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N13 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N12 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N11 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N10 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N9 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N8 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N7 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N6 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N5 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N4 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N3 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N2 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/MASK_N0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA15 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA14 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA13 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA12 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA11 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA10 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA9 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA8 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA7 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA6 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA5 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA4 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA3 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA2 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WDATA0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WCLK is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/WE is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WADDR10 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WADDR9 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WADDR8 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WADDR7 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WADDR6 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WADDR5 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WADDR4 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WADDR3 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WADDR2 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WADDR1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WADDR0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N15 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N14 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N13 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N12 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N11 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N10 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N9 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N8 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N7 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N6 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N5 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N4 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N3 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N2 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/MASK_N0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA15 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA14 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA13 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA12 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA11 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA10 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA9 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA8 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA7 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA6 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA5 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA4 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA3 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA2 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WDATA0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WCLK is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/WE is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_3/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_3/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_1/B0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_1/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_11/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_11/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_9/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_9/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_7/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_1/B0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_1/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_11/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_11/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_9/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_9/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_7/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_7/C1 is driven by constant or a pin on an incomplete path
      *** controller1/output_i6/SR is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_3/A0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_3/B0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_3/A1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_3/B1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_1/A0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_1/B0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_1/C0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_1/A1 is driven by constant or a pin on an incomplete path
      *** controller1/output_i5/SR is driven by constant or a pin on an incomplete path
      *** controller1/output_i4/SR is driven by constant or a pin on an incomplete path
      *** controller1/output_i3/SR is driven by constant or a pin on an incomplete path
@@ -457,123 +542,155 @@ VLO/Z GND  i1
      *** controller1/shift_i3/SR is driven by constant or a pin on an incomplete path
      *** controller1/shift_i2/SR is driven by constant or a pin on an incomplete path
      *** controller1/shift_i1/SR is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_13/B0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_13/B1 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_11/B0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_11/B1 is driven by constant or a pin on an incomplete path
      *** controller1/output_i1/SR is driven by constant or a pin on an incomplete path
-     *** controller1/shift_i0/DO1 is driven by constant or a pin on an incomplete path
      *** controller1/shift_i0/DO0 is driven by constant or a pin on an incomplete path
      *** controller1/shift_i0/IOLTO is driven by constant or a pin on an incomplete path
-     *** controller1/shift_i0/HOLD is driven by constant or a pin on an incomplete path
      *** controller1/shift_i0/OUTCLK is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_21/A0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_21/B0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_21/A1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_21/B1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_19/A0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_19/B0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_19/A1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_19/B1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_17/A0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_17/B0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_17/A1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_17/B1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_15/A0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_15/B0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_15/A1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_15/B1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_13/A0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_13/B0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_13/A1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_13/B1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_11/A0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_11/B0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_11/A1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_11/B1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_9/A0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_9/B0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_9/A1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_9/B1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_7/A0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_7/B0 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_7/A1 is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_21/B0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_21/B1 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_19/B0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_19/B1 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_17/B0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_17/B1 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_15/B0 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_15/B1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_11/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_11/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_11/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_11/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_9/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_9/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_9/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_9/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_7/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_7/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_7/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_7/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_5/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_5/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_5/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_5/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_3/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_3/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_3/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_3/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_1/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_1/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_1/C0 is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_1/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_11/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_11/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_11/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_11/B1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_9/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_9/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_7/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_7/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_5/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_5/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_3/A0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_3/A1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_1/C0 is driven by constant or a pin on an incomplete path
      *** ext12m_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** controller_in_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
-FA2/CI1 input counter_127_add_4_21 has no outgoing device arc
-FA2/D1 input add_342_11 has no outgoing device arc
-FA2/CI1 input add_342_11 has no outgoing device arc
-     ** game/phys_map/add_342_11/CO0 is driving a pin on an incomplete path
-FA2/B0 input add_342_11 is on an incomplete path
-FA2/C0 input add_342_11is connected to a constant net
-FA2/CI0 input add_342_11 is on an incomplete path
+EBR_B/WCLKE input mux_20is connected to a constant net
+EBR_B/WCLKE input mux_19is connected to a constant net
+EBR_B/WCLKE input mux_18is connected to a constant net
+FA2/CI1 input add_8_add_5_11 has no outgoing device arc
+FA2/CI1 input col_127_add_4_11 has no outgoing device arc
+FA2/CI1 input mod_13_unary_minus_2_add_3_11 has no outgoing device arc
+FA2/D1 input add_366_12 has no outgoing device arc
+FA2/CI1 input add_366_12 has no outgoing device arc
+     ** game/phys_map/add_366_12/CO0 is driving a pin on an incomplete path
+FA2/B0 input add_366_12 is on an incomplete path
+FA2/CI0 input add_366_12 is on an incomplete path
+FA2/D1 input add_275_12 has no outgoing device arc
+FA2/CI1 input add_275_12 has no outgoing device arc
+     ** game/phys_map/add_275_12/CO0 is driving a pin on an incomplete path
+FA2/B0 input add_275_12 is on an incomplete path
+FA2/C0 input add_275_12 is on an incomplete path
+FA2/CI0 input add_275_12 is on an incomplete path
+FA2/CI1 input mod_18_unary_minus_2_add_3_11 has no outgoing device arc
+FA2/D1 input add_379_11 has no outgoing device arc
+FA2/CI1 input add_379_11 has no outgoing device arc
+     ** game/phys_map/add_379_11/CO0 is driving a pin on an incomplete path
+FA2/B0 input add_379_11 is on an incomplete path
+FA2/C0 input add_379_11is connected to a constant net
+FA2/CI0 input add_379_11 is on an incomplete path
+FA2/D0 input add_366_2is connected to a constant net
+FA2/CI1 input add_17_add_5_11 has no outgoing device arc
 FA2/D1 input mod_18_add_379_12 has no outgoing device arc
 FA2/CI1 input mod_18_add_379_12 has no outgoing device arc
      ** game/phys_map/mod_18_add_379_12/CO0 is driving a pin on an incomplete path
 FA2/B0 input mod_18_add_379_12 is on an incomplete path
 FA2/C0 input mod_18_add_379_12is connected to a constant net
 FA2/CI0 input mod_18_add_379_12 is on an incomplete path
-FA2/D1 input add_239_12 has no outgoing device arc
-FA2/CI1 input add_239_12 has no outgoing device arc
-     ** game/phys_map/add_239_12/CO0 is driving a pin on an incomplete path
-FA2/B0 input add_239_12 is on an incomplete path
-FA2/C0 input add_239_12 is on an incomplete path
-FA2/CI0 input add_239_12 is on an incomplete path
-FA2/CI1 input add_8_add_5_11 has no outgoing device arc
 FA2/D0 input mod_18_add_379_2is connected to a constant net
-FA2/CI1 input add_340_9 has no outgoing device arc
 FA2/CI1 input sub_42_add_2_add_5_11 has no outgoing device arc
-FA2/CI1 input mod_13_add_426_11 has no outgoing device arc
+FA2/CI1 input add_377_9 has no outgoing device arc
 FA2/CI1 input add_12_add_5_11 has no outgoing device arc
-FA2/CI1 input col_129_add_4_11 has no outgoing device arc
-FA2/CI1 input clock_count_128_add_4_19 has no outgoing device arc
+FA2/CI1 input mod_13_add_426_11 has no outgoing device arc
+FA2/CI1 input clock_count_126_add_4_19 has no outgoing device arc
 VHI/Z VCC  RGB_pad[3].vhi_inst
-     *** sixtyHZclock/clock_count_128__i1/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128_add_4_1/B1 is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i2/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i3/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i4/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i5/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i6/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i7/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i8/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i9/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i10/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i11/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i12/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i13/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i14/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i15/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i16/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i17/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i18/SP is driven by constant or a pin on an incomplete path
-     *** sixtyHZclock/clock_count_128__i0/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129__i0/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129__i1/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129_add_4_1/B1 is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129__i2/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129__i3/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129__i4/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129__i5/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129__i6/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129__i7/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129__i8/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129__i9/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/col_129__i10/SP is driven by constant or a pin on an incomplete path
-     *** internalvga/add_8_add_5_1/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/yVelocity__i3/SP is driven by constant or a pin on an incomplete path
-     *** game/phys_map/yVelocity__i2/SP is driven by constant or a pin on an incomplete path
-     *** game/phys_map/yVelocity__i1/SP is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_unary_minus_2_add_3_1/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_1/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_329_10/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_329_10/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_329_2/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_unary_minus_2_add_3_1/B1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/y_i1/SP is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_7/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_342_1/C1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i1/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i2/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i3/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i4/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i5/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i6/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i7/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i8/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i9/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i10/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i11/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i12/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i13/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i14/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i15/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i16/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i17/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i18/SP is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** sixtyHZclock/clock_count_126__i0/SP is driven by constant or a pin on an incomplete path
+     *** game/phys_map/yVelocity__i0/SP is driven by constant or a pin on an incomplete path
      *** game/phys_map/add_12_add_5_1/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_17_add_5_1/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_add_379_8/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_1/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_unary_minus_2_add_3_1/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_10/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_10/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/y_i1/SP is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_unary_minus_2_add_3_1/B1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/sub_42_add_2_add_5_3/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/sub_42_add_2_add_5_3/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_7/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_366_2/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_379_1/C1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/y_i2/SP is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_add_379_8/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_18_add_379_2/C0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/y_i3/SP is driven by constant or a pin on an incomplete path
      *** game/phys_map/y_i4/SP is driven by constant or a pin on an incomplete path
      *** game/phys_map/y_i5/SP is driven by constant or a pin on an incomplete path
@@ -582,30 +699,43 @@ VHI/Z VCC  RGB_pad[3].vhi_inst
      *** game/phys_map/y_i8/SP is driven by constant or a pin on an incomplete path
      *** game/phys_map/y_i9/SP is driven by constant or a pin on an incomplete path
      *** game/phys_map/y_i10/SP is driven by constant or a pin on an incomplete path
-     *** game/phys_map/yVelocity__i0/SP is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_5/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_5/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_18_add_379_2/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_7/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_3/C0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_3/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_340_1/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/add_239_2/D0 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/mod_13_add_426_11/C1 is driven by constant or a pin on an incomplete path
-     *** game/phys_map/sub_42_add_2_add_5_1/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/yVelocity__i1/SP is driven by constant or a pin on an incomplete path
+     *** game/phys_map/yVelocity__i2/SP is driven by constant or a pin on an incomplete path
+     *** game/phys_map/yVelocity__i3/SP is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_275_2/D0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_11/C0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_11/C1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_9/C0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_9/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_17_add_5_1/C1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_7/C0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/sub_42_add_2_add_5_7/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/sub_42_add_2_add_5_5/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/sub_42_add_2_add_5_5/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_7/C0 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/sub_42_add_2_add_5_1/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/add_377_1/C1 is driven by constant or a pin on an incomplete path
+     *** game/phys_map/mod_13_add_426_11/C1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_13_add_426_9/C0 is driven by constant or a pin on an incomplete path
      *** game/phys_map/mod_13_add_426_9/C1 is driven by constant or a pin on an incomplete path
      *** game/phys_map/y_i0/SP is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_126_add_5_1/C1 is driven by constant or a pin on an incomplete path
-     *** patternmaker/add_125_add_5_1/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/RCLKE is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_20/RE is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/RCLKE is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_19/RE is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/RCLKE is driven by constant or a pin on an incomplete path
+     *** patternmaker/tony_map/mux_18/RE is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_5/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_5/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_6_add_5_1/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_7/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_5/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_5/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_3/C0 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_3/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_12_add_5_1/C1 is driven by constant or a pin on an incomplete path
+     *** patternmaker/add_276_2/D0 is driven by constant or a pin on an incomplete path
      *** controller1/output_i6/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127_add_4_1/B1 is driven by constant or a pin on an incomplete path
      *** controller1/output_i5/SP is driven by constant or a pin on an incomplete path
      *** controller1/output_i4/SP is driven by constant or a pin on an incomplete path
      *** controller1/output_i3/SP is driven by constant or a pin on an incomplete path
@@ -615,31 +745,45 @@ VHI/Z VCC  RGB_pad[3].vhi_inst
      *** controller1/shift_i5/SP is driven by constant or a pin on an incomplete path
      *** controller1/shift_i4/SP is driven by constant or a pin on an incomplete path
      *** controller1/shift_i3/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i1/SP is driven by constant or a pin on an incomplete path
      *** controller1/shift_i2/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i1/SP is driven by constant or a pin on an incomplete path
      *** controller1/shift_i1/SP is driven by constant or a pin on an incomplete path
      *** controller1/output_i1/SP is driven by constant or a pin on an incomplete path
      *** controller1/shift_i0/CE is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i2/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i3/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i4/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i5/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i6/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i7/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i8/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i9/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i10/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i11/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i12/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i13/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i14/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i15/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i16/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i17/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i18/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i19/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i20/SP is driven by constant or a pin on an incomplete path
-     *** controller1/counter_127__i21/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i2/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i3/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i4/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i5/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i6/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i7/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i8/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i9/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i10/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i11/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i12/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i13/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i14/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i15/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i16/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i17/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i18/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i19/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i20/SP is driven by constant or a pin on an incomplete path
+     *** controller1/counter_125__i21/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127__i0/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/add_8_add_5_1/C1 is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127__i1/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127__i2/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127__i3/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127__i4/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127__i5/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127__i6/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127__i7/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127__i8/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127__i9/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127__i10/SP is driven by constant or a pin on an incomplete path
+     *** internalvga/col_127_add_4_1/B1 is driven by constant or a pin on an incomplete path
      *** RGB_pad[3].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** RGB_pad[4].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** RGB_pad[5].bb_inst/T_N is driven by constant or a pin on an incomplete path

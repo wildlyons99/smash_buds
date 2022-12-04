@@ -49,7 +49,7 @@ Peak Memory Usage: 110 MB
 ibisgen "smack_buds_impl_1.udb" "C:/Program Files/lscc/radiant/3.0/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 3.0.0.24.1
 
-Sat Dec  3 21:27:05 2022
+Sat Dec  3 22:05:12 2022
 
 Loading smack_buds_impl_1.udb ...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
@@ -99,5 +99,5 @@ Writing Verilog netlist to file smack_buds_impl_1_vo.vo
 Writing SDF timing to file smack_buds_impl_1_vo.sdf
 Backanno finished with 0 posted error messages.
 Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
-Peak Memory Usage: 90 MB
+Total REAL Time: 2 secs 
+Peak Memory Usage: 92 MB

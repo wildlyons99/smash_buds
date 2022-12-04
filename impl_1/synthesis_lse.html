@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Dec  3 21:26:25 2022
+Sat Dec  3 22:04:28 2022
 
 
 Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f smack_buds_impl_1_lattice.synproj -gui -msgset //vs-home/tlyons01/es4/smack_buds/promote.xml 
@@ -138,6 +138,8 @@ VHDL library = work
 VHDL design file = //vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd
 VHDL library = work
 VHDL design file = //vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd
+VHDL library = work
+VHDL design file = //vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Compile design.
 Compile Design Begin
@@ -219,6 +221,11 @@ Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.v
 Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd
 
 INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(5): analyzing entity collisions. VHDL-1012
+Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd. VHDL-1481
+Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd
+
+INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd(5): analyzing entity tony_idle_rom. VHDL-1012
+INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd(14): analyzing architecture synth. VHDL-1010
 INFO - synthesis: The default VHDL library search path is now "//vs-home/tlyons01/es4/smack_buds/impl_1". VHDL-1504
 Top module language type = VHDL.
 unit top is not yet analyzed. VHDL-1485
@@ -265,17 +272,18 @@ INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are s
 
 ################### Begin Area Report (top)######################
 Number of register bits => 101 of 5280 (1 % )
-CCU2 => 110
+EBR_B => 3
+CCU2 => 113
 FD1P3XZ => 101
 HSOSC_CORE => 1
 IB => 2
 IOL_B => 1
-LUT4 => 277
+LUT4 => 298
 OB => 12
 PLL_B => 1
 ################### End Area Report ##################
-Number of odd-length carry chains : 14
-Number of even-length carry chains : 3
+Number of odd-length carry chains : 16
+Number of even-length carry chains : 2
 
 
 <A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
@@ -283,33 +291,33 @@ Number of even-length carry chains : 3
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 6
+  Net : pll/lscc_pll_inst/internal25clk, loads : 0
   Net : controller1/controller_latch_c, loads : 1
   Net : controller1/controller_clock_c, loads : 1
-  Net : ext12m_c, loads : 1
   Net : sixtyHZclock/internal60hzclk, loads : 0
-  Net : pll/lscc_pll_inst/internal25clk, loads : 0
+  Net : ext12m_c, loads : 1
   Net : pll/lscc_pll_inst/testPLLout_c, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : controller1/x_10__N_191, loads : 27
-  Net : game/phys_map/n51_adj_247, loads : 23
+  Net : controller1/x_10__N_197, loads : 26
+  Net : game/phys_map/n51, loads : 23
   Net : controller1/clk, loads : 21
   Net : controller1/counter_20__N_51, loads : 21
   Net : game/phys_map/n644, loads : 18
   Net : game/phys_map/n609, loads : 15
-  Net : game/phys_map/n51, loads : 14
+  Net : game/phys_map/n51_adj_240, loads : 14
   Net : controller1/controller_buttons_signal[1], loads : 11
+  Net : n397, loads : 11
   Net : internalvga/col_10__N_104, loads : 11
-  Net : internalvga/row_10__N_116, loads : 11
 ################### End Clock Report ##################
 
-Peak Memory Usage: 123 MB
+Peak Memory Usage: 142 MB
 
 --------------------------------------------------------------
-Total CPU Time: 3 secs 
-Total REAL Time: 4 secs 
+Total CPU Time: 4 secs 
+Total REAL Time: 5 secs 
 --------------------------------------------------------------
 
 

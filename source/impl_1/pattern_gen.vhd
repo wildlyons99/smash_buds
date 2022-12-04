@@ -17,31 +17,56 @@ end pattern_gen;
 architecture synth of pattern_gen is
 
 signal toout : std_logic_vector(5 downto 0);
-signal onsquarex : std_logic;
-signal onsquarey : std_logic;
-signal fromrom : std_logic_vector(5 downto 0);
---signal diffcolx : std_logic_vector(9 downto 0);
---signal diffrowy : std_logic_vector(9 downto 0);
---signal romx : unsigned(1 downto 0);
---signal romy : unsigned(1 downto 0);
+--signal onsquarex : std_logic;
+--signal onsquarey : std_logic;
+
+-- TONY ROM signals
+signal tony_color : std_logic_vector(5 downto 0);
+signal drawing_tony_x : std_logic;
+signal drawing_tony_y : std_logic;
+signal diff_x_vector : std_logic_vector(10 downto 0);
+signal diff_y_vector : std_logic_vector(10 downto 0);
+signal diff_x : signed(10 downto 0);
+signal diff_y : signed(10 downto 0);
+signal tony_width : signed(5 downto 0);
+signal tony_height : signed(6 downto 0);
+
 signal background : signed(6 downto 0); 
 
+component tony_idle_rom is
+  port(
+	  clk : in std_logic;
+	  xadr: in unsigned(4 downto 0);
+	  yadr : in unsigned(5 downto 0); -- 0-1023
+	  rgb : out std_logic_vector(5 downto 0)
+      );
+end component;
+
 begin
+   tony_map : tony_idle_rom port map(
+									 clk => clk,
+									 xadr => unsigned(diff_x_vector(4 downto 0)),
+									 yadr => unsigned(diff_y_vector(5 downto 0)),
+									 rgb => tony_color
+							  		 );
    
+   tony_width <= 6d"25";
+   tony_height <= 7d"63";
    
-   --if ((row >= 75) and (row <= 80)) then 
-	--	background 
+   drawing_tony_x <= '1' when (col >= x and col <= x + tony_width) else '0';
+   drawing_tony_y <= '1' when (row >= y and row <= y + tony_height) else '0';
    
+   diff_x <= col - x;
+   diff_y <= row - y;
    
-   onsquarex <= '1' when (col >= x and col <= x + 2) else '0';
-   onsquarey <= '1' when (row >= y and row <= y + 2) else '0';
-   toout <= "000000" when (onsquarex and onsquarey) else 
+   diff_x_vector <= std_logic_vector(unsigned(diff_x));
+   diff_y_vector <= std_logic_vector(unsigned(diff_y));
+   
+ 
+   toout <= tony_color when (drawing_tony_x and drawing_tony_y) else 
    		"111111";
    rgb <= toout when valid else 6d"0";
-   --diffcolx <= std_logic_vector(col - x - 1);
-   --diffrowy <= std_logic_vector(row - y);
-   --romx <= unsigned(diffcolx(1 downto 0));
-   --romy <= unsigned(diffrowy(1 downto 0));
+  
 end;
 
 

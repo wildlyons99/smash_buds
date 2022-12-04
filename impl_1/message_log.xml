@@ -836,6 +836,22 @@
             <Navigation>5</Navigation>
         </Message>
         <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd(5): </Dynamic>
+            <Dynamic>tony_idle_rom</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd(14): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
@@ -1238,6 +1254,22 @@
             <Navigation>5</Navigation>
         </Message>
         <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd(5): </Dynamic>
+            <Dynamic>tony_idle_rom</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd(14): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_idle_rom.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
@@ -1294,7 +1326,7 @@
         <Message>
             <ID>35811145</ID>
             <Severity>1</Severity>
-            <Dynamic>i5873</Dynamic>
+            <Dynamic>i6468</Dynamic>
         </Message>
         <Message>
             <ID>70001944</ID>

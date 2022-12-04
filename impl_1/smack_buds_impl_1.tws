@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Sat Dec  3 21:26:30 2022
+Sat Dec  3 22:04:34 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -75,7 +75,8 @@ Single Clock Domain
           Clock internal25clk           |                    |       Period       |     Frequency      
 -------------------------------------------------------------------------------------------------------
  From internal25clk                     |             Target |               +INF |          0.000 MHz 
-                                        | Actual (all paths) |               ---- |               ---- 
+                                        | Actual (all paths) |           1.340 ns |        746.269 MHz 
+patternmaker/tony_map/mux_20/RCLK (MPW) |   (50% duty cycle) |           1.340 ns |        746.269 MHz 
 -------------------------------------------------------------------------------------------------------
 
 Clock Domain Crossing
@@ -136,7 +137,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 7.38604%
+Constraint Coverage: 6.93767%
 
 3.1.2  Timing Errors
 ---------------------
@@ -152,16 +153,16 @@ Total Negative Slack: 0.000 ns (setup), 0.000 ns (hold)
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-controller1/counter_127__i21/D           |    3.390 ns 
-controller1/counter_127__i20/D           |    3.948 ns 
-controller1/counter_127__i19/D           |    4.506 ns 
-controller1/counter_127__i18/D           |    5.064 ns 
-controller1/counter_127__i17/D           |    5.622 ns 
-controller1/counter_127__i5/SR           |    5.899 ns 
-controller1/counter_127__i4/SR           |    5.899 ns 
-controller1/counter_127__i3/SR           |    5.899 ns 
-controller1/counter_127__i2/SR           |    5.899 ns 
-controller1/counter_127__i1/SR           |    5.899 ns 
+controller1/counter_125__i21/D           |    3.390 ns 
+controller1/counter_125__i20/D           |    3.948 ns 
+controller1/counter_125__i19/D           |    4.506 ns 
+controller1/counter_125__i18/D           |    5.064 ns 
+controller1/counter_125__i17/D           |    5.622 ns 
+controller1/counter_125__i5/SR           |    5.899 ns 
+controller1/counter_125__i4/SR           |    5.899 ns 
+controller1/counter_125__i3/SR           |    5.899 ns 
+controller1/counter_125__i2/SR           |    5.899 ns 
+controller1/counter_125__i1/SR           |    5.899 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|           0 
@@ -174,16 +175,16 @@ Setup # of endpoints with negative slack:|           0
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-controller1/counter_127__i12/D           |    4.196 ns 
-controller1/counter_127__i11/D           |    4.196 ns 
-controller1/counter_127__i10/D           |    4.196 ns 
-controller1/counter_127__i9/D            |    4.196 ns 
-controller1/counter_127__i8/D            |    4.196 ns 
-controller1/counter_127__i7/D            |    4.196 ns 
-controller1/counter_127__i6/D            |    4.196 ns 
-controller1/counter_127__i5/D            |    4.196 ns 
-controller1/counter_127__i4/D            |    4.196 ns 
-controller1/counter_127__i3/D            |    4.196 ns 
+controller1/counter_125__i12/D           |    4.196 ns 
+controller1/counter_125__i11/D           |    4.196 ns 
+controller1/counter_125__i10/D           |    4.196 ns 
+controller1/counter_125__i9/D            |    4.196 ns 
+controller1/counter_125__i8/D            |    4.196 ns 
+controller1/counter_125__i7/D            |    4.196 ns 
+controller1/counter_125__i6/D            |    4.196 ns 
+controller1/counter_125__i5/D            |    4.196 ns 
+controller1/counter_125__i4/D            |    4.196 ns 
+controller1/counter_125__i3/D            |    4.196 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -205,20 +206,20 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-controller1/output_i6/D                 |    No arrival or required
-controller1/output_i5/D                 |    No arrival or required
-controller1/output_i4/D                 |    No arrival or required
-controller1/output_i3/D                 |    No arrival or required
-controller1/output_i2/D                 |    No arrival or required
-controller1/shift_i7/D                  |    No arrival or required
-controller1/shift_i6/D                  |    No arrival or required
-controller1/shift_i5/D                  |    No arrival or required
-controller1/shift_i4/D                  |    No arrival or required
-controller1/shift_i3/D                  |    No arrival or required
+internalvga/row__i7/D                   |    No arrival or required
+internalvga/row__i7/SP                  |    No arrival or required
+internalvga/row__i7/SR                  |    No arrival or required
+internalvga/row__i6/D                   |    No arrival or required
+internalvga/row__i6/SP                  |    No arrival or required
+internalvga/row__i6/SR                  |    No arrival or required
+internalvga/row__i5/D                   |    No arrival or required
+internalvga/row__i5/SP                  |    No arrival or required
+internalvga/row__i5/SR                  |    No arrival or required
+internalvga/row__i0/D                   |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                       151
+ts                                      |                       182
                                         |                          
 -------------------------------------------------------------------
 
@@ -280,8 +281,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i1/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i21/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i1/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i21/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 22
@@ -297,70 +298,70 @@ controller1/clk                                           NET DELAY      2.075  
 
 
 
-controller1/counter_127__i1/CK->controller1/counter_127__i1/Q
+controller1/counter_125__i1/CK->controller1/counter_125__i1/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
 controller1/n21                                           NET DELAY         2.075         5.541  1       
-controller1/counter_127_add_4_1/C1->controller1/counter_127_add_4_1/CO1
+controller1/counter_125_add_4_1/C1->controller1/counter_125_add_4_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344         5.885  2       
-controller1/n3894                                         NET DELAY         0.280         6.165  2       
-controller1/counter_127_add_4_3/CI0->controller1/counter_127_add_4_3/CO0
+controller1/n4416                                         NET DELAY         0.280         6.165  2       
+controller1/counter_125_add_4_3/CI0->controller1/counter_125_add_4_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         6.443  2       
-controller1/n7708                                         NET DELAY         0.280         6.723  2       
-controller1/counter_127_add_4_3/CI1->controller1/counter_127_add_4_3/CO1
+controller1/n8326                                         NET DELAY         0.280         6.723  2       
+controller1/counter_125_add_4_3/CI1->controller1/counter_125_add_4_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         7.001  2       
-controller1/n3896                                         NET DELAY         0.280         7.281  2       
-controller1/counter_127_add_4_5/CI0->controller1/counter_127_add_4_5/CO0
+controller1/n4418                                         NET DELAY         0.280         7.281  2       
+controller1/counter_125_add_4_5/CI0->controller1/counter_125_add_4_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         7.559  2       
-controller1/n7711                                         NET DELAY         0.280         7.839  2       
-controller1/counter_127_add_4_5/CI1->controller1/counter_127_add_4_5/CO1
+controller1/n8329                                         NET DELAY         0.280         7.839  2       
+controller1/counter_125_add_4_5/CI1->controller1/counter_125_add_4_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         8.117  2       
-controller1/n3898                                         NET DELAY         0.280         8.397  2       
-controller1/counter_127_add_4_7/CI0->controller1/counter_127_add_4_7/CO0
+controller1/n4420                                         NET DELAY         0.280         8.397  2       
+controller1/counter_125_add_4_7/CI0->controller1/counter_125_add_4_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         8.675  2       
-controller1/n7714                                         NET DELAY         0.280         8.955  2       
-controller1/counter_127_add_4_7/CI1->controller1/counter_127_add_4_7/CO1
+controller1/n8332                                         NET DELAY         0.280         8.955  2       
+controller1/counter_125_add_4_7/CI1->controller1/counter_125_add_4_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         9.233  2       
-controller1/n3900                                         NET DELAY         0.280         9.513  2       
-controller1/counter_127_add_4_9/CI0->controller1/counter_127_add_4_9/CO0
+controller1/n4422                                         NET DELAY         0.280         9.513  2       
+controller1/counter_125_add_4_9/CI0->controller1/counter_125_add_4_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         9.791  2       
-controller1/n7717                                         NET DELAY         0.280        10.071  2       
-controller1/counter_127_add_4_9/CI1->controller1/counter_127_add_4_9/CO1
+controller1/n8335                                         NET DELAY         0.280        10.071  2       
+controller1/counter_125_add_4_9/CI1->controller1/counter_125_add_4_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        10.349  2       
-controller1/n3902                                         NET DELAY         0.280        10.629  2       
-controller1/counter_127_add_4_11/CI0->controller1/counter_127_add_4_11/CO0
+controller1/n4424                                         NET DELAY         0.280        10.629  2       
+controller1/counter_125_add_4_11/CI0->controller1/counter_125_add_4_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.907  2       
-controller1/n7720                                         NET DELAY         0.280        11.187  2       
-controller1/counter_127_add_4_11/CI1->controller1/counter_127_add_4_11/CO1
+controller1/n8338                                         NET DELAY         0.280        11.187  2       
+controller1/counter_125_add_4_11/CI1->controller1/counter_125_add_4_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.465  2       
-controller1/n3904                                         NET DELAY         0.280        11.745  2       
-controller1/counter_127_add_4_13/CI0->controller1/counter_127_add_4_13/CO0
+controller1/n4426                                         NET DELAY         0.280        11.745  2       
+controller1/counter_125_add_4_13/CI0->controller1/counter_125_add_4_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.023  2       
-controller1/n7723                                         NET DELAY         0.280        12.303  2       
-controller1/counter_127_add_4_13/CI1->controller1/counter_127_add_4_13/CO1
+controller1/n8341                                         NET DELAY         0.280        12.303  2       
+controller1/counter_125_add_4_13/CI1->controller1/counter_125_add_4_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.581  2       
-controller1/n3906                                         NET DELAY         0.280        12.861  2       
-controller1/counter_127_add_4_15/CI0->controller1/counter_127_add_4_15/CO0
+controller1/n4428                                         NET DELAY         0.280        12.861  2       
+controller1/counter_125_add_4_15/CI0->controller1/counter_125_add_4_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.139  2       
-controller1/n7726                                         NET DELAY         0.280        13.419  2       
-controller1/counter_127_add_4_15/CI1->controller1/counter_127_add_4_15/CO1
+controller1/n8344                                         NET DELAY         0.280        13.419  2       
+controller1/counter_125_add_4_15/CI1->controller1/counter_125_add_4_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.697  2       
-controller1/n3908                                         NET DELAY         0.280        13.977  2       
-controller1/counter_127_add_4_17/CI0->controller1/counter_127_add_4_17/CO0
+controller1/n4430                                         NET DELAY         0.280        13.977  2       
+controller1/counter_125_add_4_17/CI0->controller1/counter_125_add_4_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.255  2       
-controller1/n7729                                         NET DELAY         0.280        14.535  2       
-controller1/counter_127_add_4_17/CI1->controller1/counter_127_add_4_17/CO1
+controller1/n8347                                         NET DELAY         0.280        14.535  2       
+controller1/counter_125_add_4_17/CI1->controller1/counter_125_add_4_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.813  2       
-controller1/n3910                                         NET DELAY         0.280        15.093  2       
-controller1/counter_127_add_4_19/CI0->controller1/counter_127_add_4_19/CO0
+controller1/n4432                                         NET DELAY         0.280        15.093  2       
+controller1/counter_125_add_4_19/CI0->controller1/counter_125_add_4_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.371  2       
-controller1/n7732                                         NET DELAY         0.280        15.651  2       
-controller1/counter_127_add_4_19/CI1->controller1/counter_127_add_4_19/CO1
+controller1/n8350                                         NET DELAY         0.280        15.651  2       
+controller1/counter_125_add_4_19/CI1->controller1/counter_125_add_4_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.929  2       
-controller1/n3912                                         NET DELAY         0.280        16.209  2       
-controller1/counter_127_add_4_21/CI0->controller1/counter_127_add_4_21/CO0
+controller1/n4434                                         NET DELAY         0.280        16.209  2       
+controller1/counter_125_add_4_21/CI0->controller1/counter_125_add_4_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.487  2       
-controller1/n7735                                         NET DELAY         0.280        16.767  2       
-controller1/counter_127_add_4_21/D1->controller1/counter_127_add_4_21/S1
+controller1/n8353                                         NET DELAY         0.280        16.767  2       
+controller1/counter_125_add_4_21/D1->controller1/counter_125_add_4_21/S1
                                           FA2             D1_TO_S1_DELAY    0.477        17.244  1       
 controller1/n89[20] ( D )                                 NET DELAY         2.075        19.319  1       
 
@@ -381,8 +382,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i1/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i20/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i1/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i20/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 21
@@ -398,67 +399,67 @@ controller1/clk                                           NET DELAY      2.075  
 
 
 
-controller1/counter_127__i1/CK->controller1/counter_127__i1/Q
+controller1/counter_125__i1/CK->controller1/counter_125__i1/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
 controller1/n21                                           NET DELAY         2.075         5.541  1       
-controller1/counter_127_add_4_1/C1->controller1/counter_127_add_4_1/CO1
+controller1/counter_125_add_4_1/C1->controller1/counter_125_add_4_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344         5.885  2       
-controller1/n3894                                         NET DELAY         0.280         6.165  2       
-controller1/counter_127_add_4_3/CI0->controller1/counter_127_add_4_3/CO0
+controller1/n4416                                         NET DELAY         0.280         6.165  2       
+controller1/counter_125_add_4_3/CI0->controller1/counter_125_add_4_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         6.443  2       
-controller1/n7708                                         NET DELAY         0.280         6.723  2       
-controller1/counter_127_add_4_3/CI1->controller1/counter_127_add_4_3/CO1
+controller1/n8326                                         NET DELAY         0.280         6.723  2       
+controller1/counter_125_add_4_3/CI1->controller1/counter_125_add_4_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         7.001  2       
-controller1/n3896                                         NET DELAY         0.280         7.281  2       
-controller1/counter_127_add_4_5/CI0->controller1/counter_127_add_4_5/CO0
+controller1/n4418                                         NET DELAY         0.280         7.281  2       
+controller1/counter_125_add_4_5/CI0->controller1/counter_125_add_4_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         7.559  2       
-controller1/n7711                                         NET DELAY         0.280         7.839  2       
-controller1/counter_127_add_4_5/CI1->controller1/counter_127_add_4_5/CO1
+controller1/n8329                                         NET DELAY         0.280         7.839  2       
+controller1/counter_125_add_4_5/CI1->controller1/counter_125_add_4_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         8.117  2       
-controller1/n3898                                         NET DELAY         0.280         8.397  2       
-controller1/counter_127_add_4_7/CI0->controller1/counter_127_add_4_7/CO0
+controller1/n4420                                         NET DELAY         0.280         8.397  2       
+controller1/counter_125_add_4_7/CI0->controller1/counter_125_add_4_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         8.675  2       
-controller1/n7714                                         NET DELAY         0.280         8.955  2       
-controller1/counter_127_add_4_7/CI1->controller1/counter_127_add_4_7/CO1
+controller1/n8332                                         NET DELAY         0.280         8.955  2       
+controller1/counter_125_add_4_7/CI1->controller1/counter_125_add_4_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         9.233  2       
-controller1/n3900                                         NET DELAY         0.280         9.513  2       
-controller1/counter_127_add_4_9/CI0->controller1/counter_127_add_4_9/CO0
+controller1/n4422                                         NET DELAY         0.280         9.513  2       
+controller1/counter_125_add_4_9/CI0->controller1/counter_125_add_4_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         9.791  2       
-controller1/n7717                                         NET DELAY         0.280        10.071  2       
-controller1/counter_127_add_4_9/CI1->controller1/counter_127_add_4_9/CO1
+controller1/n8335                                         NET DELAY         0.280        10.071  2       
+controller1/counter_125_add_4_9/CI1->controller1/counter_125_add_4_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        10.349  2       
-controller1/n3902                                         NET DELAY         0.280        10.629  2       
-controller1/counter_127_add_4_11/CI0->controller1/counter_127_add_4_11/CO0
+controller1/n4424                                         NET DELAY         0.280        10.629  2       
+controller1/counter_125_add_4_11/CI0->controller1/counter_125_add_4_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.907  2       
-controller1/n7720                                         NET DELAY         0.280        11.187  2       
-controller1/counter_127_add_4_11/CI1->controller1/counter_127_add_4_11/CO1
+controller1/n8338                                         NET DELAY         0.280        11.187  2       
+controller1/counter_125_add_4_11/CI1->controller1/counter_125_add_4_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.465  2       
-controller1/n3904                                         NET DELAY         0.280        11.745  2       
-controller1/counter_127_add_4_13/CI0->controller1/counter_127_add_4_13/CO0
+controller1/n4426                                         NET DELAY         0.280        11.745  2       
+controller1/counter_125_add_4_13/CI0->controller1/counter_125_add_4_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.023  2       
-controller1/n7723                                         NET DELAY         0.280        12.303  2       
-controller1/counter_127_add_4_13/CI1->controller1/counter_127_add_4_13/CO1
+controller1/n8341                                         NET DELAY         0.280        12.303  2       
+controller1/counter_125_add_4_13/CI1->controller1/counter_125_add_4_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.581  2       
-controller1/n3906                                         NET DELAY         0.280        12.861  2       
-controller1/counter_127_add_4_15/CI0->controller1/counter_127_add_4_15/CO0
+controller1/n4428                                         NET DELAY         0.280        12.861  2       
+controller1/counter_125_add_4_15/CI0->controller1/counter_125_add_4_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.139  2       
-controller1/n7726                                         NET DELAY         0.280        13.419  2       
-controller1/counter_127_add_4_15/CI1->controller1/counter_127_add_4_15/CO1
+controller1/n8344                                         NET DELAY         0.280        13.419  2       
+controller1/counter_125_add_4_15/CI1->controller1/counter_125_add_4_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.697  2       
-controller1/n3908                                         NET DELAY         0.280        13.977  2       
-controller1/counter_127_add_4_17/CI0->controller1/counter_127_add_4_17/CO0
+controller1/n4430                                         NET DELAY         0.280        13.977  2       
+controller1/counter_125_add_4_17/CI0->controller1/counter_125_add_4_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.255  2       
-controller1/n7729                                         NET DELAY         0.280        14.535  2       
-controller1/counter_127_add_4_17/CI1->controller1/counter_127_add_4_17/CO1
+controller1/n8347                                         NET DELAY         0.280        14.535  2       
+controller1/counter_125_add_4_17/CI1->controller1/counter_125_add_4_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.813  2       
-controller1/n3910                                         NET DELAY         0.280        15.093  2       
-controller1/counter_127_add_4_19/CI0->controller1/counter_127_add_4_19/CO0
+controller1/n4432                                         NET DELAY         0.280        15.093  2       
+controller1/counter_125_add_4_19/CI0->controller1/counter_125_add_4_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.371  2       
-controller1/n7732                                         NET DELAY         0.280        15.651  2       
-controller1/counter_127_add_4_19/CI1->controller1/counter_127_add_4_19/CO1
+controller1/n8350                                         NET DELAY         0.280        15.651  2       
+controller1/counter_125_add_4_19/CI1->controller1/counter_125_add_4_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.929  2       
-controller1/n3912                                         NET DELAY         0.280        16.209  2       
-controller1/counter_127_add_4_21/D0->controller1/counter_127_add_4_21/S0
+controller1/n4434                                         NET DELAY         0.280        16.209  2       
+controller1/counter_125_add_4_21/D0->controller1/counter_125_add_4_21/S0
                                           FA2             D0_TO_S0_DELAY    0.477        16.686  1       
 controller1/n89[19] ( D )                                 NET DELAY         2.075        18.761  1       
 
@@ -479,8 +480,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i1/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i19/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i1/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i19/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 20
@@ -496,64 +497,64 @@ controller1/clk                                           NET DELAY      2.075  
 
 
 
-controller1/counter_127__i1/CK->controller1/counter_127__i1/Q
+controller1/counter_125__i1/CK->controller1/counter_125__i1/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
 controller1/n21                                           NET DELAY         2.075         5.541  1       
-controller1/counter_127_add_4_1/C1->controller1/counter_127_add_4_1/CO1
+controller1/counter_125_add_4_1/C1->controller1/counter_125_add_4_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344         5.885  2       
-controller1/n3894                                         NET DELAY         0.280         6.165  2       
-controller1/counter_127_add_4_3/CI0->controller1/counter_127_add_4_3/CO0
+controller1/n4416                                         NET DELAY         0.280         6.165  2       
+controller1/counter_125_add_4_3/CI0->controller1/counter_125_add_4_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         6.443  2       
-controller1/n7708                                         NET DELAY         0.280         6.723  2       
-controller1/counter_127_add_4_3/CI1->controller1/counter_127_add_4_3/CO1
+controller1/n8326                                         NET DELAY         0.280         6.723  2       
+controller1/counter_125_add_4_3/CI1->controller1/counter_125_add_4_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         7.001  2       
-controller1/n3896                                         NET DELAY         0.280         7.281  2       
-controller1/counter_127_add_4_5/CI0->controller1/counter_127_add_4_5/CO0
+controller1/n4418                                         NET DELAY         0.280         7.281  2       
+controller1/counter_125_add_4_5/CI0->controller1/counter_125_add_4_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         7.559  2       
-controller1/n7711                                         NET DELAY         0.280         7.839  2       
-controller1/counter_127_add_4_5/CI1->controller1/counter_127_add_4_5/CO1
+controller1/n8329                                         NET DELAY         0.280         7.839  2       
+controller1/counter_125_add_4_5/CI1->controller1/counter_125_add_4_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         8.117  2       
-controller1/n3898                                         NET DELAY         0.280         8.397  2       
-controller1/counter_127_add_4_7/CI0->controller1/counter_127_add_4_7/CO0
+controller1/n4420                                         NET DELAY         0.280         8.397  2       
+controller1/counter_125_add_4_7/CI0->controller1/counter_125_add_4_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         8.675  2       
-controller1/n7714                                         NET DELAY         0.280         8.955  2       
-controller1/counter_127_add_4_7/CI1->controller1/counter_127_add_4_7/CO1
+controller1/n8332                                         NET DELAY         0.280         8.955  2       
+controller1/counter_125_add_4_7/CI1->controller1/counter_125_add_4_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         9.233  2       
-controller1/n3900                                         NET DELAY         0.280         9.513  2       
-controller1/counter_127_add_4_9/CI0->controller1/counter_127_add_4_9/CO0
+controller1/n4422                                         NET DELAY         0.280         9.513  2       
+controller1/counter_125_add_4_9/CI0->controller1/counter_125_add_4_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         9.791  2       
-controller1/n7717                                         NET DELAY         0.280        10.071  2       
-controller1/counter_127_add_4_9/CI1->controller1/counter_127_add_4_9/CO1
+controller1/n8335                                         NET DELAY         0.280        10.071  2       
+controller1/counter_125_add_4_9/CI1->controller1/counter_125_add_4_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        10.349  2       
-controller1/n3902                                         NET DELAY         0.280        10.629  2       
-controller1/counter_127_add_4_11/CI0->controller1/counter_127_add_4_11/CO0
+controller1/n4424                                         NET DELAY         0.280        10.629  2       
+controller1/counter_125_add_4_11/CI0->controller1/counter_125_add_4_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.907  2       
-controller1/n7720                                         NET DELAY         0.280        11.187  2       
-controller1/counter_127_add_4_11/CI1->controller1/counter_127_add_4_11/CO1
+controller1/n8338                                         NET DELAY         0.280        11.187  2       
+controller1/counter_125_add_4_11/CI1->controller1/counter_125_add_4_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.465  2       
-controller1/n3904                                         NET DELAY         0.280        11.745  2       
-controller1/counter_127_add_4_13/CI0->controller1/counter_127_add_4_13/CO0
+controller1/n4426                                         NET DELAY         0.280        11.745  2       
+controller1/counter_125_add_4_13/CI0->controller1/counter_125_add_4_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.023  2       
-controller1/n7723                                         NET DELAY         0.280        12.303  2       
-controller1/counter_127_add_4_13/CI1->controller1/counter_127_add_4_13/CO1
+controller1/n8341                                         NET DELAY         0.280        12.303  2       
+controller1/counter_125_add_4_13/CI1->controller1/counter_125_add_4_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.581  2       
-controller1/n3906                                         NET DELAY         0.280        12.861  2       
-controller1/counter_127_add_4_15/CI0->controller1/counter_127_add_4_15/CO0
+controller1/n4428                                         NET DELAY         0.280        12.861  2       
+controller1/counter_125_add_4_15/CI0->controller1/counter_125_add_4_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.139  2       
-controller1/n7726                                         NET DELAY         0.280        13.419  2       
-controller1/counter_127_add_4_15/CI1->controller1/counter_127_add_4_15/CO1
+controller1/n8344                                         NET DELAY         0.280        13.419  2       
+controller1/counter_125_add_4_15/CI1->controller1/counter_125_add_4_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.697  2       
-controller1/n3908                                         NET DELAY         0.280        13.977  2       
-controller1/counter_127_add_4_17/CI0->controller1/counter_127_add_4_17/CO0
+controller1/n4430                                         NET DELAY         0.280        13.977  2       
+controller1/counter_125_add_4_17/CI0->controller1/counter_125_add_4_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.255  2       
-controller1/n7729                                         NET DELAY         0.280        14.535  2       
-controller1/counter_127_add_4_17/CI1->controller1/counter_127_add_4_17/CO1
+controller1/n8347                                         NET DELAY         0.280        14.535  2       
+controller1/counter_125_add_4_17/CI1->controller1/counter_125_add_4_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.813  2       
-controller1/n3910                                         NET DELAY         0.280        15.093  2       
-controller1/counter_127_add_4_19/CI0->controller1/counter_127_add_4_19/CO0
+controller1/n4432                                         NET DELAY         0.280        15.093  2       
+controller1/counter_125_add_4_19/CI0->controller1/counter_125_add_4_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.371  2       
-controller1/n7732                                         NET DELAY         0.280        15.651  2       
-controller1/counter_127_add_4_19/D1->controller1/counter_127_add_4_19/S1
+controller1/n8350                                         NET DELAY         0.280        15.651  2       
+controller1/counter_125_add_4_19/D1->controller1/counter_125_add_4_19/S1
                                           FA2             D1_TO_S1_DELAY    0.477        16.128  1       
 controller1/n89[18] ( D )                                 NET DELAY         2.075        18.203  1       
 
@@ -574,8 +575,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i1/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i18/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i1/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i18/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 19
@@ -591,61 +592,61 @@ controller1/clk                                           NET DELAY      2.075  
 
 
 
-controller1/counter_127__i1/CK->controller1/counter_127__i1/Q
+controller1/counter_125__i1/CK->controller1/counter_125__i1/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
 controller1/n21                                           NET DELAY         2.075         5.541  1       
-controller1/counter_127_add_4_1/C1->controller1/counter_127_add_4_1/CO1
+controller1/counter_125_add_4_1/C1->controller1/counter_125_add_4_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344         5.885  2       
-controller1/n3894                                         NET DELAY         0.280         6.165  2       
-controller1/counter_127_add_4_3/CI0->controller1/counter_127_add_4_3/CO0
+controller1/n4416                                         NET DELAY         0.280         6.165  2       
+controller1/counter_125_add_4_3/CI0->controller1/counter_125_add_4_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         6.443  2       
-controller1/n7708                                         NET DELAY         0.280         6.723  2       
-controller1/counter_127_add_4_3/CI1->controller1/counter_127_add_4_3/CO1
+controller1/n8326                                         NET DELAY         0.280         6.723  2       
+controller1/counter_125_add_4_3/CI1->controller1/counter_125_add_4_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         7.001  2       
-controller1/n3896                                         NET DELAY         0.280         7.281  2       
-controller1/counter_127_add_4_5/CI0->controller1/counter_127_add_4_5/CO0
+controller1/n4418                                         NET DELAY         0.280         7.281  2       
+controller1/counter_125_add_4_5/CI0->controller1/counter_125_add_4_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         7.559  2       
-controller1/n7711                                         NET DELAY         0.280         7.839  2       
-controller1/counter_127_add_4_5/CI1->controller1/counter_127_add_4_5/CO1
+controller1/n8329                                         NET DELAY         0.280         7.839  2       
+controller1/counter_125_add_4_5/CI1->controller1/counter_125_add_4_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         8.117  2       
-controller1/n3898                                         NET DELAY         0.280         8.397  2       
-controller1/counter_127_add_4_7/CI0->controller1/counter_127_add_4_7/CO0
+controller1/n4420                                         NET DELAY         0.280         8.397  2       
+controller1/counter_125_add_4_7/CI0->controller1/counter_125_add_4_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         8.675  2       
-controller1/n7714                                         NET DELAY         0.280         8.955  2       
-controller1/counter_127_add_4_7/CI1->controller1/counter_127_add_4_7/CO1
+controller1/n8332                                         NET DELAY         0.280         8.955  2       
+controller1/counter_125_add_4_7/CI1->controller1/counter_125_add_4_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         9.233  2       
-controller1/n3900                                         NET DELAY         0.280         9.513  2       
-controller1/counter_127_add_4_9/CI0->controller1/counter_127_add_4_9/CO0
+controller1/n4422                                         NET DELAY         0.280         9.513  2       
+controller1/counter_125_add_4_9/CI0->controller1/counter_125_add_4_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         9.791  2       
-controller1/n7717                                         NET DELAY         0.280        10.071  2       
-controller1/counter_127_add_4_9/CI1->controller1/counter_127_add_4_9/CO1
+controller1/n8335                                         NET DELAY         0.280        10.071  2       
+controller1/counter_125_add_4_9/CI1->controller1/counter_125_add_4_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        10.349  2       
-controller1/n3902                                         NET DELAY         0.280        10.629  2       
-controller1/counter_127_add_4_11/CI0->controller1/counter_127_add_4_11/CO0
+controller1/n4424                                         NET DELAY         0.280        10.629  2       
+controller1/counter_125_add_4_11/CI0->controller1/counter_125_add_4_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.907  2       
-controller1/n7720                                         NET DELAY         0.280        11.187  2       
-controller1/counter_127_add_4_11/CI1->controller1/counter_127_add_4_11/CO1
+controller1/n8338                                         NET DELAY         0.280        11.187  2       
+controller1/counter_125_add_4_11/CI1->controller1/counter_125_add_4_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.465  2       
-controller1/n3904                                         NET DELAY         0.280        11.745  2       
-controller1/counter_127_add_4_13/CI0->controller1/counter_127_add_4_13/CO0
+controller1/n4426                                         NET DELAY         0.280        11.745  2       
+controller1/counter_125_add_4_13/CI0->controller1/counter_125_add_4_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.023  2       
-controller1/n7723                                         NET DELAY         0.280        12.303  2       
-controller1/counter_127_add_4_13/CI1->controller1/counter_127_add_4_13/CO1
+controller1/n8341                                         NET DELAY         0.280        12.303  2       
+controller1/counter_125_add_4_13/CI1->controller1/counter_125_add_4_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.581  2       
-controller1/n3906                                         NET DELAY         0.280        12.861  2       
-controller1/counter_127_add_4_15/CI0->controller1/counter_127_add_4_15/CO0
+controller1/n4428                                         NET DELAY         0.280        12.861  2       
+controller1/counter_125_add_4_15/CI0->controller1/counter_125_add_4_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.139  2       
-controller1/n7726                                         NET DELAY         0.280        13.419  2       
-controller1/counter_127_add_4_15/CI1->controller1/counter_127_add_4_15/CO1
+controller1/n8344                                         NET DELAY         0.280        13.419  2       
+controller1/counter_125_add_4_15/CI1->controller1/counter_125_add_4_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.697  2       
-controller1/n3908                                         NET DELAY         0.280        13.977  2       
-controller1/counter_127_add_4_17/CI0->controller1/counter_127_add_4_17/CO0
+controller1/n4430                                         NET DELAY         0.280        13.977  2       
+controller1/counter_125_add_4_17/CI0->controller1/counter_125_add_4_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.255  2       
-controller1/n7729                                         NET DELAY         0.280        14.535  2       
-controller1/counter_127_add_4_17/CI1->controller1/counter_127_add_4_17/CO1
+controller1/n8347                                         NET DELAY         0.280        14.535  2       
+controller1/counter_125_add_4_17/CI1->controller1/counter_125_add_4_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.813  2       
-controller1/n3910                                         NET DELAY         0.280        15.093  2       
-controller1/counter_127_add_4_19/D0->controller1/counter_127_add_4_19/S0
+controller1/n4432                                         NET DELAY         0.280        15.093  2       
+controller1/counter_125_add_4_19/D0->controller1/counter_125_add_4_19/S0
                                           FA2             D0_TO_S0_DELAY    0.477        15.570  1       
 controller1/n89[17] ( D )                                 NET DELAY         2.075        17.645  1       
 
@@ -666,8 +667,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i1/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i17/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i1/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i17/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 18
@@ -683,58 +684,58 @@ controller1/clk                                           NET DELAY      2.075  
 
 
 
-controller1/counter_127__i1/CK->controller1/counter_127__i1/Q
+controller1/counter_125__i1/CK->controller1/counter_125__i1/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
 controller1/n21                                           NET DELAY         2.075         5.541  1       
-controller1/counter_127_add_4_1/C1->controller1/counter_127_add_4_1/CO1
+controller1/counter_125_add_4_1/C1->controller1/counter_125_add_4_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344         5.885  2       
-controller1/n3894                                         NET DELAY         0.280         6.165  2       
-controller1/counter_127_add_4_3/CI0->controller1/counter_127_add_4_3/CO0
+controller1/n4416                                         NET DELAY         0.280         6.165  2       
+controller1/counter_125_add_4_3/CI0->controller1/counter_125_add_4_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         6.443  2       
-controller1/n7708                                         NET DELAY         0.280         6.723  2       
-controller1/counter_127_add_4_3/CI1->controller1/counter_127_add_4_3/CO1
+controller1/n8326                                         NET DELAY         0.280         6.723  2       
+controller1/counter_125_add_4_3/CI1->controller1/counter_125_add_4_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         7.001  2       
-controller1/n3896                                         NET DELAY         0.280         7.281  2       
-controller1/counter_127_add_4_5/CI0->controller1/counter_127_add_4_5/CO0
+controller1/n4418                                         NET DELAY         0.280         7.281  2       
+controller1/counter_125_add_4_5/CI0->controller1/counter_125_add_4_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         7.559  2       
-controller1/n7711                                         NET DELAY         0.280         7.839  2       
-controller1/counter_127_add_4_5/CI1->controller1/counter_127_add_4_5/CO1
+controller1/n8329                                         NET DELAY         0.280         7.839  2       
+controller1/counter_125_add_4_5/CI1->controller1/counter_125_add_4_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         8.117  2       
-controller1/n3898                                         NET DELAY         0.280         8.397  2       
-controller1/counter_127_add_4_7/CI0->controller1/counter_127_add_4_7/CO0
+controller1/n4420                                         NET DELAY         0.280         8.397  2       
+controller1/counter_125_add_4_7/CI0->controller1/counter_125_add_4_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         8.675  2       
-controller1/n7714                                         NET DELAY         0.280         8.955  2       
-controller1/counter_127_add_4_7/CI1->controller1/counter_127_add_4_7/CO1
+controller1/n8332                                         NET DELAY         0.280         8.955  2       
+controller1/counter_125_add_4_7/CI1->controller1/counter_125_add_4_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         9.233  2       
-controller1/n3900                                         NET DELAY         0.280         9.513  2       
-controller1/counter_127_add_4_9/CI0->controller1/counter_127_add_4_9/CO0
+controller1/n4422                                         NET DELAY         0.280         9.513  2       
+controller1/counter_125_add_4_9/CI0->controller1/counter_125_add_4_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         9.791  2       
-controller1/n7717                                         NET DELAY         0.280        10.071  2       
-controller1/counter_127_add_4_9/CI1->controller1/counter_127_add_4_9/CO1
+controller1/n8335                                         NET DELAY         0.280        10.071  2       
+controller1/counter_125_add_4_9/CI1->controller1/counter_125_add_4_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        10.349  2       
-controller1/n3902                                         NET DELAY         0.280        10.629  2       
-controller1/counter_127_add_4_11/CI0->controller1/counter_127_add_4_11/CO0
+controller1/n4424                                         NET DELAY         0.280        10.629  2       
+controller1/counter_125_add_4_11/CI0->controller1/counter_125_add_4_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.907  2       
-controller1/n7720                                         NET DELAY         0.280        11.187  2       
-controller1/counter_127_add_4_11/CI1->controller1/counter_127_add_4_11/CO1
+controller1/n8338                                         NET DELAY         0.280        11.187  2       
+controller1/counter_125_add_4_11/CI1->controller1/counter_125_add_4_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.465  2       
-controller1/n3904                                         NET DELAY         0.280        11.745  2       
-controller1/counter_127_add_4_13/CI0->controller1/counter_127_add_4_13/CO0
+controller1/n4426                                         NET DELAY         0.280        11.745  2       
+controller1/counter_125_add_4_13/CI0->controller1/counter_125_add_4_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.023  2       
-controller1/n7723                                         NET DELAY         0.280        12.303  2       
-controller1/counter_127_add_4_13/CI1->controller1/counter_127_add_4_13/CO1
+controller1/n8341                                         NET DELAY         0.280        12.303  2       
+controller1/counter_125_add_4_13/CI1->controller1/counter_125_add_4_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.581  2       
-controller1/n3906                                         NET DELAY         0.280        12.861  2       
-controller1/counter_127_add_4_15/CI0->controller1/counter_127_add_4_15/CO0
+controller1/n4428                                         NET DELAY         0.280        12.861  2       
+controller1/counter_125_add_4_15/CI0->controller1/counter_125_add_4_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.139  2       
-controller1/n7726                                         NET DELAY         0.280        13.419  2       
-controller1/counter_127_add_4_15/CI1->controller1/counter_127_add_4_15/CO1
+controller1/n8344                                         NET DELAY         0.280        13.419  2       
+controller1/counter_125_add_4_15/CI1->controller1/counter_125_add_4_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.697  2       
-controller1/n3908                                         NET DELAY         0.280        13.977  2       
-controller1/counter_127_add_4_17/CI0->controller1/counter_127_add_4_17/CO0
+controller1/n4430                                         NET DELAY         0.280        13.977  2       
+controller1/counter_125_add_4_17/CI0->controller1/counter_125_add_4_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.255  2       
-controller1/n7729                                         NET DELAY         0.280        14.535  2       
-controller1/counter_127_add_4_17/D1->controller1/counter_127_add_4_17/S1
+controller1/n8347                                         NET DELAY         0.280        14.535  2       
+controller1/counter_125_add_4_17/D1->controller1/counter_125_add_4_17/S1
                                           FA2             D1_TO_S1_DELAY    0.477        15.012  1       
 controller1/n89[16] ( D )                                 NET DELAY         2.075        17.087  1       
 
@@ -755,8 +756,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i11/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i5/SR  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i11/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i5/SR  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -772,22 +773,22 @@ controller1/clk                                           NET DELAY      2.075  
 
 
 
-controller1/counter_127__i11/CK->controller1/counter_127__i11/Q
+controller1/counter_125__i11/CK->controller1/counter_125__i11/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
 controller1/counter[10]                                   NET DELAY      0.280         3.746  2       
-controller1/i1_2_lut_adj_28/B->controller1/i1_2_lut_adj_28/Z
+controller1/i1_2_lut_adj_25/B->controller1/i1_2_lut_adj_25/Z
                                           LUT4            B_TO_Z_DELAY   0.477         4.223  2       
-controller1/n5168                                         NET DELAY      2.075         6.298  2       
+controller1/n5749                                         NET DELAY      2.075         6.298  2       
 controller1/i2_4_lut/A->controller1/i2_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477         6.775  1       
-controller1/n5169                                         NET DELAY      2.075         8.850  1       
-controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+controller1/n5750                                         NET DELAY      2.075         8.850  1       
+controller1/i212_4_lut/A->controller1/i212_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477         9.327  1       
 controller1/n28                                           NET DELAY      2.075        11.402  1       
-controller1/i215_4_lut/A->controller1/i215_4_lut/Z
+controller1/i248_4_lut/A->controller1/i248_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477        11.879  1       
 controller1/n36                                           NET DELAY      2.075        13.954  1       
-controller1/i214_4_lut/D->controller1/i214_4_lut/Z
+controller1/i247_4_lut/D->controller1/i247_4_lut/Z
                                           LUT4            D_TO_Z_DELAY   0.450        14.404  21      
 controller1/counter_20__N_51 ( SR )                       NET DELAY      2.075        16.479  21      
 
@@ -808,8 +809,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i11/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i4/SR  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i11/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i4/SR  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -825,22 +826,22 @@ controller1/clk                                           NET DELAY      2.075  
 
 
 
-controller1/counter_127__i11/CK->controller1/counter_127__i11/Q
+controller1/counter_125__i11/CK->controller1/counter_125__i11/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
 controller1/counter[10]                                   NET DELAY      0.280         3.746  2       
-controller1/i1_2_lut_adj_28/B->controller1/i1_2_lut_adj_28/Z
+controller1/i1_2_lut_adj_25/B->controller1/i1_2_lut_adj_25/Z
                                           LUT4            B_TO_Z_DELAY   0.477         4.223  2       
-controller1/n5168                                         NET DELAY      2.075         6.298  2       
+controller1/n5749                                         NET DELAY      2.075         6.298  2       
 controller1/i2_4_lut/A->controller1/i2_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477         6.775  1       
-controller1/n5169                                         NET DELAY      2.075         8.850  1       
-controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+controller1/n5750                                         NET DELAY      2.075         8.850  1       
+controller1/i212_4_lut/A->controller1/i212_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477         9.327  1       
 controller1/n28                                           NET DELAY      2.075        11.402  1       
-controller1/i215_4_lut/A->controller1/i215_4_lut/Z
+controller1/i248_4_lut/A->controller1/i248_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477        11.879  1       
 controller1/n36                                           NET DELAY      2.075        13.954  1       
-controller1/i214_4_lut/D->controller1/i214_4_lut/Z
+controller1/i247_4_lut/D->controller1/i247_4_lut/Z
                                           LUT4            D_TO_Z_DELAY   0.450        14.404  21      
 controller1/counter_20__N_51 ( SR )                       NET DELAY      2.075        16.479  21      
 
@@ -861,8 +862,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i11/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i3/SR  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i11/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i3/SR  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -878,22 +879,22 @@ controller1/clk                                           NET DELAY      2.075  
 
 
 
-controller1/counter_127__i11/CK->controller1/counter_127__i11/Q
+controller1/counter_125__i11/CK->controller1/counter_125__i11/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
 controller1/counter[10]                                   NET DELAY      0.280         3.746  2       
-controller1/i1_2_lut_adj_28/B->controller1/i1_2_lut_adj_28/Z
+controller1/i1_2_lut_adj_25/B->controller1/i1_2_lut_adj_25/Z
                                           LUT4            B_TO_Z_DELAY   0.477         4.223  2       
-controller1/n5168                                         NET DELAY      2.075         6.298  2       
+controller1/n5749                                         NET DELAY      2.075         6.298  2       
 controller1/i2_4_lut/A->controller1/i2_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477         6.775  1       
-controller1/n5169                                         NET DELAY      2.075         8.850  1       
-controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+controller1/n5750                                         NET DELAY      2.075         8.850  1       
+controller1/i212_4_lut/A->controller1/i212_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477         9.327  1       
 controller1/n28                                           NET DELAY      2.075        11.402  1       
-controller1/i215_4_lut/A->controller1/i215_4_lut/Z
+controller1/i248_4_lut/A->controller1/i248_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477        11.879  1       
 controller1/n36                                           NET DELAY      2.075        13.954  1       
-controller1/i214_4_lut/D->controller1/i214_4_lut/Z
+controller1/i247_4_lut/D->controller1/i247_4_lut/Z
                                           LUT4            D_TO_Z_DELAY   0.450        14.404  21      
 controller1/counter_20__N_51 ( SR )                       NET DELAY      2.075        16.479  21      
 
@@ -914,8 +915,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i11/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i2/SR  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i11/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i2/SR  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -931,22 +932,22 @@ controller1/clk                                           NET DELAY      2.075  
 
 
 
-controller1/counter_127__i11/CK->controller1/counter_127__i11/Q
+controller1/counter_125__i11/CK->controller1/counter_125__i11/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
 controller1/counter[10]                                   NET DELAY      0.280         3.746  2       
-controller1/i1_2_lut_adj_28/B->controller1/i1_2_lut_adj_28/Z
+controller1/i1_2_lut_adj_25/B->controller1/i1_2_lut_adj_25/Z
                                           LUT4            B_TO_Z_DELAY   0.477         4.223  2       
-controller1/n5168                                         NET DELAY      2.075         6.298  2       
+controller1/n5749                                         NET DELAY      2.075         6.298  2       
 controller1/i2_4_lut/A->controller1/i2_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477         6.775  1       
-controller1/n5169                                         NET DELAY      2.075         8.850  1       
-controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+controller1/n5750                                         NET DELAY      2.075         8.850  1       
+controller1/i212_4_lut/A->controller1/i212_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477         9.327  1       
 controller1/n28                                           NET DELAY      2.075        11.402  1       
-controller1/i215_4_lut/A->controller1/i215_4_lut/Z
+controller1/i248_4_lut/A->controller1/i248_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477        11.879  1       
 controller1/n36                                           NET DELAY      2.075        13.954  1       
-controller1/i214_4_lut/D->controller1/i214_4_lut/Z
+controller1/i247_4_lut/D->controller1/i247_4_lut/Z
                                           LUT4            D_TO_Z_DELAY   0.450        14.404  21      
 controller1/counter_20__N_51 ( SR )                       NET DELAY      2.075        16.479  21      
 
@@ -967,8 +968,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i11/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i1/SR  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i11/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i1/SR  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 6
@@ -984,22 +985,22 @@ controller1/clk                                           NET DELAY      2.075  
 
 
 
-controller1/counter_127__i11/CK->controller1/counter_127__i11/Q
+controller1/counter_125__i11/CK->controller1/counter_125__i11/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
 controller1/counter[10]                                   NET DELAY      0.280         3.746  2       
-controller1/i1_2_lut_adj_28/B->controller1/i1_2_lut_adj_28/Z
+controller1/i1_2_lut_adj_25/B->controller1/i1_2_lut_adj_25/Z
                                           LUT4            B_TO_Z_DELAY   0.477         4.223  2       
-controller1/n5168                                         NET DELAY      2.075         6.298  2       
+controller1/n5749                                         NET DELAY      2.075         6.298  2       
 controller1/i2_4_lut/A->controller1/i2_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477         6.775  1       
-controller1/n5169                                         NET DELAY      2.075         8.850  1       
-controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+controller1/n5750                                         NET DELAY      2.075         8.850  1       
+controller1/i212_4_lut/A->controller1/i212_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477         9.327  1       
 controller1/n28                                           NET DELAY      2.075        11.402  1       
-controller1/i215_4_lut/A->controller1/i215_4_lut/Z
+controller1/i248_4_lut/A->controller1/i248_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.477        11.879  1       
 controller1/n36                                           NET DELAY      2.075        13.954  1       
-controller1/i214_4_lut/D->controller1/i214_4_lut/Z
+controller1/i247_4_lut/D->controller1/i247_4_lut/Z
                                           LUT4            D_TO_Z_DELAY   0.450        14.404  21      
 controller1/counter_20__N_51 ( SR )                       NET DELAY      2.075        16.479  21      
 
@@ -1040,8 +1041,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i12/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i12/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i12/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i12/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1057,10 +1058,10 @@ controller1/clk ( CK )                                    NET DELAY      2.075  
 
 
 
-controller1/counter_127__i12/CK->controller1/counter_127__i12/Q
+controller1/counter_125__i12/CK->controller1/counter_125__i12/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  3       
 controller1/counter[11]                                   NET DELAY       0.280         3.746  3       
-controller1/counter_127_add_4_13/C0->controller1/counter_127_add_4_13/S0
+controller1/counter_125_add_4_13/C0->controller1/counter_125_add_4_13/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
 controller1/n89[11] ( D )                                 NET DELAY       2.075         6.271  1       
 
@@ -1081,8 +1082,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i11/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i11/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i11/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i11/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1098,10 +1099,10 @@ controller1/clk ( CK )                                    NET DELAY      2.075  
 
 
 
-controller1/counter_127__i11/CK->controller1/counter_127__i11/Q
+controller1/counter_125__i11/CK->controller1/counter_125__i11/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 controller1/counter[10]                                   NET DELAY       0.280         3.746  2       
-controller1/counter_127_add_4_11/C1->controller1/counter_127_add_4_11/S1
+controller1/counter_125_add_4_11/C1->controller1/counter_125_add_4_11/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
 controller1/n89[10] ( D )                                 NET DELAY       2.075         6.271  1       
 
@@ -1122,8 +1123,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i10/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i10/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i10/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i10/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1139,10 +1140,10 @@ controller1/clk ( CK )                                    NET DELAY      2.075  
 
 
 
-controller1/counter_127__i10/CK->controller1/counter_127__i10/Q
+controller1/counter_125__i10/CK->controller1/counter_125__i10/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 controller1/counter[9]                                    NET DELAY       0.280         3.746  2       
-controller1/counter_127_add_4_11/C0->controller1/counter_127_add_4_11/S0
+controller1/counter_125_add_4_11/C0->controller1/counter_125_add_4_11/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
 controller1/n89[9] ( D )                                  NET DELAY       2.075         6.271  1       
 
@@ -1163,8 +1164,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i9/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i9/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i9/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i9/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1180,10 +1181,10 @@ controller1/clk ( CK )                                    NET DELAY      2.075  
 
 
 
-controller1/counter_127__i9/CK->controller1/counter_127__i9/Q
+controller1/counter_125__i9/CK->controller1/counter_125__i9/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  3       
 controller1/counter[8]                                    NET DELAY       0.280         3.746  3       
-controller1/counter_127_add_4_9/C1->controller1/counter_127_add_4_9/S1
+controller1/counter_125_add_4_9/C1->controller1/counter_125_add_4_9/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
 controller1/n89[8] ( D )                                  NET DELAY       2.075         6.271  1       
 
@@ -1204,8 +1205,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i8/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i8/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i8/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i8/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1221,10 +1222,10 @@ controller1/clk ( CK )                                    NET DELAY      2.075  
 
 
 
-controller1/counter_127__i8/CK->controller1/counter_127__i8/Q
+controller1/counter_125__i8/CK->controller1/counter_125__i8/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 controller1/counter[7]                                    NET DELAY       0.280         3.746  2       
-controller1/counter_127_add_4_9/C0->controller1/counter_127_add_4_9/S0
+controller1/counter_125_add_4_9/C0->controller1/counter_125_add_4_9/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
 controller1/n89[7] ( D )                                  NET DELAY       2.075         6.271  1       
 
@@ -1245,8 +1246,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i7/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i7/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i7/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i7/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1262,10 +1263,10 @@ controller1/clk ( CK )                                    NET DELAY      2.075  
 
 
 
-controller1/counter_127__i7/CK->controller1/counter_127__i7/Q
+controller1/counter_125__i7/CK->controller1/counter_125__i7/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 controller1/counter[6]                                    NET DELAY       0.280         3.746  2       
-controller1/counter_127_add_4_7/C1->controller1/counter_127_add_4_7/S1
+controller1/counter_125_add_4_7/C1->controller1/counter_125_add_4_7/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
 controller1/n89[6] ( D )                                  NET DELAY       2.075         6.271  1       
 
@@ -1286,8 +1287,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i6/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i6/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i6/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i6/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1303,10 +1304,10 @@ controller1/clk ( CK )                                    NET DELAY      2.075  
 
 
 
-controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+controller1/counter_125__i6/CK->controller1/counter_125__i6/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 controller1/counter[5]                                    NET DELAY       0.280         3.746  2       
-controller1/counter_127_add_4_7/C0->controller1/counter_127_add_4_7/S0
+controller1/counter_125_add_4_7/C0->controller1/counter_125_add_4_7/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
 controller1/n89[5] ( D )                                  NET DELAY       2.075         6.271  1       
 
@@ -1327,8 +1328,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i5/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i5/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i5/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i5/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1344,10 +1345,10 @@ controller1/clk ( CK )                                    NET DELAY      2.075  
 
 
 
-controller1/counter_127__i5/CK->controller1/counter_127__i5/Q
+controller1/counter_125__i5/CK->controller1/counter_125__i5/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 controller1/counter[4]                                    NET DELAY       0.280         3.746  2       
-controller1/counter_127_add_4_5/C1->controller1/counter_127_add_4_5/S1
+controller1/counter_125_add_4_5/C1->controller1/counter_125_add_4_5/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
 controller1/n89[4] ( D )                                  NET DELAY       2.075         6.271  1       
 
@@ -1368,8 +1369,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i4/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i4/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i4/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i4/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1385,10 +1386,10 @@ controller1/clk ( CK )                                    NET DELAY      2.075  
 
 
 
-controller1/counter_127__i4/CK->controller1/counter_127__i4/Q
+controller1/counter_125__i4/CK->controller1/counter_125__i4/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 controller1/counter[3]                                    NET DELAY       0.280         3.746  2       
-controller1/counter_127_add_4_5/C0->controller1/counter_127_add_4_5/S0
+controller1/counter_125_add_4_5/C0->controller1/counter_125_add_4_5/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
 controller1/n89[3] ( D )                                  NET DELAY       2.075         6.271  1       
 
@@ -1409,8 +1410,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i3/Q  (FD1P3XZ)
-Path End         : controller1/counter_127__i3/D  (FD1P3XZ)
+Path Begin       : controller1/counter_125__i3/Q  (FD1P3XZ)
+Path End         : controller1/counter_125__i3/D  (FD1P3XZ)
 Source Clock     : controller1/clk (R)
 Destination Clock: controller1/clk (R)
 Logic Level      : 2
@@ -1426,10 +1427,10 @@ controller1/clk ( CK )                                    NET DELAY      2.075  
 
 
 
-controller1/counter_127__i3/CK->controller1/counter_127__i3/Q
+controller1/counter_125__i3/CK->controller1/counter_125__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 controller1/counter[2]                                    NET DELAY       0.280         3.746  2       
-controller1/counter_127_add_4_3/C1->controller1/counter_127_add_4_3/S1
+controller1/counter_125_add_4_3/C1->controller1/counter_125_add_4_3/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
 controller1/n89[2] ( D )                                  NET DELAY       2.075         6.271  1       
 
