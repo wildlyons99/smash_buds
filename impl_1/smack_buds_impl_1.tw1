@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Sat Dec  3 18:34:02 2022
+Sat Dec  3 21:26:38 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -142,7 +142,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 7.20391%
+Constraint Coverage: 7.16454%
 
 3.1.2  Timing Errors
 ---------------------
@@ -158,12 +158,6 @@ Total Negative Slack: 0.000 ns (setup), 0.000 ns (hold)
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-{controller1/counter_127__i2/SR   controller1/counter_127__i3/SR}              
-                                         |    4.104 ns 
-{controller1/counter_127__i4/SR   controller1/counter_127__i5/SR}              
-                                         |    4.104 ns 
-{controller1/counter_127__i6/SR   controller1/counter_127__i7/SR}              
-                                         |    4.104 ns 
 {controller1/counter_127__i8/SR   controller1/counter_127__i9/SR}              
                                          |    4.104 ns 
 {controller1/counter_127__i10/SR   controller1/counter_127__i11/SR}              
@@ -178,6 +172,11 @@ Total Negative Slack: 0.000 ns (setup), 0.000 ns (hold)
                                          |    4.104 ns 
 {controller1/counter_127__i20/SR   controller1/counter_127__i21/SR}              
                                          |    4.104 ns 
+controller1/counter_127__i1/SR           |    4.104 ns 
+{controller1/counter_127__i2/SR   controller1/counter_127__i3/SR}              
+                                         |    4.104 ns 
+{controller1/counter_127__i4/SR   controller1/counter_127__i5/SR}              
+                                         |    4.104 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|           0 
@@ -190,16 +189,16 @@ Setup # of endpoints with negative slack:|           0
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-controller1/counter_127__i12/D           |    3.092 ns 
-controller1/counter_127__i13/D           |    3.092 ns 
-controller1/counter_127__i14/D           |    3.092 ns 
-controller1/counter_127__i15/D           |    3.092 ns 
-controller1/counter_127__i16/D           |    3.092 ns 
 controller1/counter_127__i17/D           |    3.092 ns 
 controller1/counter_127__i18/D           |    3.092 ns 
 controller1/counter_127__i19/D           |    3.092 ns 
 controller1/counter_127__i20/D           |    3.092 ns 
 controller1/counter_127__i21/D           |    3.092 ns 
+controller1/counter_127__i1/D            |    3.092 ns 
+controller1/counter_127__i2/D            |    3.092 ns 
+controller1/counter_127__i3/D            |    3.092 ns 
+controller1/counter_127__i4/D            |    3.092 ns 
+controller1/counter_127__i5/D            |    3.092 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -221,16 +220,19 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-sixtyHZclock/clock_count_128__i14/D     |    No arrival or required
-sixtyHZclock/clock_count_128__i13/D     |    No arrival or required
-sixtyHZclock/clock_count_128__i12/D     |    No arrival or required
-sixtyHZclock/clock_count_128__i11/D     |    No arrival or required
-sixtyHZclock/clock_count_128__i10/D     |    No arrival or required
-sixtyHZclock/clock_count_128__i9/D      |    No arrival or required
-sixtyHZclock/clock_count_128__i8/D      |    No arrival or required
-sixtyHZclock/clock_count_128__i7/D      |    No arrival or required
-sixtyHZclock/clock_count_128__i6/D      |    No arrival or required
-sixtyHZclock/clock_count_128__i5/D      |    No arrival or required
+internalvga/col_129__i10/D              |    No arrival or required
+internalvga/col_129__i9/D               |    No arrival or required
+{internalvga/col_129__i9/SR   internalvga/col_129__i10/SR}                           
+                                        |    No arrival or required
+internalvga/col_129__i8/D               |    No arrival or required
+internalvga/col_129__i7/D               |    No arrival or required
+{internalvga/col_129__i7/SR   internalvga/col_129__i8/SR}                           
+                                        |    No arrival or required
+internalvga/col_129__i6/D               |    No arrival or required
+internalvga/col_129__i5/D               |    No arrival or required
+{internalvga/col_129__i5/SR   internalvga/col_129__i6/SR}                           
+                                        |    No arrival or required
+internalvga/col_129__i4/D               |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
@@ -275,20 +277,20 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
-game/y_i10                              |                  No Clock
-game/yVelocity__i0                      |                  No Clock
-game/x__i6                              |                  No Clock
-game/x__i2                              |                  No Clock
-game/x__i4                              |                  No Clock
-game/x__i5                              |                  No Clock
-game/x__i8                              |                  No Clock
-game/x__i3                              |                  No Clock
-game/x__i10                             |                  No Clock
-game/x__i1                              |                  No Clock
+game/phys_map/y_i10                     |                  No Clock
+controller1/shift_i7                    |                  No Clock
+controller1/shift_i3                    |                  No Clock
+controller1/output_i6                   |                  No Clock
+controller1/output_i3                   |                  No Clock
+controller1/output_i2                   |                  No Clock
+controller1/shift_i6                    |                  No Clock
+controller1/output_i5                   |                  No Clock
+controller1/shift_i4                    |                  No Clock
+controller1/output_i4                   |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
-ition                                   |                       144
+ition                                   |                       166
                                         |                          
 -------------------------------------------------------------------
 
@@ -311,165 +313,6 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : controller1/counter_127__i6/Q  (SLICE)
-Path End         : {controller1/counter_127__i2/SR   controller1/counter_127__i3/SR}  (SLICE)
-Source Clock     : controller1/clk (R)
-Destination Clock: controller1/clk (R)
-Logic Level      : 6
-Delay Ratio      : 76.9% (route), 23.1% (logic)
-Clock Skew       : 0.000 ns
-Setup Constraint : 20.833 ns 
-Path Slack       : 4.104 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  12      
-controller1/clk                                           NET DELAY      2.075         2.075  12      
-
-
-
-controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
-controller1/counter[5]                                    NET DELAY        2.075         5.541  2       
-controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.477         6.018  1       
-controller1/n9                                            NET DELAY        2.075         8.093  1       
-controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n5180                                         NET DELAY        2.075        10.645  1       
-controller1/i180_4_lut/A->controller1/i180_4_lut/Z
-                                          SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
-controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i214_4_lut/A->controller1/i214_4_lut/Z
-                                          SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
-controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i213_4_lut/D->controller1/i213_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
-
-
-                                                          CONSTRAINT     0.000        20.833  1       
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000        20.833  12      
-controller1/clk ( CLK )                                   NET DELAY      2.075        22.908  12      
-                                                          Uncertainty    0.000        22.908  
-                                                          Setup time     0.530        22.378  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         22.378  
-Arrival Time                                                                         -18.273  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   4.104  
-
-
-
-
-++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : controller1/counter_127__i6/Q  (SLICE)
-Path End         : {controller1/counter_127__i4/SR   controller1/counter_127__i5/SR}  (SLICE)
-Source Clock     : controller1/clk (R)
-Destination Clock: controller1/clk (R)
-Logic Level      : 6
-Delay Ratio      : 76.9% (route), 23.1% (logic)
-Clock Skew       : 0.000 ns
-Setup Constraint : 20.833 ns 
-Path Slack       : 4.104 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  12      
-controller1/clk                                           NET DELAY      2.075         2.075  12      
-
-
-
-controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
-controller1/counter[5]                                    NET DELAY        2.075         5.541  2       
-controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.477         6.018  1       
-controller1/n9                                            NET DELAY        2.075         8.093  1       
-controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n5180                                         NET DELAY        2.075        10.645  1       
-controller1/i180_4_lut/A->controller1/i180_4_lut/Z
-                                          SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
-controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i214_4_lut/A->controller1/i214_4_lut/Z
-                                          SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
-controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i213_4_lut/D->controller1/i213_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
-
-
-                                                          CONSTRAINT     0.000        20.833  1       
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000        20.833  12      
-controller1/clk ( CLK )                                   NET DELAY      2.075        22.908  12      
-                                                          Uncertainty    0.000        22.908  
-                                                          Setup time     0.530        22.378  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         22.378  
-Arrival Time                                                                         -18.273  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   4.104  
-
-
-
-
-++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : controller1/counter_127__i6/Q  (SLICE)
-Path End         : {controller1/counter_127__i6/SR   controller1/counter_127__i7/SR}  (SLICE)
-Source Clock     : controller1/clk (R)
-Destination Clock: controller1/clk (R)
-Logic Level      : 6
-Delay Ratio      : 76.9% (route), 23.1% (logic)
-Clock Skew       : 0.000 ns
-Setup Constraint : 20.833 ns 
-Path Slack       : 4.104 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  12      
-controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  12      
-
-
-
-controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
-controller1/counter[5]                                    NET DELAY        2.075         5.541  2       
-controller1/i3_2_lut/B->controller1/i3_2_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.477         6.018  1       
-controller1/n9                                            NET DELAY        2.075         8.093  1       
-controller1/i2_4_lut/B->controller1/i2_4_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n5180                                         NET DELAY        2.075        10.645  1       
-controller1/i180_4_lut/A->controller1/i180_4_lut/Z
-                                          SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
-controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i214_4_lut/A->controller1/i214_4_lut/Z
-                                          SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
-controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i213_4_lut/D->controller1/i213_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
-
-
-                                                          CONSTRAINT     0.000        20.833  1       
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000        20.833  12      
-controller1/clk ( CLK )                                   NET DELAY      2.075        22.908  12      
-                                                          Uncertainty    0.000        22.908  
-                                                          Setup time     0.530        22.378  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         22.378  
-Arrival Time                                                                         -18.273  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   4.104  
-
-
-
-
-++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : controller1/counter_127__i6/Q  (SLICE)
 Path End         : {controller1/counter_127__i8/SR   controller1/counter_127__i9/SR}  (SLICE)
@@ -496,14 +339,14 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n5180                                         NET DELAY        2.075        10.645  1       
+controller1/n5169                                         NET DELAY        2.075        10.645  1       
 controller1/i180_4_lut/A->controller1/i180_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+controller1/i215_4_lut/A->controller1/i215_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+controller1/i214_4_lut/D->controller1/i214_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
 
@@ -522,7 +365,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : controller1/counter_127__i6/Q  (SLICE)
 Path End         : {controller1/counter_127__i10/SR   controller1/counter_127__i11/SR}  (SLICE)
@@ -549,14 +392,14 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n5180                                         NET DELAY        2.075        10.645  1       
+controller1/n5169                                         NET DELAY        2.075        10.645  1       
 controller1/i180_4_lut/A->controller1/i180_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+controller1/i215_4_lut/A->controller1/i215_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+controller1/i214_4_lut/D->controller1/i214_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
 
@@ -575,7 +418,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : controller1/counter_127__i6/Q  (SLICE)
 Path End         : {controller1/counter_127__i12/SR   controller1/counter_127__i13/SR}  (SLICE)
@@ -602,14 +445,14 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n5180                                         NET DELAY        2.075        10.645  1       
+controller1/n5169                                         NET DELAY        2.075        10.645  1       
 controller1/i180_4_lut/A->controller1/i180_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+controller1/i215_4_lut/A->controller1/i215_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+controller1/i214_4_lut/D->controller1/i214_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
 
@@ -628,7 +471,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : controller1/counter_127__i6/Q  (SLICE)
 Path End         : {controller1/counter_127__i14/SR   controller1/counter_127__i15/SR}  (SLICE)
@@ -655,14 +498,14 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n5180                                         NET DELAY        2.075        10.645  1       
+controller1/n5169                                         NET DELAY        2.075        10.645  1       
 controller1/i180_4_lut/A->controller1/i180_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+controller1/i215_4_lut/A->controller1/i215_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+controller1/i214_4_lut/D->controller1/i214_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
 
@@ -681,7 +524,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : controller1/counter_127__i6/Q  (SLICE)
 Path End         : {controller1/counter_127__i16/SR   controller1/counter_127__i17/SR}  (SLICE)
@@ -708,14 +551,14 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n5180                                         NET DELAY        2.075        10.645  1       
+controller1/n5169                                         NET DELAY        2.075        10.645  1       
 controller1/i180_4_lut/A->controller1/i180_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+controller1/i215_4_lut/A->controller1/i215_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+controller1/i214_4_lut/D->controller1/i214_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
 
@@ -734,7 +577,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : controller1/counter_127__i6/Q  (SLICE)
 Path End         : {controller1/counter_127__i18/SR   controller1/counter_127__i19/SR}  (SLICE)
@@ -761,14 +604,14 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n5180                                         NET DELAY        2.075        10.645  1       
+controller1/n5169                                         NET DELAY        2.075        10.645  1       
 controller1/i180_4_lut/A->controller1/i180_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+controller1/i215_4_lut/A->controller1/i215_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+controller1/i214_4_lut/D->controller1/i214_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
 
@@ -787,7 +630,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : controller1/counter_127__i6/Q  (SLICE)
 Path End         : {controller1/counter_127__i20/SR   controller1/counter_127__i21/SR}  (SLICE)
@@ -814,14 +657,173 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n5180                                         NET DELAY        2.075        10.645  1       
+controller1/n5169                                         NET DELAY        2.075        10.645  1       
 controller1/i180_4_lut/A->controller1/i180_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i214_4_lut/A->controller1/i214_4_lut/Z
+controller1/i215_4_lut/A->controller1/i215_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i213_4_lut/D->controller1/i213_4_lut/Z
+controller1/i214_4_lut/D->controller1/i214_4_lut/Z
+                                          SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
+controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+
+
+                                                          CONSTRAINT     0.000        20.833  1       
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000        20.833  12      
+controller1/clk ( CLK )                                   NET DELAY      2.075        22.908  12      
+                                                          Uncertainty    0.000        22.908  
+                                                          Setup time     0.530        22.378  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         22.378  
+Arrival Time                                                                         -18.273  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   4.104  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : controller1/counter_127__i6/Q  (SLICE)
+Path End         : controller1/counter_127__i1/SR  (SLICE)
+Source Clock     : controller1/clk (R)
+Destination Clock: controller1/clk (R)
+Logic Level      : 6
+Delay Ratio      : 76.9% (route), 23.1% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 4.104 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  12      
+controller1/clk                                           NET DELAY      2.075         2.075  12      
+
+
+
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
+controller1/counter[5]                                    NET DELAY        2.075         5.541  2       
+controller1/i3_2_lut/B->controller1/i3_2_lut/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477         6.018  1       
+controller1/n9                                            NET DELAY        2.075         8.093  1       
+controller1/i2_4_lut/B->controller1/i2_4_lut/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
+controller1/n5169                                         NET DELAY        2.075        10.645  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
+controller1/n28                                           NET DELAY        2.075        13.197  1       
+controller1/i215_4_lut/A->controller1/i215_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
+controller1/n36                                           NET DELAY        2.075        15.749  1       
+controller1/i214_4_lut/D->controller1/i214_4_lut/Z
+                                          SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
+controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+
+
+                                                          CONSTRAINT     0.000        20.833  1       
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000        20.833  12      
+controller1/clk ( CLK )                                   NET DELAY      2.075        22.908  12      
+                                                          Uncertainty    0.000        22.908  
+                                                          Setup time     0.530        22.378  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         22.378  
+Arrival Time                                                                         -18.273  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   4.104  
+
+
+
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : controller1/counter_127__i6/Q  (SLICE)
+Path End         : {controller1/counter_127__i2/SR   controller1/counter_127__i3/SR}  (SLICE)
+Source Clock     : controller1/clk (R)
+Destination Clock: controller1/clk (R)
+Logic Level      : 6
+Delay Ratio      : 76.9% (route), 23.1% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 4.104 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  12      
+controller1/clk                                           NET DELAY      2.075         2.075  12      
+
+
+
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
+controller1/counter[5]                                    NET DELAY        2.075         5.541  2       
+controller1/i3_2_lut/B->controller1/i3_2_lut/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477         6.018  1       
+controller1/n9                                            NET DELAY        2.075         8.093  1       
+controller1/i2_4_lut/B->controller1/i2_4_lut/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
+controller1/n5169                                         NET DELAY        2.075        10.645  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
+controller1/n28                                           NET DELAY        2.075        13.197  1       
+controller1/i215_4_lut/A->controller1/i215_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
+controller1/n36                                           NET DELAY        2.075        15.749  1       
+controller1/i214_4_lut/D->controller1/i214_4_lut/Z
+                                          SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
+controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+
+
+                                                          CONSTRAINT     0.000        20.833  1       
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000        20.833  12      
+controller1/clk ( CLK )                                   NET DELAY      2.075        22.908  12      
+                                                          Uncertainty    0.000        22.908  
+                                                          Setup time     0.530        22.378  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         22.378  
+Arrival Time                                                                         -18.273  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   4.104  
+
+
+
+
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : controller1/counter_127__i6/Q  (SLICE)
+Path End         : {controller1/counter_127__i4/SR   controller1/counter_127__i5/SR}  (SLICE)
+Source Clock     : controller1/clk (R)
+Destination Clock: controller1/clk (R)
+Logic Level      : 6
+Delay Ratio      : 76.9% (route), 23.1% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 20.833 ns 
+Path Slack       : 4.104 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  12      
+controller1/clk                                           NET DELAY      2.075         2.075  12      
+
+
+
+controller1/counter_127__i6/CK->controller1/counter_127__i6/Q
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
+controller1/counter[5]                                    NET DELAY        2.075         5.541  2       
+controller1/i3_2_lut/B->controller1/i3_2_lut/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477         6.018  1       
+controller1/n9                                            NET DELAY        2.075         8.093  1       
+controller1/i2_4_lut/B->controller1/i2_4_lut/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
+controller1/n5169                                         NET DELAY        2.075        10.645  1       
+controller1/i180_4_lut/A->controller1/i180_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
+controller1/n28                                           NET DELAY        2.075        13.197  1       
+controller1/i215_4_lut/A->controller1/i215_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
+controller1/n36                                           NET DELAY        2.075        15.749  1       
+controller1/i214_4_lut/D->controller1/i214_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
 controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
 
@@ -862,211 +864,6 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : controller1/counter_127__i12/Q  (SLICE)
-Path End         : controller1/counter_127__i12/D  (SLICE)
-Source Clock     : controller1/clk (R)
-Destination Clock: controller1/clk (R)
-Logic Level      : 2
-Delay Ratio      : 67.1% (route), 32.9% (logic)
-Clock Skew       : 0.000 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 3.092 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
-controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
-
-
-
-controller1/counter_127__i12/CK->controller1/counter_127__i12/Q
-                                          SLICE           CLK_TO_Q0_DELAY  0.768         2.843  3       
-controller1/counter[11]                                   NET DELAY        2.075         4.918  3       
-controller1/counter_127_add_4_13/C0->controller1/counter_127_add_4_13/S0
-                                          SLICE           C0_TO_F0_DELAY   0.249         5.167  1       
-controller1/n89[11] ( DI0 )                               NET DELAY        0.000         5.167  1       
-
-
-                                                          CONSTRAINT     0.000         0.000  1       
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
-controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
-                                                          Uncertainty    0.000         2.075  
-                                                          Hold time      0.000         2.075  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         -2.075  
-Arrival Time                                                                           5.167  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   3.092  
-
-
-
-
-++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : controller1/counter_127__i13/Q  (SLICE)
-Path End         : controller1/counter_127__i13/D  (SLICE)
-Source Clock     : controller1/clk (R)
-Destination Clock: controller1/clk (R)
-Logic Level      : 2
-Delay Ratio      : 67.1% (route), 32.9% (logic)
-Clock Skew       : 0.000 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 3.092 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
-controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
-
-
-
-controller1/counter_127__i13/CK->controller1/counter_127__i13/Q
-                                          SLICE           CLK_TO_Q1_DELAY  0.768         2.843  4       
-controller1/counter[12]                                   NET DELAY        2.075         4.918  4       
-controller1/counter_127_add_4_13/C1->controller1/counter_127_add_4_13/S1
-                                          SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
-controller1/n89[12] ( DI1 )                               NET DELAY        0.000         5.167  1       
-
-
-                                                          CONSTRAINT     0.000         0.000  1       
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
-controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
-                                                          Uncertainty    0.000         2.075  
-                                                          Hold time      0.000         2.075  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         -2.075  
-Arrival Time                                                                           5.167  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   3.092  
-
-
-
-
-++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : controller1/counter_127__i14/Q  (SLICE)
-Path End         : controller1/counter_127__i14/D  (SLICE)
-Source Clock     : controller1/clk (R)
-Destination Clock: controller1/clk (R)
-Logic Level      : 2
-Delay Ratio      : 67.1% (route), 32.9% (logic)
-Clock Skew       : 0.000 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 3.092 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
-controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
-
-
-
-controller1/counter_127__i14/CK->controller1/counter_127__i14/Q
-                                          SLICE           CLK_TO_Q0_DELAY  0.768         2.843  4       
-controller1/counter[13]                                   NET DELAY        2.075         4.918  4       
-controller1/counter_127_add_4_15/C0->controller1/counter_127_add_4_15/S0
-                                          SLICE           C0_TO_F0_DELAY   0.249         5.167  1       
-controller1/n89[13] ( DI0 )                               NET DELAY        0.000         5.167  1       
-
-
-                                                          CONSTRAINT     0.000         0.000  1       
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
-controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
-                                                          Uncertainty    0.000         2.075  
-                                                          Hold time      0.000         2.075  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         -2.075  
-Arrival Time                                                                           5.167  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   3.092  
-
-
-
-
-++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : controller1/counter_127__i15/Q  (SLICE)
-Path End         : controller1/counter_127__i15/D  (SLICE)
-Source Clock     : controller1/clk (R)
-Destination Clock: controller1/clk (R)
-Logic Level      : 2
-Delay Ratio      : 67.1% (route), 32.9% (logic)
-Clock Skew       : 0.000 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 3.092 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
-controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
-
-
-
-controller1/counter_127__i15/CK->controller1/counter_127__i15/Q
-                                          SLICE           CLK_TO_Q1_DELAY  0.768         2.843  4       
-controller1/counter[14]                                   NET DELAY        2.075         4.918  4       
-controller1/counter_127_add_4_15/C1->controller1/counter_127_add_4_15/S1
-                                          SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
-controller1/n89[14] ( DI1 )                               NET DELAY        0.000         5.167  1       
-
-
-                                                          CONSTRAINT     0.000         0.000  1       
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
-controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
-                                                          Uncertainty    0.000         2.075  
-                                                          Hold time      0.000         2.075  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         -2.075  
-Arrival Time                                                                           5.167  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   3.092  
-
-
-
-
-++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : controller1/counter_127__i16/Q  (SLICE)
-Path End         : controller1/counter_127__i16/D  (SLICE)
-Source Clock     : controller1/clk (R)
-Destination Clock: controller1/clk (R)
-Logic Level      : 2
-Delay Ratio      : 67.1% (route), 32.9% (logic)
-Clock Skew       : 0.000 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 3.092 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
-controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
-
-
-
-controller1/counter_127__i16/CK->controller1/counter_127__i16/Q
-                                          SLICE           CLK_TO_Q0_DELAY  0.768         2.843  4       
-controller1/counter[15]                                   NET DELAY        2.075         4.918  4       
-controller1/counter_127_add_4_17/C0->controller1/counter_127_add_4_17/S0
-                                          SLICE           C0_TO_F0_DELAY   0.249         5.167  1       
-controller1/n89[15] ( DI0 )                               NET DELAY        0.000         5.167  1       
-
-
-                                                          CONSTRAINT     0.000         0.000  1       
-controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
-controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
-                                                          Uncertainty    0.000         2.075  
-                                                          Hold time      0.000         2.075  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         -2.075  
-Arrival Time                                                                           5.167  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   3.092  
-
-
-
-
-++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
 Path Begin       : controller1/counter_127__i17/Q  (SLICE)
 Path End         : controller1/counter_127__i17/D  (SLICE)
 Source Clock     : controller1/clk (R)
@@ -1106,7 +903,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : controller1/counter_127__i18/Q  (SLICE)
 Path End         : controller1/counter_127__i18/D  (SLICE)
@@ -1147,7 +944,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : controller1/counter_127__i19/Q  (SLICE)
 Path End         : controller1/counter_127__i19/D  (SLICE)
@@ -1188,7 +985,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : controller1/counter_127__i20/Q  (SLICE)
 Path End         : controller1/counter_127__i20/D  (SLICE)
@@ -1229,7 +1026,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : controller1/counter_127__i21/Q  (SLICE)
 Path End         : controller1/counter_127__i21/D  (SLICE)
@@ -1254,6 +1051,211 @@ controller1/counter[20]                                   NET DELAY        2.075
 controller1/counter_127_add_4_21/C1->controller1/counter_127_add_4_21/S1
                                           SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
 controller1/n89[20] ( DI1 )                               NET DELAY        0.000         5.167  1       
+
+
+                                                          CONSTRAINT     0.000         0.000  1       
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
+controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
+                                                          Uncertainty    0.000         2.075  
+                                                          Hold time      0.000         2.075  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         -2.075  
+Arrival Time                                                                           5.167  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   3.092  
+
+
+
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : controller1/counter_127__i1/Q  (SLICE)
+Path End         : controller1/counter_127__i1/D  (SLICE)
+Source Clock     : controller1/clk (R)
+Destination Clock: controller1/clk (R)
+Logic Level      : 2
+Delay Ratio      : 67.1% (route), 32.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 3.092 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
+controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
+
+
+
+controller1/counter_127__i1/CK->controller1/counter_127__i1/Q
+                                          SLICE           CLK_TO_Q1_DELAY  0.768         2.843  1       
+controller1/n21                                           NET DELAY        2.075         4.918  1       
+controller1/counter_127_add_4_1/C1->controller1/counter_127_add_4_1/S1
+                                          SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
+controller1/n89[0] ( DI1 )                                NET DELAY        0.000         5.167  1       
+
+
+                                                          CONSTRAINT     0.000         0.000  1       
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
+controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
+                                                          Uncertainty    0.000         2.075  
+                                                          Hold time      0.000         2.075  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         -2.075  
+Arrival Time                                                                           5.167  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   3.092  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : controller1/counter_127__i2/Q  (SLICE)
+Path End         : controller1/counter_127__i2/D  (SLICE)
+Source Clock     : controller1/clk (R)
+Destination Clock: controller1/clk (R)
+Logic Level      : 2
+Delay Ratio      : 67.1% (route), 32.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 3.092 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
+controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
+
+
+
+controller1/counter_127__i2/CK->controller1/counter_127__i2/Q
+                                          SLICE           CLK_TO_Q0_DELAY  0.768         2.843  1       
+controller1/n20                                           NET DELAY        2.075         4.918  1       
+controller1/counter_127_add_4_3/C0->controller1/counter_127_add_4_3/S0
+                                          SLICE           C0_TO_F0_DELAY   0.249         5.167  1       
+controller1/n89[1] ( DI0 )                                NET DELAY        0.000         5.167  1       
+
+
+                                                          CONSTRAINT     0.000         0.000  1       
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
+controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
+                                                          Uncertainty    0.000         2.075  
+                                                          Hold time      0.000         2.075  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         -2.075  
+Arrival Time                                                                           5.167  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   3.092  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : controller1/counter_127__i3/Q  (SLICE)
+Path End         : controller1/counter_127__i3/D  (SLICE)
+Source Clock     : controller1/clk (R)
+Destination Clock: controller1/clk (R)
+Logic Level      : 2
+Delay Ratio      : 67.1% (route), 32.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 3.092 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
+controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
+
+
+
+controller1/counter_127__i3/CK->controller1/counter_127__i3/Q
+                                          SLICE           CLK_TO_Q1_DELAY  0.768         2.843  2       
+controller1/counter[2]                                    NET DELAY        2.075         4.918  2       
+controller1/counter_127_add_4_3/C1->controller1/counter_127_add_4_3/S1
+                                          SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
+controller1/n89[2] ( DI1 )                                NET DELAY        0.000         5.167  1       
+
+
+                                                          CONSTRAINT     0.000         0.000  1       
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
+controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
+                                                          Uncertainty    0.000         2.075  
+                                                          Hold time      0.000         2.075  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         -2.075  
+Arrival Time                                                                           5.167  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   3.092  
+
+
+
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : controller1/counter_127__i4/Q  (SLICE)
+Path End         : controller1/counter_127__i4/D  (SLICE)
+Source Clock     : controller1/clk (R)
+Destination Clock: controller1/clk (R)
+Logic Level      : 2
+Delay Ratio      : 67.1% (route), 32.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 3.092 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
+controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
+
+
+
+controller1/counter_127__i4/CK->controller1/counter_127__i4/Q
+                                          SLICE           CLK_TO_Q0_DELAY  0.768         2.843  2       
+controller1/counter[3]                                    NET DELAY        2.075         4.918  2       
+controller1/counter_127_add_4_5/C0->controller1/counter_127_add_4_5/S0
+                                          SLICE           C0_TO_F0_DELAY   0.249         5.167  1       
+controller1/n89[3] ( DI0 )                                NET DELAY        0.000         5.167  1       
+
+
+                                                          CONSTRAINT     0.000         0.000  1       
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
+controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
+                                                          Uncertainty    0.000         2.075  
+                                                          Hold time      0.000         2.075  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         -2.075  
+Arrival Time                                                                           5.167  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   3.092  
+
+
+
+
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : controller1/counter_127__i5/Q  (SLICE)
+Path End         : controller1/counter_127__i5/D  (SLICE)
+Source Clock     : controller1/clk (R)
+Destination Clock: controller1/clk (R)
+Logic Level      : 2
+Delay Ratio      : 67.1% (route), 32.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 3.092 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+controller1.the_hsosc/CLKHF               HFOSC           CLOCK LATENCY  0.000         0.000  13      
+controller1/clk ( CLK )                                   NET DELAY      2.075         2.075  13      
+
+
+
+controller1/counter_127__i5/CK->controller1/counter_127__i5/Q
+                                          SLICE           CLK_TO_Q1_DELAY  0.768         2.843  2       
+controller1/counter[4]                                    NET DELAY        2.075         4.918  2       
+controller1/counter_127_add_4_5/C1->controller1/counter_127_add_4_5/S1
+                                          SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
+controller1/n89[4] ( DI1 )                                NET DELAY        0.000         5.167  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       

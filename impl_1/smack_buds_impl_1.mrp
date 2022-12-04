@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Sat Dec  3 18:34:01 2022
+Mapped on: Sat Dec  3 21:26:37 2022
 
 Design Information
 ------------------
@@ -19,8 +19,8 @@ Design Summary
 
    Number of slice registers: 101 out of  5280 (2%)
    Number of I/O registers:      1 out of   117 (1%)
-   Number of LUT4s:           503 out of  5280 (10%)
-      Number of logic LUT4s:             276
+   Number of LUT4s:           505 out of  5280 (10%)
+      Number of logic LUT4s:             278
       Number of inserted feedthru LUT4s:   7
       Number of ripple logic:            110 (220 LUT4s)
    Number of IO sites used:   14 out of 39 (36%)
@@ -45,21 +45,21 @@ Design Summary
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  6
-      Net internal25clk: 22 loads, 22 rising, 0 falling (Driver: Pin
-     pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net internal60hzclk: 26 loads, 26 rising, 0 falling (Driver: Pin
-     sixtyHZclock.i4974_4_lut/OUT)
-      Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
       Net controller_latch_c: 6 loads, 6 rising, 0 falling (Driver: Pin
      controller1.i7_4_lut/OUT)
       Net controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
      controller1.i1_4_lut/OUT)
       Net controller1.clk: 11 loads, 11 rising, 0 falling (Driver: Pin
      controller1.the_hsosc/CLKHF)
+      Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
+      Net internal25clk: 22 loads, 22 rising, 0 falling (Driver: Pin
+     pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
+      Net internal60hzclk: 26 loads, 26 rising, 0 falling (Driver: Pin
+     sixtyHZclock.i4_4_lut/OUT)
    Number of Clock Enables:  3
       Net RGB_pad[3].vcc: 1 loads, 0 SLICEs
       Net n401: 6 loads, 6 SLICEs
-      Net game.n2482: 11 loads, 11 SLICEs
+      Net game.phys_map.n2416: 11 loads, 11 SLICEs
 
                                     Page 1
 
@@ -70,22 +70,22 @@ Design Summary
 Design Summary (cont)
 ---------------------
    Number of LSRs:  5
+      Net x_10__N_191: 25 loads, 25 SLICEs
+      Net controller1.counter_20__N_51: 11 loads, 11 SLICEs
       Net col_10__N_104: 6 loads, 6 SLICEs
       Net row_10__N_116: 6 loads, 6 SLICEs
-      Net controller_buttons_signal[4]: 23 loads, 23 SLICEs
-      Net game.n231: 1 loads, 1 SLICEs
-      Net controller1.counter_20__N_51: 11 loads, 11 SLICEs
+      Net game.phys_map.n232: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
       Net RGB_pad[3].vcc: 40 loads
-      Net controller_buttons_signal[4]: 27 loads
-      Net game.n62[10]: 24 loads
-      Net game.n644: 19 loads
-      Net game.n609: 15 loads
-      Net game.n62_adj_308[10]: 15 loads
+      Net x_10__N_191: 28 loads
+      Net game.phys_map.n62_adj_321[10]: 24 loads
+      Net game.phys_map.n644: 19 loads
+      Net game.phys_map.n609: 15 loads
+      Net game.phys_map.n62[10]: 15 loads
       Net controller_buttons_signal[1]: 12 loads
       Net controller1.counter_20__N_51: 11 loads
-      Net game.n21_adj_223: 11 loads
-      Net game.n2482: 11 loads
+      Net controller_buttons_signal[2]: 11 loads
+      Net game.phys_map.n21_adj_232: 11 loads
 
 
 
@@ -202,19 +202,19 @@ OSC 1:                                 Pin/Node Value
 ASIC Components
 ---------------
 
-Instance Name: pll/lscc_pll_inst/u_PLL_B
-         Type: PLL
 Instance Name: controller1/shift_i0
          Type: IOLOGIC
 Instance Name: controller1/the_hsosc
          Type: HFOSC
+Instance Name: pll/lscc_pll_inst/u_PLL_B
+         Type: PLL
 
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 61 MB
+   Peak Memory Usage: 60 MB
 
 
 

@@ -84,6 +84,8 @@ begin
 									y => y_gl,
 									yv => yv_gl
 								);
+	x <= x_gl;
+	y <= y_gl;
 
 end;
 

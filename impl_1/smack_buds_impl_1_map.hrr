@@ -4,45 +4,33 @@ Report for cell top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        100.0
-                                  LUT4	        503        100.0
+                                  LUT4	        505        100.0
                                  IOREG	          1        100.0
                                  IOBUF	         14        100.0
                                 PFUREG	        101        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                            controller	          1         9.1
-                            game_logic	          1        62.0
+                            controller	          1         8.1
+                            game_logic	          1        62.6
                                 my_pll	          1         0.0
                            pattern_gen	          1        13.1
-                     pllclock_to_60_hz	          1         5.4
-                                   vga	          1         8.0
+                     pllclock_to_60_hz	          1         5.5
+                                   vga	          1         7.9
 ---------------------------------------------------
-Report for cell pllclock_to_60_hz
-   Instance path: top/sixtyHZclock
+Report for cell controller
+   Instance path: top/controller1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         27         5.4
-                                PFUREG	         19        18.8
+                                 IOLGC	       1.00        100.0
+                                  LUT4	         41         8.1
+                                 IOREG	          1        100.0
+                                PFUREG	         34        33.7
 ---------------------------------------------------
 Report for cell pattern_gen
    Instance path: top/patternmaker
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   LUT4	         66        13.1
----------------------------------------------------
-Report for cell vga
-   Instance path: top/internalvga
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         40         8.0
-                                PFUREG	         22        21.8
----------------------------------------------------
-Report for cell game_logic
-   Instance path: top/game
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        312        62.0
-                                PFUREG	         26        25.7
 ---------------------------------------------------
 Report for cell my_pll
    Instance path: top/pll
@@ -57,11 +45,33 @@ Report for cell my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
-Report for cell controller
-   Instance path: top/controller1
+Report for cell game_logic
+   Instance path: top/game
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOLGC	       1.00        100.0
-                                  LUT4	         46         9.1
-                                 IOREG	          1        100.0
-                                PFUREG	         34        33.7
+                                  LUT4	        316        62.6
+                                PFUREG	         26        25.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                               physics	          1        62.6
+---------------------------------------------------
+Report for cell physics
+   Instance path: top/game/phys_map
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        316        62.6
+                                PFUREG	         26        25.7
+---------------------------------------------------
+Report for cell vga
+   Instance path: top/internalvga
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         40         7.9
+                                PFUREG	         22        21.8
+---------------------------------------------------
+Report for cell pllclock_to_60_hz
+   Instance path: top/sixtyHZclock
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         28         5.5
+                                PFUREG	         19        18.8

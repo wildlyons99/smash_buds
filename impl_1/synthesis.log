@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Dec  3 18:33:50 2022
+Sat Dec  3 21:26:25 2022
 
 
 Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f smack_buds_impl_1_lattice.synproj -gui -msgset //vs-home/tlyons01/es4/smack_buds/promote.xml 
@@ -171,6 +171,7 @@ Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd.
 Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd
 
 INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(5): analyzing entity physics. VHDL-1012
+INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(21): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd. VHDL-1481
 Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd
 
@@ -205,11 +206,12 @@ Top module name (VHDL, mixed language): top
 
 WARNING - synthesis: Bit 1 of Register gravity is stuck at Zero
 WARNING - synthesis: Bit 0 of Register gravity is stuck at One
+WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(62): Removing unused instance \game/col_map. VDB-5034
 WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/my_pll/rtl/my_pll.v(139): net \pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
 WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/my_pll/rtl/my_pll.v(140): net \pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
 ######## Missing driver on net \pll/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \pll/lscc_pll_inst/sdi_i. Patching with GND.
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(134): Register \game/first_time is stuck at One. VDB-5014
+WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(71): Register \game/phys_map/first_time is stuck at One. VDB-5014
 
 
 
@@ -222,7 +224,7 @@ FD1P3XZ => 101
 HSOSC_CORE => 1
 IB => 2
 IOL_B => 1
-LUT4 => 275
+LUT4 => 277
 OB => 12
 PLL_B => 1
 ################### End Area Report ##################
@@ -242,19 +244,19 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : controller1/controller_buttons_signal[4], loads : 26
-  Net : game/n51, loads : 23
+  Net : controller1/x_10__N_191, loads : 27
+  Net : game/phys_map/n51_adj_247, loads : 23
   Net : controller1/clk, loads : 21
   Net : controller1/counter_20__N_51, loads : 21
-  Net : game/n644, loads : 18
-  Net : game/n609, loads : 15
-  Net : game/n51_adj_228, loads : 14
+  Net : game/phys_map/n644, loads : 18
+  Net : game/phys_map/n609, loads : 15
+  Net : game/phys_map/n51, loads : 14
   Net : controller1/controller_buttons_signal[1], loads : 11
   Net : internalvga/col_10__N_104, loads : 11
   Net : internalvga/row_10__N_116, loads : 11
 ################### End Clock Report ##################
 
-Peak Memory Usage: 124 MB
+Peak Memory Usage: 123 MB
 
 --------------------------------------------------------------
 Total CPU Time: 3 secs 

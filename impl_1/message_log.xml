@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Export">
+    <Task name="Map">
         <Message>
-            <ID>1191031</ID>
-            <Severity>1</Severity>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>pll.lscc_pll_inst.u_PLL_B</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>pll.lscc_pll_inst.u_PLL_B</Dynamic>
         </Message>
     </Task>
     <Task name="PAR">
@@ -804,6 +820,14 @@
             <Navigation>5</Navigation>
         </Message>
         <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(21): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
             <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(5): </Dynamic>
@@ -1198,6 +1222,14 @@
             <Navigation>5</Navigation>
         </Message>
         <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(21): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
             <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(5): </Dynamic>
@@ -1224,6 +1256,14 @@
             <Dynamic>gravity</Dynamic>
         </Message>
         <Message>
+            <ID>35935034</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(62): </Dynamic>
+            <Dynamic>\game/col_map</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
+            <Navigation>62</Navigation>
+        </Message>
+        <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
             <Dynamic>//vs-home/tlyons01/es4/smack_buds/my_pll/rtl/my_pll.v(139): </Dynamic>
@@ -1242,10 +1282,10 @@
         <Message>
             <ID>35935014</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(134): </Dynamic>
-            <Dynamic>\game/first_time</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
-            <Navigation>134</Navigation>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(71): </Dynamic>
+            <Dynamic>\game/phys_map/first_time</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd</Navigation>
+            <Navigation>71</Navigation>
         </Message>
         <Message>
             <ID>35002039</ID>
@@ -1254,7 +1294,7 @@
         <Message>
             <ID>35811145</ID>
             <Severity>1</Severity>
-            <Dynamic>i5880</Dynamic>
+            <Dynamic>i5873</Dynamic>
         </Message>
         <Message>
             <ID>70001944</ID>
@@ -1297,26 +1337,10 @@
             <Dynamic>u_PLL_B</Dynamic>
         </Message>
     </Task>
-    <Task name="Map">
+    <Task name="Export">
         <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>pll.lscc_pll_inst.u_PLL_B</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>pll.lscc_pll_inst.u_PLL_B</Dynamic>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
         </Message>
     </Task>
 </BaliMessageLog>
