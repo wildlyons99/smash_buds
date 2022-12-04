@@ -10,7 +10,7 @@ I/O cells:      14
                          HSOSC_CORE         1          100.0
                                  IB         2          100.0
                               IOL_B         1          100.0
-                               LUT4       298          100.0
+                               LUT4       297          100.0
                                  OB        12          100.0
                               PLL_B         1          100.0
 SUB MODULES
@@ -23,7 +23,7 @@ my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT
                   pllclock_to_60_hz         1
                       tony_idle_rom         1
                                 vga         1
-                              TOTAL       541
+                              TOTAL       540
 ----------------------------------------------------------------------
 Report for cell vga.v1
 Instance Path : internalvga
@@ -31,8 +31,8 @@ Instance Path : internalvga
                                cell     count   Res Usage(%)
                                 FA2        12           10.6
                             FD1P3XZ        22           21.8
-                               LUT4        17            5.7
-                              TOTAL        51
+                               LUT4        18            6.1
+                              TOTAL        52
 ----------------------------------------------------------------------
 Report for cell controller.v1
 Instance Path : controller1
@@ -51,10 +51,10 @@ Instance Path : patternmaker
                                cell     count   Res Usage(%)
                               EBR_B         3          100.0
                                 FA2        15           13.3
-                               LUT4        56           18.8
+                               LUT4        54           18.2
 SUB MODULES
                       tony_idle_rom         1
-                              TOTAL        75
+                              TOTAL        73
 ----------------------------------------------------------------------
 Report for cell tony_idle_rom.v1
 Instance Path : patternmaker.tony_map
@@ -85,7 +85,7 @@ Instance Path : game
                                cell     count   Res Usage(%)
                                 FA2        65           57.5
                             FD1P3XZ        26           25.7
-                               LUT4       198           66.4
+                               LUT4       198           66.7
 SUB MODULES
                             physics         1
                               TOTAL       290
@@ -96,7 +96,7 @@ Instance Path : game.phys_map
                                cell     count   Res Usage(%)
                                 FA2        65           57.5
                             FD1P3XZ        26           25.7
-                               LUT4       198           66.4
+                               LUT4       198           66.7
                               TOTAL       289
 ----------------------------------------------------------------------
 Report for cell pllclock_to_60_hz.v1
@@ -105,5 +105,5 @@ Instance Path : sixtyHZclock
                                cell     count   Res Usage(%)
                                 FA2        10            8.8
                             FD1P3XZ        19           18.8
-                               LUT4         7            2.3
+                               LUT4         7            2.4
                               TOTAL        36

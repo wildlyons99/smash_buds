@@ -18,7 +18,11 @@ begin
 			if (first_time) then
 				clock_count <= 19b"0";
 			else
-				clock_count <= clock_count + 1;
+				if (clock_count = 385000) then
+					clock_count <= 19b"0";
+				else
+					clock_count <= clock_count + 1;
+				end if;
 			end if;
 		end if;
 	end process;
