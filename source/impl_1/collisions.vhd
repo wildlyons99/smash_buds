@@ -62,7 +62,7 @@ begin
 		plat_width => 11d"640", 
 		plat_height => 11d"20",
 		corner_x => 11d"0",
-		corner_y => 11d"300"
+		corner_y => 11d"420"
 	)
 	port map(
 		--clk => clk,
