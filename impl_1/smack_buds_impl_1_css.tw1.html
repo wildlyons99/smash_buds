@@ -46,7 +46,7 @@ if (a)
 <A name="timing_rpt_top">Timing Report</A><B><U><big></big></U></B>
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Mon Dec  5 22:09:11 2022
+Mon Dec  5 22:40:25 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -180,7 +180,7 @@ Clock Domain Crossing
 
 <A name="Timing_rpt_ConstraintCoverage"></A><B><U><big>3.1.1  Constraint Coverage</big></U></B>
 
-Constraint Coverage: 6.70074%
+Constraint Coverage: 6.46409%
 
 <A name="Timing_rpt_Errors"></A><B><U><big>3.1.2  Timing Errors</big></U></B>
 
@@ -255,24 +255,24 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
+internalvga/row__i6/D                   |    No arrival or required
+internalvga/row__i5/D                   |    No arrival or required
+{internalvga/row__i5/SP   internalvga/row__i6/SP}                           
+                                        |    No arrival or required
+{internalvga/row__i5/SR   internalvga/row__i6/SR}                           
+                                        |    No arrival or required
+internalvga/row__i4/D                   |    No arrival or required
+internalvga/row__i3/D                   |    No arrival or required
+{internalvga/row__i3/SP   internalvga/row__i4/SP}                           
+                                        |    No arrival or required
+{internalvga/row__i3/SR   internalvga/row__i4/SR}                           
+                                        |    No arrival or required
 internalvga/row__i10/D                  |    No arrival or required
 internalvga/row__i9/D                   |    No arrival or required
-{internalvga/row__i9/SP   internalvga/row__i10/SP}                           
-                                        |    No arrival or required
-{internalvga/row__i9/SR   internalvga/row__i10/SR}                           
-                                        |    No arrival or required
-internalvga/row__i8/D                   |    No arrival or required
-internalvga/row__i7/D                   |    No arrival or required
-{internalvga/row__i7/SP   internalvga/row__i8/SP}                           
-                                        |    No arrival or required
-{internalvga/row__i7/SR   internalvga/row__i8/SR}                           
-                                        |    No arrival or required
-internalvga/col_170__i10/D              |    No arrival or required
-internalvga/col_170__i9/D               |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                        95
+ts                                      |                        91
                                         |                          
 -------------------------------------------------------------------
 
@@ -293,14 +293,14 @@ create_generated_clock,
 -------------------------------------------------------------------
 ext12m                                  |                     input
 controller_in                           |                     input
-RGB[1]                                  |                    output
-RGB[2]                                  |                    output
-RGB[3]                                  |                    output
 RGB[4]                                  |                    output
 RGB[5]                                  |                    output
 up                                      |                    output
 VSYNC                                   |                    output
 HSYNC                                   |                    output
+RGB[3]                                  |                    output
+RGB[2]                                  |                    output
+RGB[1]                                  |                    output
 -------------------------------------------------------------------
                                         |                          
 Number of I/O ports without constraint  |                        13
@@ -312,20 +312,20 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
-game/phys_map/y_i6                      |                  No Clock
-game/phys_map/y_i5                      |                  No Clock
-game/phys_map/xVelocity_172__i2         |                  No Clock
-game/phys_map/xVelocity_172__i1         |                  No Clock
 game/phys_map/x_i0                      |                  No Clock
-game/phys_map/yVelocity__i3             |                  No Clock
-game/phys_map/y_i4                      |                  No Clock
-game/phys_map/xVelocity_172__i0         |                  No Clock
-game/phys_map/y_i2                      |                  No Clock
+game/phys_map/xVelocity_172__i2         |                  No Clock
+game/phys_map/yVelocity__i0             |                  No Clock
 game/phys_map/xVelocity_172__i3         |                  No Clock
+game/phys_map/y_i6                      |                  No Clock
+game/phys_map/y_i3                      |                  No Clock
+game/phys_map/y_i4                      |                  No Clock
+game/phys_map/y_i2                      |                  No Clock
+game/phys_map/xVelocity_172__i1         |                  No Clock
+game/phys_map/y_i5                      |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
-ition                                   |                       163
+ition                                   |                       210
                                         |                          
 -------------------------------------------------------------------
 
@@ -368,7 +368,7 @@ Path Slack       : 4.104 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/CK",
-        "phy_name":"controller1.SLICE_111/CLK"
+        "phy_name":"controller1.SLICE_109/CLK"
     },
     "path_sections":[
     {
@@ -398,13 +398,13 @@ controller1/clk                                           NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/Q",
-        "phy_name":"controller1.SLICE_111/Q0"
+        "phy_name":"controller1.SLICE_109/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"{controller1/counter_168__i2/SR   controller1/counter_168__i3/SR}",
-        "phy_name":"controller1.SLICE_113/LSR"
+        "phy_name":"controller1.SLICE_111/LSR"
     },
     "path_sections":[
     {
@@ -412,12 +412,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i6/CK",
-            "phy_name":"controller1.SLICE_111/CLK"
+            "phy_name":"controller1.SLICE_109/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i6/Q",
-            "phy_name":"controller1.SLICE_111/Q0"
+            "phy_name":"controller1.SLICE_109/Q0"
         },
         "arrive":3.466,
         "delay":1.391
@@ -437,12 +437,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i3_2_lut/B",
-            "phy_name":"controller1.SLICE_428/B0"
+            "phy_name":"controller1.SLICE_442/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i3_2_lut/Z",
-            "phy_name":"controller1.SLICE_428/F0"
+            "phy_name":"controller1.SLICE_442/F0"
         },
         "arrive":6.018,
         "delay":0.477
@@ -462,12 +462,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i2_4_lut/B",
-            "phy_name":"controller1.SLICE_347/B0"
+            "phy_name":"controller1.SLICE_361/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i2_4_lut/Z",
-            "phy_name":"controller1.SLICE_347/F0"
+            "phy_name":"controller1.SLICE_361/F0"
         },
         "arrive":8.570,
         "delay":0.477
@@ -476,8 +476,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/n6640",
-            "phy_name":"controller1.n6640"
+            "log_name":"controller1/n6733",
+            "phy_name":"controller1.n6733"
         },
         "arrive":10.645,
         "delay":2.075
@@ -486,13 +486,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i218_4_lut/A",
-            "phy_name":"controller1.SLICE_359/A0"
+            "log_name":"controller1/i220_4_lut/A",
+            "phy_name":"controller1.SLICE_373/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i218_4_lut/Z",
-            "phy_name":"controller1.SLICE_359/F0"
+            "log_name":"controller1/i220_4_lut/Z",
+            "phy_name":"controller1.SLICE_373/F0"
         },
         "arrive":11.122,
         "delay":0.477
@@ -511,13 +511,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i222_4_lut/A",
-            "phy_name":"controller1.SLICE_345/A0"
+            "log_name":"controller1/i213_4_lut/A",
+            "phy_name":"controller1.SLICE_357/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i222_4_lut/Z",
-            "phy_name":"controller1.SLICE_345/F0"
+            "log_name":"controller1/i213_4_lut/Z",
+            "phy_name":"controller1.SLICE_357/F0"
         },
         "arrive":13.674,
         "delay":0.477
@@ -536,13 +536,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i209_4_lut/D",
-            "phy_name":"controller1.SLICE_358/D0"
+            "log_name":"controller1/i212_4_lut/D",
+            "phy_name":"controller1.SLICE_372/D0"
         },
         "pin1":
         {
-            "log_name":"controller1/i209_4_lut/Z",
-            "phy_name":"controller1.SLICE_358/F0"
+            "log_name":"controller1/i212_4_lut/Z",
+            "phy_name":"controller1.SLICE_372/F0"
         },
         "arrive":16.199,
         "delay":0.450
@@ -551,8 +551,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/counter_20__N_51",
-            "phy_name":"controller1.counter_20__N_51"
+            "log_name":"controller1/counter_19__N_59",
+            "phy_name":"controller1.counter_19__N_59"
         },
         "arrive":18.274,
         "delay":2.075
@@ -570,16 +570,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 <tapath class="path_info">
 <xmp>
@@ -594,7 +594,7 @@ controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i2/CK",
-        "phy_name":"controller1.SLICE_113/CLK"
+        "phy_name":"controller1.SLICE_111/CLK"
     },
     "path_sections":[
     {
@@ -666,7 +666,7 @@ Path Slack       : 4.104 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/CK",
-        "phy_name":"controller1.SLICE_111/CLK"
+        "phy_name":"controller1.SLICE_109/CLK"
     },
     "path_sections":[
     {
@@ -696,13 +696,13 @@ controller1/clk                                           NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/Q",
-        "phy_name":"controller1.SLICE_111/Q0"
+        "phy_name":"controller1.SLICE_109/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"{controller1/counter_168__i4/SR   controller1/counter_168__i5/SR}",
-        "phy_name":"controller1.SLICE_112/LSR"
+        "phy_name":"controller1.SLICE_110/LSR"
     },
     "path_sections":[
     {
@@ -710,12 +710,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i6/CK",
-            "phy_name":"controller1.SLICE_111/CLK"
+            "phy_name":"controller1.SLICE_109/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i6/Q",
-            "phy_name":"controller1.SLICE_111/Q0"
+            "phy_name":"controller1.SLICE_109/Q0"
         },
         "arrive":3.466,
         "delay":1.391
@@ -735,12 +735,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i3_2_lut/B",
-            "phy_name":"controller1.SLICE_428/B0"
+            "phy_name":"controller1.SLICE_442/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i3_2_lut/Z",
-            "phy_name":"controller1.SLICE_428/F0"
+            "phy_name":"controller1.SLICE_442/F0"
         },
         "arrive":6.018,
         "delay":0.477
@@ -760,12 +760,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i2_4_lut/B",
-            "phy_name":"controller1.SLICE_347/B0"
+            "phy_name":"controller1.SLICE_361/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i2_4_lut/Z",
-            "phy_name":"controller1.SLICE_347/F0"
+            "phy_name":"controller1.SLICE_361/F0"
         },
         "arrive":8.570,
         "delay":0.477
@@ -774,8 +774,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/n6640",
-            "phy_name":"controller1.n6640"
+            "log_name":"controller1/n6733",
+            "phy_name":"controller1.n6733"
         },
         "arrive":10.645,
         "delay":2.075
@@ -784,13 +784,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i218_4_lut/A",
-            "phy_name":"controller1.SLICE_359/A0"
+            "log_name":"controller1/i220_4_lut/A",
+            "phy_name":"controller1.SLICE_373/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i218_4_lut/Z",
-            "phy_name":"controller1.SLICE_359/F0"
+            "log_name":"controller1/i220_4_lut/Z",
+            "phy_name":"controller1.SLICE_373/F0"
         },
         "arrive":11.122,
         "delay":0.477
@@ -809,13 +809,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i222_4_lut/A",
-            "phy_name":"controller1.SLICE_345/A0"
+            "log_name":"controller1/i213_4_lut/A",
+            "phy_name":"controller1.SLICE_357/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i222_4_lut/Z",
-            "phy_name":"controller1.SLICE_345/F0"
+            "log_name":"controller1/i213_4_lut/Z",
+            "phy_name":"controller1.SLICE_357/F0"
         },
         "arrive":13.674,
         "delay":0.477
@@ -834,13 +834,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i209_4_lut/D",
-            "phy_name":"controller1.SLICE_358/D0"
+            "log_name":"controller1/i212_4_lut/D",
+            "phy_name":"controller1.SLICE_372/D0"
         },
         "pin1":
         {
-            "log_name":"controller1/i209_4_lut/Z",
-            "phy_name":"controller1.SLICE_358/F0"
+            "log_name":"controller1/i212_4_lut/Z",
+            "phy_name":"controller1.SLICE_372/F0"
         },
         "arrive":16.199,
         "delay":0.450
@@ -849,8 +849,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/counter_20__N_51",
-            "phy_name":"controller1.counter_20__N_51"
+            "log_name":"controller1/counter_19__N_59",
+            "phy_name":"controller1.counter_19__N_59"
         },
         "arrive":18.274,
         "delay":2.075
@@ -868,16 +868,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 <tapath class="path_info">
 <xmp>
@@ -892,7 +892,7 @@ controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i4/CK",
-        "phy_name":"controller1.SLICE_112/CLK"
+        "phy_name":"controller1.SLICE_110/CLK"
     },
     "path_sections":[
     {
@@ -964,7 +964,7 @@ Path Slack       : 4.104 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/CK",
-        "phy_name":"controller1.SLICE_111/CLK"
+        "phy_name":"controller1.SLICE_109/CLK"
     },
     "path_sections":[
     {
@@ -994,13 +994,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/Q",
-        "phy_name":"controller1.SLICE_111/Q0"
+        "phy_name":"controller1.SLICE_109/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"{controller1/counter_168__i6/SR   controller1/counter_168__i7/SR}",
-        "phy_name":"controller1.SLICE_111/LSR"
+        "phy_name":"controller1.SLICE_109/LSR"
     },
     "path_sections":[
     {
@@ -1008,12 +1008,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i6/CK",
-            "phy_name":"controller1.SLICE_111/CLK"
+            "phy_name":"controller1.SLICE_109/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i6/Q",
-            "phy_name":"controller1.SLICE_111/Q0"
+            "phy_name":"controller1.SLICE_109/Q0"
         },
         "arrive":3.466,
         "delay":1.391
@@ -1033,12 +1033,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i3_2_lut/B",
-            "phy_name":"controller1.SLICE_428/B0"
+            "phy_name":"controller1.SLICE_442/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i3_2_lut/Z",
-            "phy_name":"controller1.SLICE_428/F0"
+            "phy_name":"controller1.SLICE_442/F0"
         },
         "arrive":6.018,
         "delay":0.477
@@ -1058,12 +1058,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i2_4_lut/B",
-            "phy_name":"controller1.SLICE_347/B0"
+            "phy_name":"controller1.SLICE_361/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i2_4_lut/Z",
-            "phy_name":"controller1.SLICE_347/F0"
+            "phy_name":"controller1.SLICE_361/F0"
         },
         "arrive":8.570,
         "delay":0.477
@@ -1072,8 +1072,8 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/n6640",
-            "phy_name":"controller1.n6640"
+            "log_name":"controller1/n6733",
+            "phy_name":"controller1.n6733"
         },
         "arrive":10.645,
         "delay":2.075
@@ -1082,13 +1082,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i218_4_lut/A",
-            "phy_name":"controller1.SLICE_359/A0"
+            "log_name":"controller1/i220_4_lut/A",
+            "phy_name":"controller1.SLICE_373/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i218_4_lut/Z",
-            "phy_name":"controller1.SLICE_359/F0"
+            "log_name":"controller1/i220_4_lut/Z",
+            "phy_name":"controller1.SLICE_373/F0"
         },
         "arrive":11.122,
         "delay":0.477
@@ -1107,13 +1107,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i222_4_lut/A",
-            "phy_name":"controller1.SLICE_345/A0"
+            "log_name":"controller1/i213_4_lut/A",
+            "phy_name":"controller1.SLICE_357/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i222_4_lut/Z",
-            "phy_name":"controller1.SLICE_345/F0"
+            "log_name":"controller1/i213_4_lut/Z",
+            "phy_name":"controller1.SLICE_357/F0"
         },
         "arrive":13.674,
         "delay":0.477
@@ -1132,13 +1132,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i209_4_lut/D",
-            "phy_name":"controller1.SLICE_358/D0"
+            "log_name":"controller1/i212_4_lut/D",
+            "phy_name":"controller1.SLICE_372/D0"
         },
         "pin1":
         {
-            "log_name":"controller1/i209_4_lut/Z",
-            "phy_name":"controller1.SLICE_358/F0"
+            "log_name":"controller1/i212_4_lut/Z",
+            "phy_name":"controller1.SLICE_372/F0"
         },
         "arrive":16.199,
         "delay":0.450
@@ -1147,8 +1147,8 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/counter_20__N_51",
-            "phy_name":"controller1.counter_20__N_51"
+            "log_name":"controller1/counter_19__N_59",
+            "phy_name":"controller1.counter_19__N_59"
         },
         "arrive":18.274,
         "delay":2.075
@@ -1166,16 +1166,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 <tapath class="path_info">
 <xmp>
@@ -1190,7 +1190,7 @@ controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/CK",
-        "phy_name":"controller1.SLICE_111/CLK"
+        "phy_name":"controller1.SLICE_109/CLK"
     },
     "path_sections":[
     {
@@ -1262,7 +1262,7 @@ Path Slack       : 4.104 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/CK",
-        "phy_name":"controller1.SLICE_111/CLK"
+        "phy_name":"controller1.SLICE_109/CLK"
     },
     "path_sections":[
     {
@@ -1292,13 +1292,13 @@ controller1/clk                                           NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/Q",
-        "phy_name":"controller1.SLICE_111/Q0"
+        "phy_name":"controller1.SLICE_109/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"{controller1/counter_168__i8/SR   controller1/counter_168__i9/SR}",
-        "phy_name":"controller1.SLICE_110/LSR"
+        "phy_name":"controller1.SLICE_108/LSR"
     },
     "path_sections":[
     {
@@ -1306,12 +1306,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i6/CK",
-            "phy_name":"controller1.SLICE_111/CLK"
+            "phy_name":"controller1.SLICE_109/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i6/Q",
-            "phy_name":"controller1.SLICE_111/Q0"
+            "phy_name":"controller1.SLICE_109/Q0"
         },
         "arrive":3.466,
         "delay":1.391
@@ -1331,12 +1331,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i3_2_lut/B",
-            "phy_name":"controller1.SLICE_428/B0"
+            "phy_name":"controller1.SLICE_442/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i3_2_lut/Z",
-            "phy_name":"controller1.SLICE_428/F0"
+            "phy_name":"controller1.SLICE_442/F0"
         },
         "arrive":6.018,
         "delay":0.477
@@ -1356,12 +1356,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i2_4_lut/B",
-            "phy_name":"controller1.SLICE_347/B0"
+            "phy_name":"controller1.SLICE_361/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i2_4_lut/Z",
-            "phy_name":"controller1.SLICE_347/F0"
+            "phy_name":"controller1.SLICE_361/F0"
         },
         "arrive":8.570,
         "delay":0.477
@@ -1370,8 +1370,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/n6640",
-            "phy_name":"controller1.n6640"
+            "log_name":"controller1/n6733",
+            "phy_name":"controller1.n6733"
         },
         "arrive":10.645,
         "delay":2.075
@@ -1380,13 +1380,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i218_4_lut/A",
-            "phy_name":"controller1.SLICE_359/A0"
+            "log_name":"controller1/i220_4_lut/A",
+            "phy_name":"controller1.SLICE_373/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i218_4_lut/Z",
-            "phy_name":"controller1.SLICE_359/F0"
+            "log_name":"controller1/i220_4_lut/Z",
+            "phy_name":"controller1.SLICE_373/F0"
         },
         "arrive":11.122,
         "delay":0.477
@@ -1405,13 +1405,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i222_4_lut/A",
-            "phy_name":"controller1.SLICE_345/A0"
+            "log_name":"controller1/i213_4_lut/A",
+            "phy_name":"controller1.SLICE_357/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i222_4_lut/Z",
-            "phy_name":"controller1.SLICE_345/F0"
+            "log_name":"controller1/i213_4_lut/Z",
+            "phy_name":"controller1.SLICE_357/F0"
         },
         "arrive":13.674,
         "delay":0.477
@@ -1430,13 +1430,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i209_4_lut/D",
-            "phy_name":"controller1.SLICE_358/D0"
+            "log_name":"controller1/i212_4_lut/D",
+            "phy_name":"controller1.SLICE_372/D0"
         },
         "pin1":
         {
-            "log_name":"controller1/i209_4_lut/Z",
-            "phy_name":"controller1.SLICE_358/F0"
+            "log_name":"controller1/i212_4_lut/Z",
+            "phy_name":"controller1.SLICE_372/F0"
         },
         "arrive":16.199,
         "delay":0.450
@@ -1445,8 +1445,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/counter_20__N_51",
-            "phy_name":"controller1.counter_20__N_51"
+            "log_name":"controller1/counter_19__N_59",
+            "phy_name":"controller1.counter_19__N_59"
         },
         "arrive":18.274,
         "delay":2.075
@@ -1464,16 +1464,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 <tapath class="path_info">
 <xmp>
@@ -1488,7 +1488,7 @@ controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i8/CK",
-        "phy_name":"controller1.SLICE_110/CLK"
+        "phy_name":"controller1.SLICE_108/CLK"
     },
     "path_sections":[
     {
@@ -1560,7 +1560,7 @@ Path Slack       : 4.104 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/CK",
-        "phy_name":"controller1.SLICE_111/CLK"
+        "phy_name":"controller1.SLICE_109/CLK"
     },
     "path_sections":[
     {
@@ -1590,13 +1590,13 @@ controller1/clk                                           NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/Q",
-        "phy_name":"controller1.SLICE_111/Q0"
+        "phy_name":"controller1.SLICE_109/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"{controller1/counter_168__i10/SR   controller1/counter_168__i11/SR}",
-        "phy_name":"controller1.SLICE_109/LSR"
+        "phy_name":"controller1.SLICE_107/LSR"
     },
     "path_sections":[
     {
@@ -1604,12 +1604,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i6/CK",
-            "phy_name":"controller1.SLICE_111/CLK"
+            "phy_name":"controller1.SLICE_109/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i6/Q",
-            "phy_name":"controller1.SLICE_111/Q0"
+            "phy_name":"controller1.SLICE_109/Q0"
         },
         "arrive":3.466,
         "delay":1.391
@@ -1629,12 +1629,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i3_2_lut/B",
-            "phy_name":"controller1.SLICE_428/B0"
+            "phy_name":"controller1.SLICE_442/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i3_2_lut/Z",
-            "phy_name":"controller1.SLICE_428/F0"
+            "phy_name":"controller1.SLICE_442/F0"
         },
         "arrive":6.018,
         "delay":0.477
@@ -1654,12 +1654,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i2_4_lut/B",
-            "phy_name":"controller1.SLICE_347/B0"
+            "phy_name":"controller1.SLICE_361/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i2_4_lut/Z",
-            "phy_name":"controller1.SLICE_347/F0"
+            "phy_name":"controller1.SLICE_361/F0"
         },
         "arrive":8.570,
         "delay":0.477
@@ -1668,8 +1668,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/n6640",
-            "phy_name":"controller1.n6640"
+            "log_name":"controller1/n6733",
+            "phy_name":"controller1.n6733"
         },
         "arrive":10.645,
         "delay":2.075
@@ -1678,13 +1678,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i218_4_lut/A",
-            "phy_name":"controller1.SLICE_359/A0"
+            "log_name":"controller1/i220_4_lut/A",
+            "phy_name":"controller1.SLICE_373/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i218_4_lut/Z",
-            "phy_name":"controller1.SLICE_359/F0"
+            "log_name":"controller1/i220_4_lut/Z",
+            "phy_name":"controller1.SLICE_373/F0"
         },
         "arrive":11.122,
         "delay":0.477
@@ -1703,13 +1703,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i222_4_lut/A",
-            "phy_name":"controller1.SLICE_345/A0"
+            "log_name":"controller1/i213_4_lut/A",
+            "phy_name":"controller1.SLICE_357/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i222_4_lut/Z",
-            "phy_name":"controller1.SLICE_345/F0"
+            "log_name":"controller1/i213_4_lut/Z",
+            "phy_name":"controller1.SLICE_357/F0"
         },
         "arrive":13.674,
         "delay":0.477
@@ -1728,13 +1728,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i209_4_lut/D",
-            "phy_name":"controller1.SLICE_358/D0"
+            "log_name":"controller1/i212_4_lut/D",
+            "phy_name":"controller1.SLICE_372/D0"
         },
         "pin1":
         {
-            "log_name":"controller1/i209_4_lut/Z",
-            "phy_name":"controller1.SLICE_358/F0"
+            "log_name":"controller1/i212_4_lut/Z",
+            "phy_name":"controller1.SLICE_372/F0"
         },
         "arrive":16.199,
         "delay":0.450
@@ -1743,8 +1743,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/counter_20__N_51",
-            "phy_name":"controller1.counter_20__N_51"
+            "log_name":"controller1/counter_19__N_59",
+            "phy_name":"controller1.counter_19__N_59"
         },
         "arrive":18.274,
         "delay":2.075
@@ -1762,16 +1762,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 <tapath class="path_info">
 <xmp>
@@ -1786,7 +1786,7 @@ controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i10/CK",
-        "phy_name":"controller1.SLICE_109/CLK"
+        "phy_name":"controller1.SLICE_107/CLK"
     },
     "path_sections":[
     {
@@ -1858,7 +1858,7 @@ Path Slack       : 4.104 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/CK",
-        "phy_name":"controller1.SLICE_111/CLK"
+        "phy_name":"controller1.SLICE_109/CLK"
     },
     "path_sections":[
     {
@@ -1888,13 +1888,13 @@ controller1/clk                                           NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/Q",
-        "phy_name":"controller1.SLICE_111/Q0"
+        "phy_name":"controller1.SLICE_109/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"{controller1/counter_168__i12/SR   controller1/counter_168__i13/SR}",
-        "phy_name":"controller1.SLICE_108/LSR"
+        "phy_name":"controller1.SLICE_106/LSR"
     },
     "path_sections":[
     {
@@ -1902,12 +1902,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i6/CK",
-            "phy_name":"controller1.SLICE_111/CLK"
+            "phy_name":"controller1.SLICE_109/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i6/Q",
-            "phy_name":"controller1.SLICE_111/Q0"
+            "phy_name":"controller1.SLICE_109/Q0"
         },
         "arrive":3.466,
         "delay":1.391
@@ -1927,12 +1927,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i3_2_lut/B",
-            "phy_name":"controller1.SLICE_428/B0"
+            "phy_name":"controller1.SLICE_442/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i3_2_lut/Z",
-            "phy_name":"controller1.SLICE_428/F0"
+            "phy_name":"controller1.SLICE_442/F0"
         },
         "arrive":6.018,
         "delay":0.477
@@ -1952,12 +1952,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i2_4_lut/B",
-            "phy_name":"controller1.SLICE_347/B0"
+            "phy_name":"controller1.SLICE_361/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i2_4_lut/Z",
-            "phy_name":"controller1.SLICE_347/F0"
+            "phy_name":"controller1.SLICE_361/F0"
         },
         "arrive":8.570,
         "delay":0.477
@@ -1966,8 +1966,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/n6640",
-            "phy_name":"controller1.n6640"
+            "log_name":"controller1/n6733",
+            "phy_name":"controller1.n6733"
         },
         "arrive":10.645,
         "delay":2.075
@@ -1976,13 +1976,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i218_4_lut/A",
-            "phy_name":"controller1.SLICE_359/A0"
+            "log_name":"controller1/i220_4_lut/A",
+            "phy_name":"controller1.SLICE_373/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i218_4_lut/Z",
-            "phy_name":"controller1.SLICE_359/F0"
+            "log_name":"controller1/i220_4_lut/Z",
+            "phy_name":"controller1.SLICE_373/F0"
         },
         "arrive":11.122,
         "delay":0.477
@@ -2001,13 +2001,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i222_4_lut/A",
-            "phy_name":"controller1.SLICE_345/A0"
+            "log_name":"controller1/i213_4_lut/A",
+            "phy_name":"controller1.SLICE_357/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i222_4_lut/Z",
-            "phy_name":"controller1.SLICE_345/F0"
+            "log_name":"controller1/i213_4_lut/Z",
+            "phy_name":"controller1.SLICE_357/F0"
         },
         "arrive":13.674,
         "delay":0.477
@@ -2026,13 +2026,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i209_4_lut/D",
-            "phy_name":"controller1.SLICE_358/D0"
+            "log_name":"controller1/i212_4_lut/D",
+            "phy_name":"controller1.SLICE_372/D0"
         },
         "pin1":
         {
-            "log_name":"controller1/i209_4_lut/Z",
-            "phy_name":"controller1.SLICE_358/F0"
+            "log_name":"controller1/i212_4_lut/Z",
+            "phy_name":"controller1.SLICE_372/F0"
         },
         "arrive":16.199,
         "delay":0.450
@@ -2041,8 +2041,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/counter_20__N_51",
-            "phy_name":"controller1.counter_20__N_51"
+            "log_name":"controller1/counter_19__N_59",
+            "phy_name":"controller1.counter_19__N_59"
         },
         "arrive":18.274,
         "delay":2.075
@@ -2060,16 +2060,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 <tapath class="path_info">
 <xmp>
@@ -2084,7 +2084,7 @@ controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i12/CK",
-        "phy_name":"controller1.SLICE_108/CLK"
+        "phy_name":"controller1.SLICE_106/CLK"
     },
     "path_sections":[
     {
@@ -2156,7 +2156,7 @@ Path Slack       : 4.104 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/CK",
-        "phy_name":"controller1.SLICE_111/CLK"
+        "phy_name":"controller1.SLICE_109/CLK"
     },
     "path_sections":[
     {
@@ -2186,13 +2186,13 @@ controller1/clk                                           NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/Q",
-        "phy_name":"controller1.SLICE_111/Q0"
+        "phy_name":"controller1.SLICE_109/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"{controller1/counter_168__i14/SR   controller1/counter_168__i15/SR}",
-        "phy_name":"controller1.SLICE_107/LSR"
+        "phy_name":"controller1.SLICE_105/LSR"
     },
     "path_sections":[
     {
@@ -2200,12 +2200,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i6/CK",
-            "phy_name":"controller1.SLICE_111/CLK"
+            "phy_name":"controller1.SLICE_109/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i6/Q",
-            "phy_name":"controller1.SLICE_111/Q0"
+            "phy_name":"controller1.SLICE_109/Q0"
         },
         "arrive":3.466,
         "delay":1.391
@@ -2225,12 +2225,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i3_2_lut/B",
-            "phy_name":"controller1.SLICE_428/B0"
+            "phy_name":"controller1.SLICE_442/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i3_2_lut/Z",
-            "phy_name":"controller1.SLICE_428/F0"
+            "phy_name":"controller1.SLICE_442/F0"
         },
         "arrive":6.018,
         "delay":0.477
@@ -2250,12 +2250,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i2_4_lut/B",
-            "phy_name":"controller1.SLICE_347/B0"
+            "phy_name":"controller1.SLICE_361/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i2_4_lut/Z",
-            "phy_name":"controller1.SLICE_347/F0"
+            "phy_name":"controller1.SLICE_361/F0"
         },
         "arrive":8.570,
         "delay":0.477
@@ -2264,8 +2264,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/n6640",
-            "phy_name":"controller1.n6640"
+            "log_name":"controller1/n6733",
+            "phy_name":"controller1.n6733"
         },
         "arrive":10.645,
         "delay":2.075
@@ -2274,13 +2274,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i218_4_lut/A",
-            "phy_name":"controller1.SLICE_359/A0"
+            "log_name":"controller1/i220_4_lut/A",
+            "phy_name":"controller1.SLICE_373/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i218_4_lut/Z",
-            "phy_name":"controller1.SLICE_359/F0"
+            "log_name":"controller1/i220_4_lut/Z",
+            "phy_name":"controller1.SLICE_373/F0"
         },
         "arrive":11.122,
         "delay":0.477
@@ -2299,13 +2299,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i222_4_lut/A",
-            "phy_name":"controller1.SLICE_345/A0"
+            "log_name":"controller1/i213_4_lut/A",
+            "phy_name":"controller1.SLICE_357/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i222_4_lut/Z",
-            "phy_name":"controller1.SLICE_345/F0"
+            "log_name":"controller1/i213_4_lut/Z",
+            "phy_name":"controller1.SLICE_357/F0"
         },
         "arrive":13.674,
         "delay":0.477
@@ -2324,13 +2324,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i209_4_lut/D",
-            "phy_name":"controller1.SLICE_358/D0"
+            "log_name":"controller1/i212_4_lut/D",
+            "phy_name":"controller1.SLICE_372/D0"
         },
         "pin1":
         {
-            "log_name":"controller1/i209_4_lut/Z",
-            "phy_name":"controller1.SLICE_358/F0"
+            "log_name":"controller1/i212_4_lut/Z",
+            "phy_name":"controller1.SLICE_372/F0"
         },
         "arrive":16.199,
         "delay":0.450
@@ -2339,8 +2339,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/counter_20__N_51",
-            "phy_name":"controller1.counter_20__N_51"
+            "log_name":"controller1/counter_19__N_59",
+            "phy_name":"controller1.counter_19__N_59"
         },
         "arrive":18.274,
         "delay":2.075
@@ -2358,16 +2358,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 <tapath class="path_info">
 <xmp>
@@ -2382,7 +2382,7 @@ controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i14/CK",
-        "phy_name":"controller1.SLICE_107/CLK"
+        "phy_name":"controller1.SLICE_105/CLK"
     },
     "path_sections":[
     {
@@ -2454,7 +2454,7 @@ Path Slack       : 4.104 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/CK",
-        "phy_name":"controller1.SLICE_111/CLK"
+        "phy_name":"controller1.SLICE_109/CLK"
     },
     "path_sections":[
     {
@@ -2484,13 +2484,13 @@ controller1/clk                                           NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/Q",
-        "phy_name":"controller1.SLICE_111/Q0"
+        "phy_name":"controller1.SLICE_109/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"{controller1/counter_168__i16/SR   controller1/counter_168__i17/SR}",
-        "phy_name":"controller1.SLICE_106/LSR"
+        "phy_name":"controller1.SLICE_104/LSR"
     },
     "path_sections":[
     {
@@ -2498,12 +2498,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i6/CK",
-            "phy_name":"controller1.SLICE_111/CLK"
+            "phy_name":"controller1.SLICE_109/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i6/Q",
-            "phy_name":"controller1.SLICE_111/Q0"
+            "phy_name":"controller1.SLICE_109/Q0"
         },
         "arrive":3.466,
         "delay":1.391
@@ -2523,12 +2523,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i3_2_lut/B",
-            "phy_name":"controller1.SLICE_428/B0"
+            "phy_name":"controller1.SLICE_442/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i3_2_lut/Z",
-            "phy_name":"controller1.SLICE_428/F0"
+            "phy_name":"controller1.SLICE_442/F0"
         },
         "arrive":6.018,
         "delay":0.477
@@ -2548,12 +2548,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i2_4_lut/B",
-            "phy_name":"controller1.SLICE_347/B0"
+            "phy_name":"controller1.SLICE_361/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i2_4_lut/Z",
-            "phy_name":"controller1.SLICE_347/F0"
+            "phy_name":"controller1.SLICE_361/F0"
         },
         "arrive":8.570,
         "delay":0.477
@@ -2562,8 +2562,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/n6640",
-            "phy_name":"controller1.n6640"
+            "log_name":"controller1/n6733",
+            "phy_name":"controller1.n6733"
         },
         "arrive":10.645,
         "delay":2.075
@@ -2572,13 +2572,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i218_4_lut/A",
-            "phy_name":"controller1.SLICE_359/A0"
+            "log_name":"controller1/i220_4_lut/A",
+            "phy_name":"controller1.SLICE_373/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i218_4_lut/Z",
-            "phy_name":"controller1.SLICE_359/F0"
+            "log_name":"controller1/i220_4_lut/Z",
+            "phy_name":"controller1.SLICE_373/F0"
         },
         "arrive":11.122,
         "delay":0.477
@@ -2597,13 +2597,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i222_4_lut/A",
-            "phy_name":"controller1.SLICE_345/A0"
+            "log_name":"controller1/i213_4_lut/A",
+            "phy_name":"controller1.SLICE_357/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i222_4_lut/Z",
-            "phy_name":"controller1.SLICE_345/F0"
+            "log_name":"controller1/i213_4_lut/Z",
+            "phy_name":"controller1.SLICE_357/F0"
         },
         "arrive":13.674,
         "delay":0.477
@@ -2622,13 +2622,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i209_4_lut/D",
-            "phy_name":"controller1.SLICE_358/D0"
+            "log_name":"controller1/i212_4_lut/D",
+            "phy_name":"controller1.SLICE_372/D0"
         },
         "pin1":
         {
-            "log_name":"controller1/i209_4_lut/Z",
-            "phy_name":"controller1.SLICE_358/F0"
+            "log_name":"controller1/i212_4_lut/Z",
+            "phy_name":"controller1.SLICE_372/F0"
         },
         "arrive":16.199,
         "delay":0.450
@@ -2637,8 +2637,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/counter_20__N_51",
-            "phy_name":"controller1.counter_20__N_51"
+            "log_name":"controller1/counter_19__N_59",
+            "phy_name":"controller1.counter_19__N_59"
         },
         "arrive":18.274,
         "delay":2.075
@@ -2656,16 +2656,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 <tapath class="path_info">
 <xmp>
@@ -2680,7 +2680,7 @@ controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i16/CK",
-        "phy_name":"controller1.SLICE_106/CLK"
+        "phy_name":"controller1.SLICE_104/CLK"
     },
     "path_sections":[
     {
@@ -2752,7 +2752,7 @@ Path Slack       : 4.104 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/CK",
-        "phy_name":"controller1.SLICE_111/CLK"
+        "phy_name":"controller1.SLICE_109/CLK"
     },
     "path_sections":[
     {
@@ -2782,13 +2782,13 @@ controller1/clk                                           NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/Q",
-        "phy_name":"controller1.SLICE_111/Q0"
+        "phy_name":"controller1.SLICE_109/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"{controller1/counter_168__i18/SR   controller1/counter_168__i19/SR}",
-        "phy_name":"controller1.SLICE_105/LSR"
+        "phy_name":"controller1.SLICE_103/LSR"
     },
     "path_sections":[
     {
@@ -2796,12 +2796,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i6/CK",
-            "phy_name":"controller1.SLICE_111/CLK"
+            "phy_name":"controller1.SLICE_109/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i6/Q",
-            "phy_name":"controller1.SLICE_111/Q0"
+            "phy_name":"controller1.SLICE_109/Q0"
         },
         "arrive":3.466,
         "delay":1.391
@@ -2821,12 +2821,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i3_2_lut/B",
-            "phy_name":"controller1.SLICE_428/B0"
+            "phy_name":"controller1.SLICE_442/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i3_2_lut/Z",
-            "phy_name":"controller1.SLICE_428/F0"
+            "phy_name":"controller1.SLICE_442/F0"
         },
         "arrive":6.018,
         "delay":0.477
@@ -2846,12 +2846,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i2_4_lut/B",
-            "phy_name":"controller1.SLICE_347/B0"
+            "phy_name":"controller1.SLICE_361/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i2_4_lut/Z",
-            "phy_name":"controller1.SLICE_347/F0"
+            "phy_name":"controller1.SLICE_361/F0"
         },
         "arrive":8.570,
         "delay":0.477
@@ -2860,8 +2860,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/n6640",
-            "phy_name":"controller1.n6640"
+            "log_name":"controller1/n6733",
+            "phy_name":"controller1.n6733"
         },
         "arrive":10.645,
         "delay":2.075
@@ -2870,13 +2870,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i218_4_lut/A",
-            "phy_name":"controller1.SLICE_359/A0"
+            "log_name":"controller1/i220_4_lut/A",
+            "phy_name":"controller1.SLICE_373/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i218_4_lut/Z",
-            "phy_name":"controller1.SLICE_359/F0"
+            "log_name":"controller1/i220_4_lut/Z",
+            "phy_name":"controller1.SLICE_373/F0"
         },
         "arrive":11.122,
         "delay":0.477
@@ -2895,13 +2895,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i222_4_lut/A",
-            "phy_name":"controller1.SLICE_345/A0"
+            "log_name":"controller1/i213_4_lut/A",
+            "phy_name":"controller1.SLICE_357/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i222_4_lut/Z",
-            "phy_name":"controller1.SLICE_345/F0"
+            "log_name":"controller1/i213_4_lut/Z",
+            "phy_name":"controller1.SLICE_357/F0"
         },
         "arrive":13.674,
         "delay":0.477
@@ -2920,13 +2920,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i209_4_lut/D",
-            "phy_name":"controller1.SLICE_358/D0"
+            "log_name":"controller1/i212_4_lut/D",
+            "phy_name":"controller1.SLICE_372/D0"
         },
         "pin1":
         {
-            "log_name":"controller1/i209_4_lut/Z",
-            "phy_name":"controller1.SLICE_358/F0"
+            "log_name":"controller1/i212_4_lut/Z",
+            "phy_name":"controller1.SLICE_372/F0"
         },
         "arrive":16.199,
         "delay":0.450
@@ -2935,8 +2935,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/counter_20__N_51",
-            "phy_name":"controller1.counter_20__N_51"
+            "log_name":"controller1/counter_19__N_59",
+            "phy_name":"controller1.counter_19__N_59"
         },
         "arrive":18.274,
         "delay":2.075
@@ -2954,16 +2954,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 <tapath class="path_info">
 <xmp>
@@ -2978,7 +2978,7 @@ controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i18/CK",
-        "phy_name":"controller1.SLICE_105/CLK"
+        "phy_name":"controller1.SLICE_103/CLK"
     },
     "path_sections":[
     {
@@ -3050,7 +3050,7 @@ Path Slack       : 4.104 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/CK",
-        "phy_name":"controller1.SLICE_111/CLK"
+        "phy_name":"controller1.SLICE_109/CLK"
     },
     "path_sections":[
     {
@@ -3080,13 +3080,13 @@ controller1/clk                                           NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i6/Q",
-        "phy_name":"controller1.SLICE_111/Q0"
+        "phy_name":"controller1.SLICE_109/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"{controller1/counter_168__i20/SR   controller1/counter_168__i21/SR}",
-        "phy_name":"controller1.SLICE_104/LSR"
+        "phy_name":"controller1.SLICE_102/LSR"
     },
     "path_sections":[
     {
@@ -3094,12 +3094,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i6/CK",
-            "phy_name":"controller1.SLICE_111/CLK"
+            "phy_name":"controller1.SLICE_109/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i6/Q",
-            "phy_name":"controller1.SLICE_111/Q0"
+            "phy_name":"controller1.SLICE_109/Q0"
         },
         "arrive":3.466,
         "delay":1.391
@@ -3119,12 +3119,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i3_2_lut/B",
-            "phy_name":"controller1.SLICE_428/B0"
+            "phy_name":"controller1.SLICE_442/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i3_2_lut/Z",
-            "phy_name":"controller1.SLICE_428/F0"
+            "phy_name":"controller1.SLICE_442/F0"
         },
         "arrive":6.018,
         "delay":0.477
@@ -3144,12 +3144,12 @@ controller1/clk                                           NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/i2_4_lut/B",
-            "phy_name":"controller1.SLICE_347/B0"
+            "phy_name":"controller1.SLICE_361/B0"
         },
         "pin1":
         {
             "log_name":"controller1/i2_4_lut/Z",
-            "phy_name":"controller1.SLICE_347/F0"
+            "phy_name":"controller1.SLICE_361/F0"
         },
         "arrive":8.570,
         "delay":0.477
@@ -3158,8 +3158,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/n6640",
-            "phy_name":"controller1.n6640"
+            "log_name":"controller1/n6733",
+            "phy_name":"controller1.n6733"
         },
         "arrive":10.645,
         "delay":2.075
@@ -3168,13 +3168,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i218_4_lut/A",
-            "phy_name":"controller1.SLICE_359/A0"
+            "log_name":"controller1/i220_4_lut/A",
+            "phy_name":"controller1.SLICE_373/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i218_4_lut/Z",
-            "phy_name":"controller1.SLICE_359/F0"
+            "log_name":"controller1/i220_4_lut/Z",
+            "phy_name":"controller1.SLICE_373/F0"
         },
         "arrive":11.122,
         "delay":0.477
@@ -3193,13 +3193,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i222_4_lut/A",
-            "phy_name":"controller1.SLICE_345/A0"
+            "log_name":"controller1/i213_4_lut/A",
+            "phy_name":"controller1.SLICE_357/A0"
         },
         "pin1":
         {
-            "log_name":"controller1/i222_4_lut/Z",
-            "phy_name":"controller1.SLICE_345/F0"
+            "log_name":"controller1/i213_4_lut/Z",
+            "phy_name":"controller1.SLICE_357/F0"
         },
         "arrive":13.674,
         "delay":0.477
@@ -3218,13 +3218,13 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller1/i209_4_lut/D",
-            "phy_name":"controller1.SLICE_358/D0"
+            "log_name":"controller1/i212_4_lut/D",
+            "phy_name":"controller1.SLICE_372/D0"
         },
         "pin1":
         {
-            "log_name":"controller1/i209_4_lut/Z",
-            "phy_name":"controller1.SLICE_358/F0"
+            "log_name":"controller1/i212_4_lut/Z",
+            "phy_name":"controller1.SLICE_372/F0"
         },
         "arrive":16.199,
         "delay":0.450
@@ -3233,8 +3233,8 @@ controller1/clk                                           NET DELAY      2.075  
         "type":"net_delay",
         "net":
         {
-            "log_name":"controller1/counter_20__N_51",
-            "phy_name":"controller1.counter_20__N_51"
+            "log_name":"controller1/counter_19__N_59",
+            "phy_name":"controller1.counter_19__N_59"
         },
         "arrive":18.274,
         "delay":2.075
@@ -3252,16 +3252,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 <tapath class="path_info">
 <xmp>
@@ -3276,7 +3276,7 @@ controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i20/CK",
-        "phy_name":"controller1.SLICE_104/CLK"
+        "phy_name":"controller1.SLICE_102/CLK"
     },
     "path_sections":[
     {
@@ -3367,7 +3367,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i12/CK",
-        "phy_name":"controller1.SLICE_108/CLK"
+        "phy_name":"controller1.SLICE_106/CLK"
     },
     "path_sections":[
     {
@@ -3397,13 +3397,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i12/Q",
-        "phy_name":"controller1.SLICE_108/Q0"
+        "phy_name":"controller1.SLICE_106/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i12/D",
-        "phy_name":"controller1.SLICE_108/DI0"
+        "phy_name":"controller1.SLICE_106/DI0"
     },
     "path_sections":[
     {
@@ -3411,12 +3411,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i12/CK",
-            "phy_name":"controller1.SLICE_108/CLK"
+            "phy_name":"controller1.SLICE_106/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i12/Q",
-            "phy_name":"controller1.SLICE_108/Q0"
+            "phy_name":"controller1.SLICE_106/Q0"
         },
         "arrive":2.843,
         "delay":0.768
@@ -3436,12 +3436,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168_add_4_13/C0",
-            "phy_name":"controller1.SLICE_108/C0"
+            "phy_name":"controller1.SLICE_106/C0"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168_add_4_13/S0",
-            "phy_name":"controller1.SLICE_108/F0"
+            "phy_name":"controller1.SLICE_106/F0"
         },
         "arrive":5.167,
         "delay":0.249
@@ -3481,7 +3481,7 @@ controller1/n89[11] ( DI0 )                               NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i12/CK",
-        "phy_name":"controller1.SLICE_108/CLK"
+        "phy_name":"controller1.SLICE_106/CLK"
     },
     "path_sections":[
     {
@@ -3553,7 +3553,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i12/CK",
-        "phy_name":"controller1.SLICE_108/CLK"
+        "phy_name":"controller1.SLICE_106/CLK"
     },
     "path_sections":[
     {
@@ -3583,13 +3583,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i13/Q",
-        "phy_name":"controller1.SLICE_108/Q1"
+        "phy_name":"controller1.SLICE_106/Q1"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i13/D",
-        "phy_name":"controller1.SLICE_108/DI1"
+        "phy_name":"controller1.SLICE_106/DI1"
     },
     "path_sections":[
     {
@@ -3597,12 +3597,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i13/CK",
-            "phy_name":"controller1.SLICE_108/CLK"
+            "phy_name":"controller1.SLICE_106/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i13/Q",
-            "phy_name":"controller1.SLICE_108/Q1"
+            "phy_name":"controller1.SLICE_106/Q1"
         },
         "arrive":2.843,
         "delay":0.768
@@ -3622,12 +3622,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168_add_4_13/C1",
-            "phy_name":"controller1.SLICE_108/C1"
+            "phy_name":"controller1.SLICE_106/C1"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168_add_4_13/S1",
-            "phy_name":"controller1.SLICE_108/F1"
+            "phy_name":"controller1.SLICE_106/F1"
         },
         "arrive":5.167,
         "delay":0.249
@@ -3667,7 +3667,7 @@ controller1/n89[12] ( DI1 )                               NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i12/CK",
-        "phy_name":"controller1.SLICE_108/CLK"
+        "phy_name":"controller1.SLICE_106/CLK"
     },
     "path_sections":[
     {
@@ -3739,7 +3739,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i14/CK",
-        "phy_name":"controller1.SLICE_107/CLK"
+        "phy_name":"controller1.SLICE_105/CLK"
     },
     "path_sections":[
     {
@@ -3769,13 +3769,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i14/Q",
-        "phy_name":"controller1.SLICE_107/Q0"
+        "phy_name":"controller1.SLICE_105/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i14/D",
-        "phy_name":"controller1.SLICE_107/DI0"
+        "phy_name":"controller1.SLICE_105/DI0"
     },
     "path_sections":[
     {
@@ -3783,12 +3783,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i14/CK",
-            "phy_name":"controller1.SLICE_107/CLK"
+            "phy_name":"controller1.SLICE_105/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i14/Q",
-            "phy_name":"controller1.SLICE_107/Q0"
+            "phy_name":"controller1.SLICE_105/Q0"
         },
         "arrive":2.843,
         "delay":0.768
@@ -3808,12 +3808,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168_add_4_15/C0",
-            "phy_name":"controller1.SLICE_107/C0"
+            "phy_name":"controller1.SLICE_105/C0"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168_add_4_15/S0",
-            "phy_name":"controller1.SLICE_107/F0"
+            "phy_name":"controller1.SLICE_105/F0"
         },
         "arrive":5.167,
         "delay":0.249
@@ -3853,7 +3853,7 @@ controller1/n89[13] ( DI0 )                               NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i14/CK",
-        "phy_name":"controller1.SLICE_107/CLK"
+        "phy_name":"controller1.SLICE_105/CLK"
     },
     "path_sections":[
     {
@@ -3925,7 +3925,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i14/CK",
-        "phy_name":"controller1.SLICE_107/CLK"
+        "phy_name":"controller1.SLICE_105/CLK"
     },
     "path_sections":[
     {
@@ -3955,13 +3955,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i15/Q",
-        "phy_name":"controller1.SLICE_107/Q1"
+        "phy_name":"controller1.SLICE_105/Q1"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i15/D",
-        "phy_name":"controller1.SLICE_107/DI1"
+        "phy_name":"controller1.SLICE_105/DI1"
     },
     "path_sections":[
     {
@@ -3969,12 +3969,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i15/CK",
-            "phy_name":"controller1.SLICE_107/CLK"
+            "phy_name":"controller1.SLICE_105/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i15/Q",
-            "phy_name":"controller1.SLICE_107/Q1"
+            "phy_name":"controller1.SLICE_105/Q1"
         },
         "arrive":2.843,
         "delay":0.768
@@ -3994,12 +3994,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168_add_4_15/C1",
-            "phy_name":"controller1.SLICE_107/C1"
+            "phy_name":"controller1.SLICE_105/C1"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168_add_4_15/S1",
-            "phy_name":"controller1.SLICE_107/F1"
+            "phy_name":"controller1.SLICE_105/F1"
         },
         "arrive":5.167,
         "delay":0.249
@@ -4039,7 +4039,7 @@ controller1/n89[14] ( DI1 )                               NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i14/CK",
-        "phy_name":"controller1.SLICE_107/CLK"
+        "phy_name":"controller1.SLICE_105/CLK"
     },
     "path_sections":[
     {
@@ -4111,7 +4111,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i16/CK",
-        "phy_name":"controller1.SLICE_106/CLK"
+        "phy_name":"controller1.SLICE_104/CLK"
     },
     "path_sections":[
     {
@@ -4141,13 +4141,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i16/Q",
-        "phy_name":"controller1.SLICE_106/Q0"
+        "phy_name":"controller1.SLICE_104/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i16/D",
-        "phy_name":"controller1.SLICE_106/DI0"
+        "phy_name":"controller1.SLICE_104/DI0"
     },
     "path_sections":[
     {
@@ -4155,12 +4155,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i16/CK",
-            "phy_name":"controller1.SLICE_106/CLK"
+            "phy_name":"controller1.SLICE_104/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i16/Q",
-            "phy_name":"controller1.SLICE_106/Q0"
+            "phy_name":"controller1.SLICE_104/Q0"
         },
         "arrive":2.843,
         "delay":0.768
@@ -4180,12 +4180,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168_add_4_17/C0",
-            "phy_name":"controller1.SLICE_106/C0"
+            "phy_name":"controller1.SLICE_104/C0"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168_add_4_17/S0",
-            "phy_name":"controller1.SLICE_106/F0"
+            "phy_name":"controller1.SLICE_104/F0"
         },
         "arrive":5.167,
         "delay":0.249
@@ -4225,7 +4225,7 @@ controller1/n89[15] ( DI0 )                               NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i16/CK",
-        "phy_name":"controller1.SLICE_106/CLK"
+        "phy_name":"controller1.SLICE_104/CLK"
     },
     "path_sections":[
     {
@@ -4297,7 +4297,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i16/CK",
-        "phy_name":"controller1.SLICE_106/CLK"
+        "phy_name":"controller1.SLICE_104/CLK"
     },
     "path_sections":[
     {
@@ -4327,13 +4327,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i17/Q",
-        "phy_name":"controller1.SLICE_106/Q1"
+        "phy_name":"controller1.SLICE_104/Q1"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i17/D",
-        "phy_name":"controller1.SLICE_106/DI1"
+        "phy_name":"controller1.SLICE_104/DI1"
     },
     "path_sections":[
     {
@@ -4341,12 +4341,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i17/CK",
-            "phy_name":"controller1.SLICE_106/CLK"
+            "phy_name":"controller1.SLICE_104/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i17/Q",
-            "phy_name":"controller1.SLICE_106/Q1"
+            "phy_name":"controller1.SLICE_104/Q1"
         },
         "arrive":2.843,
         "delay":0.768
@@ -4366,12 +4366,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168_add_4_17/C1",
-            "phy_name":"controller1.SLICE_106/C1"
+            "phy_name":"controller1.SLICE_104/C1"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168_add_4_17/S1",
-            "phy_name":"controller1.SLICE_106/F1"
+            "phy_name":"controller1.SLICE_104/F1"
         },
         "arrive":5.167,
         "delay":0.249
@@ -4411,7 +4411,7 @@ controller1/n89[16] ( DI1 )                               NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i16/CK",
-        "phy_name":"controller1.SLICE_106/CLK"
+        "phy_name":"controller1.SLICE_104/CLK"
     },
     "path_sections":[
     {
@@ -4483,7 +4483,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i18/CK",
-        "phy_name":"controller1.SLICE_105/CLK"
+        "phy_name":"controller1.SLICE_103/CLK"
     },
     "path_sections":[
     {
@@ -4513,13 +4513,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i18/Q",
-        "phy_name":"controller1.SLICE_105/Q0"
+        "phy_name":"controller1.SLICE_103/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i18/D",
-        "phy_name":"controller1.SLICE_105/DI0"
+        "phy_name":"controller1.SLICE_103/DI0"
     },
     "path_sections":[
     {
@@ -4527,12 +4527,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i18/CK",
-            "phy_name":"controller1.SLICE_105/CLK"
+            "phy_name":"controller1.SLICE_103/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i18/Q",
-            "phy_name":"controller1.SLICE_105/Q0"
+            "phy_name":"controller1.SLICE_103/Q0"
         },
         "arrive":2.843,
         "delay":0.768
@@ -4552,12 +4552,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168_add_4_19/C0",
-            "phy_name":"controller1.SLICE_105/C0"
+            "phy_name":"controller1.SLICE_103/C0"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168_add_4_19/S0",
-            "phy_name":"controller1.SLICE_105/F0"
+            "phy_name":"controller1.SLICE_103/F0"
         },
         "arrive":5.167,
         "delay":0.249
@@ -4597,7 +4597,7 @@ controller1/n89[17] ( DI0 )                               NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i18/CK",
-        "phy_name":"controller1.SLICE_105/CLK"
+        "phy_name":"controller1.SLICE_103/CLK"
     },
     "path_sections":[
     {
@@ -4669,7 +4669,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i18/CK",
-        "phy_name":"controller1.SLICE_105/CLK"
+        "phy_name":"controller1.SLICE_103/CLK"
     },
     "path_sections":[
     {
@@ -4699,13 +4699,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i19/Q",
-        "phy_name":"controller1.SLICE_105/Q1"
+        "phy_name":"controller1.SLICE_103/Q1"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i19/D",
-        "phy_name":"controller1.SLICE_105/DI1"
+        "phy_name":"controller1.SLICE_103/DI1"
     },
     "path_sections":[
     {
@@ -4713,12 +4713,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i19/CK",
-            "phy_name":"controller1.SLICE_105/CLK"
+            "phy_name":"controller1.SLICE_103/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i19/Q",
-            "phy_name":"controller1.SLICE_105/Q1"
+            "phy_name":"controller1.SLICE_103/Q1"
         },
         "arrive":2.843,
         "delay":0.768
@@ -4738,12 +4738,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168_add_4_19/C1",
-            "phy_name":"controller1.SLICE_105/C1"
+            "phy_name":"controller1.SLICE_103/C1"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168_add_4_19/S1",
-            "phy_name":"controller1.SLICE_105/F1"
+            "phy_name":"controller1.SLICE_103/F1"
         },
         "arrive":5.167,
         "delay":0.249
@@ -4783,7 +4783,7 @@ controller1/n89[18] ( DI1 )                               NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i18/CK",
-        "phy_name":"controller1.SLICE_105/CLK"
+        "phy_name":"controller1.SLICE_103/CLK"
     },
     "path_sections":[
     {
@@ -4855,7 +4855,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i20/CK",
-        "phy_name":"controller1.SLICE_104/CLK"
+        "phy_name":"controller1.SLICE_102/CLK"
     },
     "path_sections":[
     {
@@ -4885,13 +4885,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i20/Q",
-        "phy_name":"controller1.SLICE_104/Q0"
+        "phy_name":"controller1.SLICE_102/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i20/D",
-        "phy_name":"controller1.SLICE_104/DI0"
+        "phy_name":"controller1.SLICE_102/DI0"
     },
     "path_sections":[
     {
@@ -4899,12 +4899,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i20/CK",
-            "phy_name":"controller1.SLICE_104/CLK"
+            "phy_name":"controller1.SLICE_102/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i20/Q",
-            "phy_name":"controller1.SLICE_104/Q0"
+            "phy_name":"controller1.SLICE_102/Q0"
         },
         "arrive":2.843,
         "delay":0.768
@@ -4924,12 +4924,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168_add_4_21/C0",
-            "phy_name":"controller1.SLICE_104/C0"
+            "phy_name":"controller1.SLICE_102/C0"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168_add_4_21/S0",
-            "phy_name":"controller1.SLICE_104/F0"
+            "phy_name":"controller1.SLICE_102/F0"
         },
         "arrive":5.167,
         "delay":0.249
@@ -4969,7 +4969,7 @@ controller1/n89[19] ( DI0 )                               NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i20/CK",
-        "phy_name":"controller1.SLICE_104/CLK"
+        "phy_name":"controller1.SLICE_102/CLK"
     },
     "path_sections":[
     {
@@ -5041,7 +5041,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i20/CK",
-        "phy_name":"controller1.SLICE_104/CLK"
+        "phy_name":"controller1.SLICE_102/CLK"
     },
     "path_sections":[
     {
@@ -5071,13 +5071,13 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i21/Q",
-        "phy_name":"controller1.SLICE_104/Q1"
+        "phy_name":"controller1.SLICE_102/Q1"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i21/D",
-        "phy_name":"controller1.SLICE_104/DI1"
+        "phy_name":"controller1.SLICE_102/DI1"
     },
     "path_sections":[
     {
@@ -5085,12 +5085,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168__i21/CK",
-            "phy_name":"controller1.SLICE_104/CLK"
+            "phy_name":"controller1.SLICE_102/CLK"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168__i21/Q",
-            "phy_name":"controller1.SLICE_104/Q1"
+            "phy_name":"controller1.SLICE_102/Q1"
         },
         "arrive":2.843,
         "delay":0.768
@@ -5110,12 +5110,12 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
         "pin0":
         {
             "log_name":"controller1/counter_168_add_4_21/C1",
-            "phy_name":"controller1.SLICE_104/C1"
+            "phy_name":"controller1.SLICE_102/C1"
         },
         "pin1":
         {
             "log_name":"controller1/counter_168_add_4_21/S1",
-            "phy_name":"controller1.SLICE_104/F1"
+            "phy_name":"controller1.SLICE_102/F1"
         },
         "arrive":5.167,
         "delay":0.249
@@ -5136,8 +5136,8 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
 </tapath>
 
 controller1/counter_168__i21/CK->controller1/counter_168__i21/Q
-                                          SLICE           CLK_TO_Q1_DELAY  0.768         2.843  2       
-controller1/counter[20]                                   NET DELAY        2.075         4.918  2       
+                                          SLICE           CLK_TO_Q1_DELAY  0.768         2.843  15      
+controller1/counter[20]                                   NET DELAY        2.075         4.918  15      
 controller1/counter_168_add_4_21/C1->controller1/counter_168_add_4_21/S1
                                           SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
 controller1/n89[20] ( DI1 )                               NET DELAY        0.000         5.167  1       
@@ -5155,7 +5155,7 @@ controller1/n89[20] ( DI1 )                               NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"controller1/counter_168__i20/CK",
-        "phy_name":"controller1.SLICE_104/CLK"
+        "phy_name":"controller1.SLICE_102/CLK"
     },
     "path_sections":[
     {

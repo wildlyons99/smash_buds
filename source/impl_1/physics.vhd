@@ -42,8 +42,8 @@ begin
       left_pressed <= buttons(1);
       jump_pressed <= buttons(7);
 
-	 at_maxspd_left <= '0' when (xVelocity > 4b"1010") else '1';
-	 at_maxspd_right <= '0' when (xVelocity < 4d"6") else '1';
+	 at_maxspd_left <= '0' when (xVelocity > 4b"1011") else '1';
+	 at_maxspd_right <= '0' when (xVelocity < 4d"4") else '1';
 	 
       process (clk) begin
       if rising_edge(clk) then
@@ -72,7 +72,7 @@ begin
                         y <= y_platform;
                   else
                         if(coll_top and jump_pressed) then
-                              yVelocity <= 5b"10110";                      
+                              yVelocity <= 5b"10010";                      
                         elsif (coll_bottom) then
                               yVelocity <= -1 * yVelocity; 
                         elsif (yVelocity < 5d"8") then

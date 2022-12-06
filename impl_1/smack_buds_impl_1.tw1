@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Mon Dec  5 22:09:11 2022
+Mon Dec  5 22:40:25 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -142,7 +142,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 6.70074%
+Constraint Coverage: 6.46409%
 
 3.1.2  Timing Errors
 ---------------------
@@ -221,24 +221,24 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
+internalvga/row__i6/D                   |    No arrival or required
+internalvga/row__i5/D                   |    No arrival or required
+{internalvga/row__i5/SP   internalvga/row__i6/SP}                           
+                                        |    No arrival or required
+{internalvga/row__i5/SR   internalvga/row__i6/SR}                           
+                                        |    No arrival or required
+internalvga/row__i4/D                   |    No arrival or required
+internalvga/row__i3/D                   |    No arrival or required
+{internalvga/row__i3/SP   internalvga/row__i4/SP}                           
+                                        |    No arrival or required
+{internalvga/row__i3/SR   internalvga/row__i4/SR}                           
+                                        |    No arrival or required
 internalvga/row__i10/D                  |    No arrival or required
 internalvga/row__i9/D                   |    No arrival or required
-{internalvga/row__i9/SP   internalvga/row__i10/SP}                           
-                                        |    No arrival or required
-{internalvga/row__i9/SR   internalvga/row__i10/SR}                           
-                                        |    No arrival or required
-internalvga/row__i8/D                   |    No arrival or required
-internalvga/row__i7/D                   |    No arrival or required
-{internalvga/row__i7/SP   internalvga/row__i8/SP}                           
-                                        |    No arrival or required
-{internalvga/row__i7/SR   internalvga/row__i8/SR}                           
-                                        |    No arrival or required
-internalvga/col_170__i10/D              |    No arrival or required
-internalvga/col_170__i9/D               |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                        95
+ts                                      |                        91
                                         |                          
 -------------------------------------------------------------------
 
@@ -260,14 +260,14 @@ create_generated_clock,
 -------------------------------------------------------------------
 ext12m                                  |                     input
 controller_in                           |                     input
-RGB[1]                                  |                    output
-RGB[2]                                  |                    output
-RGB[3]                                  |                    output
 RGB[4]                                  |                    output
 RGB[5]                                  |                    output
 up                                      |                    output
 VSYNC                                   |                    output
 HSYNC                                   |                    output
+RGB[3]                                  |                    output
+RGB[2]                                  |                    output
+RGB[1]                                  |                    output
 -------------------------------------------------------------------
                                         |                          
 Number of I/O ports without constraint  |                        13
@@ -279,20 +279,20 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
-game/phys_map/y_i6                      |                  No Clock
-game/phys_map/y_i5                      |                  No Clock
-game/phys_map/xVelocity_172__i2         |                  No Clock
-game/phys_map/xVelocity_172__i1         |                  No Clock
 game/phys_map/x_i0                      |                  No Clock
-game/phys_map/yVelocity__i3             |                  No Clock
-game/phys_map/y_i4                      |                  No Clock
-game/phys_map/xVelocity_172__i0         |                  No Clock
-game/phys_map/y_i2                      |                  No Clock
+game/phys_map/xVelocity_172__i2         |                  No Clock
+game/phys_map/yVelocity__i0             |                  No Clock
 game/phys_map/xVelocity_172__i3         |                  No Clock
+game/phys_map/y_i6                      |                  No Clock
+game/phys_map/y_i3                      |                  No Clock
+game/phys_map/y_i4                      |                  No Clock
+game/phys_map/y_i2                      |                  No Clock
+game/phys_map/xVelocity_172__i1         |                  No Clock
+game/phys_map/y_i5                      |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
-ition                                   |                       163
+ition                                   |                       210
                                         |                          
 -------------------------------------------------------------------
 
@@ -341,16 +341,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 
                                                           CONSTRAINT     0.000        20.833  1       
@@ -394,16 +394,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 
                                                           CONSTRAINT     0.000        20.833  1       
@@ -447,16 +447,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 
                                                           CONSTRAINT     0.000        20.833  1       
@@ -500,16 +500,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 
                                                           CONSTRAINT     0.000        20.833  1       
@@ -553,16 +553,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 
                                                           CONSTRAINT     0.000        20.833  1       
@@ -606,16 +606,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 
                                                           CONSTRAINT     0.000        20.833  1       
@@ -659,16 +659,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 
                                                           CONSTRAINT     0.000        20.833  1       
@@ -712,16 +712,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 
                                                           CONSTRAINT     0.000        20.833  1       
@@ -765,16 +765,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 
                                                           CONSTRAINT     0.000        20.833  1       
@@ -818,16 +818,16 @@ controller1/i3_2_lut/B->controller1/i3_2_lut/Z
 controller1/n9                                            NET DELAY        2.075         8.093  1       
 controller1/i2_4_lut/B->controller1/i2_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
-controller1/n6640                                         NET DELAY        2.075        10.645  1       
-controller1/i218_4_lut/A->controller1/i218_4_lut/Z
+controller1/n6733                                         NET DELAY        2.075        10.645  1       
+controller1/i220_4_lut/A->controller1/i220_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        11.122  1       
 controller1/n28                                           NET DELAY        2.075        13.197  1       
-controller1/i222_4_lut/A->controller1/i222_4_lut/Z
+controller1/i213_4_lut/A->controller1/i213_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        13.674  1       
 controller1/n36                                           NET DELAY        2.075        15.749  1       
-controller1/i209_4_lut/D->controller1/i209_4_lut/Z
+controller1/i212_4_lut/D->controller1/i212_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.450        16.199  11      
-controller1/counter_20__N_51 ( LSR )                      NET DELAY        2.075        18.274  11      
+controller1/counter_19__N_59 ( LSR )                      NET DELAY        2.075        18.274  11      
 
 
                                                           CONSTRAINT     0.000        20.833  1       
@@ -1253,8 +1253,8 @@ controller1/clk ( CLK )                                   NET DELAY      2.075  
 
 
 controller1/counter_168__i21/CK->controller1/counter_168__i21/Q
-                                          SLICE           CLK_TO_Q1_DELAY  0.768         2.843  2       
-controller1/counter[20]                                   NET DELAY        2.075         4.918  2       
+                                          SLICE           CLK_TO_Q1_DELAY  0.768         2.843  15      
+controller1/counter[20]                                   NET DELAY        2.075         4.918  15      
 controller1/counter_168_add_4_21/C1->controller1/counter_168_add_4_21/S1
                                           SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
 controller1/n89[20] ( DI1 )                               NET DELAY        0.000         5.167  1       

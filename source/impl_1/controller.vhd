@@ -25,6 +25,7 @@ signal clk, NESclk : std_logic;
 signal counter : unsigned(20 downto 0);
 signal NEScount : unsigned(8 downto 0);
 signal shift : std_logic_vector(7 downto 0);
+signal interimShift : std_logic_vector(7 downto 0);
 
 begin
 
@@ -53,10 +54,13 @@ shift(6) <= shift(5);
 shift(7) <= shift(6);
 end if;
 end process;
-process(latch)
+process(counter(20))
 begin
-if(rising_edge(latch)) then
-output <= not shift;
+if(rising_edge(counter(20))) then
+	if(interimShift = shift) then
+	output <= not shift;
+	else interimShift <= shift;
+	end if;
 end if;
 end process;
 

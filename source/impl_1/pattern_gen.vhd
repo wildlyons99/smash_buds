@@ -63,7 +63,9 @@ component tony_run_rom2 is
       );
 end component;
 
-signal counter : unsigned(25 downto 0);
+signal counter : unsigned(30 downto 0);
+signal left_pressed : std_logic;
+signal right_pressed : std_logic; 
 
 begin
    tony_map : tony_idle_rom port map(
@@ -94,8 +96,7 @@ begin
 		end if;
    
    end process;
-   
-   
+  
    tony_width <= 6d"25";
    tony_height <= 7d"63";
    
@@ -111,8 +112,8 @@ begin
    
  
    toout <= tony_color_idle when (drawing_tony_x and drawing_tony_y) and (not buttons(0)) and (not buttons(1)) else 
-   		    tony_color_run1 when (not counter(25)) and (drawing_tony_x and drawing_tony_y) else
-			tony_color_run2 when (counter(25)) and (drawing_tony_x and drawing_tony_y) else
+   		    tony_color_run1 when (not counter(21)) and (drawing_tony_x and drawing_tony_y) else
+			tony_color_run2 when (counter(21)) and (drawing_tony_x and drawing_tony_y) else
 		"111111";
    
    
