@@ -40,74 +40,6 @@ if (a)
 <BODY>
 
 <DIV id="content" onclick="hideTocList()"><PRE>
-<A name="pn221129183942"></A><B><U><big>pn221129183942</big></U></B>
-#Start recording tcl command: 11/29/2022 18:09:55
-#Project Location: //vs-home/tlyons01/es4/smack_buds; Project name: smack_buds
-//vs-home/tlyons01/es4/lab7
-lab7
-#Start recording tcl command: 11/29/2022 18:39:42
-#Project Location: //vs-home/tlyons01/es4/lab7; Project name: lab7
-prj_create -name "smack_buds" -impl "impl_1" -dev iCE40UP5K-UWG30ITR -performance "High-Performance_1.2V" -synthesis "lse"
-prj_save 
-prj_set_strategy_value -strategy Strategy1 syn_vhdl2008=True
-prj_set_strategy_value -strategy Strategy1 lse_vhdl2008=True
-prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd"
-prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd"
-prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/vga.vhd"
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_set_device -part iCE40UP5K-SG48I -performance "High-Performance_1.2V"
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_add_source "//vs-home/tlyons01/es4/smack_buds/my_pll/my_pll.ipx"
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
-prj_run Map -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Export -impl impl_1
-launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
-prj_add_source "//vs-home/tlyons01/es4/smack_buds/smack_buds.pdc"
-prj_enable_source "//vs-home/tlyons01/es4/smack_buds/smack_buds.pdc"
-prj_run Export -impl impl_1
-launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
-prj_save 
-prj_close
-prj_open "//vs-home/tlyons01/es4/lab7/lab7.rdf"
-#Stop recording: 11/29/2022 18:39:42
-
-
-
-<A name="pn221129184145"></A><B><U><big>pn221129184145</big></U></B>
-#Start recording tcl command: 11/29/2022 18:41:44
-#Project Location: //vs-home/tlyons01/es4/smack_buds; Project name: smack_buds
-prj_open "//vs-home/tlyons01/es4/smack_buds/smack_buds.rdf"
-#Stop recording: 11/29/2022 18:41:45
-
-
-
 <A name="pn221129185746"></A><B><U><big>pn221129185746</big></U></B>
 #Start recording tcl command: 11/29/2022 18:49:15
 #Project Location: //vs-home/tlyons01/es4/smack_buds; Project name: smack_buds
@@ -243,12 +175,174 @@ prj_open "//vs-home/tlyons01/es4/smack_buds/smack_buds.rdf"
 
 
 
+<A name="pn221205225300"></A><B><U><big>pn221205225300</big></U></B>
+#Start recording tcl command: 12/5/2022 18:06:46
+#Project Location: //vs-home/tlyons01/es4/smack_buds; Project name: smack_buds
+prj_open "//vs-home/tlyons01/es4/smack_buds/smack_buds.rdf"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/platform.vhd"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/r_edge_col.vhd"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/l_edge_col.vhd"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/t_edge_col.vhd"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/b_edge_col.vhd"
+prj_disable_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/r_edge_col.vhd"
+prj_disable_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/l_edge_col.vhd"
+prj_disable_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/t_edge_col.vhd"
+prj_disable_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/b_edge_col.vhd"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_run_rom1.vhd"
+prj_add_source "//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_run_rom2.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+#Stop recording: 12/5/2022 22:53:00
+
+
+
+<A name="pn221206151436"></A><B><U><big>pn221206151436</big></U></B>
+#Start recording tcl command: 12/6/2022 15:04:46
+#Project Location: //vs-home/tlyons01/es4/smack_buds; Project name: smack_buds
+prj_open "//vs-home/tlyons01/es4/smack_buds/smack_buds.rdf"
+#Stop recording: 12/6/2022 15:14:36
+
+
+
 </PRE></DIV>
 
 <DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
 <UL id="toc_list">
-<LI><A href=#pn221129183942>pn221129183942</A></LI>
-<LI><A href=#pn221129184145>pn221129184145</A></LI>
 <LI><A href=#pn221129185746>pn221129185746</A></LI>
 <LI><A href=#pn221129191605>pn221129191605</A></LI>
 <LI><A href=#pn221129221411>pn221129221411</A></LI>
@@ -257,6 +351,8 @@ prj_open "//vs-home/tlyons01/es4/smack_buds/smack_buds.rdf"
 <LI><A href=#pn221202185604>pn221202185604</A></LI>
 <LI><A href=#pn221203184112>pn221203184112</A></LI>
 <LI><A href=#pn221205180441>pn221205180441</A></LI>
+<LI><A href=#pn221205225300>pn221205225300</A></LI>
+<LI><A href=#pn221206151436>pn221206151436</A></LI>
 </UL>
 </DIV>
 

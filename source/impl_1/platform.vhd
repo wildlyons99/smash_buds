@@ -50,12 +50,12 @@ begin
 		-- Vertical checks (top and bottom)
 		-- Top Check
 		above_or_below_platform <= '1' when (((player_x + player_width) >= corner_x) and player_x <= (corner_x + plat_width)) else '0';
-		above_platform <= '1' when (player_y <= corner_y) else '0';
+		above_platform <= '1' when (player_y + player_height - 20 <= corner_y) else '0';
 		passing_through_platform_top <= '1' when (player_y + player_height + player_yv >= corner_y) else '0';
 		col_t <= '1' when (above_or_below_platform and passing_through_platform_top and above_platform) else '0';
 		
 		-- Bottom Check
-		passing_through_platform_bottom <= '1' when (player_y + player_yv < corner_y + plat_height) else '0';
+		passing_through_platform_bottom <= '1' when (player_y + player_yv - 20 < corner_y + plat_height) else '0';
 		below_platform <= '1' when (player_y > corner_y + plat_height) else '0';
 		col_b <= '1' when (above_or_below_platform and passing_through_platform_bottom and below_platform) else '0';
 		

@@ -34,7 +34,7 @@ signal diff_y : signed(10 downto 0);
 signal tony_width : signed(5 downto 0);
 signal tony_height : signed(6 downto 0);
 
-signal background : signed(6 downto 0); 
+signal background : std_logic_vector(5 downto 0); 
 
 component tony_idle_rom is
   port(
@@ -110,11 +110,15 @@ begin
 					std_logic_vector(unsigned(tony_width) - unsigned(diff_x));
    diff_y_vector <= std_logic_vector(unsigned(diff_y));
    
- 
+
+	background <= "110110" when col >= 11d"330" and col <= 11d"630" and
+								row > 11d"330" and row <= 11d"350" 
+						   else "111111"; 
+	
    toout <= tony_color_idle when (drawing_tony_x and drawing_tony_y) and (not buttons(0)) and (not buttons(1)) else 
    		    tony_color_run1 when (not counter(21)) and (drawing_tony_x and drawing_tony_y) else
 			tony_color_run2 when (counter(21)) and (drawing_tony_x and drawing_tony_y) else
-		"111111";
+		background;
    
    
    rgb <= toout when valid else 6d"0";

@@ -56,6 +56,12 @@ signal plat1_col_b : std_logic;
 signal plat1_col_t : std_logic;
 signal plat1_y	   : signed(10 downto 0);
 
+signal plat2_col_r : std_logic;
+signal plat2_col_l : std_logic;
+signal plat2_col_b : std_logic;
+signal plat2_col_t : std_logic;
+signal plat2_y	   : signed(10 downto 0);
+
 	
 begin
 	floor : platform generic map (
@@ -77,15 +83,37 @@ begin
 		y_pos_plat => plat1_y
 	); 
 	
+	
+	plat_test : platform generic map (
+		plat_width => 11d"300", 
+		plat_height => 11d"20",
+		corner_x => 11d"330",
+		corner_y => 11d"330"
+	)
+	port map(
+		--clk => clk,
+		player_x => x,
+		player_y => y,
+		player_yv => yv,
+		buttons => buttons,
+		col_r => plat2_col_r,
+		col_l => plat2_col_l,
+		col_b => plat2_col_b,
+		col_t => plat2_col_t,
+		y_pos_plat => plat2_y
+	);
+	
 	--collisions TODO: or statements, logic vectors!
 	--coll_left <= '1' when plat1_col_l else '0';
 	--coll_right <= '1' when plat1_col_r else '0';
 	--coll_top <= '1' when plat1_col_t else '0';
 	--coll_bottom <= '1' when plat1_col_b else '0';
-	coll_left <= plat1_col_l;
-	coll_right <= plat1_col_r;
-	coll_top <= plat1_col_t;
-	coll_bottom <= plat1_col_b;
-	y_platform <= plat1_y; 
+	coll_left <= plat1_col_l or plat2_col_l;
+	coll_right <= plat1_col_r or plat2_col_r;
+	coll_top <= plat1_col_t or plat2_col_t;
+	coll_bottom <= plat1_col_b or plat2_col_b;
+	y_platform <= plat1_y when plat1_col_t else
+	              plat2_y when plat2_col_t else
+				  y_platform;
 	
 end;

@@ -32,18 +32,22 @@ architecture synth of physics is
       signal left_pressed : std_logic;
       signal right_pressed : std_logic;
       signal jump_pressed : std_logic;
+	  signal down_pressed : std_logic;
       --signal physClk  : unsigned() -- hypothetically slow down accelerations?
 	 signal at_maxspd_left : std_logic;
 	 signal at_maxspd_right : std_logic;
+	 signal falling : std_logic;
 
 begin
       reset <= buttons(4);
       right_pressed <= buttons(0);
       left_pressed <= buttons(1);
       jump_pressed <= buttons(7);
+	  down_pressed <= buttons(2);
 
 	 at_maxspd_left <= '0' when (xVelocity > 4b"1011") else '1';
 	 at_maxspd_right <= '0' when (xVelocity < 4d"4") else '1';
+	 falling <= '1' when yVelocity >= 0 else '0';
 	 
       process (clk) begin
       if rising_edge(clk) then
@@ -67,21 +71,33 @@ begin
                   x <= (x + xVelocity) mod 639;
                   
                   --vertical movement
-                  if (coll_top and not jump_pressed) then
-                        yVelocity <= 5d"0";
-                        y <= y_platform;
+                  if (coll_top) then
+					if(jump_pressed and falling) then
+						yVelocity <= 5b"10010";	
+						y <= y_platform - 2;
+					else
+                        if(falling) then
+							yVelocity <= 5d"0";
+							y <= y_platform;
+						elsif(down_pressed) then
+							if(y < 340) then
+								y <= y_platform + 20;
+							end if;
+						else
+							yVelocity <= yVelocity + gravity;
+							y <= (y + yVelocity) mod 479;
+						end if; 
+					end if;
                   else
-                        if(coll_top and jump_pressed) then
-                              yVelocity <= 5b"10010";                      
-                        elsif (coll_bottom) then
-                              yVelocity <= -1 * yVelocity; 
-                        elsif (yVelocity < 5d"8") then
-                              yVelocity <= yVelocity + gravity;
-                        end if;
-                        y <= (y + yVelocity) mod 479;
+					  if (coll_bottom) then
+							yVelocity <= -1 * yVelocity; 
+					  elsif (yVelocity < 5d"8") then
+							yVelocity <= yVelocity + gravity;
+					  end if;
+                  y <= (y + yVelocity) mod 479;
                   end if;
             end if;
-      end if;
+		end if;
    end process;
 
 end;

@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>pll.lscc_pll_inst.u_PLL_B</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>pll.lscc_pll_inst.u_PLL_B</Dynamic>
+        </Message>
+    </Task>
     <Task name="PAR">
         <Message>
             <ID>70001944</ID>
@@ -131,28 +153,6 @@
         <Message>
             <ID>1191031</ID>
             <Severity>1</Severity>
-        </Message>
-    </Task>
-    <Task name="Map">
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {testPLLout_c} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTCORE }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>pll.lscc_pll_inst.u_PLL_B</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>pll.lscc_pll_inst.u_PLL_B</Dynamic>
         </Message>
     </Task>
     <Task name="Synthesis">
@@ -1458,16 +1458,10 @@
         <Message>
             <ID>35935014</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(84): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(100): </Dynamic>
             <Dynamic>\game/phys_map/first_time</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd</Navigation>
-            <Navigation>84</Navigation>
-        </Message>
-        <Message>
-            <ID>35001747</ID>
-            <Severity>16</Severity>
-            <Dynamic>10</Dynamic>
-            <Dynamic>\game/phys_map/y</Dynamic>
+            <Navigation>100</Navigation>
         </Message>
         <Message>
             <ID>35002039</ID>
@@ -1476,7 +1470,7 @@
         <Message>
             <ID>35811145</ID>
             <Severity>1</Severity>
-            <Dynamic>i7612</Dynamic>
+            <Dynamic>i9908</Dynamic>
         </Message>
         <Message>
             <ID>70001944</ID>

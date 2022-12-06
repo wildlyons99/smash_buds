@@ -33,6 +33,27 @@
         <Source name="source/impl_1/tony_idle_rom.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
+        <Source name="source/impl_1/platform.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/r_edge_col.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/l_edge_col.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/t_edge_col.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/b_edge_col.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/tony_run_rom1.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/tony_run_rom2.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
         <Source name="smack_buds.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>
         </Source>
