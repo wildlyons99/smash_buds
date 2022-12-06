@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Sat Dec  3 22:19:23 2022
+Mapped on: Mon Dec  5 20:15:23 2022
 
 Design Information
 ------------------
@@ -17,12 +17,12 @@ Command line:   map smack_buds_impl_1_syn.udb
 Design Summary
 --------------
 
-   Number of slice registers: 101 out of  5280 (2%)
-   Number of I/O registers:      1 out of   117 (1%)
-   Number of LUT4s:           531 out of  5280 (10%)
-      Number of logic LUT4s:             298
-      Number of inserted feedthru LUT4s:   7
-      Number of ripple logic:            113 (226 LUT4s)
+   Number of slice registers:  97 out of  5280 (2%)
+   Number of I/O registers:      2 out of   117 (2%)
+   Number of LUT4s:           470 out of  5280 (9%)
+      Number of logic LUT4s:             260
+      Number of inserted feedthru LUT4s:   8
+      Number of ripple logic:            101 (202 LUT4s)
    Number of IO sites used:   14 out of 39 (36%)
       Number of IO sites used for general PIO: 14
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -47,19 +47,19 @@ Design Summary
    Number of Clocks:  6
       Net internal25clk: 25 loads, 25 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net controller_latch_c: 6 loads, 6 rising, 0 falling (Driver: Pin
+      Net internal60hzclk: 26 loads, 26 rising, 0 falling (Driver: Pin
+     sixtyHZclock.i4_4_lut_adj_14/OUT)
+      Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
+      Net controller_latch_c: 3 loads, 3 rising, 0 falling (Driver: Pin
      controller1.i7_4_lut/OUT)
       Net controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
      controller1.i1_4_lut/OUT)
       Net controller1.clk: 11 loads, 11 rising, 0 falling (Driver: Pin
      controller1.the_hsosc/CLKHF)
-      Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
-      Net internal60hzclk: 26 loads, 26 rising, 0 falling (Driver: Pin
-     sixtyHZclock.i4_4_lut_adj_10/OUT)
    Number of Clock Enables:  3
-      Net n399: 6 loads, 6 SLICEs
-      Net RGB_pad[3].vcc: 10 loads, 0 SLICEs
-      Net game.phys_map.n2550: 11 loads, 11 SLICEs
+      Net up_pad.vcc: 10 loads, 0 SLICEs
+      Net n321: 6 loads, 6 SLICEs
+      Net n4930: 3 loads, 3 SLICEs
 
                                     Page 1
 
@@ -70,23 +70,23 @@ Design Summary
 Design Summary (cont)
 ---------------------
    Number of LSRs:  6
-      Net row_10__N_135: 6 loads, 6 SLICEs
       Net col_10__N_123: 6 loads, 6 SLICEs
-      Net x_10__N_216: 23 loads, 23 SLICEs
-      Net controller1.counter_20__N_51: 11 loads, 11 SLICEs
+      Net row_10__N_135: 6 loads, 6 SLICEs
+      Net x_10__N_267: 22 loads, 22 SLICEs
       Net internal60hzclk: 10 loads, 10 SLICEs
-      Net game.phys_map.n232: 1 loads, 1 SLICEs
+      Net game.phys_map.n2529: 3 loads, 3 SLICEs
+      Net controller1.counter_20__N_51: 11 loads, 11 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net RGB_pad[3].vcc: 57 loads
-      Net x_10__N_216: 27 loads
-      Net game.phys_map.n62_adj_336[10]: 24 loads
-      Net game.phys_map.n644: 19 loads
-      Net game.phys_map.n609: 15 loads
+      Net up_pad.vcc: 43 loads
+      Net x_10__N_267: 25 loads
+      Net game.phys_map.n57[9]: 24 loads
+      Net game.phys_map.n644: 20 loads
       Net game.phys_map.n62[10]: 15 loads
-      Net controller_buttons_signal[1]: 12 loads
+      Net game.phys_map.n609: 13 loads
+      Net xVelocity[3]: 12 loads
       Net controller1.counter_20__N_51: 11 loads
-      Net game.phys_map.n21_adj_237: 11 loads
-      Net game.phys_map.n2550: 11 loads
+      Net game.phys_map.n107: 10 loads
+      Net game.phys_map.n1_adj_356[8]: 10 loads
 
 
 
@@ -106,17 +106,17 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[4]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[5]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| up                  | OUTPUT    | LVCMOS33  |       |       |           |
+| up                  | OUTPUT    | LVCMOS33  | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | VSYNC               | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | HSYNC               | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[5]              | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[4]              | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -187,8 +187,8 @@ OSC Summary
 
 OSC 1:                                 Pin/Node Value
   OSC Instance Name:                            controller1/the_hsosc
-  Power UP:                            NODE     RGB_pad[3].vcc
-  Enable Signal:                       NODE     RGB_pad[3].vcc
+  Power UP:                            NODE     up_pad.vcc
+  Enable Signal:                       NODE     up_pad.vcc
   OSC Output:                          NODE     controller1.clk
   DIV Setting:                                  00
 
@@ -202,27 +202,27 @@ OSC 1:                                 Pin/Node Value
 ASIC Components
 ---------------
 
+Instance Name: patternmaker/tony_map/mux_18
+         Type: EBR
+Instance Name: patternmaker/tony_map/mux_17
+         Type: EBR
+Instance Name: patternmaker/tony_map/mux_19
+         Type: EBR
+Instance Name: pll/lscc_pll_inst/u_PLL_B
+         Type: PLL
+Instance Name: controller1/output_i1
+         Type: IOLOGIC
 Instance Name: controller1/shift_i0
          Type: IOLOGIC
 Instance Name: controller1/the_hsosc
          Type: HFOSC
-Instance Name: patternmaker/tony_map/mux_20
-         Type: EBR
-Instance Name: patternmaker/tony_map/mux_19
-         Type: EBR
-Instance Name: patternmaker/tony_map/mux_18
-         Type: EBR
-Instance Name: pll/lscc_pll_inst/u_PLL_B
-         Type: PLL
 
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 61 MB
-
-
+   Peak Memory Usage: 60 MB
 
 
 

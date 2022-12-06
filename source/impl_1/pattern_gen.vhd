@@ -10,6 +10,7 @@ entity pattern_gen is
 	  x : in signed(10 downto 0);
 	  y : in signed(10 downto 0);
 	  valid : in std_logic;
+	  buttons : in std_logic_vector(7 downto 0);
 	  rgb : out std_logic_vector(5 downto 0)
       );
 end pattern_gen;

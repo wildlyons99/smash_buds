@@ -30,6 +30,9 @@
         <Source name="source/impl_1/collisions.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
+        <Source name="source/impl_1/tony_idle_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
         <Source name="smack_buds.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>
         </Source>

@@ -1,60 +1,42 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  101 of 5280 (1.913%)
+Register bits:  97 of 5280 (1.837%)
 I/O cells:      14
                                   Cell usage:
                                cell     count   Res Usage(%)
                               EBR_B         3          100.0
-                               CCU2       113          100.0
-                            FD1P3XZ       101          100.0
+                               CCU2       101          100.0
+                            FD1P3XZ        97          100.0
                          HSOSC_CORE         1          100.0
                                  IB         2          100.0
-                              IOL_B         1          100.0
-                               LUT4       297          100.0
+                              IOL_B         2          100.0
+                               LUT4       259          100.0
                                  OB        12          100.0
                               PLL_B         1          100.0
 SUB MODULES
+                         collisions         1
                          controller         1
                          game_logic         1
                              my_pll         1
 my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
                         pattern_gen         1
                             physics         1
+platform(plat_width="01010000000",plat_height="00000000010",corner_y="00110110110")         1
                   pllclock_to_60_hz         1
                       tony_idle_rom         1
                                 vga         1
-                              TOTAL       540
-----------------------------------------------------------------------
-Report for cell vga.v1
-Instance Path : internalvga
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        12           10.6
-                            FD1P3XZ        22           21.8
-                               LUT4        18            6.1
-                              TOTAL        52
-----------------------------------------------------------------------
-Report for cell controller.v1
-Instance Path : controller1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        11            9.7
-                            FD1P3XZ        34           33.7
-                         HSOSC_CORE         1          100.0
-                              IOL_B         1          100.0
-                               LUT4        19            6.4
-                              TOTAL        66
+                              TOTAL       489
 ----------------------------------------------------------------------
 Report for cell pattern_gen.v1
 Instance Path : patternmaker
                                   Cell usage:
                                cell     count   Res Usage(%)
                               EBR_B         3          100.0
-                                FA2        15           13.3
-                               LUT4        54           18.2
+                                FA2        15           14.9
+                               LUT4        58           22.4
 SUB MODULES
                       tony_idle_rom         1
-                              TOTAL        73
+                              TOTAL        77
 ----------------------------------------------------------------------
 Report for cell tony_idle_rom.v1
 Instance Path : patternmaker.tony_map
@@ -62,6 +44,62 @@ Instance Path : patternmaker.tony_map
                                cell     count   Res Usage(%)
                               EBR_B         3          100.0
                               TOTAL         3
+----------------------------------------------------------------------
+Report for cell vga.v1
+Instance Path : internalvga
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12           11.9
+                            FD1P3XZ        22           22.7
+                               LUT4        18            6.9
+                              TOTAL        52
+----------------------------------------------------------------------
+Report for cell game_logic.v1
+Instance Path : game
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        53           52.5
+                            FD1P3XZ        26           26.8
+                               LUT4       156           60.2
+SUB MODULES
+                         collisions         1
+                            physics         1
+platform(plat_width="01010000000",plat_height="00000000010",corner_y="00110110110")         1
+                              TOTAL       238
+----------------------------------------------------------------------
+Report for cell physics.v1
+Instance Path : game.phys_map
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        53           52.5
+                            FD1P3XZ        26           26.8
+                               LUT4       155           59.8
+                              TOTAL       234
+----------------------------------------------------------------------
+Report for cell collisions.v1
+Instance Path : game.col_map
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.4
+SUB MODULES
+platform(plat_width="01010000000",plat_height="00000000010",corner_y="00110110110")         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell platform(plat_width="01010000000",plat_height="00000000010",corner_y="00110110110").v1
+Instance Path : game.col_map.floor
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.4
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell pllclock_to_60_hz.v1
+Instance Path : sixtyHZclock
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        10            9.9
+                            FD1P3XZ        19           19.6
+                               LUT4         7            2.7
+                              TOTAL        36
 ----------------------------------------------------------------------
 Report for cell my_pll.v1
 Instance Path : pll
@@ -79,31 +117,13 @@ Instance Path : pll.lscc_pll_inst
                               PLL_B         1          100.0
                               TOTAL         1
 ----------------------------------------------------------------------
-Report for cell game_logic.v1
-Instance Path : game
+Report for cell controller.v1
+Instance Path : controller1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        65           57.5
-                            FD1P3XZ        26           25.7
-                               LUT4       198           66.7
-SUB MODULES
-                            physics         1
-                              TOTAL       290
-----------------------------------------------------------------------
-Report for cell physics.v1
-Instance Path : game.phys_map
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        65           57.5
-                            FD1P3XZ        26           25.7
-                               LUT4       198           66.7
-                              TOTAL       289
-----------------------------------------------------------------------
-Report for cell pllclock_to_60_hz.v1
-Instance Path : sixtyHZclock
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        10            8.8
-                            FD1P3XZ        19           18.8
-                               LUT4         7            2.4
-                              TOTAL        36
+                                FA2        11           10.9
+                            FD1P3XZ        30           30.9
+                         HSOSC_CORE         1          100.0
+                              IOL_B         2          100.0
+                               LUT4        16            6.2
+                              TOTAL        60
