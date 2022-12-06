@@ -60,7 +60,7 @@ end component;
 begin
 
 	col_map : collisions port map(
-									clk => clk,
+									--clk => clk,
 									coll_left => col_l, 
 									coll_right => col_r, 
 									coll_top => col_t, 

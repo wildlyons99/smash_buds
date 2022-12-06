@@ -35,7 +35,7 @@ component platform is
 		corner_y : signed(10 downto 0) := 11d"0"
 	);
 	port (
-		clk : in std_logic; 
+		--clk : in std_logic; 
 		
 		player_x : in signed(10 downto 0); 
 		player_y : in signed(10 downto 0);
@@ -60,12 +60,12 @@ signal plat1_y	   : signed(10 downto 0);
 begin
 	floor : platform generic map (
 		plat_width => 11d"640", 
-		plat_height => 11d"2",
+		plat_height => 11d"20",
 		corner_x => 11d"0",
-		corner_y => 11d"438"
+		corner_y => 11d"300"
 	)
 	port map(
-		clk => clk,
+		--clk => clk,
 		player_x => x,
 		player_y => y,
 		player_yv => yv,
@@ -75,13 +75,17 @@ begin
 		col_b => plat1_col_b,
 		col_t => plat1_col_t,
 		y_pos_plat => plat1_y
-	);
+	); 
 	
 	--collisions TODO: or statements, logic vectors!
-	coll_left <= '1' when plat1_col_l;
-	coll_right <= '1' when plat1_col_r;
-	coll_top <= '1' when plat1_col_t;
-	coll_bottom <= '1' when plat1_col_b;
+	--coll_left <= '1' when plat1_col_l else '0';
+	--coll_right <= '1' when plat1_col_r else '0';
+	--coll_top <= '1' when plat1_col_t else '0';
+	--coll_bottom <= '1' when plat1_col_b else '0';
+	coll_left <= plat1_col_l;
+	coll_right <= plat1_col_r;
+	coll_top <= plat1_col_t;
+	coll_bottom <= plat1_col_b;
 	y_platform <= plat1_y; 
 	
 end;

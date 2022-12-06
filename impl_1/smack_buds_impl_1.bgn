@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Dec  5 20:15:50 2022
+Mon Dec  5 22:09:40 2022
 
 
 Command: bitgen -w -freq 0 -gui smack_buds_impl_1.udb 

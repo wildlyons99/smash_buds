@@ -13,7 +13,7 @@ entity platform is
 	);
 	
 	port (
-		clk : in std_logic; 
+		--clk : in std_logic; 
 		
 		player_x : in signed(10 downto 0); 
 		player_y : in signed(10 downto 0);
@@ -50,7 +50,7 @@ begin
 		-- Vertical checks (top and bottom)
 		-- Top Check
 		above_or_below_platform <= '1' when (((player_x + player_width) >= corner_x) and player_x <= (corner_x + plat_width)) else '0';
-		above_platform <= '1' when (player_y + player_height <= corner_y) else '0';
+		above_platform <= '1' when (player_y <= corner_y) else '0';
 		passing_through_platform_top <= '1' when (player_y + player_height + player_yv >= corner_y) else '0';
 		col_t <= '1' when (above_or_below_platform and passing_through_platform_top and above_platform) else '0';
 		
@@ -60,6 +60,7 @@ begin
 		col_b <= '1' when (above_or_below_platform and passing_through_platform_bottom and below_platform) else '0';
 		
 		--Horizontal Checks
+		left_or_right_platform <= '1' when (((player_y + player_height) >= corner_y) and player_y <= (corner_y + plat_height)) else '0';
 		-- Left Check
 		adjacent_to_left_side <= '1' when (player_x + player_width + 1 = corner_x) else '0';
 		col_l <= '1' when (left_or_right_platform and adjacent_to_left_side and buttons(0)) else '0';
@@ -68,5 +69,5 @@ begin
 		col_r <= '1' when (left_or_right_platform and adjacent_to_right_side and buttons(1)) else '0';
 		
 		-- Where to set height when colliding vertically
-		y_pos_plat <= corner_y + plat_height when (col_b) else corner_y; 
+		y_pos_plat <= corner_y + plat_height when (col_b) else corner_y - player_height; 
 end;

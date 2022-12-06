@@ -58,6 +58,7 @@ architecture synth of top is
 		  x : in signed(10 downto 0);
 		  y : in signed(10 downto 0);
 		  valid : in std_logic;
+		  buttons : in std_logic_vector(7 downto 0);
 		  rgb : out std_logic_vector(5 downto 0)
 		);
     end component;
@@ -96,6 +97,7 @@ begin
 									   x => xpos,
 									   y => ypos,
 									   valid => internalvalid,
+									   buttons => controller_buttons_signal,
 									   rgb => RGB
 									   );
 

@@ -818,6 +818,22 @@
             <Navigation>14</Navigation>
         </Message>
         <Message>
+            <ID>35929000</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(73): </Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
+            <Navigation>73</Navigation>
+        </Message>
+        <Message>
+            <ID>35921259</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(28): </Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
             <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(5): </Dynamic>
@@ -1292,6 +1308,22 @@
             <Navigation>14</Navigation>
         </Message>
         <Message>
+            <ID>35929000</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(73): </Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
+            <Navigation>73</Navigation>
+        </Message>
+        <Message>
+            <ID>35921259</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(28): </Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
             <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(5): </Dynamic>
@@ -1396,97 +1428,7 @@
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[7]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[6]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[5]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[4]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[3]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[2]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[1]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[0]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[7]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[6]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[5]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[4]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[3]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[2]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[1]' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(92): input port 'buttons[0]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(62): input port 'clk' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
@@ -1528,31 +1470,13 @@
             <Dynamic>\game/phys_map/y</Dynamic>
         </Message>
         <Message>
-            <ID>35001747</ID>
-            <Severity>16</Severity>
-            <Dynamic>3</Dynamic>
-            <Dynamic>\game/phys_map/yVelocity</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001747</ID>
-            <Severity>16</Severity>
-            <Dynamic>0</Dynamic>
-            <Dynamic>\game/phys_map/yVelocity</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001747</ID>
-            <Severity>16</Severity>
-            <Dynamic>2</Dynamic>
-            <Dynamic>\game/phys_map/yVelocity_res1</Dynamic>
-        </Message>
-        <Message>
             <ID>35002039</ID>
             <Severity>1</Severity>
         </Message>
         <Message>
             <ID>35811145</ID>
             <Severity>1</Severity>
-            <Dynamic>i6021</Dynamic>
+            <Dynamic>i7048</Dynamic>
         </Message>
         <Message>
             <ID>70001944</ID>
