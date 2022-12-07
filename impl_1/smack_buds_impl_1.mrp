@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Tue Dec  6 22:11:40 2022
+Mapped on: Tue Dec  6 22:29:03 2022
 
 Design Information
 ------------------
@@ -17,12 +17,13 @@ Command line:   map smack_buds_impl_1_syn.udb
 Design Summary
 --------------
 
-   Number of slice registers: 124 out of  5280 (2%)
+   Number of slice registers: 125 out of  5280 (2%)
    Number of I/O registers:      3 out of   117 (3%)
-   Number of LUT4s:           698 out of  5280 (13%)
-      Number of logic LUT4s:             441
+   Number of LUT4s:           750 out of  5280 (14%)
+      Number of logic LUT4s:             480
       Number of inserted feedthru LUT4s:  15
-      Number of ripple logic:            121 (242 LUT4s)
+      Number of replicated LUT4s:          1
+      Number of ripple logic:            127 (254 LUT4s)
    Number of IO sites used:   12 out of 39 (31%)
       Number of IO sites used for general PIO: 12
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -47,19 +48,18 @@ Design Summary
    Number of Clocks:  5
       Net internal25clk: 52 loads, 52 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net internal60hzclk: 33 loads, 33 rising, 0 falling (Driver: Pin
-     internalvga.i4_4_lut/OUT)
+      Net internal60hzclk: 34 loads, 34 rising, 0 falling (Driver: Pin
+     internalvga.i6_4_lut/OUT)
       Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
       Net tony_controller.counter[20]: 13 loads, 13 rising, 0 falling (Driver:
-     Pin tony_controller.counter_263__i21/Q)
+     Pin tony_controller.counter_271__i21/Q)
       Net tony_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
-     tony_controller.i1_4_lut_adj_46/OUT)
-   Number of Clock Enables:  9
+     tony_controller.i1_4_lut_adj_55/OUT)
+   Number of Clock Enables:  10
       Net VCC_net: 27 loads, 0 SLICEs
-      Net n470: 6 loads, 6 SLICEs
-      Net game.tony.phys_map.n3866: 10 loads, 10 SLICEs
-      Net game.tony.phys_map.n3851: 4 loads, 4 SLICEs
-      Net game.tony.phys_map.n3849: 1 loads, 1 SLICEs
+      Net n8619: 1 loads, 1 SLICEs
+      Net n500: 6 loads, 6 SLICEs
+      Net game.tony.phys_map.n3915: 4 loads, 4 SLICEs
 
                                     Page 1
 
@@ -69,29 +69,32 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net game.tony.phys_map.n3845: 2 loads, 2 SLICEs
-      Net game.tony.phys_map.n3847: 1 loads, 1 SLICEs
+      Net game.tony.phys_map.n3932: 10 loads, 10 SLICEs
+      Net game.tony.phys_map.n3913: 1 loads, 1 SLICEs
+      Net game.tony.phys_map.n3909: 2 loads, 2 SLICEs
+      Net game.tony.phys_map.n3911: 1 loads, 1 SLICEs
+      Net tony_controller.n3890: 5 loads, 5 SLICEs
       Net tony_controller.n15: 8 loads, 8 SLICEs
-      Net tony_controller.n3831: 5 loads, 5 SLICEs
-   Number of LSRs:  7
-      Net internalvalid: 5 loads, 5 SLICEs
-      Net n3465: 1 loads, 1 SLICEs
+   Number of LSRs:  8
+      Net n3486: 5 loads, 5 SLICEs
+      Net meta_state.not_first_time_N_423: 1 loads, 1 SLICEs
+      Net tony_controller_buttons_signal[4]: 28 loads, 28 SLICEs
+      Net n8307: 1 loads, 1 SLICEs
       Net col_10__N_34: 6 loads, 6 SLICEs
       Net row_10__N_46: 6 loads, 6 SLICEs
-      Net tony_controller_buttons_signal[4]: 28 loads, 28 SLICEs
-      Net game.tony.phys_map.n4081: 2 loads, 2 SLICEs
-      Net tony_controller.counter_19__N_474: 11 loads, 11 SLICEs
+      Net game.tony.phys_map.n4150: 2 loads, 2 SLICEs
+      Net tony_controller.counter_19__N_514: 11 loads, 11 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net VCC_net: 71 loads
+      Net VCC_net: 74 loads
+      Net tony_controller_buttons_signal[4]: 39 loads
       Net game.tony.yv_gl[4]: 37 loads
-      Net tony_controller_buttons_signal[4]: 34 loads
       Net game.tony.phys_map.n62[10]: 24 loads
+      Net game.tony.phys_map.n30: 20 loads
       Net game.tony.phys_map.n644: 20 loads
-      Net game.tony.phys_map.n1506: 19 loads
-      Net n5167: 17 loads
-      Net tony_controller_buttons_signal[2]: 17 loads
-      Net n3380: 16 loads
-      Net game.tony.phys_map.n62_adj_582[10]: 15 loads
+      Net tony_controller_buttons_signal[2]: 18 loads
+      Net drawing_tony_x_N_172[10]: 15 loads
+      Net game.tony.phys_map.n609: 15 loads
+      Net game.tony.phys_map.n62_adj_620[10]: 15 loads
 
 
 
@@ -123,9 +126,6 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | HSYNC               | OUTPUT    | LVCMOS33  | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
 
                                     Page 2
 
@@ -135,6 +135,9 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
+| RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[1]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -187,11 +190,8 @@ PLL 1:                                 Pin/Node Value
   EXTERNAL_DIVIDE_FACTOR:                       NONE
   TEST Mode:                                    0
 
-ASIC Components
----------------
 
-Instance Name: VSYNC_i1
-         Type: IOLOGIC
+
 
                                     Page 3
 
@@ -199,8 +199,11 @@ Instance Name: VSYNC_i1
 
 
 
-ASIC Components (cont)
-----------------------
+ASIC Components
+---------------
+
+Instance Name: VSYNC_i1
+         Type: IOLOGIC
 Instance Name: HSYNC_i0
          Type: IOLOGIC
 Instance Name: patternmaker/tony_run_map2/mux_81
@@ -232,9 +235,6 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 64 MB
-
-
-
 
 
 

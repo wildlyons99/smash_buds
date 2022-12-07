@@ -1,10 +1,10 @@
 <top name = "top"  library = "work"  arch = "RTL"  entry = "VHDL">
 
 <clocks>
-    <clockitem name = "internal25clk"  type = "net" />
     <clockitem name = "ext12m"  type = "port" />
-    <clockitem name = "internal60hzclk"  type = "net" />
     <clockitem name = "tony_controller_clock"  type = "net" />
+    <clockitem name = "internal60hzclk"  type = "net" />
+    <clockitem name = "internal25clk"  type = "net" />
     <clockitem name = "pll/outcore_o"  type = "net" />
     <clockitem name = "tony_controller/counter[20]"  type = "net" />
     <clockitem name = "pll/lscc_pll_inst/outglobalb_o"  type = "net" />

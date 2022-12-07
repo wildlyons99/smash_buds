@@ -1,15 +1,15 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  124 of 5280 (2.348%)
+Register bits:  125 of 5280 (2.367%)
 I/O cells:      12
                                   Cell usage:
                                cell     count   Res Usage(%)
                               EBR_B         9          100.0
-                               CCU2       121          100.0
-                            FD1P3XZ       124          100.0
+                               CCU2       127          100.0
+                            FD1P3XZ       125          100.0
                                  IB         2          100.0
                               IOL_B         3          100.0
-                               LUT4       439          100.0
+                               LUT4       479          100.0
                                  OB        10          100.0
                               PLL_B         1          100.0
 SUB MODULES
@@ -29,28 +29,30 @@ player(reset_x="00011001000",reset_y="00011001000")         1
                       tony_run_rom1         1
                       tony_run_rom2         1
                                 vga         1
-                              TOTAL       725
+                              TOTAL       772
 ----------------------------------------------------------------------
 Report for cell game_state.v1
 Instance Path : meta_state
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ         2            1.6
-                              TOTAL         2
+                                FA2         6            4.7
+                            FD1P3XZ         3            2.4
+                               LUT4         4            0.8
+                              TOTAL        13
 ----------------------------------------------------------------------
 Report for cell pattern_gen.v1
 Instance Path : patternmaker
                                   Cell usage:
                                cell     count   Res Usage(%)
                               EBR_B         9          100.0
-                                FA2        27           22.3
-                            FD1P3XZ        22           17.7
-                               LUT4       102           23.2
+                                FA2        27           21.3
+                            FD1P3XZ        22           17.6
+                               LUT4       116           24.2
 SUB MODULES
                       tony_idle_rom         1
                       tony_run_rom1         1
                       tony_run_rom2         1
-                              TOTAL       163
+                              TOTAL       177
 ----------------------------------------------------------------------
 Report for cell tony_run_rom2.v1
 Instance Path : patternmaker.tony_run_map2
@@ -64,7 +66,7 @@ Instance Path : patternmaker.tony_run_map1
                                   Cell usage:
                                cell     count   Res Usage(%)
                               EBR_B         3           33.3
-                               LUT4         2            0.5
+                               LUT4         2            0.4
                               TOTAL         5
 ----------------------------------------------------------------------
 Report for cell tony_idle_rom.v1
@@ -78,84 +80,10 @@ Report for cell vga.v1
 Instance Path : internalvga
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        12            9.9
-                            FD1P3XZ        22           17.7
-                               LUT4        49           11.2
-                              TOTAL        83
-----------------------------------------------------------------------
-Report for cell game_logic.v1
-Instance Path : game
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        71           58.7
-                            FD1P3XZ        31           25.0
-                               LUT4       259           59.0
-SUB MODULES
-                         collisions         1
-physics(reset_x="00011001000",reset_y="00011001000")         1
-platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")         1
-platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")         1
-platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100")         1
-player(reset_x="00011001000",reset_y="00011001000")         1
-                              TOTAL       367
-----------------------------------------------------------------------
-Report for cell player(reset_x="00011001000",reset_y="00011001000").v1
-Instance Path : game.tony
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        71           58.7
-                            FD1P3XZ        31           25.0
-                               LUT4       259           59.0
-SUB MODULES
-                         collisions         1
-physics(reset_x="00011001000",reset_y="00011001000")         1
-platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")         1
-platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")         1
-platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100")         1
-                              TOTAL       366
-----------------------------------------------------------------------
-Report for cell physics(reset_x="00011001000",reset_y="00011001000").v1
-Instance Path : game.tony.phys_map
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        65           53.7
-                            FD1P3XZ        31           25.0
-                               LUT4       223           50.8
-                              TOTAL       319
-----------------------------------------------------------------------
-Report for cell collisions.v1
-Instance Path : game.tony.col_map
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2         6            5.0
-                               LUT4        36            8.2
-SUB MODULES
-platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")         1
-platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")         1
-platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100")         1
-                              TOTAL        45
-----------------------------------------------------------------------
-Report for cell platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010").v1
-Instance Path : game.tony.col_map.plat_test_2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         6            1.4
-                              TOTAL         6
-----------------------------------------------------------------------
-Report for cell platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010").v1
-Instance Path : game.tony.col_map.plat_test
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2         6            5.0
-                               LUT4        16            3.6
-                              TOTAL        22
-----------------------------------------------------------------------
-Report for cell platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100").v1
-Instance Path : game.tony.col_map.floor
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         6            1.4
-                              TOTAL         6
+                                FA2        12            9.4
+                            FD1P3XZ        22           17.6
+                               LUT4        66           13.8
+                              TOTAL       100
 ----------------------------------------------------------------------
 Report for cell my_pll.v1
 Instance Path : pll
@@ -173,12 +101,86 @@ Instance Path : pll.lscc_pll_inst
                               PLL_B         1          100.0
                               TOTAL         1
 ----------------------------------------------------------------------
+Report for cell game_logic.v1
+Instance Path : game
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        71           55.9
+                            FD1P3XZ        31           24.8
+                               LUT4       258           53.9
+SUB MODULES
+                         collisions         1
+physics(reset_x="00011001000",reset_y="00011001000")         1
+platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")         1
+platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")         1
+platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100")         1
+player(reset_x="00011001000",reset_y="00011001000")         1
+                              TOTAL       366
+----------------------------------------------------------------------
+Report for cell player(reset_x="00011001000",reset_y="00011001000").v1
+Instance Path : game.tony
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        71           55.9
+                            FD1P3XZ        31           24.8
+                               LUT4       258           53.9
+SUB MODULES
+                         collisions         1
+physics(reset_x="00011001000",reset_y="00011001000")         1
+platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")         1
+platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")         1
+platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100")         1
+                              TOTAL       365
+----------------------------------------------------------------------
+Report for cell physics(reset_x="00011001000",reset_y="00011001000").v1
+Instance Path : game.tony.phys_map
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        65           51.2
+                            FD1P3XZ        31           24.8
+                               LUT4       225           47.0
+                              TOTAL       321
+----------------------------------------------------------------------
+Report for cell collisions.v1
+Instance Path : game.tony.col_map
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         6            4.7
+                               LUT4        33            6.9
+SUB MODULES
+platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")         1
+platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")         1
+platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100")         1
+                              TOTAL        42
+----------------------------------------------------------------------
+Report for cell platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010").v1
+Instance Path : game.tony.col_map.plat_test_2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         6            1.3
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010").v1
+Instance Path : game.tony.col_map.plat_test
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         6            4.7
+                               LUT4        14            2.9
+                              TOTAL        20
+----------------------------------------------------------------------
+Report for cell platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100").v1
+Instance Path : game.tony.col_map.floor
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4            0.8
+                              TOTAL         4
+----------------------------------------------------------------------
 Report for cell controller.v1
 Instance Path : tony_controller
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        11            9.1
-                            FD1P3XZ        41           33.1
+                                FA2        11            8.7
+                            FD1P3XZ        41           32.8
                               IOL_B         1           33.3
-                               LUT4        24            5.5
+                               LUT4        24            5.0
                               TOTAL        77

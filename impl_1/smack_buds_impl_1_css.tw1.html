@@ -46,7 +46,7 @@ if (a)
 <A name="timing_rpt_top">Timing Report</A><B><U><big></big></U></B>
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Tue Dec  6 22:11:41 2022
+Tue Dec  6 22:29:04 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -110,37 +110,37 @@ Operating conditions:
 Combinational Loops
 -------------------
 ++++ Loop1
-patternmaker/i1_3_lut_4_lut/A	->	patternmaker/i1_3_lut_4_lut/Z
+patternmaker/i1_3_lut_4_lut_adj_143/D	->	patternmaker/i1_3_lut_4_lut_adj_143/Z
 
 ++++ Loop2
-patternmaker/i1_3_lut_4_lut_adj_125/A	->	patternmaker/i1_3_lut_4_lut_adj_125/Z
+patternmaker/i1_3_lut_4_lut_adj_144/D	->	patternmaker/i1_3_lut_4_lut_adj_144/Z
 
 ++++ Loop3
-patternmaker/i1_3_lut_adj_120/B	->	patternmaker/i1_3_lut_adj_120/Z
+game.tony.col_map.SLICE_228/D0	->	game.tony.col_map.SLICE_228/F0
 
 ++++ Loop4
-patternmaker/i1_3_lut_adj_124/B	->	patternmaker/i1_3_lut_adj_124/Z
+game.tony.col_map.SLICE_230/D0	->	game.tony.col_map.SLICE_230/F0
 
 ++++ Loop5
-game/tony/col_map/i4710_2_lut_3_lut/A	->	game/tony/col_map/i4710_2_lut_3_lut/Z
+patternmaker.SLICE_242/D0	->	patternmaker.SLICE_242/F0
 
 ++++ Loop6
-game/tony/col_map/i1_2_lut_3_lut/C	->	game/tony/col_map/i1_2_lut_3_lut/Z
+patternmaker.SLICE_244/D0	->	patternmaker.SLICE_244/F0
 
 ++++ Loop7
-game/tony/col_map/i2990_3_lut_4_lut/A	->	game/tony/col_map/i2990_3_lut_4_lut/Z
+game/tony/col_map/i3010_3_lut/A	->	game/tony/col_map/i3010_3_lut/Z
 
 ++++ Loop8
-game/tony/col_map/i3035_3_lut_4_lut/A	->	game/tony/col_map/i3035_3_lut_4_lut/Z
+game/tony/col_map/i3057_3_lut/A	->	game/tony/col_map/i3057_3_lut/Z
 
 ++++ Loop9
-game/tony/col_map/i4706_2_lut_3_lut/A	->	game/tony/col_map/i4706_2_lut_3_lut/Z
+game.tony.col_map.SLICE_508/D0	->	game.tony.col_map.SLICE_508/F0
 
 ++++ Loop10
 game/tony/col_map/i1_3_lut/A	->	game/tony/col_map/i1_3_lut/Z
 
 ++++ Loop11
-game/tony/col_map/i4709_3_lut/A	->	game/tony/col_map/i4709_3_lut/Z
+game/tony/col_map/i4950_3_lut/A	->	game/tony/col_map/i4950_3_lut/Z
 
 
 <A name="Timing_rpt_ClockSummary"></A><B><U><big>2  CLOCK SUMMARY</big></U></B>
@@ -205,16 +205,16 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-patternmaker/counter_262_496__i21/D     |    No arrival or required
-patternmaker/counter_262_496__i20/D     |    No arrival or required
-patternmaker/counter_262_496__i19/D     |    No arrival or required
-patternmaker/counter_262_496__i18/D     |    No arrival or required
-patternmaker/counter_262_496__i17/D     |    No arrival or required
-patternmaker/counter_262_496__i16/D     |    No arrival or required
-patternmaker/counter_262_496__i15/D     |    No arrival or required
-patternmaker/counter_262_496__i14/D     |    No arrival or required
-patternmaker/counter_262_496__i13/D     |    No arrival or required
-patternmaker/counter_262_496__i12/D     |    No arrival or required
+patternmaker/counter_270_503__i22/D     |    No arrival or required
+patternmaker/counter_270_503__i21/D     |    No arrival or required
+patternmaker/counter_270_503__i20/D     |    No arrival or required
+patternmaker/counter_270_503__i19/D     |    No arrival or required
+patternmaker/counter_270_503__i18/D     |    No arrival or required
+patternmaker/counter_270_503__i17/D     |    No arrival or required
+patternmaker/counter_270_503__i16/D     |    No arrival or required
+patternmaker/counter_270_503__i15/D     |    No arrival or required
+patternmaker/counter_270_503__i14/D     |    No arrival or required
+patternmaker/counter_270_503__i13/D     |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
@@ -259,19 +259,19 @@ Define the clock for these registers.
          Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
 meta_state/start_screen_c               |                  No Clock
+meta_state/tony_win                     |                  No Clock
 meta_state/not_first_time_c             |                  No Clock
-game/tony/phys_map/y_i4                 |                  No Clock
-game/tony/phys_map/yVelocity__i0        |                  No Clock
-game/tony/phys_map/x_i0                 |                  No Clock
-game/tony/phys_map/y_i3                 |                  No Clock
-game/tony/phys_map/yVelocity__i2        |                  No Clock
 game/tony/phys_map/yVelocity__i1        |                  No Clock
-game/tony/phys_map/y_i2                 |                  No Clock
 game/tony/phys_map/y_i1                 |                  No Clock
+game/tony/phys_map/xVelocity_272__i0    |                  No Clock
+game/tony/phys_map/x_i0                 |                  No Clock
+game/tony/phys_map/y_i2                 |                  No Clock
+game/tony/phys_map/yVelocity__i0        |                  No Clock
+game/tony/phys_map/y_i3                 |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
-ition                                   |                       231
+ition                                   |                       237
                                         |                          
 -------------------------------------------------------------------
 

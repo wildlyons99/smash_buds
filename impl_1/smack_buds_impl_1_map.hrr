@@ -4,32 +4,33 @@ Report for cell top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       3.00        100.0
-                                  LUT4	        698        100.0
+                                  LUT4	        750        100.0
                                  IOREG	          3        100.0
                                  IOBUF	         12        100.0
-                                PFUREG	        124        100.0
+                                PFUREG	        125        100.0
                                    EBR	          9        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                            controller	          1         6.4
-                            game_logic	          1        56.7
-                            game_state	          1         0.0
+                            controller	          1         6.0
+                            game_logic	          1        52.1
+                            game_state	          1         2.1
                                 my_pll	          1         0.0
-                           pattern_gen	          1        21.9
-                                   vga	          1        10.5
+                           pattern_gen	          1        22.0
+                                   vga	          1        11.7
 ---------------------------------------------------
 Report for cell game_state
    Instance path: top/meta_state
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                PFUREG	          2         1.6
+                                  LUT4	         16         2.1
+                                PFUREG	          3         2.4
 ---------------------------------------------------
 Report for cell pattern_gen
    Instance path: top/patternmaker
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        153        21.9
-                                PFUREG	         22        17.7
+                                  LUT4	        165        22.0
+                                PFUREG	         22        17.6
                                    EBR	          9        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
@@ -60,65 +61,8 @@ Report for cell vga
    Instance path: top/internalvga
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         73        10.5
-                                PFUREG	         22        17.7
----------------------------------------------------
-Report for cell game_logic
-   Instance path: top/game
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        396        56.7
-                                PFUREG	         31        25.0
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-player(reset_x="00011001000",reset_y="00011001000")	          1        56.7
----------------------------------------------------
-Report for cell player(reset_x="00011001000",reset_y="00011001000")
-   Instance path: top/game/tony
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        396        56.7
-                                PFUREG	         31        25.0
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-                            collisions	          1         6.7
-physics(reset_x="00011001000",reset_y="00011001000")	          1        50.0
----------------------------------------------------
-Report for cell physics(reset_x="00011001000",reset_y="00011001000")
-   Instance path: top/game/tony/phys_map
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        349        50.0
-                                PFUREG	         31        25.0
----------------------------------------------------
-Report for cell collisions
-   Instance path: top/game/tony/col_map
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         47         6.7
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")	          1         0.9
-platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")	          1         4.0
-platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100")	          1         0.9
----------------------------------------------------
-Report for cell platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")
-   Instance path: top/game/tony/col_map/plat_test_2
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	          6         0.9
----------------------------------------------------
-Report for cell platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")
-   Instance path: top/game/tony/col_map/plat_test
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         28         4.0
----------------------------------------------------
-Report for cell platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100")
-   Instance path: top/game/tony/col_map/floor
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	          6         0.9
+                                  LUT4	         88        11.7
+                                PFUREG	         22        17.6
 ---------------------------------------------------
 Report for cell my_pll
    Instance path: top/pll
@@ -133,11 +77,68 @@ Report for cell my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
+Report for cell game_logic
+   Instance path: top/game
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        391        52.1
+                                PFUREG	         31        24.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+player(reset_x="00011001000",reset_y="00011001000")	          1        52.1
+---------------------------------------------------
+Report for cell player(reset_x="00011001000",reset_y="00011001000")
+   Instance path: top/game/tony
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        391        52.1
+                                PFUREG	         31        24.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                            collisions	          1         5.2
+physics(reset_x="00011001000",reset_y="00011001000")	          1        46.9
+---------------------------------------------------
+Report for cell physics(reset_x="00011001000",reset_y="00011001000")
+   Instance path: top/game/tony/phys_map
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        352        46.9
+                                PFUREG	         31        24.8
+---------------------------------------------------
+Report for cell collisions
+   Instance path: top/game/tony/col_map
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         39         5.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")	          1         0.8
+platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")	          1         3.3
+platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100")	          1         0.5
+---------------------------------------------------
+Report for cell platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")
+   Instance path: top/game/tony/col_map/plat_test_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          6         0.8
+---------------------------------------------------
+Report for cell platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")
+   Instance path: top/game/tony/col_map/plat_test
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         25         3.3
+---------------------------------------------------
+Report for cell platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111001100")
+   Instance path: top/game/tony/col_map/floor
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.5
+---------------------------------------------------
 Report for cell controller
    Instance path: top/tony_controller
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        33.3
-                                  LUT4	         45         6.4
+                                  LUT4	         45         6.0
                                  IOREG	          1        33.3
-                                PFUREG	         41        33.1
+                                PFUREG	         41        32.8

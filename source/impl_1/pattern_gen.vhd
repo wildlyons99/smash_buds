@@ -134,10 +134,11 @@ begin
    tony_diff_y_vector <= std_logic_vector(unsigned(tony_diff_y));
    
 								-- X     								--    Y
-	background <= "001100" when ((col >= 11d"330" and col <= 11d"630") and (row > 11d"370" and row <= 11d"378")) or
-								((col >= 11d"0" and col <= 11d"200") and (row > 11d"290" and row <= 11d"298")) or
-								(row > 460) -- Floor
-						        else "111111";
+	background <= "001100" when ((col >= 11d"330" and col <= 11d"630") and (row > 11d"370" and row <= 11d"378")) or -- Bototm right platform
+								((col >= 11d"0" and col <= 11d"200") and (row > 11d"290" and row <= 11d"298")) or -- Top left platform
+								(row > 460) else -- Floor 
+								"110000" when ((col >= 11d"250" and col <= 11d"300") and (row > 11d"250" and row <= 11d"255")) else -- Win square for debugging
+								"111111";
 						   
 	tony_is_pink_idle <= '1' when (tony_color_idle = "110110") else '0';
 	tony_is_pink_run1 <= '1' when (tony_color_run1 = "110110") else '0';

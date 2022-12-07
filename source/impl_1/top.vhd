@@ -93,6 +93,11 @@ architecture synth of top is
 	  --sunil_reset : in std_logic;
 	  tony_reset : in std_logic;
 	  
+	  -- Player positions for determining win condition
+	  tony_x : in signed(10 downto 0);
+	  tony_y : in signed(10 downto 0);
+	  -- sunil positions
+	  
 	  start_screen : out std_logic;
 	  sunil_win : out std_logic;
 	  tony_win : out std_logic
@@ -159,6 +164,9 @@ begin
 								     clk => internal60hzclk,
 									 --sunil_buttons : in std_logic_vector(7 downto 0);
 									 tony_reset => tony_controller_buttons_signal(4),
+									  
+									 tony_x => tony_xpos,
+									 tony_y => tony_ypos,
 									  
 									 start_screen => start_screen,
 									 sunil_win => sunil_win,
