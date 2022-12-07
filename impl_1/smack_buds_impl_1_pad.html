@@ -48,7 +48,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Tue Dec  6 19:07:49 2022
+Tue Dec  6 20:45:11 2022
 
 Pinout by Port Name:
 +-----------------------+----------+--------------+-------+--------------------+
@@ -63,11 +63,9 @@ Pinout by Port Name:
 | RGB[5]                | 37/0     | LVCMOS33_OUT | PR14A | DRIVE:8mA PULL:NA  |
 | VSYNC                 | 23/0     | LVCMOS33_OUT | PR20A | DRIVE:8mA PULL:NA  |
 | ext12m                | 20/1     | LVCMOS33_IN  | PL20B | PULL:100K          |
-| testPLLout            | 34/0     | LVCMOS33_OUT | PR14B | DRIVE:8mA PULL:NA  |
 | tony_controller_clock | 2/2      | LVCMOS33_OUT | PL9A  | DRIVE:8mA PULL:NA  |
 | tony_controller_in    | 47/2     | LVCMOS33_IN  | PL7A  | PULL:100K          |
 | tony_controller_latch | 46/2     | LVCMOS33_OUT | PL6A  | DRIVE:8mA PULL:NA  |
-| up                    | 4/2      | LVCMOS33_OUT | PL10A | DRIVE:8mA PULL:NA  |
 +-----------------------+----------+--------------+-------+--------------------+
 
 Vccio by Bank:
@@ -85,7 +83,7 @@ Vccio by Bank:
 +----------+-----------------------+------------+--------------+-------+------------------+
 | 2/2      | tony_controller_clock | LOCATED    | LVCMOS33_OUT | PL9A  |                  |
 | 3/2      |     unused, PULL:UP   |            |              | PL10B |                  |
-| 4/2      | up                    | LOCATED    | LVCMOS33_OUT | PL10A |                  |
+| 4/2      |     unused, PULL:UP   |            |              | PL10A |                  |
 | 6/1      |     unused, PULL:UP   |            |              | PL14B |                  |
 | 9/1      |     unused, PULL:UP   |            |              | PL16A |                  |
 | 10/1     |     unused, PULL:UP   |            |              | PL17A |                  |
@@ -107,7 +105,7 @@ Vccio by Bank:
 | 28/0     |     unused, PULL:UP   |            |              | PR18A |                  |
 | 31/0     | RGB[4]                | LOCATED    | LVCMOS33_OUT | PR17B |                  |
 | 32/0     | RGB[2]                | LOCATED    | LVCMOS33_OUT | PR17A |                  |
-| 34/0     | testPLLout            |            | LVCMOS33_OUT | PR14B |                  |
+| 34/0     |     unused, PULL:UP   |            |              | PR14B |                  |
 | 35/0     | RGB[3]                | LOCATED    | LVCMOS33_OUT | PR13B | GPLL_IN/PCLKT0_1 |
 | 36/0     |     unused, PULL:UP   |            |              | PR10B |                  |
 | 37/0     | RGB[5]                | LOCATED    | LVCMOS33_OUT | PR14A | PCLKT0_0         |
@@ -153,18 +151,16 @@ ldc_set_location -site {31} [ get_ports {RGB[4]} ]
 ldc_set_location -site {37} [ get_ports {RGB[5]} ]
 ldc_set_location -site {23} [ get_ports {VSYNC} ]
 ldc_set_location -site {20} [ get_ports {ext12m} ]
-ldc_set_location -site {34} [ get_ports {testPLLout} ]
 ldc_set_location -site {2} [ get_ports {tony_controller_clock} ]
 ldc_set_location -site {47} [ get_ports {tony_controller_in} ]
 ldc_set_location -site {46} [ get_ports {tony_controller_latch} ]
-ldc_set_location -site {4} [ get_ports {up} ]
 
 
 
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Tue Dec  6 19:07:50 2022
+Tue Dec  6 20:45:11 2022
 
 
 

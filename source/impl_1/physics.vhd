@@ -7,7 +7,9 @@ entity physics is
 			 --TODO: generalize terminal velocities
 			 gravity    : signed(2 downto 0) := 3d"1";
 			 friction   : signed(2 downto 0) := 3d"1";
-			 accel      : signed(2 downto 0) := 3d"1"
+			 accel      : signed(2 downto 0) := 3d"1";
+			 reset_x : signed(10 downto 0) := 11d"0";
+			 reset_y : signed(10 downto 0) := 11d"0"
 	  );
 	  port (
             clk : in std_logic;
@@ -45,16 +47,16 @@ begin
       jump_pressed <= buttons(7);
 	  down_pressed <= buttons(2);
 
-	 at_maxspd_left <= '0' when (xVelocity > 4b"1011") else '1';
+	 at_maxspd_left <= '0' when (xVelocity > 4b"1100") else '1';
 	 at_maxspd_right <= '0' when (xVelocity < 4d"4") else '1';
 	 falling <= '1' when yVelocity >= 0 else '0';
 	 
       process (clk) begin
       if rising_edge(clk) then
             if ((not first_time) or reset) then
-                  x <= 11d"200";
-                  y <= 11d"200";
-                  first_time <= '1';   
+                  x <= reset_x;
+                  y <= reset_y;
+                  first_time <= '1';
                   yVelocity <= 5d"0";
                   xVelocity <= 4d"0";
             else

@@ -74,7 +74,7 @@ begin
 		plat_width => 11d"640", 
 		plat_height => 11d"20",
 		corner_x => 11d"0",
-		corner_y => 11d"420"
+		corner_y => 11d"460"
 	)
 	port map(
 		--clk => clk,
@@ -94,7 +94,7 @@ begin
 		plat_width => 11d"300", 
 		plat_height => 11d"8",
 		corner_x => 11d"330",
-		corner_y => 11d"330"
+		corner_y => 11d"370"
 	)
 	port map(
 		--clk => clk,
@@ -114,7 +114,7 @@ begin
 		plat_width => 11d"200", 
 		plat_height => 11d"8",
 		corner_x => 11d"0",
-		corner_y => 11d"200"
+		corner_y => 11d"290"
 	)
 	port map(
 		--clk => clk,

@@ -4,6 +4,7 @@ use IEEE.numeric_std.all;
 
 entity controller is
   port(
+ input_clk : in std_logic;
  latch : out std_logic;
  clock : out std_logic;
  data : in std_logic;
@@ -29,11 +30,13 @@ signal interimShift : std_logic_vector(7 downto 0);
 
 begin
 
-the_hsosc : HSOSC port map ('1', '1', clk);
+--the_hsosc : HSOSC port map ('1', '1', clk);
 
-process(clk)
+--process(clk)
+process (input_clk)
 begin
-if rising_edge(clk) then
+--if rising_edge(clk) then
+if rising_edge(input_clk) then
 counter <= counter + 1;
 if counter > 21d"1201923" then
 counter <= 21d"0";

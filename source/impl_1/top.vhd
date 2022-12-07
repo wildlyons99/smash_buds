@@ -9,13 +9,11 @@ entity top is
 	  HSYNC : out std_logic;
 	  VSYNC : out std_logic;
 	  RGB : out std_logic_vector(5 downto 0);
-	  testPLLout : out std_logic;
 	  
 	  -- Tony Player
 	  tony_controller_in : in std_logic;
 	  tony_controller_latch : out std_logic;
-	  tony_controller_clock : out std_logic;
-	  up : out std_logic
+	  tony_controller_clock : out std_logic
       );
 end top;
 
@@ -30,6 +28,7 @@ architecture synth of top is
 	end component;
 	component controller is
 	port(
+		input_clk : in std_logic;
 		latch : out std_logic;
 		clock : out std_logic;
 		data : in std_logic;
@@ -53,17 +52,29 @@ architecture synth of top is
 		  );
 	end component;
 	component pattern_gen is
-    port(
-		  clk : in std_logic;
-		  row : in signed(10 downto 0); -- 0-1023
-		  col : in signed(10 downto 0); -- 0-1023
-		  tony_x : in signed(10 downto 0);
-		  tony_y : in signed(10 downto 0);
-		  valid : in std_logic;
-		  tony_buttons : in std_logic_vector(7 downto 0);
-		  rgb : out std_logic_vector(5 downto 0)
-		);
-    end component;
+	port(
+	  clk : in std_logic;
+	  row : in signed(10 downto 0); -- 0-1023
+	  col : in signed(10 downto 0); -- 0-1023
+      valid : in std_logic;
+	  
+	  -- Tony
+	  tony_x : in signed(10 downto 0);
+	  tony_y : in signed(10 downto 0);
+	  tony_buttons : in std_logic_vector(7 downto 0);
+	  
+	  -- Sunil
+	  sunil_x : in signed(10 downto 0);
+	  sunil_y : in signed(10 downto 0);
+	  sunil_buttons : in std_logic_vector(7 downto 0);
+	  
+	  -- Which game state we're in
+	  start_screen, tony_win, sunil_win : std_logic;
+	  
+	  -- Output
+	  rgb : out std_logic_vector(5 downto 0)
+      );
+	end component;
 
 	component game_logic is
 	  port(
@@ -82,16 +93,25 @@ architecture synth of top is
 	signal internal60hzclk : std_logic;
 	signal tony_xpos : signed(10 downto 0);
 	signal tony_ypos : signed(10 downto 0);
+	-- Synchronize outputs
+	signal colors_from_pattern_gen : std_logic_vector(5 downto 0);
+	signal hsync_from_vga, vsync_from_vga : std_logic;
 begin
    controller1 : controller port map(
-                                    latch => tony_controller_latch,
+                                    input_clk => internal25clk,
+									latch => tony_controller_latch,
 									clock => tony_controller_clock,
 									data => tony_controller_in,
 									output => tony_controller_buttons_signal
 									);
    sixtyHZclock : pllclock_to_60_hz port map(internal25clk, internal60hzclk);
-   pll : my_pll port map(ext12m, '1', testPLLout, internal25clk);
-   internalvga : vga port map(internal25clk, HSYNC, VSYNC, internalrow, internalcol, internalvalid);
+   
+   pll : my_pll port map(
+					     ref_clk_i => ext12m,
+						 rst_n_i => '1',
+						 outglobal_o => internal25clk
+						 );
+   internalvga : vga port map(internal25clk, hsync_from_vga, vsync_from_vga, internalrow, internalcol, internalvalid);
    patternmaker : pattern_gen port map (
 									   clk => internal25clk,
 									   row => internalrow,
@@ -100,7 +120,7 @@ begin
 									   tony_y => tony_ypos,
 									   valid => internalvalid,
 									   tony_buttons => tony_controller_buttons_signal,
-									   rgb => RGB
+									   rgb => colors_from_pattern_gen
 									   );
 
 
@@ -110,8 +130,16 @@ begin
 							 tony_x => tony_xpos,
 							 tony_y => tony_ypos
 							 );
-									   
-	up <= tony_controller_buttons_signal(3);
+	
+	
+	-- Buffer outputs 1 pixel to avoid sampling pixels between clock cycles
+	process (internal25clk) begin
+		if rising_edge(internal25clk) then
+			RGB <= colors_from_pattern_gen;
+			HSYNC <= hsync_from_vga;
+			VSYNC <= vsync_from_vga;
+		end if;
+	end process;
 end;
 
 

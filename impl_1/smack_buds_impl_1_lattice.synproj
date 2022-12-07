@@ -52,6 +52,7 @@
 "//vs-home/tlyons01/es4/smack_buds/source/impl_1/platform.vhd"
 "//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_run_rom1.vhd"
 "//vs-home/tlyons01/es4/smack_buds/source/impl_1/tony_run_rom2.vhd"
+"//vs-home/tlyons01/es4/smack_buds/source/impl_1/player.vhd"
 
 
 -path "//vs-home/tlyons01/es4/smack_buds"
