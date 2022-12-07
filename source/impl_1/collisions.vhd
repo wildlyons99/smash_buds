@@ -15,12 +15,17 @@ entity collisions is
 		coll_top : out std_logic;
 		--coll_bottom : out std_logic;
 		y_platform : out signed(10 downto 0);
+		was_punched : out std_logic;
 		
 		buttons : in std_logic_vector(7 downto 0);
 		
 		x : in signed(10 downto 0);
 		y : in signed(10 downto 0);
-		yv : in signed(4 downto 0)
+		yv : in signed(4 downto 0);
+		
+		other_player_x : in signed(10 downto 0);
+	    other_player_y : in signed(10 downto 0);
+	    other_player_punching : in std_logic
 	);
 end collisions; 
 

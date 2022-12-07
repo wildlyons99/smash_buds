@@ -3,7 +3,7 @@ tmcheck -par "smack_buds_impl_1.par"
 
 bitgen -w "smack_buds_impl_1.udb" -f "smack_buds_impl_1.t2b" 
 Loading smack_buds_impl_1.udb ...
-Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/3.2/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
 Performance Hardware Data Status:   Advanced       Version 1.0.
 
@@ -18,12 +18,12 @@ Successfully loading design udb and device data from disks and to up-layer in CP
 
 
 
-BITGEN: Bitstream Generator Radiant Software (64-bit) 3.0.0.24.1
+BITGEN: Bitstream Generator Radiant Software (64-bit) 3.2.1.217.3
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
 
 Running DRC.
@@ -38,21 +38,22 @@ Preference Summary:
 
 
 Creating bit map...
-Saving bit stream in "\\vs-home\tlyons01\es4\smack_buds\impl_1\smack_buds_impl_1.bin".
+Saving bit stream in "C:\Users\noahs\my_designs\smash_buds\impl_1\smack_buds_impl_1.bin".
+    <postMsg mid="1009992" type="Info" dynamic="1" navigation="0" arg0="Bitstream authenticated."  />
 Bitstream generation complete!
 
-Total CPU Time: 0 secs 
-Total REAL Time: 0 secs 
-Peak Memory Usage: 112 MB
+Total CPU Time: 1 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 124 MB
 
 
-ibisgen "smack_buds_impl_1.udb" "C:/Program Files/lscc/radiant/3.0/cae_library/ibis/iCE40UP.ibs"
-IBIS Models Generator: Lattice Radiant Software (64-bit) 3.0.0.24.1
+ibisgen "smack_buds_impl_1.udb" "C:/lscc/radiant/3.2/cae_library/ibis/iCE40UP.ibs"
+IBIS Models Generator: Lattice Radiant Software (64-bit) 3.2.1.217.3
 
-Tue Dec  6 22:29:25 2022
+Wed Dec  7 18:39:04 2022
 
 Loading smack_buds_impl_1.udb ...
-Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/3.2/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
 Performance Hardware Data Status:   Advanced       Version 1.0.
 
@@ -68,20 +69,20 @@ Successfully loading design udb and device data from disks and to up-layer in CP
 Created design models.
 
 
-Generating: \\vs-home\tlyons01\es4\smack_buds\impl_1\IBIS\smack_buds_impl_1.ibs
+Generating: C:\Users\noahs\my_designs\smash_buds\impl_1\IBIS\smack_buds_impl_1.ibs
 
 
     <postMsg mid="1191031" type="Info" dynamic="0" navigation="0"  />
 
 backanno "smack_buds_impl_1.udb"  -o "smack_buds_impl_1_vo.vo"      -sp "High-Performance_1.2V"  -w -neg
-backanno: version Radiant Software (64-bit) 3.0.0.24.1
+backanno: version Radiant Software (64-bit) 3.2.1.217.3
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/3.2/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
 Loading udb::Database ...
 Design:  top
@@ -98,6 +99,6 @@ Writing a verilog netlist based on the smack_buds_impl_1 design file.
 Writing Verilog netlist to file smack_buds_impl_1_vo.vo
 Writing SDF timing to file smack_buds_impl_1_vo.sdf
 Backanno finished with 0 posted error messages.
-Total CPU Time: 1 secs 
-Total REAL Time: 2 secs 
-Peak Memory Usage: 98 MB
+Total CPU Time: 3 secs 
+Total REAL Time: 4 secs 
+Peak Memory Usage: 131 MB

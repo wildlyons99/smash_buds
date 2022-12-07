@@ -5,9 +5,20 @@ use IEEE.numeric_std.all;
 entity game_logic is
   port(
 	  clk : in std_logic; 
+	  
+	  reset_players : in std_logic;
+	  
+	  -- Tony
 	  tony_controller_buttons : in std_logic_vector(7 downto 0);
 	  tony_x : out signed(10 downto 0); 
-	  tony_y : out signed(10 downto 0)
+	  tony_y : out signed(10 downto 0);
+	  tony_punching : out std_logic;
+	  
+	  -- Sunil
+	  sunil_controller_buttons : in std_logic_vector(7 downto 0);
+	  sunil_x : out signed(10 downto 0); 
+	  sunil_y : out signed(10 downto 0);
+	  sunil_punching : out std_logic
       );
 end game_logic;
 
@@ -20,13 +31,19 @@ architecture synth of game_logic is
     );
 	port(
 	  clk : in std_logic; 
+	  reset_players : in std_logic;
 	  controller_buttons : in std_logic_vector(7 downto 0);
+	  
+	  other_player_x : in signed(10 downto 0);
+	  other_player_y : in signed(10 downto 0);
+	  other_player_punching : in std_logic;
+	  
 	  x : out signed(10 downto 0); 
-	  y : out signed(10 downto 0)
-      );
+	  y : out signed(10 downto 0);
+	  is_punching : out std_logic
+	  );
 	end component;
 
-	
 begin
 
 	tony : player 
@@ -36,9 +53,35 @@ begin
 	)
 	port map (
 		clk => clk,
+		reset_players => reset_players,
 		controller_buttons => tony_controller_buttons,
+		
+		other_player_x => sunil_x,
+	    other_player_y => sunil_y,
+	    other_player_punching => sunil_punching,
+		
 		x => tony_x,
-		y => tony_y
+		y => tony_y,
+		is_punching => tony_punching
+	);
+	
+	sunil : player
+	generic map (
+		reset_x => 11d"400",
+		reset_y => 11d"100"
+	)
+	port map (
+		clk => clk,
+		controller_buttons => sunil_controller_buttons,
+		reset_players => reset_players,
+		
+		other_player_x => tony_x,
+		other_player_y => tony_y,
+		other_player_punching => tony_punching,
+		
+		x => sunil_x,
+		y => sunil_y,
+		is_punching => sunil_punching
 	);
 
 end;

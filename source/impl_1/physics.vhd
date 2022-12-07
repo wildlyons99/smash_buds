@@ -13,10 +13,16 @@ entity physics is
 	  );
 	  port (
             clk : in std_logic;
-            coll_left : in std_logic;
-            coll_right : in std_logic;
+			
+			reset_players : in std_logic;
+			
+            --coll_left : in std_logic;
+            --coll_right : in std_logic;
             coll_top : in std_logic;
-            coll_bottom : in std_logic;
+            --coll_bottom : in std_logic;
+			
+			was_punched : in std_logic;
+			
             y_platform : in signed(10 downto 0);
             buttons : in std_logic_vector(7 downto 0);
             
@@ -52,7 +58,7 @@ begin
 	 
       process (clk) begin
       if rising_edge(clk) then
-            if (reset) then
+            if (reset_players) then
                   x <= reset_x;
                   y <= reset_y;
                   yVelocity <= 5d"0";
@@ -89,11 +95,9 @@ begin
 						end if; 
 					end if;
                   else
-					  if (coll_bottom) then
-							yVelocity <= -1 * yVelocity; 
-					  elsif (yVelocity < 5d"8") then
+					  if (yVelocity < 5d"8") then
 							yVelocity <= yVelocity + gravity;
-					  end if;
+					  end if;				  
                   y <= (y + yVelocity) mod 479;
                   end if;
             end if;

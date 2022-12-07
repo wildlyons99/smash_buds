@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Map Report</TITLE>
-<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///C:/lscc/radiant/3.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/3.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -40,39 +40,39 @@ if (a)
 <BODY>
 
 <DIV id="content" onclick="hideTocList()"><PRE>
-<A name="Mrp"></A>      Lattice Mapping Report File for Design Module 'smack_buds_impl_1'
+<A name="Mrp"></A>      Lattice Mapping Report File for Design Module &apos;smack_buds_impl_1&apos;
 
 Target Vendor:        LATTICE
 Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
-Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Tue Dec  6 22:29:03 2022
+Mapper:    version Radiant Software (64-bit) 3.2.1.217.3
+Mapped on: Wed Dec  7 18:38:36 2022
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
-Command line:   map smack_buds_impl_1_syn.udb
-     //vs-home/tlyons01/es4/smack_buds/smack_buds.pdc -o
+Command line:   map -i smack_buds_impl_1_syn.udb -pdc
+     C:/Users/noahs/my_designs/smash_buds/smack_buds.pdc -o
      smack_buds_impl_1_map.udb -mp smack_buds_impl_1.mrp -hierrpt -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers: 125 out of  5280 (2%)
-   Number of I/O registers:      3 out of   117 (3%)
-   Number of LUT4s:           750 out of  5280 (14%)
-      Number of logic LUT4s:             480
-      Number of inserted feedthru LUT4s:  15
+   Number of slice registers: 200 out of  5280 (4%)
+   Number of I/O registers:      4 out of   117 (3%)
+   Number of LUT4s:           1325 out of  5280 (25%)
+      Number of logic LUT4s:             844
+      Number of inserted feedthru LUT4s:  32
       Number of replicated LUT4s:          1
-      Number of ripple logic:            127 (254 LUT4s)
-   Number of IO sites used:   12 out of 39 (31%)
-      Number of IO sites used for general PIO: 12
+      Number of ripple logic:            224 (448 LUT4s)
+   Number of IO sites used:   15 out of 39 (38%)
+      Number of IO sites used for general PIO: 15
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 12 out of 36 (33%)
+      Number of IO sites used for PIO+I3C: 15 out of 36 (42%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 12 out of 39 (31%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -83,55 +83,68 @@ Command line:   map smack_buds_impl_1_syn.udb
    Number of SRAMs:            0 out of 4 (0%)
    Number of WARMBOOTs:        0 out of 1 (0%)
    Number of SPIs:             0 out of 2 (0%)
-   Number of EBRs:             9 out of 30 (30%)
+   Number of EBRs:             18 out of 30 (60%)
    Number of PLLs:             1 out of 1 (100%)
-   Number of Clocks:  5
-      Net internal25clk: 52 loads, 52 rising, 0 falling (Driver: Pin
+   Number of Clocks:  7
+      Net internal25clk: 72 loads, 72 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net internal60hzclk: 34 loads, 34 rising, 0 falling (Driver: Pin
-     internalvga.i6_4_lut/OUT)
+      Net internal60hzclk: 68 loads, 68 rising, 0 falling (Driver: Pin
+     internalvga.i5_4_lut_adj_148/Z)
+      Net sunil_controller.counter[20]: 13 loads, 13 rising, 0 falling (Driver:
+     Pin sunil_controller.counter_561__i21/Q)
+      Net sunil_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
+     sunil_controller.i1_4_lut_adj_124/Z)
       Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
       Net tony_controller.counter[20]: 13 loads, 13 rising, 0 falling (Driver:
-     Pin tony_controller.counter_271__i21/Q)
+     Pin tony_controller.counter_560__i21/Q)
       Net tony_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
-     tony_controller.i1_4_lut_adj_55/OUT)
-   Number of Clock Enables:  10
-      Net VCC_net: 27 loads, 0 SLICEs
-      Net n8619: 1 loads, 1 SLICEs
-      Net n500: 6 loads, 6 SLICEs
-      Net game.tony.phys_map.n3915: 4 loads, 4 SLICEs
+     tony_controller.i1_4_lut_adj_64/Z)
+   Number of Clock Enables:  16
 
-      Net game.tony.phys_map.n3932: 10 loads, 10 SLICEs
-      Net game.tony.phys_map.n3913: 1 loads, 1 SLICEs
-      Net game.tony.phys_map.n3909: 2 loads, 2 SLICEs
-      Net game.tony.phys_map.n3911: 1 loads, 1 SLICEs
-      Net tony_controller.n3890: 5 loads, 5 SLICEs
+      Net VCC_net: 54 loads, 0 SLICEs
+      Net n16806: 1 loads, 1 SLICEs
+      Net n969: 6 loads, 6 SLICEs
+      Net sunil_controller.n15: 8 loads, 8 SLICEs
+      Net sunil_controller.n7399: 5 loads, 5 SLICEs
+      Net game.tony.phys_map.n7403: 4 loads, 4 SLICEs
+      Net game.tony.phys_map.n7465: 10 loads, 10 SLICEs
+      Net game.tony.phys_map.n7417: 1 loads, 1 SLICEs
+      Net game.tony.phys_map.n7415: 3 loads, 3 SLICEs
+      Net game.sunil.phys_map.n7404: 4 loads, 4 SLICEs
+      Net game.sunil.phys_map.n7449: 1 loads, 1 SLICEs
+      Net game.sunil.phys_map.n7447: 2 loads, 2 SLICEs
+      Net game.sunil.phys_map.n7439: 1 loads, 1 SLICEs
+      Net game.sunil.phys_map.n7433: 10 loads, 10 SLICEs
+      Net tony_controller.n7392: 5 loads, 5 SLICEs
       Net tony_controller.n15: 8 loads, 8 SLICEs
-   Number of LSRs:  8
-      Net n3486: 5 loads, 5 SLICEs
-      Net meta_state.not_first_time_N_423: 1 loads, 1 SLICEs
-      Net tony_controller_buttons_signal[4]: 28 loads, 28 SLICEs
-      Net n8307: 1 loads, 1 SLICEs
+   Number of LSRs:  11
+      Net n6678: 5 loads, 5 SLICEs
+      Net tony_controller_buttons_signal[4]: 1 loads, 1 SLICEs
+      Net meta_state.not_first_time_N_586: 1 loads, 1 SLICEs
+      Net reset_players: 56 loads, 56 SLICEs
+      Net n16089: 1 loads, 1 SLICEs
       Net col_10__N_34: 6 loads, 6 SLICEs
       Net row_10__N_46: 6 loads, 6 SLICEs
-      Net game.tony.phys_map.n4150: 2 loads, 2 SLICEs
-      Net tony_controller.counter_19__N_514: 11 loads, 11 SLICEs
+      Net sunil_controller.counter_19__N_683: 11 loads, 11 SLICEs
+      Net game.tony.phys_map.n8126: 2 loads, 2 SLICEs
+      Net game.sunil.phys_map.n8139: 2 loads, 2 SLICEs
+      Net tony_controller.counter_19__N_683: 11 loads, 11 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net VCC_net: 74 loads
-      Net tony_controller_buttons_signal[4]: 39 loads
-      Net game.tony.yv_gl[4]: 37 loads
+      Net VCC_net: 141 loads
+      Net reset_players: 67 loads
+      Net game.sunil.yv_gl[4]: 36 loads
+      Net game.tony.yv_gl[4]: 34 loads
+      Net game.sunil.phys_map.n62_adj_788[10]: 24 loads
       Net game.tony.phys_map.n62[10]: 24 loads
-      Net game.tony.phys_map.n30: 20 loads
+      Net game.sunil.phys_map.n11454: 22 loads
+      Net game.sunil.phys_map.n644: 20 loads
+      Net game.tony.phys_map.n10187: 20 loads
       Net game.tony.phys_map.n644: 20 loads
-      Net tony_controller_buttons_signal[2]: 18 loads
-      Net drawing_tony_x_N_172[10]: 15 loads
-      Net game.tony.phys_map.n609: 15 loads
-      Net game.tony.phys_map.n62_adj_620[10]: 15 loads
 
 
 
 
-   Number of warnings:  3
+   Number of warnings:  4
    Number of errors:    0
 
 
@@ -139,11 +152,14 @@ Command line:   map smack_buds_impl_1_syn.udb
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: No port matched 'a'.
-WARNING - map: Can't resolve object 'a' in constraint 'ldc_set_location -site
-     {4} [get_ports a]'.
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {4} [get_ports
-     a]'.
+WARNING - map: C:/Users/noahs/my_designs/smash_buds/smack_buds.pdc (13) : No
+     port matched &apos;a&apos;.
+WARNING - map: No port matched &apos;a&apos;.
+WARNING - map: Can&apos;t resolve object &apos;a&apos; in constraint &apos;ldc_set_location -site
+     {4} [get_ports a]&apos;.
+WARNING - map: Remove invalid constraint &apos;ldc_set_location -site {4} [get_ports
+     a]&apos;.
+
 
 
 
@@ -153,30 +169,35 @@ WARNING - map: Remove invalid constraint 'ldc_set_location -site {4} [get_ports
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[4]              | OUTPUT    | LVCMOS33  |       |       |           |
+| RGB[2]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[5]              | OUTPUT    | LVCMOS33  |       |       |           |
+| RGB[3]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| VSYNC               | OUTPUT    | LVCMOS33  | O     |       |           |
+| RGB[4]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| HSYNC               | OUTPUT    | LVCMOS33  | O     |       |           |
+| RGB[5]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-
-| RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
+| VSYNC               | OUTPUT    |           | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
+| HSYNC               | OUTPUT    |           | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[1]              | OUTPUT    | LVCMOS33  |       |       |           |
+| RGB[1]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[0]              | OUTPUT    | LVCMOS33  |       |       |           |
+| RGB[0]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| tony_controller_latch| OUTPUT    | LVCMOS33  |       |       |           |
+| tony_controller_latch| OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| tony_controller_clock| OUTPUT    | LVCMOS33  |       |       |           |
+| tony_controller_clock| OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| ext12m              | INPUT     | LVCMOS33  |       |       |           |
+| sunil_controller_latch| OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| tony_controller_in  | INPUT     | LVCMOS33  | I     |       |           |
+| sunil_controller_clock| OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ext12m              | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tony_controller_in  | INPUT     |           | I     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sunil_controller_in | INPUT     |           | I     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 
@@ -203,25 +224,23 @@ PLL 1:                                 Pin/Node Value
   LATCH signal:                                 GND
   Lock Signal:                                  NONE
   Input Clock Frequency (MHz):                  NA
+
   Reference Divider:                            0
-  Feedback Divider:                             0
-  VCO Divider:                                  1
+  Feedback Divider:                             66
+  VCO Divider:                                  5
   ENABLE_ICEGATE_PORTA:                         0
   ENABLE_ICEGATE_PORTB:                         0
-  PLLOUT_SELECT_PORTA:                          SHIFTREG_0deg
-  PLLOUT_SELECT_PORTB:                          SHIFTREG_0deg
+  PLLOUT_SELECT_PORTA:                          GENCLK
+  PLLOUT_SELECT_PORTB:                          GENCLK
   SHIFTREG_DIV_MODE:                            0
   DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
   FDA_RELATIVE:                                 0
   FEEDBACK_PATH:                                SIMPLE
   DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
   FDA_FEEDBACK:                                 0
-  FILTER_RANGE:                                 0
+  FILTER_RANGE:                                 1
   EXTERNAL_DIVIDE_FACTOR:                       NONE
   TEST Mode:                                    0
-
-
-
 
 
 
@@ -232,24 +251,45 @@ Instance Name: VSYNC_i1
          Type: IOLOGIC
 Instance Name: HSYNC_i0
          Type: IOLOGIC
-Instance Name: patternmaker/tony_run_map2/mux_81
+Instance Name: patternmaker/tony_run_map2/mux_181
          Type: EBR
-Instance Name: patternmaker/tony_run_map2/mux_80
+Instance Name: patternmaker/tony_run_map2/mux_180
          Type: EBR
-Instance Name: patternmaker/tony_run_map2/mux_79
+Instance Name: patternmaker/tony_run_map2/mux_179
          Type: EBR
-Instance Name: patternmaker/tony_run_map1/mux_78
+Instance Name: patternmaker/tony_run_map1/mux_178
          Type: EBR
-Instance Name: patternmaker/tony_run_map1/mux_77
+Instance Name: patternmaker/tony_run_map1/mux_177
          Type: EBR
-Instance Name: patternmaker/tony_run_map1/mux_76
+Instance Name: patternmaker/tony_run_map1/mux_176
          Type: EBR
-Instance Name: patternmaker/tony_map/mux_75
+Instance Name: patternmaker/tony_idle_map/mux_175
          Type: EBR
-Instance Name: patternmaker/tony_map/mux_74
+Instance Name: patternmaker/tony_idle_map/mux_174
          Type: EBR
-Instance Name: patternmaker/tony_map/mux_73
+Instance Name: patternmaker/tony_idle_map/mux_173
          Type: EBR
+Instance Name: patternmaker/sunil_run_map2/mux_189
+         Type: EBR
+Instance Name: patternmaker/sunil_run_map2/mux_188
+         Type: EBR
+Instance Name: patternmaker/sunil_run_map2/mux_190
+         Type: EBR
+Instance Name: patternmaker/sunil_run_map1/mux_187
+         Type: EBR
+Instance Name: patternmaker/sunil_run_map1/mux_186
+         Type: EBR
+Instance Name: patternmaker/sunil_run_map1/mux_185
+         Type: EBR
+Instance Name: patternmaker/sunil_idle_map/mux_184
+         Type: EBR
+Instance Name: patternmaker/sunil_idle_map/mux_183
+
+         Type: EBR
+Instance Name: patternmaker/sunil_idle_map/mux_182
+         Type: EBR
+Instance Name: sunil_controller/shift_i0
+         Type: IOLOGIC
 Instance Name: pll/lscc_pll_inst/u_PLL_B
          Type: PLL
 Instance Name: tony_controller/shift_i0
@@ -262,7 +302,25 @@ Instance Name: tony_controller/shift_i0
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 64 MB
+   Peak Memory Usage: 75 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -291,12 +349,12 @@ Instance Name: tony_controller/shift_i0
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
-     AT&T Corp.   All rights reserved.
+     AT&amp;T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent
      Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems
      All rights reserved.
-Copyright (c) 2002-2021 Lattice Semiconductor
+Copyright (c) 2002-2022 Lattice Semiconductor
      Corporation,  All rights reserved.
 
 
