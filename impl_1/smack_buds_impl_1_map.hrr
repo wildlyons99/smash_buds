@@ -4,7 +4,7 @@ Report for cell top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       2.00        100.0
-                                  LUT4	        712        100.0
+                                  LUT4	        705        100.0
                                  IOREG	          2        100.0
                                  IOBUF	         14        100.0
                                 PFUREG	        135        100.0
@@ -12,17 +12,17 @@ Report for cell top
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                             controller	          1         6.5
-                            game_logic	          1        60.8
+                            game_logic	          1        57.0
                                 my_pll	          1         0.0
-                           pattern_gen	          1        18.1
-                     pllclock_to_60_hz	          1         3.7
-                                   vga	          1         7.6
+                           pattern_gen	          1        22.7
+                     pllclock_to_60_hz	          1         3.8
+                                   vga	          1         6.8
 ---------------------------------------------------
 Report for cell vga
    Instance path: top/internalvga
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         54         7.6
+                                  LUT4	         48         6.8
                                 PFUREG	         22        16.3
 ---------------------------------------------------
 Report for cell my_pll
@@ -38,67 +38,11 @@ Report for cell my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
-Report for cell pllclock_to_60_hz
-   Instance path: top/sixtyHZclock
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         26         3.7
-                                PFUREG	         19        14.1
----------------------------------------------------
-Report for cell controller
-   Instance path: top/controller1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                 IOLGC	       2.00        100.0
-                                  LUT4	         46         6.5
-                                 IOREG	          2        100.0
-                                PFUREG	         41        30.4
----------------------------------------------------
-Report for cell game_logic
-   Instance path: top/game
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        433        60.8
-                                PFUREG	         31        23.0
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-                            collisions	          1        13.2
-                               physics	          1        47.6
----------------------------------------------------
-Report for cell physics
-   Instance path: top/game/phys_map
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        339        47.6
-                                PFUREG	         31        23.0
----------------------------------------------------
-Report for cell collisions
-   Instance path: top/game/col_map
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         94        13.2
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-platform(plat_width="00100101100",plat_height="00000010100",corner_x="00101001010",corner_y="00101001010")	          1         1.7
-platform(plat_width="01010000000",plat_height="00000010100",corner_y="00110100100")	          1         7.6
----------------------------------------------------
-Report for cell platform(plat_width="00100101100",plat_height="00000010100",corner_x="00101001010",corner_y="00101001010")
-   Instance path: top/game/col_map/plat_test
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         12         1.7
----------------------------------------------------
-Report for cell platform(plat_width="01010000000",plat_height="00000010100",corner_y="00110100100")
-   Instance path: top/game/col_map/floor
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         54         7.6
----------------------------------------------------
 Report for cell pattern_gen
    Instance path: top/patternmaker
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        129        18.1
+                                  LUT4	        160        22.7
                                 PFUREG	         22        16.3
                                    EBR	          9        100.0
 SUB MODULES
@@ -124,3 +68,66 @@ Report for cell tony_idle_rom
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                    EBR	          3        33.3
+---------------------------------------------------
+Report for cell pllclock_to_60_hz
+   Instance path: top/sixtyHZclock
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         3.8
+                                PFUREG	         19        14.1
+---------------------------------------------------
+Report for cell game_logic
+   Instance path: top/game
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        402        57.0
+                                PFUREG	         31        23.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                            collisions	          1         8.8
+                               physics	          1        48.2
+---------------------------------------------------
+Report for cell physics
+   Instance path: top/game/phys_map
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        340        48.2
+                                PFUREG	         31        23.0
+---------------------------------------------------
+Report for cell collisions
+   Instance path: top/game/col_map
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         62         8.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+platform(plat_width="00011001000",plat_height="00000001000",corner_y="00011001000")	          1         0.7
+platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101001010")	          1         4.1
+platform(plat_width="01010000000",plat_height="00000010100",corner_y="00110100100")	          1         3.3
+---------------------------------------------------
+Report for cell platform(plat_width="00011001000",plat_height="00000001000",corner_y="00011001000")
+   Instance path: top/game/col_map/plat_test_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.7
+---------------------------------------------------
+Report for cell platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101001010")
+   Instance path: top/game/col_map/plat_test
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         29         4.1
+---------------------------------------------------
+Report for cell platform(plat_width="01010000000",plat_height="00000010100",corner_y="00110100100")
+   Instance path: top/game/col_map/floor
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         23         3.3
+---------------------------------------------------
+Report for cell controller
+   Instance path: top/controller1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       2.00        100.0
+                                  LUT4	         46         6.5
+                                 IOREG	          2        100.0
+                                PFUREG	         41        30.4

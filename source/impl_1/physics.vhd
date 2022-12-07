@@ -20,7 +20,7 @@ entity physics is
             
             x : out signed(10 downto 0);
             y : out signed(10 downto 0);
-            yv : out signed(3 downto 0)
+            yv : out signed(4 downto 0)
       );
 end physics;
 
@@ -60,9 +60,9 @@ begin
             else
 
                   --horizontal movement
-                  if (left_pressed and not coll_right and not at_maxspd_left) then
+                  if (left_pressed and not at_maxspd_left) then
                         xVelocity <= xVelocity - accel;
-                  elsif (right_pressed and not coll_left and not at_maxspd_right) then
+                  elsif (right_pressed and not at_maxspd_right) then
                         xVelocity <= xVelocity + accel;
                   elsif (xVelocity /= 0) then
                         xVelocity <= xVelocity + friction when xVelocity(xVelocity'left) else
@@ -76,12 +76,12 @@ begin
 						yVelocity <= 5b"10010";	
 						y <= y_platform - 2;
 					else
-                        if(falling) then
+                        if (falling and not down_pressed) then
 							yVelocity <= 5d"0";
 							y <= y_platform;
-						elsif(down_pressed) then
-							if(y < 340) then
-								y <= y_platform + 20;
+						elsif (down_pressed and falling) then
+							if (y < 340) then
+								y <= y_platform + 10;
 							end if;
 						else
 							yVelocity <= yVelocity + gravity;
@@ -99,5 +99,5 @@ begin
             end if;
 		end if;
    end process;
-
+	yv <= yVelocity;
 end;

@@ -4,16 +4,18 @@ use IEEE.numeric_std.all;
 
 entity top is
   port(
+	  -- For VGA Output
 	  ext12m : in std_logic;
 	  HSYNC : out std_logic;
 	  VSYNC : out std_logic;
-	  up : out std_logic;
 	  RGB : out std_logic_vector(5 downto 0);
 	  testPLLout : out std_logic;
-	
-	  controller_in : in std_logic;
-	  controller_latch : out std_logic;
-	  controller_clock : out std_logic
+	  
+	  -- Tony Player
+	  tony_controller_in : in std_logic;
+	  tony_controller_latch : out std_logic;
+	  tony_controller_clock : out std_logic;
+	  up : out std_logic
       );
 end top;
 
@@ -55,10 +57,10 @@ architecture synth of top is
 		  clk : in std_logic;
 		  row : in signed(10 downto 0); -- 0-1023
 		  col : in signed(10 downto 0); -- 0-1023
-		  x : in signed(10 downto 0);
-		  y : in signed(10 downto 0);
+		  tony_x : in signed(10 downto 0);
+		  tony_y : in signed(10 downto 0);
 		  valid : in std_logic;
-		  buttons : in std_logic_vector(7 downto 0);
+		  tony_buttons : in std_logic_vector(7 downto 0);
 		  rgb : out std_logic_vector(5 downto 0)
 		);
     end component;
@@ -66,9 +68,9 @@ architecture synth of top is
 	component game_logic is
 	  port(
 		  clk : in std_logic; 
-		  controller_buttons : in std_logic_vector(7 downto 0);
-		  x : out signed(10 downto 0); 
-		  y : out signed(10 downto 0)
+		  tony_controller_buttons : in std_logic_vector(7 downto 0);
+		  tony_x : out signed(10 downto 0); 
+		  tony_y : out signed(10 downto 0)
 		  );
 	end component;
 
@@ -76,16 +78,16 @@ architecture synth of top is
 	signal internalrow : signed(10 downto 0);
 	signal internalcol : signed(10 downto 0);
 	signal internalvalid : std_logic;
-	signal controller_buttons_signal : std_logic_vector(7 downto 0);
+	signal tony_controller_buttons_signal : std_logic_vector(7 downto 0);
 	signal internal60hzclk : std_logic;
-	signal xpos : signed(10 downto 0);
-	signal ypos : signed(10 downto 0);
+	signal tony_xpos : signed(10 downto 0);
+	signal tony_ypos : signed(10 downto 0);
 begin
    controller1 : controller port map(
-                                    latch => controller_latch,
-									clock => controller_clock,
-									data => controller_in,
-									output => controller_buttons_signal
+                                    latch => tony_controller_latch,
+									clock => tony_controller_clock,
+									data => tony_controller_in,
+									output => tony_controller_buttons_signal
 									);
    sixtyHZclock : pllclock_to_60_hz port map(internal25clk, internal60hzclk);
    pll : my_pll port map(ext12m, '1', testPLLout, internal25clk);
@@ -94,22 +96,22 @@ begin
 									   clk => internal25clk,
 									   row => internalrow,
 									   col => internalcol,
-									   x => xpos,
-									   y => ypos,
+									   tony_x => tony_xpos,
+									   tony_y => tony_ypos,
 									   valid => internalvalid,
-									   buttons => controller_buttons_signal,
+									   tony_buttons => tony_controller_buttons_signal,
 									   rgb => RGB
 									   );
 
 
 	game : game_logic port map(
 							 clk => internal60hzclk,
-							 controller_buttons => controller_buttons_signal,
-							 x => xpos,
-							 y => ypos
+							 tony_controller_buttons => tony_controller_buttons_signal,
+							 tony_x => tony_xpos,
+							 tony_y => tony_ypos
 							 );
 									   
-	up <= controller_buttons_signal(3);
+	up <= tony_controller_buttons_signal(3);
 end;
 
 

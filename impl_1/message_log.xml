@@ -732,10 +732,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(20): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(22): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>20</Navigation>
+            <Navigation>22</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -816,22 +816,6 @@
             <Dynamic>synth</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
             <Navigation>14</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(73): </Dynamic>
-            <Dynamic>clk</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
-            <Navigation>73</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(28): </Dynamic>
-            <Dynamic>clk</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
-            <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1222,10 +1206,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(20): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(22): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>20</Navigation>
+            <Navigation>22</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1306,22 +1290,6 @@
             <Dynamic>synth</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
             <Navigation>14</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(73): </Dynamic>
-            <Dynamic>clk</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
-            <Navigation>73</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(28): </Dynamic>
-            <Dynamic>clk</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
-            <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1426,20 +1394,6 @@
             <Dynamic>//vs-home/tlyons01/es4/smack_buds/impl_1</Dynamic>
         </Message>
         <Message>
-            <ID>1009991</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(62): input port 'clk' is not connected on this instance
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(24): </Dynamic>
-            <Dynamic>\game/yv_gl[3]</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd</Navigation>
-            <Navigation>24</Navigation>
-        </Message>
-        <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
             <Dynamic>//vs-home/tlyons01/es4/smack_buds/my_pll/rtl/my_pll.v(139): </Dynamic>
@@ -1456,6 +1410,30 @@
             <Navigation>140</Navigation>
         </Message>
         <Message>
+            <ID>35931002</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(55): </Dynamic>
+            <Dynamic>\game/col_map/plat1_col_b</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(61): </Dynamic>
+            <Dynamic>\game/col_map/plat2_col_b</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd</Navigation>
+            <Navigation>61</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(67): </Dynamic>
+            <Dynamic>\game/col_map/plat3_col_b</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd</Navigation>
+            <Navigation>67</Navigation>
+        </Message>
+        <Message>
             <ID>35935014</ID>
             <Severity>16</Severity>
             <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(100): </Dynamic>
@@ -1470,7 +1448,7 @@
         <Message>
             <ID>35811145</ID>
             <Severity>1</Severity>
-            <Dynamic>i9908</Dynamic>
+            <Dynamic>i9854</Dynamic>
         </Message>
         <Message>
             <ID>70001944</ID>

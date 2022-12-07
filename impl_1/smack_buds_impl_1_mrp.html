@@ -47,7 +47,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Tue Dec  6 16:24:58 2022
+Mapped on: Tue Dec  6 19:07:31 2022
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -59,10 +59,10 @@ Command line:   map smack_buds_impl_1_syn.udb
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of slice registers: 135 out of  5280 (3%)
    Number of I/O registers:      2 out of   117 (2%)
-   Number of LUT4s:           712 out of  5280 (13%)
-      Number of logic LUT4s:             429
+   Number of LUT4s:           705 out of  5280 (13%)
+      Number of logic LUT4s:             428
       Number of inserted feedthru LUT4s:  15
-      Number of ripple logic:            134 (268 LUT4s)
+      Number of ripple logic:            131 (262 LUT4s)
    Number of IO sites used:   14 out of 39 (36%)
       Number of IO sites used for general PIO: 14
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -89,41 +89,41 @@ Command line:   map smack_buds_impl_1_syn.udb
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
       Net internal60hzclk: 31 loads, 31 rising, 0 falling (Driver: Pin
-     sixtyHZclock.i8648_4_lut/OUT)
+     sixtyHZclock.i4_4_lut/OUT)
       Net controller1.clk: 11 loads, 11 rising, 0 falling (Driver: Pin
      controller1.the_hsosc/CLKHF)
+      Net tony_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
+     controller1.i1_4_lut_adj_34/OUT)
       Net controller1.counter[20]: 14 loads, 14 rising, 0 falling (Driver: Pin
-     controller1.counter_203__i21/Q)
-      Net controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
-     controller1.i1_4_lut_adj_79/OUT)
-   Number of Clock Enables:  7
-      Net n407: 6 loads, 6 SLICEs
-      Net RGB_pad[4].vcc: 28 loads, 0 SLICEs
-      Net controller1.counter[20]_enable_1: 6 loads, 5 SLICEs
+     controller1.counter_233__i21/Q)
+   Number of Clock Enables:  8
+      Net n425: 6 loads, 6 SLICEs
+      Net RGB_pad[3].vcc: 28 loads, 0 SLICEs
+      Net game.phys_map.n3541: 10 loads, 10 SLICEs
 
+      Net game.phys_map.n3557: 1 loads, 1 SLICEs
+      Net game.phys_map.n3555: 3 loads, 3 SLICEs
+      Net game.phys_map.n3526: 4 loads, 4 SLICEs
+      Net controller1.counter[20]_enable_1: 6 loads, 5 SLICEs
       Net controller1.n15: 8 loads, 8 SLICEs
-      Net game.phys_map.n3538: 4 loads, 4 SLICEs
-      Net game.phys_map.n3506: 10 loads, 10 SLICEs
-      Net game.phys_map.n3970: 4 loads, 4 SLICEs
-   Number of LSRs:  7
+   Number of LSRs:  6
       Net row_10__N_152: 6 loads, 6 SLICEs
       Net col_10__N_140: 6 loads, 6 SLICEs
-      Net x_10__N_499: 24 loads, 24 SLICEs
+      Net x_10__N_464: 28 loads, 28 SLICEs
       Net internal60hzclk: 10 loads, 10 SLICEs
+      Net game.phys_map.n3781: 2 loads, 2 SLICEs
       Net controller1.counter_19__N_59: 11 loads, 11 SLICEs
-      Net game.phys_map.n3759: 2 loads, 2 SLICEs
-      Net game.phys_map.n3747: 4 loads, 4 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net RGB_pad[4].vcc: 90 loads
-      Net x_10__N_499: 30 loads
-      Net game.phys_map.n62[10]: 24 loads
-      Net game.phys_map.n1444: 20 loads
+      Net RGB_pad[3].vcc: 74 loads
+      Net game.tony_yv_gl[4]: 35 loads
+      Net x_10__N_464: 34 loads
+      Net game.phys_map.n62_adj_585[10]: 24 loads
+      Net game.phys_map.n4440: 20 loads
       Net game.phys_map.n644: 20 loads
-      Net game.yVelocity[4]: 18 loads
-      Net controller_buttons_signal[2]: 15 loads
-      Net game.phys_map.n62_adj_664[10]: 15 loads
-      Net game.xVelocity[3]: 14 loads
-      Net plat1_col_t: 14 loads
+      Net tony_controller_buttons_signal[2]: 17 loads
+      Net game.phys_map.n62[10]: 15 loads
+      Net game.phys_map.n609: 14 loads
+      Net game.phys_map.n1363: 13 loads
 
 
 
@@ -146,34 +146,34 @@ Command line:   map smack_buds_impl_1_syn.udb
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[4]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[5]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| up                  | OUTPUT    | LVCMOS33  | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | VSYNC               | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | HSYNC               | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[1]              | OUTPUT    | LVCMOS33  |       |       |           |
-
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[0]              | OUTPUT    | LVCMOS33  |       |       |           |
+
 +---------------------+-----------+-----------+-------+-------+-----------+
 | testPLLout          | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| controller_latch    | OUTPUT    | LVCMOS33  |       |       |           |
+| tony_controller_latch| OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| controller_clock    | OUTPUT    | LVCMOS33  |       |       |           |
+| tony_controller_clock| OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| up                  | OUTPUT    | LVCMOS33  | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | ext12m              | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| controller_in       | INPUT     | LVCMOS33  | I     |       |           |
+| tony_controller_in  | INPUT     | LVCMOS33  | I     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 
@@ -223,8 +223,8 @@ OSC Summary
 OSC 1:                                 Pin/Node Value
   OSC Instance Name:                            controller1/the_hsosc
 
-  Power UP:                            NODE     RGB_pad[4].vcc
-  Enable Signal:                       NODE     RGB_pad[4].vcc
+  Power UP:                            NODE     RGB_pad[3].vcc
+  Enable Signal:                       NODE     RGB_pad[3].vcc
   OSC Output:                          NODE     controller1.clk
   DIV Setting:                                  00
 
@@ -235,30 +235,30 @@ OSC 1:                                 Pin/Node Value
 
 Instance Name: pll/lscc_pll_inst/u_PLL_B
          Type: PLL
-Instance Name: controller1/the_hsosc
-         Type: HFOSC
-Instance Name: controller1/shift_i0
-         Type: IOLOGIC
-Instance Name: controller1/output__i4
-         Type: IOLOGIC
-Instance Name: patternmaker/tony_run_map2/mux_73
-         Type: EBR
-Instance Name: patternmaker/tony_run_map2/mux_72
-         Type: EBR
 Instance Name: patternmaker/tony_run_map2/mux_71
          Type: EBR
-Instance Name: patternmaker/tony_run_map1/mux_70
+Instance Name: patternmaker/tony_run_map2/mux_70
          Type: EBR
-Instance Name: patternmaker/tony_run_map1/mux_69
+Instance Name: patternmaker/tony_run_map2/mux_69
          Type: EBR
 Instance Name: patternmaker/tony_run_map1/mux_68
          Type: EBR
-Instance Name: patternmaker/tony_map/mux_67
+Instance Name: patternmaker/tony_run_map1/mux_67
          Type: EBR
-Instance Name: patternmaker/tony_map/mux_66
+Instance Name: patternmaker/tony_run_map1/mux_66
          Type: EBR
 Instance Name: patternmaker/tony_map/mux_65
          Type: EBR
+Instance Name: patternmaker/tony_map/mux_64
+         Type: EBR
+Instance Name: patternmaker/tony_map/mux_63
+         Type: EBR
+Instance Name: controller1/the_hsosc
+         Type: HFOSC
+Instance Name: controller1/output__0__i4
+         Type: IOLOGIC
+Instance Name: controller1/shift_i0
+         Type: IOLOGIC
 
 
 
@@ -267,7 +267,7 @@ Instance Name: patternmaker/tony_map/mux_65
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 63 MB
+   Peak Memory Usage: 64 MB
 
 
 

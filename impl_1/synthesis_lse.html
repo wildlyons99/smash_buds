@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Dec  6 16:24:44 2022
+Tue Dec  6 19:07:17 2022
 
 
 Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f smack_buds_impl_1_lattice.synproj -gui -msgset //vs-home/tlyons01/es4/smack_buds/promote.xml 
@@ -192,7 +192,7 @@ Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd. VHD
 Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd
 
 INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
-INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(20): analyzing architecture synth. VHDL-1010
+INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(22): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd. VHDL-1481
 Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd
 
@@ -218,8 +218,6 @@ Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.v
 
 INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(5): analyzing entity game_logic. VHDL-1012
 INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(14): analyzing architecture synth. VHDL-1010
-INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(73): input pin clk has no actual or default value. VHDL-9000
-INFO - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(28): clk is declared here. VHDL-1259
 Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd. VHDL-1481
 Analyzing VHDL file //vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd
 
@@ -278,110 +276,137 @@ Top module name (VHDL, mixed language): top
                                                          
 
 
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(62): input port 'clk' is not connected on this instance
-
-WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/game_logic.vhd(24): net \game/yv_gl[3] does not have a driver. VDB-1002
 WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/my_pll/rtl/my_pll.v(139): net \pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
 WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/my_pll/rtl/my_pll.v(140): net \pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
-######## Missing driver on net \game/yv_gl[3]. Patching with GND.
-######## Missing driver on net \game/yv_gl[2]. Patching with GND.
-######## Missing driver on net \game/yv_gl[1]. Patching with GND.
-######## Missing driver on net \game/yv_gl[0]. Patching with GND.
+WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(55): net \game/col_map/plat1_col_b does not have a driver. VDB-1002
+WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(61): net \game/col_map/plat2_col_b does not have a driver. VDB-1002
+WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(67): net \game/col_map/plat3_col_b does not have a driver. VDB-1002
 ######## Missing driver on net \pll/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \pll/lscc_pll_inst/sdi_i. Patching with GND.
+######## Missing driver on net \game/col_map/plat1_col_b. Patching with GND.
+######## Missing driver on net \game/col_map/plat2_col_b. Patching with GND.
+######## Missing driver on net \game/col_map/plat3_col_b. Patching with GND.
 WARNING - synthesis: //vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(100): Register \game/phys_map/first_time is stuck at One. VDB-5014
 
 
 
 Combinational loop found : 1
 
-	Net \game/y_plat[0] 
-
-	Instance \game/col_map/y_platform_10__I_0_2_i1 
-
-	Net \game/col_map/y_platform_10__N_276[0] 
+	Net \game/tony_y_plat[0] 
 
 	Instance \game/col_map/y_platform_10__I_0_i1 
 
+	Net \game/col_map/y_platform_10__N_288[0] 
+
+	Instance \game/col_map/y_platform_10__I_20_i1 
+
+	Net \game/col_map/y_platform_10__N_299[0] 
+
+	Instance \game/col_map/mux_11_i1 
+
 Combinational loop found : 2
 
-	Net \game/y_plat[10] 
-
-	Instance \game/col_map/y_platform_10__I_0_2_i11 
-
-	Net \game/col_map/y_platform_10__N_276[10] 
+	Net \game/tony_y_plat[10] 
 
 	Instance \game/col_map/y_platform_10__I_0_i11 
 
+	Net \game/col_map/y_platform_10__N_288[10] 
+
+	Instance \game/col_map/y_platform_10__I_20_i11 
+
+	Net \game/col_map/y_platform_10__N_299[10] 
+
+	Instance \game/col_map/mux_11_i11 
+
 Combinational loop found : 3
 
-	Net \game/y_plat[9] 
+	Net \game/tony_y_plat[9] 
 
-	Instance \game/col_map/y_platform_10__I_0_2_i10 
+	Instance \game/col_map/y_platform_10__I_0_i10 
+
+	Net \game/col_map/y_platform_10__N_288[9] 
+
+	Instance \game/col_map/y_platform_10__I_20_i10 
 
 Combinational loop found : 4
 
-	Net \game/y_plat[8] 
-
-	Instance \game/col_map/y_platform_10__I_0_2_i9 
-
-	Net \game/col_map/y_platform_10__N_276[8] 
+	Net \game/tony_y_plat[8] 
 
 	Instance \game/col_map/y_platform_10__I_0_i9 
 
 Combinational loop found : 5
 
-	Net \game/y_plat[7] 
+	Net \game/tony_y_plat[7] 
 
-	Instance \game/col_map/y_platform_10__I_0_2_i8 
+	Instance \game/col_map/y_platform_10__I_0_i8 
+
+	Net \game/col_map/y_platform_10__N_288[7] 
+
+	Instance \game/col_map/y_platform_10__I_20_i8 
+
+	Net \game/col_map/y_platform_10__N_299[7] 
+
+	Instance \game/col_map/mux_11_i8 
 
 Combinational loop found : 6
 
-	Net \game/y_plat[6] 
-
-	Instance \game/col_map/y_platform_10__I_0_2_i7 
-
-	Net \game/col_map/y_platform_10__N_276[6] 
+	Net \game/tony_y_plat[6] 
 
 	Instance \game/col_map/y_platform_10__I_0_i7 
 
+	Net \game/col_map/y_platform_10__N_288[6] 
+
+	Instance \game/col_map/y_platform_10__I_20_i7 
+
 Combinational loop found : 7
 
-	Net \game/y_plat[5] 
+	Net \game/tony_y_plat[5] 
 
-	Instance \game/col_map/y_platform_10__I_0_2_i6 
+	Instance \game/col_map/y_platform_10__I_0_i6 
 
 Combinational loop found : 8
 
-	Net \game/y_plat[4] 
-
-	Instance \game/col_map/y_platform_10__I_0_2_i5 
-
-	Net \game/col_map/y_platform_10__N_276[4] 
+	Net \game/tony_y_plat[4] 
 
 	Instance \game/col_map/y_platform_10__I_0_i5 
 
+	Net \game/col_map/y_platform_10__N_288[4] 
+
+	Instance \game/col_map/y_platform_10__I_20_i5 
+
+	Net \game/col_map/y_platform_10__N_299[4] 
+
+	Instance \game/col_map/mux_11_i5 
+
 Combinational loop found : 9
 
-	Net \game/y_plat[3] 
+	Net \game/tony_y_plat[3] 
 
-	Instance \game/col_map/y_platform_10__I_0_2_i4 
+	Instance \game/col_map/y_platform_10__I_0_i4 
+
+	Net \game/col_map/y_platform_10__N_288[3] 
+
+	Instance \game/col_map/y_platform_10__I_20_i4 
 
 Combinational loop found : 10
 
-	Net \game/y_plat[2] 
-
-	Instance \game/col_map/y_platform_10__I_0_2_i3 
-
-	Net \game/col_map/y_platform_10__N_276[2] 
+	Net \game/tony_y_plat[2] 
 
 	Instance \game/col_map/y_platform_10__I_0_i3 
 
 Combinational loop found : 11
 
-	Net \game/y_plat[1] 
+	Net \game/tony_y_plat[1] 
 
-	Instance \game/col_map/y_platform_10__I_0_2_i2 
+	Instance \game/col_map/y_platform_10__I_0_i2 
+
+	Net \game/col_map/y_platform_10__N_288[1] 
+
+	Instance \game/col_map/y_platform_10__I_20_i2 
+
+	Net \game/col_map/y_platform_10__N_299[1] 
+
+	Instance \game/col_map/mux_11_i2 
 
 INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
@@ -391,17 +416,17 @@ INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are s
 ################### Begin Area Report (top)######################
 Number of register bits => 135 of 5280 (2 % )
 EBR_B => 9
-CCU2 => 134
+CCU2 => 131
 FD1P3XZ => 135
 HSOSC_CORE => 1
 IB => 2
 IOL_B => 2
-LUT4 => 428
+LUT4 => 427
 OB => 12
 PLL_B => 1
 ################### End Area Report ##################
-Number of odd-length carry chains : 17
-Number of even-length carry chains : 4
+Number of odd-length carry chains : 15
+Number of even-length carry chains : 5
 
 
 <A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
@@ -410,7 +435,7 @@ Number of even-length carry chains : 4
 Clock Nets
 Number of Clocks: 5
   Net : pll/lscc_pll_inst/internal25clk, loads : 0
-  Net : controller1/controller_clock_c, loads : 1
+  Net : controller1/tony_controller_clock_c, loads : 1
   Net : sixtyHZclock/internal60hzclk, loads : 0
   Net : ext12m_c, loads : 1
   Net : pll/lscc_pll_inst/testPLLout_c, loads : 1
@@ -418,19 +443,19 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : controller1/x_10__N_499, loads : 29
-  Net : game/phys_map/n51, loads : 23
+  Net : game/phys_map/tony_yv_gl[4], loads : 34
+  Net : controller1/x_10__N_464, loads : 33
+  Net : game/phys_map/n51_adj_521, loads : 23
   Net : controller1/clk, loads : 21
   Net : controller1/counter_19__N_59, loads : 21
-  Net : game/phys_map/n1444, loads : 20
+  Net : game/phys_map/n4440, loads : 20
   Net : game/phys_map/n644, loads : 18
+  Net : controller1/tony_controller_buttons_signal[2], loads : 16
   Net : controller1/counter[20], loads : 16
-  Net : game/phys_map/yVelocity[4], loads : 16
-  Net : controller1/controller_buttons_signal[2], loads : 14
-  Net : game/phys_map/n51_adj_580, loads : 14
+  Net : game/phys_map/n51, loads : 14
 ################### End Clock Report ##################
 
-Peak Memory Usage: 158 MB
+Peak Memory Usage: 157 MB
 
 --------------------------------------------------------------
 Total CPU Time: 5 secs 

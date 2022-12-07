@@ -7,10 +7,10 @@ entity pattern_gen is
 	  clk : in std_logic;
 	  row : in signed(10 downto 0); -- 0-1023
 	  col : in signed(10 downto 0); -- 0-1023
-	  x : in signed(10 downto 0);
-	  y : in signed(10 downto 0);
+	  tony_x : in signed(10 downto 0);
+	  tony_y : in signed(10 downto 0);
 	  valid : in std_logic;
-	  buttons : in std_logic_vector(7 downto 0);
+	  tony_buttons : in std_logic_vector(7 downto 0);
 	  rgb : out std_logic_vector(5 downto 0)
       );
 end pattern_gen;
@@ -27,10 +27,10 @@ signal tony_color_run1 : std_logic_vector(5 downto 0);
 signal tony_color_run2 : std_logic_vector(5 downto 0);
 signal drawing_tony_x : std_logic;
 signal drawing_tony_y : std_logic;
-signal diff_x_vector : std_logic_vector(10 downto 0);
-signal diff_y_vector : std_logic_vector(10 downto 0);
-signal diff_x : signed(10 downto 0);
-signal diff_y : signed(10 downto 0);
+signal tony_diff_x_vector : std_logic_vector(10 downto 0);
+signal tony_diff_y_vector : std_logic_vector(10 downto 0);
+signal tony_diff_x : signed(10 downto 0);
+signal tony_diff_y : signed(10 downto 0);
 signal tony_width : signed(5 downto 0);
 signal tony_height : signed(6 downto 0);
 
@@ -64,28 +64,32 @@ component tony_run_rom2 is
 end component;
 
 signal counter : unsigned(30 downto 0);
-signal left_pressed : std_logic;
-signal right_pressed : std_logic; 
+signal tony_left_pressed : std_logic;
+signal tony_right_pressed : std_logic; 
+
+signal tony_is_pink_idle : std_logic;
+signal tony_is_pink_run1 : std_logic;
+signal tony_is_pink_run2 : std_logic;
 
 begin
    tony_map : tony_idle_rom port map(
 									 clk => clk,
-									 xadr => unsigned(diff_x_vector(4 downto 0)),
-									 yadr => unsigned(diff_y_vector(5 downto 0)),
+									 xadr => unsigned(tony_diff_x_vector(4 downto 0)),
+									 yadr => unsigned(tony_diff_y_vector(5 downto 0)),
 									 rgb => tony_color_idle
 							  		 );
 	
 	tony_run_map1 : tony_run_rom1 port map(
 									 clk => clk,
-									 xadr => unsigned(diff_x_vector(4 downto 0)),
-									 yadr => unsigned(diff_y_vector(5 downto 0)),
+									 xadr => unsigned(tony_diff_x_vector(4 downto 0)),
+									 yadr => unsigned(tony_diff_y_vector(5 downto 0)),
 									 rgb => tony_color_run1
 							  		 );
 	
 	tony_run_map2 : tony_run_rom2 port map(
 									 clk => clk,
-									 xadr => unsigned(diff_x_vector(4 downto 0)),
-									 yadr => unsigned(diff_y_vector(5 downto 0)),
+									 xadr => unsigned(tony_diff_x_vector(4 downto 0)),
+									 yadr => unsigned(tony_diff_y_vector(5 downto 0)),
 									 rgb => tony_color_run2
 							  		 );
    
@@ -100,26 +104,32 @@ begin
    tony_width <= 6d"25";
    tony_height <= 7d"63";
    
-   drawing_tony_x <= '1' when (col >= x and col <= x + tony_width) else '0';
-   drawing_tony_y <= '1' when (row >= y and row <= y + tony_height) else '0';
+   drawing_tony_x <= '1' when (col >= tony_x and col <= tony_x + tony_width) else '0';
+   drawing_tony_y <= '1' when (row >= tony_y and row <= tony_y + tony_height) else '0';
    
-   diff_x <= col - x;
-   diff_y <= row - y;
+   tony_diff_x <= col - tony_x;
+   tony_diff_y <= row - tony_y;
    
-   diff_x_vector <= std_logic_vector(unsigned(diff_x)) when buttons(0) else
-					std_logic_vector(unsigned(tony_width) - unsigned(diff_x));
-   diff_y_vector <= std_logic_vector(unsigned(diff_y));
+   tony_diff_x_vector <= std_logic_vector(unsigned(tony_diff_x)) when tony_buttons(0) else
+					std_logic_vector(unsigned(tony_width) - unsigned(tony_diff_x));
+   tony_diff_y_vector <= std_logic_vector(unsigned(tony_diff_y));
    
 
-	background <= "110110" when col >= 11d"330" and col <= 11d"630" and
-								row > 11d"330" and row <= 11d"350" 
-						   else "111111"; 
+	background <= "001100" when (col >= 11d"330" and col <= 11d"630" and
+								row > 11d"330" and row <= 11d"338") or
+								(col >= 11d"0" and col <= 11d"200" and
+								row > 11d"200" and row <= 11d"208")
+						        else "111111";
+						   
+	tony_is_pink_idle <= '1' when (tony_color_idle = "110110") else '0';
+	tony_is_pink_run1 <= '1' when (tony_color_run1 = "110110") else '0';
+	tony_is_pink_run2 <= '1' when (tony_color_run2 = "110110") else '0';
 	
-   toout <= tony_color_idle when (drawing_tony_x and drawing_tony_y) and (not buttons(0)) and (not buttons(1)) else 
-   		    tony_color_run1 when (not counter(21)) and (drawing_tony_x and drawing_tony_y) else
-			tony_color_run2 when (counter(21)) and (drawing_tony_x and drawing_tony_y) else
-		background;
-   
+	toout <= tony_color_run1 when (not counter(21)) and (drawing_tony_x and drawing_tony_y) and (not tony_is_pink_run1) and (tony_buttons(0) or tony_buttons(1)) else
+			 tony_color_run2 when (counter(21)) and (drawing_tony_x and drawing_tony_y) and (not tony_is_pink_run2) and (tony_buttons(1) or tony_buttons(0)) else
+			 tony_color_idle when (drawing_tony_x and drawing_tony_y) and (not tony_is_pink_idle) and (not tony_buttons(0) and not tony_buttons(1)) else
+		     background;
+			
    
    rgb <= toout when valid else 6d"0";
   

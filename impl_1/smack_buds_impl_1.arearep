@@ -5,12 +5,12 @@ I/O cells:      14
                                   Cell usage:
                                cell     count   Res Usage(%)
                               EBR_B         9          100.0
-                               CCU2       134          100.0
+                               CCU2       131          100.0
                             FD1P3XZ       135          100.0
                          HSOSC_CORE         1          100.0
                                  IB         2          100.0
                               IOL_B         2          100.0
-                               LUT4       428          100.0
+                               LUT4       427          100.0
                                  OB        12          100.0
                               PLL_B         1          100.0
 SUB MODULES
@@ -21,23 +21,24 @@ SUB MODULES
 my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
                         pattern_gen         1
                             physics         1
-platform(plat_width="00100101100",plat_height="00000010100",corner_x="00101001010",corner_y="00101001010")         1
+platform(plat_width="00011001000",plat_height="00000001000",corner_y="00011001000")         1
+platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101001010")         1
 platform(plat_width="01010000000",plat_height="00000010100",corner_y="00110100100")         1
                   pllclock_to_60_hz         1
                       tony_idle_rom         1
                       tony_run_rom1         1
                       tony_run_rom2         1
                                 vga         1
-                              TOTAL       738
+                              TOTAL       735
 ----------------------------------------------------------------------
 Report for cell vga.v1
 Instance Path : internalvga
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        12            9.0
+                                FA2        12            9.2
                             FD1P3XZ        22           16.3
-                               LUT4        30            7.0
-                              TOTAL        64
+                               LUT4        24            5.6
+                              TOTAL        58
 ----------------------------------------------------------------------
 Report for cell my_pll.v1
 Instance Path : pll
@@ -55,88 +56,19 @@ Instance Path : pll.lscc_pll_inst
                               PLL_B         1          100.0
                               TOTAL         1
 ----------------------------------------------------------------------
-Report for cell pllclock_to_60_hz.v1
-Instance Path : sixtyHZclock
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        10            7.5
-                            FD1P3XZ        19           14.1
-                               LUT4         6            1.4
-                              TOTAL        35
-----------------------------------------------------------------------
-Report for cell controller.v1
-Instance Path : controller1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        11            8.2
-                            FD1P3XZ        41           30.4
-                         HSOSC_CORE         1          100.0
-                              IOL_B         2          100.0
-                               LUT4        25            5.8
-                              TOTAL        80
-----------------------------------------------------------------------
-Report for cell game_logic.v1
-Instance Path : game
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        74           55.2
-                            FD1P3XZ        31           23.0
-                               LUT4       290           67.8
-SUB MODULES
-                         collisions         1
-                            physics         1
-platform(plat_width="00100101100",plat_height="00000010100",corner_x="00101001010",corner_y="00101001010")         1
-platform(plat_width="01010000000",plat_height="00000010100",corner_y="00110100100")         1
-                              TOTAL       399
-----------------------------------------------------------------------
-Report for cell physics.v1
-Instance Path : game.phys_map
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        64           47.8
-                            FD1P3XZ        31           23.0
-                               LUT4       215           50.2
-                              TOTAL       310
-----------------------------------------------------------------------
-Report for cell collisions.v1
-Instance Path : game.col_map
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        10            7.5
-                               LUT4        75           17.5
-SUB MODULES
-platform(plat_width="00100101100",plat_height="00000010100",corner_x="00101001010",corner_y="00101001010")         1
-platform(plat_width="01010000000",plat_height="00000010100",corner_y="00110100100")         1
-                              TOTAL        87
-----------------------------------------------------------------------
-Report for cell platform(plat_width="00100101100",plat_height="00000010100",corner_x="00101001010",corner_y="00101001010").v1
-Instance Path : game.col_map.plat_test
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4        12            2.8
-                              TOTAL        12
-----------------------------------------------------------------------
-Report for cell platform(plat_width="01010000000",plat_height="00000010100",corner_y="00110100100").v1
-Instance Path : game.col_map.floor
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        10            7.5
-                               LUT4        34            7.9
-                              TOTAL        44
-----------------------------------------------------------------------
 Report for cell pattern_gen.v1
 Instance Path : patternmaker
                                   Cell usage:
                                cell     count   Res Usage(%)
                               EBR_B         9          100.0
-                                FA2        27           20.1
+                                FA2        27           20.6
                             FD1P3XZ        22           16.3
-                               LUT4        75           17.5
+                               LUT4       106           24.8
 SUB MODULES
                       tony_idle_rom         1
                       tony_run_rom1         1
                       tony_run_rom2         1
-                              TOTAL       136
+                              TOTAL       167
 ----------------------------------------------------------------------
 Report for cell tony_run_rom2.v1
 Instance Path : patternmaker.tony_run_map2
@@ -158,3 +90,81 @@ Instance Path : patternmaker.tony_map
                                cell     count   Res Usage(%)
                               EBR_B         3           33.3
                               TOTAL         3
+----------------------------------------------------------------------
+Report for cell pllclock_to_60_hz.v1
+Instance Path : sixtyHZclock
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        10            7.6
+                            FD1P3XZ        19           14.1
+                               LUT4         7            1.6
+                              TOTAL        36
+----------------------------------------------------------------------
+Report for cell game_logic.v1
+Instance Path : game
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        71           54.2
+                            FD1P3XZ        31           23.0
+                               LUT4       263           61.6
+SUB MODULES
+                         collisions         1
+                            physics         1
+platform(plat_width="00011001000",plat_height="00000001000",corner_y="00011001000")         1
+platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101001010")         1
+platform(plat_width="01010000000",plat_height="00000010100",corner_y="00110100100")         1
+                              TOTAL       370
+----------------------------------------------------------------------
+Report for cell physics.v1
+Instance Path : game.phys_map
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        65           49.6
+                            FD1P3XZ        31           23.0
+                               LUT4       213           49.9
+                              TOTAL       309
+----------------------------------------------------------------------
+Report for cell collisions.v1
+Instance Path : game.col_map
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         6            4.6
+                               LUT4        50           11.7
+SUB MODULES
+platform(plat_width="00011001000",plat_height="00000001000",corner_y="00011001000")         1
+platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101001010")         1
+platform(plat_width="01010000000",plat_height="00000010100",corner_y="00110100100")         1
+                              TOTAL        59
+----------------------------------------------------------------------
+Report for cell platform(plat_width="00011001000",plat_height="00000001000",corner_y="00011001000").v1
+Instance Path : game.col_map.plat_test_2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         5            1.2
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101001010").v1
+Instance Path : game.col_map.plat_test
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        29            6.8
+                              TOTAL        29
+----------------------------------------------------------------------
+Report for cell platform(plat_width="01010000000",plat_height="00000010100",corner_y="00110100100").v1
+Instance Path : game.col_map.floor
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         6            4.6
+                               LUT4        11            2.6
+                              TOTAL        17
+----------------------------------------------------------------------
+Report for cell controller.v1
+Instance Path : controller1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        11            8.4
+                            FD1P3XZ        41           30.4
+                         HSOSC_CORE         1          100.0
+                              IOL_B         2          100.0
+                               LUT4        25            5.9
+                              TOTAL        80
