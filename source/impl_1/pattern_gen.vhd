@@ -154,6 +154,8 @@ begin
 			level_pixels;
    
    rgb <= toout when valid else 6d"0";
+   start_pixels <= "101101" when (col <= 200) else
+                   "110000";
 end;
 
 

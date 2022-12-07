@@ -10,10 +10,10 @@ entity collisions is
 	
 	port (
 		--clk : in std_logic; 
-		coll_left : out std_logic;
-		coll_right : out std_logic;
+		--coll_left : out std_logic;
+		--coll_right : out std_logic;
 		coll_top : out std_logic;
-		coll_bottom : out std_logic;
+		--coll_bottom : out std_logic;
 		y_platform : out signed(10 downto 0);
 		
 		buttons : in std_logic_vector(7 downto 0);
@@ -42,29 +42,29 @@ component platform is
 		player_yv : in signed(4 downto 0); 
 		buttons : in std_logic_vector(7 downto 0);
 		
-		col_r : out std_logic;
-		col_l : out std_logic; 
-		col_b : out std_logic;
+		--col_r : out std_logic;
+		--col_l : out std_logic; 
+		--col_b : out std_logic;
 		col_t : out std_logic;
 		y_pos_plat : out signed(10 downto 0)
 	);
 end component;
 
-signal plat1_col_r : std_logic;
-signal plat1_col_l : std_logic;
-signal plat1_col_b : std_logic;
+--signal plat1_col_r : std_logic;
+--signal plat1_col_l : std_logic;
+--signal plat1_col_b : std_logic;
 signal plat1_col_t : std_logic;
 signal plat1_y	   : signed(10 downto 0);
 
-signal plat2_col_r : std_logic;
-signal plat2_col_l : std_logic;
-signal plat2_col_b : std_logic;
+--signal plat2_col_r : std_logic;
+--signal plat2_col_l : std_logic;
+--signal plat2_col_b : std_logic;
 signal plat2_col_t : std_logic;
 signal plat2_y	   : signed(10 downto 0);
 
-signal plat3_col_r : std_logic;
-signal plat3_col_l : std_logic;
-signal plat3_col_b : std_logic;
+--signal plat3_col_r : std_logic;
+--signal plat3_col_l : std_logic;
+--signal plat3_col_b : std_logic;
 signal plat3_col_t : std_logic;
 signal plat3_y	   : signed(10 downto 0);
 
@@ -82,9 +82,9 @@ begin
 		player_y => y,
 		player_yv => yv,
 		buttons => buttons,
-		col_r => plat1_col_r,
-		col_l => plat1_col_l,
-		col_b => plat1_col_b,
+		--col_r => plat1_col_r,
+		--col_l => plat1_col_l,
+		--col_b => plat1_col_b,
 		col_t => plat1_col_t,
 		y_pos_plat => plat1_y
 	); 
@@ -102,9 +102,9 @@ begin
 		player_y => y,
 		player_yv => yv,
 		buttons => buttons,
-		col_r => plat2_col_r,
-		col_l => plat2_col_l,
-		col_b => plat2_col_b,
+		--col_r => plat2_col_r,
+		--col_l => plat2_col_l,
+		--col_b => plat2_col_b,
 		col_t => plat2_col_t,
 		y_pos_plat => plat2_y
 	);
@@ -122,9 +122,9 @@ begin
 		player_y => y,
 		player_yv => yv,
 		buttons => buttons,
-		col_r => plat3_col_r,
-		col_l => plat3_col_l,
-		col_b => plat3_col_b,
+		--col_r => plat3_col_r,
+		--col_l => plat3_col_l,
+		--col_b => plat3_col_b,
 		col_t => plat3_col_t,
 		y_pos_plat => plat3_y
 	);
@@ -134,10 +134,10 @@ begin
 	--coll_right <= '1' when plat1_col_r else '0';
 	--coll_top <= '1' when plat1_col_t else '0';
 	--coll_bottom <= '1' when plat1_col_b else '0';
-	coll_left <= plat1_col_l or plat2_col_l or plat3_col_l;
-	coll_right <= plat1_col_r or plat2_col_r or plat3_col_r;
+	--coll_left <= plat1_col_l or plat2_col_l or plat3_col_l;
+	--coll_right <= plat1_col_r or plat2_col_r or plat3_col_r;
 	coll_top <= plat1_col_t or plat2_col_t or plat3_col_t;
-	coll_bottom <= plat1_col_b or plat2_col_b or plat3_col_b;
+	--coll_bottom <= plat1_col_b or plat2_col_b or plat3_col_b;
 	y_platform <= plat1_y when plat1_col_t else
 	              plat2_y when plat2_col_t else
 				  plat3_y when plat3_col_t else

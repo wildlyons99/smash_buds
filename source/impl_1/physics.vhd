@@ -27,7 +27,6 @@ entity physics is
 end physics;
 
 architecture synth of physics is
-      signal first_time : std_logic;
       signal yVelocity  : signed(4 downto 0);
       signal xVelocity  : signed(3 downto 0);
       signal reset        : std_logic;
@@ -53,10 +52,9 @@ begin
 	 
       process (clk) begin
       if rising_edge(clk) then
-            if ((not first_time) or reset) then
+            if (reset) then
                   x <= reset_x;
                   y <= reset_y;
-                  first_time <= '1';
                   yVelocity <= 5d"0";
                   xVelocity <= 4d"0";
             else

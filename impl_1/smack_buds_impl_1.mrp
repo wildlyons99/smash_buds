@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Tue Dec  6 20:44:58 2022
+Mapped on: Tue Dec  6 22:11:40 2022
 
 Design Information
 ------------------
@@ -17,12 +17,12 @@ Command line:   map smack_buds_impl_1_syn.udb
 Design Summary
 --------------
 
-   Number of slice registers: 141 out of  5280 (3%)
+   Number of slice registers: 124 out of  5280 (2%)
    Number of I/O registers:      3 out of   117 (3%)
-   Number of LUT4s:           718 out of  5280 (14%)
+   Number of LUT4s:           698 out of  5280 (13%)
       Number of logic LUT4s:             441
       Number of inserted feedthru LUT4s:  15
-      Number of ripple logic:            131 (262 LUT4s)
+      Number of ripple logic:            121 (242 LUT4s)
    Number of IO sites used:   12 out of 39 (31%)
       Number of IO sites used for general PIO: 12
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -45,21 +45,21 @@ Design Summary
    Number of EBRs:             9 out of 30 (30%)
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  5
-      Net internal25clk: 62 loads, 62 rising, 0 falling (Driver: Pin
+      Net internal25clk: 52 loads, 52 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net tony_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
-     controller1.i1_4_lut_adj_99/OUT)
-      Net controller1.counter[20]: 13 loads, 13 rising, 0 falling (Driver: Pin
-     controller1.counter_257__i21/Q)
+      Net internal60hzclk: 33 loads, 33 rising, 0 falling (Driver: Pin
+     internalvga.i4_4_lut/OUT)
       Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
-      Net internal60hzclk: 31 loads, 31 rising, 0 falling (Driver: Pin
-     sixtyHZclock.i4_4_lut/OUT)
+      Net tony_controller.counter[20]: 13 loads, 13 rising, 0 falling (Driver:
+     Pin tony_controller.counter_263__i21/Q)
+      Net tony_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
+     tony_controller.i1_4_lut_adj_46/OUT)
    Number of Clock Enables:  9
       Net VCC_net: 27 loads, 0 SLICEs
-      Net n463: 6 loads, 6 SLICEs
-      Net controller1.n3662: 5 loads, 5 SLICEs
-      Net controller1.n15: 8 loads, 8 SLICEs
-      Net game.tony.phys_map.n3685: 10 loads, 10 SLICEs
+      Net n470: 6 loads, 6 SLICEs
+      Net game.tony.phys_map.n3866: 10 loads, 10 SLICEs
+      Net game.tony.phys_map.n3851: 4 loads, 4 SLICEs
+      Net game.tony.phys_map.n3849: 1 loads, 1 SLICEs
 
                                     Page 1
 
@@ -69,30 +69,29 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net game.tony.phys_map.n3701: 1 loads, 1 SLICEs
-      Net game.tony.phys_map.n3668: 4 loads, 4 SLICEs
-      Net game.tony.phys_map.n3691: 1 loads, 1 SLICEs
-      Net game.tony.phys_map.n3699: 2 loads, 2 SLICEs
-   Number of LSRs:  8
-      Net internalvalid: 6 loads, 6 SLICEs
-      Net col_10__N_140: 6 loads, 6 SLICEs
-      Net row_10__N_152: 6 loads, 6 SLICEs
-      Net controller1.counter_19__N_59: 11 loads, 11 SLICEs
-      Net x_10__N_483: 24 loads, 24 SLICEs
-      Net internal60hzclk: 10 loads, 10 SLICEs
-      Net game.tony.phys_map.n3914: 4 loads, 4 SLICEs
-      Net game.tony.phys_map.n3925: 2 loads, 2 SLICEs
+      Net game.tony.phys_map.n3845: 2 loads, 2 SLICEs
+      Net game.tony.phys_map.n3847: 1 loads, 1 SLICEs
+      Net tony_controller.n15: 8 loads, 8 SLICEs
+      Net tony_controller.n3831: 5 loads, 5 SLICEs
+   Number of LSRs:  7
+      Net internalvalid: 5 loads, 5 SLICEs
+      Net n3465: 1 loads, 1 SLICEs
+      Net col_10__N_34: 6 loads, 6 SLICEs
+      Net row_10__N_46: 6 loads, 6 SLICEs
+      Net tony_controller_buttons_signal[4]: 28 loads, 28 SLICEs
+      Net game.tony.phys_map.n4081: 2 loads, 2 SLICEs
+      Net tony_controller.counter_19__N_474: 11 loads, 11 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net VCC_net: 72 loads
-      Net game.tony.yv_gl[4]: 40 loads
-      Net x_10__N_483: 31 loads
-      Net game.tony.phys_map.n62_adj_604[10]: 24 loads
+      Net VCC_net: 71 loads
+      Net game.tony.yv_gl[4]: 37 loads
+      Net tony_controller_buttons_signal[4]: 34 loads
+      Net game.tony.phys_map.n62[10]: 24 loads
       Net game.tony.phys_map.n644: 20 loads
-      Net tony_controller_buttons_signal[2]: 20 loads
-      Net game.tony.phys_map.n1487: 19 loads
-      Net game.tony.col_t: 16 loads
-      Net game.tony.phys_map.n62[10]: 15 loads
-      Net game.tony.phys_map.n609: 14 loads
+      Net game.tony.phys_map.n1506: 19 loads
+      Net n5167: 17 loads
+      Net tony_controller_buttons_signal[2]: 17 loads
+      Net n3380: 16 loads
+      Net game.tony.phys_map.n62_adj_582[10]: 15 loads
 
 
 
@@ -116,8 +115,6 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[4]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[5]              | OUTPUT    | LVCMOS33  |       |       |           |
@@ -126,6 +123,9 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | HSYNC               | OUTPUT    | LVCMOS33  | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
 
                                     Page 2
 
@@ -135,7 +135,6 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
-| RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[1]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -191,7 +190,8 @@ PLL 1:                                 Pin/Node Value
 ASIC Components
 ---------------
 
-Instance Name: controller1/shift_i0
+Instance Name: VSYNC_i1
+         Type: IOLOGIC
 
                                     Page 3
 
@@ -201,30 +201,29 @@ Instance Name: controller1/shift_i0
 
 ASIC Components (cont)
 ----------------------
+Instance Name: HSYNC_i0
          Type: IOLOGIC
-Instance Name: VSYNC_i1
-         Type: IOLOGIC
+Instance Name: patternmaker/tony_run_map2/mux_81
+         Type: EBR
+Instance Name: patternmaker/tony_run_map2/mux_80
+         Type: EBR
 Instance Name: patternmaker/tony_run_map2/mux_79
          Type: EBR
-Instance Name: patternmaker/tony_run_map2/mux_78
+Instance Name: patternmaker/tony_run_map1/mux_78
          Type: EBR
-Instance Name: patternmaker/tony_run_map2/mux_77
+Instance Name: patternmaker/tony_run_map1/mux_77
          Type: EBR
 Instance Name: patternmaker/tony_run_map1/mux_76
          Type: EBR
-Instance Name: patternmaker/tony_run_map1/mux_75
+Instance Name: patternmaker/tony_map/mux_75
          Type: EBR
-Instance Name: patternmaker/tony_run_map1/mux_74
+Instance Name: patternmaker/tony_map/mux_74
          Type: EBR
 Instance Name: patternmaker/tony_map/mux_73
          Type: EBR
-Instance Name: patternmaker/tony_map/mux_72
-         Type: EBR
-Instance Name: patternmaker/tony_map/mux_71
-         Type: EBR
 Instance Name: pll/lscc_pll_inst/u_PLL_B
          Type: PLL
-Instance Name: HSYNC_i0
+Instance Name: tony_controller/shift_i0
          Type: IOLOGIC
 
 Run Time and Memory Usage
@@ -233,6 +232,7 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 64 MB
+
 
 
 

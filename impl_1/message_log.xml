@@ -691,10 +691,10 @@
         <Message>
             <ID>35929000</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(149): </Dynamic>
             <Dynamic>sunil_x</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
+            <Navigation>149</Navigation>
         </Message>
         <Message>
             <ID>35921259</ID>
@@ -707,10 +707,10 @@
         <Message>
             <ID>35929000</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(149): </Dynamic>
             <Dynamic>sunil_y</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
+            <Navigation>149</Navigation>
         </Message>
         <Message>
             <ID>35921259</ID>
@@ -723,10 +723,10 @@
         <Message>
             <ID>35929000</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(149): </Dynamic>
             <Dynamic>sunil_buttons</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
+            <Navigation>149</Navigation>
         </Message>
         <Message>
             <ID>35921259</ID>
@@ -735,54 +735,6 @@
             <Dynamic>sunil_buttons</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
             <Navigation>69</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
-            <Dynamic>start_screen</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(72): </Dynamic>
-            <Dynamic>start_screen</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>72</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
-            <Dynamic>tony_win</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(72): </Dynamic>
-            <Dynamic>tony_win</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>72</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
-            <Dynamic>sunil_win</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(72): </Dynamic>
-            <Dynamic>sunil_win</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>72</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -974,6 +926,22 @@
             <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/player.vhd(19): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/player.vhd</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_state.vhd(5): </Dynamic>
+            <Dynamic>game_state</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_state.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_state.vhd(19): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_state.vhd</Navigation>
             <Navigation>19</Navigation>
         </Message>
         <Message>
@@ -1277,10 +1245,10 @@
         <Message>
             <ID>35929000</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(149): </Dynamic>
             <Dynamic>sunil_x</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
+            <Navigation>149</Navigation>
         </Message>
         <Message>
             <ID>35921259</ID>
@@ -1293,10 +1261,10 @@
         <Message>
             <ID>35929000</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(149): </Dynamic>
             <Dynamic>sunil_y</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
+            <Navigation>149</Navigation>
         </Message>
         <Message>
             <ID>35921259</ID>
@@ -1309,10 +1277,10 @@
         <Message>
             <ID>35929000</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(149): </Dynamic>
             <Dynamic>sunil_buttons</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
+            <Navigation>149</Navigation>
         </Message>
         <Message>
             <ID>35921259</ID>
@@ -1321,54 +1289,6 @@
             <Dynamic>sunil_buttons</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
             <Navigation>69</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
-            <Dynamic>start_screen</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(72): </Dynamic>
-            <Dynamic>start_screen</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>72</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
-            <Dynamic>tony_win</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(72): </Dynamic>
-            <Dynamic>tony_win</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>72</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(124): </Dynamic>
-            <Dynamic>sunil_win</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>124</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(72): </Dynamic>
-            <Dynamic>sunil_win</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd</Navigation>
-            <Navigation>72</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1563,6 +1483,22 @@
             <Navigation>19</Navigation>
         </Message>
         <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_state.vhd(5): </Dynamic>
+            <Dynamic>game_state</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_state.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_state.vhd(19): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_state.vhd</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
@@ -1571,386 +1507,374 @@
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[10]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[10]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[9]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[9]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[8]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[8]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[7]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[7]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[6]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[6]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[5]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[5]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[4]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[4]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[3]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[3]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[2]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[2]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[1]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[1]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[0]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[0]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[10]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[10]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[9]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[9]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[8]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[8]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[7]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[7]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[6]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[6]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[5]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[5]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[4]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[4]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[3]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[3]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[2]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[2]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[1]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[1]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[0]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[0]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[7]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[7]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[6]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[6]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[5]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[5]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[4]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[4]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[3]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[3]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[2]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[2]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[1]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[1]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[0]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[0]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[10]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/player.vhd(86): input port 'coll_left' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[9]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/player.vhd(86): input port 'coll_right' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[8]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[10]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[7]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[9]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[6]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[8]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[5]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[7]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[4]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[6]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[3]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[5]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[2]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[4]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[1]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[3]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_x[0]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[2]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[10]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[1]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[9]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_x[0]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[8]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[10]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[7]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[9]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[6]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[8]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[5]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[7]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[4]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[6]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[3]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[5]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[2]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[4]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[1]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[3]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_y[0]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[2]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[7]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[1]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[6]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_y[0]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[5]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[7]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[4]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[6]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[3]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[5]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[2]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[4]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[1]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[3]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
             <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(115): input port 'sunil_buttons[0]' is not connected on this instance
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[2]' is not connected on this instance
 </Dynamic>
         </Message>
         <Message>
-            <ID>35931002</ID>
+            <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd(23): </Dynamic>
-            <Dynamic>\patternmaker/start_screen</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd</Navigation>
-            <Navigation>23</Navigation>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[1]' is not connected on this instance
+</Dynamic>
         </Message>
         <Message>
-            <ID>35931002</ID>
+            <ID>1009991</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd(23): </Dynamic>
-            <Dynamic>\patternmaker/tony_win</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd</Navigation>
-            <Navigation>23</Navigation>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd(23): </Dynamic>
-            <Dynamic>\patternmaker/sunil_win</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/pattern_gen.vhd</Navigation>
-            <Navigation>23</Navigation>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/top.vhd(137): input port 'sunil_buttons[0]' is not connected on this instance
+</Dynamic>
         </Message>
         <Message>
             <ID>35931002</ID>
@@ -1971,34 +1895,18 @@
         <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(55): </Dynamic>
-            <Dynamic>\game/tony/col_map/plat1_col_b</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd</Navigation>
-            <Navigation>55</Navigation>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(61): </Dynamic>
-            <Dynamic>\game/tony/col_map/plat2_col_b</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd</Navigation>
-            <Navigation>61</Navigation>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd(67): </Dynamic>
-            <Dynamic>\game/tony/col_map/plat3_col_b</Dynamic>
-            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/collisions.vhd</Navigation>
-            <Navigation>67</Navigation>
-        </Message>
-        <Message>
-            <ID>35935014</ID>
-            <Severity>16</Severity>
-            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(102): </Dynamic>
-            <Dynamic>\game/tony/phys_map/first_time</Dynamic>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd(19): </Dynamic>
+            <Dynamic>\game/tony/phys_map/coll_bottom</Dynamic>
             <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/physics.vhd</Navigation>
-            <Navigation>102</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_state.vhd(46): </Dynamic>
+            <Dynamic>\meta_state/tony_win</Dynamic>
+            <Navigation>//vs-home/tlyons01/es4/smack_buds/source/impl_1/game_state.vhd</Navigation>
+            <Navigation>46</Navigation>
         </Message>
         <Message>
             <ID>35002039</ID>

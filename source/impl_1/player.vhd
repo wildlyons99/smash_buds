@@ -18,10 +18,10 @@ end player;
 
 architecture synth of player is
 	
-	signal col_l : std_logic;
-	signal col_r : std_logic;
+	--signal col_l : std_logic;
+	--signal col_r : std_logic;
 	signal col_t : std_logic;
-	signal col_b : std_logic;
+	--signal col_b : std_logic;
 	signal y_plat : signed(10 downto 0);
 	
 	signal x_gl : signed(10 downto 0);
@@ -30,10 +30,10 @@ architecture synth of player is
 	
 	component collisions is 
 	port (
-		coll_left : out std_logic;
-		coll_right : out std_logic;
+		--coll_left : out std_logic;
+		--coll_right : out std_logic;
 		coll_top : out std_logic;
-		coll_bottom : out std_logic;
+		--coll_bottom : out std_logic;
 		y_platform : out signed(10 downto 0);
 		
 		buttons : in std_logic_vector(7 downto 0);
@@ -55,10 +55,10 @@ component physics is
 	  );
 	port (
 		clk : in std_logic; 
-		coll_left : in std_logic;
-		coll_right : in std_logic;
+		--coll_left : in std_logic;
+		--coll_right : in std_logic;
 		coll_top : in std_logic;
-		coll_bottom : in std_logic;
+		--coll_bottom : in std_logic;
 		y_platform : in signed(10 downto 0);
 		buttons : in std_logic_vector(7 downto 0);
 		
@@ -72,10 +72,10 @@ end component;
 begin
 
 	col_map : collisions port map(
-									coll_left => col_l, 
-									coll_right => col_r, 
+									--coll_left => col_l, 
+									--coll_right => col_r, 
 									coll_top => col_t, 
-									coll_bottom => col_b,
+									--coll_bottom => col_b,
 									y_platform => y_plat,
 									buttons => controller_buttons,
 									x => x_gl,
@@ -90,10 +90,10 @@ begin
 	)
 	port map(
 				clk => clk,
-				coll_left => col_l, 
-				coll_right => col_r, 
+				--coll_left => col_l, 
+				--coll_right => col_r, 
 				coll_top => col_t, 
-				coll_bottom => col_b,
+				--coll_bottom => col_b,
 				y_platform => y_plat,
 				buttons => controller_buttons,
 				x => x_gl,
