@@ -4,38 +4,34 @@ Report for cell top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       4.00        100.0
-                                  LUT4	       1847        100.0
+                                  LUT4	       2988        100.0
                                  IOREG	          4        100.0
-                                 IOBUF	         17        100.0
-                                PFUREG	        222        100.0
-                                   EBR	         30        100.0
+                                 IOBUF	         15        100.0
+                                PFUREG	        252        100.0
+                                   EBR	         22        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                            controller	          1         2.5
-                         controller_U5	          1         2.5
-                            game_logic	          1        57.5
-                            game_state	          1         1.0
+                            controller	          1         1.6
+                         controller_U7	          1         1.9
+                            game_logic	          1        35.1
+                            game_state	          1         2.0
                                 my_pll	          1         0.0
-                           pattern_gen	          1        29.2
-                                   vga	          1         2.9
----------------------------------------------------
-Report for cell game_state
-   Instance path: top/meta_state
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         19         1.0
-                                PFUREG	          6         2.7
+                           pattern_gen	          1        53.2
+                                   vga	          1         1.7
 ---------------------------------------------------
 Report for cell pattern_gen
    Instance path: top/patternmaker
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        540        29.2
-                                PFUREG	         24        10.8
-                                   EBR	         30        100.0
+                                  LUT4	       1589        53.2
+                                PFUREG	         42        16.7
+                                   EBR	         22        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                      start_screen_rom	          1         0.6
+                        background_rom	          1        21.3
+                            pencil_rom	          1         0.0
+                         pencil_rom_U6	          1         0.0
+                      start_screen_rom	          1        11.0
                         sunil_idle_rom	          1         0.0
                         sunil_run_rom1	          1         0.0
                         sunil_run_rom2	          1         0.0
@@ -47,61 +43,63 @@ Report for cell tony_run_rom2
    Instance path: top/patternmaker/tony_run_map2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                   EBR	          3        10.0
+                                   EBR	          3        13.6
 ---------------------------------------------------
 Report for cell tony_run_rom1
    Instance path: top/patternmaker/tony_run_map1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                   EBR	          3        10.0
+                                   EBR	          3        13.6
+---------------------------------------------------
+Report for cell pencil_rom
+   Instance path: top/patternmaker/tony_pencil_map
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          2         9.1
 ---------------------------------------------------
 Report for cell tony_idle_rom
    Instance path: top/patternmaker/tony_idle_map
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                   EBR	          3        10.0
+                                   EBR	          3        13.6
 ---------------------------------------------------
 Report for cell sunil_run_rom2
    Instance path: top/patternmaker/sunil_run_map2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                   EBR	          3        10.0
+                                   EBR	          3        13.6
 ---------------------------------------------------
 Report for cell sunil_run_rom1
    Instance path: top/patternmaker/sunil_run_map1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                   EBR	          3        10.0
+                                   EBR	          3        13.6
+---------------------------------------------------
+Report for cell pencil_rom_U6
+   Instance path: top/patternmaker/sunil_pencil_map
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          2         9.1
 ---------------------------------------------------
 Report for cell sunil_idle_rom
    Instance path: top/patternmaker/sunil_idle_map
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                   EBR	          3        10.0
+                                   EBR	          3        13.6
 ---------------------------------------------------
 Report for cell start_screen_rom
    Instance path: top/patternmaker/start_screen_map
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         12         0.6
-                                PFUREG	          2         0.9
-                                   EBR	         12        40.0
+                                  LUT4	        330        11.0
+                                PFUREG	          6         2.4
 ---------------------------------------------------
-Report for cell vga
-   Instance path: top/internalvga
+Report for cell background_rom
+   Instance path: top/patternmaker/background_rom_map
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         54         2.9
-                                PFUREG	         22         9.9
----------------------------------------------------
-Report for cell controller_U5
-   Instance path: top/sunil_controller
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                 IOLGC	       1.00        25.0
-                                  LUT4	         46         2.5
-                                 IOREG	          1        25.0
-                                PFUREG	         42        18.9
+                                  LUT4	        635        21.3
+                                PFUREG	          6         2.4
 ---------------------------------------------------
 Report for cell my_pll
    Instance path: top/pll
@@ -116,132 +114,179 @@ Report for cell my_pll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
+Report for cell controller_U7
+   Instance path: top/sunil_controller
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        25.0
+                                  LUT4	         57         1.9
+                                 IOREG	          1        25.0
+                                PFUREG	         42        16.7
+---------------------------------------------------
+Report for cell game_state
+   Instance path: top/meta_state
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         60         2.0
+                                PFUREG	         18         7.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+win_area(win_box_x="00011010000",win_box_height="00011111010",win_box_width="00011011100")	          1         1.5
+---------------------------------------------------
+Report for cell win_area(win_box_x="00011010000",win_box_height="00011111010",win_box_width="00011011100")
+   Instance path: top/meta_state/win_area_map
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         46         1.5
+                                PFUREG	         11         4.4
+---------------------------------------------------
 Report for cell game_logic
    Instance path: top/game
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	       1062        57.5
-                                PFUREG	         80        36.0
+                                  LUT4	       1049        35.1
+                                PFUREG	         80        31.7
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-player(reset_x="00011001000",reset_y="00011001000")	          1        28.7
-player(reset_x="00110010000",reset_y="00001100100")	          1        28.7
+player(reset_x="00011001000",reset_y="00011001000")	          1        16.8
+player(reset_x="00110010000",reset_y="00001100100")	          1        18.3
 ---------------------------------------------------
 Report for cell player(reset_x="00011001000",reset_y="00011001000")
    Instance path: top/game/tony
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        531        28.7
-                                PFUREG	         40        18.0
+                                  LUT4	        502        16.8
+                                PFUREG	         40        15.9
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                             can_punch	          1         0.7
-                            collisions	          1         7.5
-physics(reset_x="00011001000",reset_y="00011001000")	          1        20.6
+                             can_punch	          1         0.4
+                            collisions	          1         4.6
+physics(reset_x="00011001000",reset_y="00011001000")	          1        11.7
 ---------------------------------------------------
 Report for cell can_punch
    Instance path: top/game/tony/punch_logic
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         13         0.7
-                                PFUREG	          7         3.2
+                                  LUT4	         13         0.4
+                                PFUREG	          7         2.8
 ---------------------------------------------------
 Report for cell physics(reset_x="00011001000",reset_y="00011001000")
    Instance path: top/game/tony/phys_map
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        380        20.6
-                                PFUREG	         33        14.9
+                                  LUT4	        351        11.7
+                                PFUREG	         33        13.1
 ---------------------------------------------------
 Report for cell collisions
    Instance path: top/game/tony/col_map
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        138         7.5
+                                  LUT4	        138         4.6
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")	          1         0.6
-platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")	          1         0.5
-platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111010000")	          1         1.4
+platform(plat_width="00010010100",plat_height="00000001000",corner_x="00000100000",corner_y="00110000000")	          1         0.2
+platform(plat_width="00010010100",plat_height="00000001000",corner_x="00111001000",corner_y="00110000000")	          1         0.1
+platform(plat_width="00011011100",plat_height="00000001000",corner_x="00011010000",corner_y="00100101000")	          1         0.4
+platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111010000")	          1         0.7
 ---------------------------------------------------
-Report for cell platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")
-   Instance path: top/game/tony/col_map/plat_test_2
+Report for cell platform(plat_width="00011011100",plat_height="00000001000",corner_x="00011010000",corner_y="00100101000")
+   Instance path: top/game/tony/col_map/top_platform
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         11         0.6
+                                  LUT4	         11         0.4
 ---------------------------------------------------
-Report for cell platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")
-   Instance path: top/game/tony/col_map/plat_test
+Report for cell platform(plat_width="00010010100",plat_height="00000001000",corner_x="00111001000",corner_y="00110000000")
+   Instance path: top/game/tony/col_map/right_platform
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          9         0.5
+                                  LUT4	          4         0.1
+---------------------------------------------------
+Report for cell platform(plat_width="00010010100",plat_height="00000001000",corner_x="00000100000",corner_y="00110000000")
+   Instance path: top/game/tony/col_map/left_platform
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.2
 ---------------------------------------------------
 Report for cell platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111010000")
    Instance path: top/game/tony/col_map/floor
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         26         1.4
+                                  LUT4	         20         0.7
 ---------------------------------------------------
 Report for cell player(reset_x="00110010000",reset_y="00001100100")
    Instance path: top/game/sunil
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        531        28.7
-                                PFUREG	         40        18.0
+                                  LUT4	        547        18.3
+                                PFUREG	         40        15.9
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                          can_punch_U3	          1         0.7
-                         collisions_U4	          1         7.6
-physics(reset_x="00110010000",reset_y="00001100100")	          1        20.5
+                          can_punch_U4	          1         0.8
+                         collisions_U5	          1         5.1
+physics(reset_x="00110010000",reset_y="00001100100")	          1        12.4
 ---------------------------------------------------
-Report for cell can_punch_U3
+Report for cell can_punch_U4
    Instance path: top/game/sunil/punch_logic
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         13         0.7
-                                PFUREG	          7         3.2
+                                  LUT4	         25         0.8
+                                PFUREG	          7         2.8
 ---------------------------------------------------
 Report for cell physics(reset_x="00110010000",reset_y="00001100100")
    Instance path: top/game/sunil/phys_map
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        378        20.5
-                                PFUREG	         33        14.9
+                                  LUT4	        370        12.4
+                                PFUREG	         33        13.1
 ---------------------------------------------------
-Report for cell collisions_U4
+Report for cell collisions_U5
    Instance path: top/game/sunil/col_map
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        140         7.6
+                                  LUT4	        152         5.1
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")_U0	          1         0.5
-platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")_U1	          1         0.5
-platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111010000")_U2	          1         1.7
+platform(plat_width="00010010100",plat_height="00000001000",corner_x="00000100000",corner_y="00110000000")_U2	          1         0.2
+platform(plat_width="00010010100",plat_height="00000001000",corner_x="00111001000",corner_y="00110000000")_U1	          1         0.2
+platform(plat_width="00011011100",plat_height="00000001000",corner_x="00011010000",corner_y="00100101000")_U0	          1         0.5
+platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111010000")_U3	          1         0.6
 ---------------------------------------------------
-Report for cell platform(plat_width="00011001000",plat_height="00000001000",corner_y="00100100010")_U0
-   Instance path: top/game/sunil/col_map/plat_test_2
+Report for cell platform(plat_width="00011011100",plat_height="00000001000",corner_x="00011010000",corner_y="00100101000")_U0
+   Instance path: top/game/sunil/col_map/top_platform
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          9         0.5
+                                  LUT4	         15         0.5
 ---------------------------------------------------
-Report for cell platform(plat_width="00100101100",plat_height="00000001000",corner_x="00101001010",corner_y="00101110010")_U1
-   Instance path: top/game/sunil/col_map/plat_test
+Report for cell platform(plat_width="00010010100",plat_height="00000001000",corner_x="00111001000",corner_y="00110000000")_U1
+   Instance path: top/game/sunil/col_map/right_platform
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          9         0.5
+                                  LUT4	          5         0.2
 ---------------------------------------------------
-Report for cell platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111010000")_U2
+Report for cell platform(plat_width="00010010100",plat_height="00000001000",corner_x="00000100000",corner_y="00110000000")_U2
+   Instance path: top/game/sunil/col_map/left_platform
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         0.2
+---------------------------------------------------
+Report for cell platform(plat_width="01010000000",plat_height="00000010100",corner_y="00111010000")_U3
    Instance path: top/game/sunil/col_map/floor
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         32         1.7
+                                  LUT4	         19         0.6
 ---------------------------------------------------
 Report for cell controller
    Instance path: top/tony_controller
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        25.0
-                                  LUT4	         46         2.5
+                                  LUT4	         47         1.6
                                  IOREG	          1        25.0
-                                PFUREG	         42        18.9
+                                PFUREG	         42        16.7
+---------------------------------------------------
+Report for cell vga
+   Instance path: top/internalvga
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         52         1.7
+                                PFUREG	         22         8.7

@@ -22,10 +22,7 @@ entity player is
 	  y : out signed(10 downto 0);
 	  is_punching_left : out std_logic;
 	  is_punching_right : out std_logic;
-	  is_punching : out std_logic;
-	  
-	  in_hitbox : out std_logic
-
+	  is_punching : out std_logic
       );
 end player;
 
@@ -68,10 +65,7 @@ architecture synth of player is
 		other_player_x : in signed(10 downto 0);
 	    other_player_y : in signed(10 downto 0);
 	    other_player_punching_left : in std_logic;
-		other_player_punching_right : in std_logic;
-		
-		in_hitbox : out std_logic
-
+		other_player_punching_right : in std_logic
 	);
 end component; 
 
@@ -135,8 +129,7 @@ begin
 									other_player_x => other_player_x,
 									other_player_y => other_player_y,
 									other_player_punching_left => other_player_punching_left,
-									other_player_punching_right => other_player_punching_right,
-									in_hitbox => in_hitbox
+									other_player_punching_right => other_player_punching_right
 								);
 	
 	phys_map : physics 

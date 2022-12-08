@@ -52,10 +52,7 @@ architecture synth of game_logic is
 	  y : out signed(10 downto 0);
 	  is_punching_left : out std_logic;
 	  is_punching_right : out std_logic;
-	  is_punching : out std_logic;
-	  
-	  in_hitbox : out std_logic
-
+	  is_punching : out std_logic
 	  );
 	end component;
 
@@ -81,9 +78,8 @@ begin
 		y => tony_y,
 		is_punching_left => tony_punching_left,
 		is_punching_right => tony_punching_right,
-		is_punching => tony_punching,
+		is_punching => tony_punching
 		
-		in_hitbox => tony_in_hitbox
 	);
 	
 	sunil : player
@@ -105,9 +101,8 @@ begin
 		y => sunil_y,
 		is_punching_left => sunil_punching_left,
 		is_punching_right => sunil_punching_right,
-		is_punching => sunil_punching,
+		is_punching => sunil_punching
 		
-		in_hitbox => sunil_in_hitbox
 	);
 
 end;

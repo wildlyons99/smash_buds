@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec  8 00:44:16 2022
+Thu Dec  8 03:31:16 2022
 
 
 Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f smack_buds_impl_1_lattice.synproj -gui -msgset Z:/smash_buds-main/promote.xml 
@@ -117,6 +117,12 @@ VHDL library = work
 VHDL design file = Z:/smash_buds-main/source/impl_1/sunil_run_rom1.vhd
 VHDL library = work
 VHDL design file = Z:/smash_buds-main/source/impl_1/start_screen_rom.vhd
+VHDL library = work
+VHDL design file = Z:/smash_buds-main/source/impl_1/pencil_rom.vhd
+VHDL library = work
+VHDL design file = Z:/smash_buds-main/source/impl_1/win_area.vhd
+VHDL library = work
+VHDL design file = Z:/smash_buds-main/source/impl_1/background_rom.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Compile design.
 Compile Design Begin
@@ -163,12 +169,12 @@ Analyzing VHDL file z:/smash_buds-main/source/impl_1/top.vhd. VHDL-1481
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/top.vhd
 
 INFO - synthesis: z:/smash_buds-main/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
-INFO - synthesis: z:/smash_buds-main/source/impl_1/top.vhd(29): analyzing architecture synth. VHDL-1010
+INFO - synthesis: z:/smash_buds-main/source/impl_1/top.vhd(26): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/pattern_gen.vhd. VHDL-1481
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/pattern_gen.vhd
 
 INFO - synthesis: z:/smash_buds-main/source/impl_1/pattern_gen.vhd(5): analyzing entity pattern_gen. VHDL-1012
-INFO - synthesis: z:/smash_buds-main/source/impl_1/pattern_gen.vhd(32): analyzing architecture synth. VHDL-1010
+INFO - synthesis: z:/smash_buds-main/source/impl_1/pattern_gen.vhd(34): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/vga.vhd. VHDL-1481
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/vga.vhd
 
@@ -198,7 +204,7 @@ Analyzing VHDL file z:/smash_buds-main/source/impl_1/collisions.vhd. VHDL-1481
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/collisions.vhd
 
 INFO - synthesis: z:/smash_buds-main/source/impl_1/collisions.vhd(5): analyzing entity collisions. VHDL-1012
-INFO - synthesis: z:/smash_buds-main/source/impl_1/collisions.vhd(45): analyzing architecture synth. VHDL-1010
+INFO - synthesis: z:/smash_buds-main/source/impl_1/collisions.vhd(43): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/tony_idle_rom.vhd. VHDL-1481
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/tony_idle_rom.vhd
 
@@ -223,12 +229,12 @@ Analyzing VHDL file z:/smash_buds-main/source/impl_1/player.vhd. VHDL-1481
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/player.vhd
 
 INFO - synthesis: z:/smash_buds-main/source/impl_1/player.vhd(5): analyzing entity player. VHDL-1012
-INFO - synthesis: z:/smash_buds-main/source/impl_1/player.vhd(32): analyzing architecture synth. VHDL-1010
+INFO - synthesis: z:/smash_buds-main/source/impl_1/player.vhd(29): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/game_state.vhd. VHDL-1481
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/game_state.vhd
 
 INFO - synthesis: z:/smash_buds-main/source/impl_1/game_state.vhd(5): analyzing entity game_state. VHDL-1012
-INFO - synthesis: z:/smash_buds-main/source/impl_1/game_state.vhd(28): analyzing architecture synth. VHDL-1010
+INFO - synthesis: z:/smash_buds-main/source/impl_1/game_state.vhd(29): analyzing architecture synth. VHDL-1010
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/can_punch.vhd. VHDL-1481
 Analyzing VHDL file z:/smash_buds-main/source/impl_1/can_punch.vhd
 
@@ -254,6 +260,21 @@ Analyzing VHDL file z:/smash_buds-main/source/impl_1/start_screen_rom.vhd
 
 INFO - synthesis: z:/smash_buds-main/source/impl_1/start_screen_rom.vhd(5): analyzing entity start_screen_rom. VHDL-1012
 INFO - synthesis: z:/smash_buds-main/source/impl_1/start_screen_rom.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/smash_buds-main/source/impl_1/pencil_rom.vhd. VHDL-1481
+Analyzing VHDL file z:/smash_buds-main/source/impl_1/pencil_rom.vhd
+
+INFO - synthesis: z:/smash_buds-main/source/impl_1/pencil_rom.vhd(7): analyzing entity pencil_rom. VHDL-1012
+INFO - synthesis: z:/smash_buds-main/source/impl_1/pencil_rom.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/smash_buds-main/source/impl_1/win_area.vhd. VHDL-1481
+Analyzing VHDL file z:/smash_buds-main/source/impl_1/win_area.vhd
+
+INFO - synthesis: z:/smash_buds-main/source/impl_1/win_area.vhd(5): analyzing entity win_area. VHDL-1012
+INFO - synthesis: z:/smash_buds-main/source/impl_1/win_area.vhd(26): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/smash_buds-main/source/impl_1/background_rom.vhd. VHDL-1481
+Analyzing VHDL file z:/smash_buds-main/source/impl_1/background_rom.vhd
+
+INFO - synthesis: z:/smash_buds-main/source/impl_1/background_rom.vhd(5): analyzing entity background_rom. VHDL-1012
+INFO - synthesis: z:/smash_buds-main/source/impl_1/background_rom.vhd(14): analyzing architecture synth. VHDL-1010
 INFO - synthesis: The default VHDL library search path is now "Z:/smash_buds-main/impl_1". VHDL-1504
 Top module language type = VHDL.
 unit top is not yet analyzed. VHDL-1485
@@ -291,7 +312,13 @@ WARNING - synthesis: z:/smash_buds-main/my_pll/rtl/my_pll.v(140): net \pll/lscc_
 
 
 
-Duplicate register/latch removal. i189 is a one-to-one match with i193.
+WARNING - synthesis: No available RAMs found.
+WARNING - synthesis: No available RAMs found.
+WARNING - synthesis: No available RAMs found.
+WARNING - synthesis: No available RAMs found.
+WARNING - synthesis: No available RAMs found.
+WARNING - synthesis: No available RAMs found.
+WARNING - synthesis: z:/smash_buds-main/source/impl_1/win_area.vhd(60): Register \meta_state/win_area_map/not_first_time is stuck at One. VDB-5014
 Combinational loop found : 1
 
 	Net \patternmaker/sunil_pixel[0] 
@@ -370,13 +397,13 @@ Combinational loop found : 13
 
 	Instance \game/sunil/col_map/y_platform_10__I_0_i1 
 
-	Net \game/sunil/col_map/y_platform_10__N_437[0] 
+	Net \game/sunil/col_map/y_platform_10__N_502[0] 
 
-	Instance \game/sunil/col_map/y_platform_10__I_39_i1 
+	Instance \game/sunil/col_map/mux_35_i1 
 
-	Net \game/sunil/col_map/y_platform_10__N_481[0] 
+	Net \game/sunil/col_map/n351 
 
-	Instance \game/sunil/col_map/mux_33_i1 
+	Instance \game/sunil/col_map/mux_34_i1 
 
 Combinational loop found : 14
 
@@ -384,238 +411,237 @@ Combinational loop found : 14
 
 	Instance \game/tony/col_map/y_platform_10__I_0_i1 
 
-	Net \game/tony/col_map/y_platform_10__N_437[0] 
+	Net \game/tony/col_map/y_platform_10__N_502[0] 
 
-	Instance \game/tony/col_map/y_platform_10__I_39_i1 
+	Instance \game/tony/col_map/mux_35_i1 
 
-	Net \game/tony/col_map/y_platform_10__N_481[0] 
+	Net \game/tony/col_map/n351 
 
-	Instance \game/tony/col_map/mux_33_i1 
+	Instance \game/tony/col_map/mux_34_i1 
 
 Combinational loop found : 15
-
-	Net \game/sunil/y_plat[10] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_0_i11 
-
-	Net \game/sunil/col_map/y_platform_10__N_437[10] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_39_i11 
-
-	Net \game/sunil/col_map/y_platform_10__N_481[10] 
-
-	Instance \game/sunil/col_map/mux_33_i11 
-
-Combinational loop found : 16
-
-	Net \game/sunil/y_plat[9] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_0_i10 
-
-	Net \game/sunil/col_map/y_platform_10__N_437[9] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_39_i10 
-
-Combinational loop found : 17
-
-	Net \game/sunil/y_plat[8] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_0_i9 
-
-Combinational loop found : 18
-
-	Net \game/sunil/y_plat[7] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_0_i8 
-
-	Net \game/sunil/col_map/y_platform_10__N_437[7] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_39_i8 
-
-	Net \game/sunil/col_map/y_platform_10__N_481[7] 
-
-	Instance \game/sunil/col_map/mux_33_i8 
-
-Combinational loop found : 19
-
-	Net \game/sunil/y_plat[6] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_0_i7 
-
-	Net \game/sunil/col_map/y_platform_10__N_437[6] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_39_i7 
-
-Combinational loop found : 20
-
-	Net \game/sunil/y_plat[5] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_0_i6 
-
-Combinational loop found : 21
-
-	Net \game/sunil/y_plat[4] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_0_i5 
-
-	Net \game/sunil/col_map/y_platform_10__N_437[4] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_39_i5 
-
-	Net \game/sunil/col_map/y_platform_10__N_481[4] 
-
-	Instance \game/sunil/col_map/mux_33_i5 
-
-Combinational loop found : 22
-
-	Net \game/sunil/y_plat[3] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_0_i4 
-
-	Net \game/sunil/col_map/y_platform_10__N_437[3] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_39_i4 
-
-Combinational loop found : 23
-
-	Net \game/sunil/y_plat[2] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_0_i3 
-
-Combinational loop found : 24
-
-	Net \game/sunil/y_plat[1] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_0_i2 
-
-	Net \game/sunil/col_map/y_platform_10__N_437[1] 
-
-	Instance \game/sunil/col_map/y_platform_10__I_39_i2 
-
-	Net \game/sunil/col_map/y_platform_10__N_481[1] 
-
-	Instance \game/sunil/col_map/mux_33_i2 
-
-Combinational loop found : 25
 
 	Net \game/tony/y_plat[10] 
 
 	Instance \game/tony/col_map/y_platform_10__I_0_i11 
 
-	Net \game/tony/col_map/y_platform_10__N_437[10] 
+	Net \game/tony/col_map/y_platform_10__N_502[10] 
 
-	Instance \game/tony/col_map/y_platform_10__I_39_i11 
+	Instance \game/tony/col_map/mux_35_i11 
 
-	Net \game/tony/col_map/y_platform_10__N_481[10] 
+	Net \game/tony/col_map/n341 
 
-	Instance \game/tony/col_map/mux_33_i11 
+	Instance \game/tony/col_map/mux_34_i11 
 
-Combinational loop found : 26
+Combinational loop found : 16
 
 	Net \game/tony/y_plat[9] 
 
 	Instance \game/tony/col_map/y_platform_10__I_0_i10 
 
-	Net \game/tony/col_map/y_platform_10__N_437[9] 
+	Net \game/tony/col_map/y_platform_10__N_502[9] 
 
-	Instance \game/tony/col_map/y_platform_10__I_39_i10 
+	Instance \game/tony/col_map/mux_35_i10 
 
-Combinational loop found : 27
+Combinational loop found : 17
 
 	Net \game/tony/y_plat[8] 
 
 	Instance \game/tony/col_map/y_platform_10__I_0_i9 
 
-Combinational loop found : 28
+Combinational loop found : 18
 
 	Net \game/tony/y_plat[7] 
 
 	Instance \game/tony/col_map/y_platform_10__I_0_i8 
 
-	Net \game/tony/col_map/y_platform_10__N_437[7] 
+	Net \game/tony/col_map/y_platform_10__N_502[7] 
 
-	Instance \game/tony/col_map/y_platform_10__I_39_i8 
+	Instance \game/tony/col_map/mux_35_i8 
 
-	Net \game/tony/col_map/y_platform_10__N_481[7] 
+	Net \game/tony/col_map/n344 
 
-	Instance \game/tony/col_map/mux_33_i8 
+	Instance \game/tony/col_map/mux_34_i8 
 
-Combinational loop found : 29
+Combinational loop found : 19
 
 	Net \game/tony/y_plat[6] 
 
 	Instance \game/tony/col_map/y_platform_10__I_0_i7 
 
-	Net \game/tony/col_map/y_platform_10__N_437[6] 
+	Net \game/tony/col_map/y_platform_10__N_502[6] 
 
-	Instance \game/tony/col_map/y_platform_10__I_39_i7 
+	Instance \game/tony/col_map/mux_35_i7 
 
-Combinational loop found : 30
+Combinational loop found : 20
 
 	Net \game/tony/y_plat[5] 
 
 	Instance \game/tony/col_map/y_platform_10__I_0_i6 
 
-Combinational loop found : 31
+Combinational loop found : 21
 
 	Net \game/tony/y_plat[4] 
 
 	Instance \game/tony/col_map/y_platform_10__I_0_i5 
 
-	Net \game/tony/col_map/y_platform_10__N_437[4] 
+	Net \game/tony/col_map/y_platform_10__N_502[4] 
 
-	Instance \game/tony/col_map/y_platform_10__I_39_i5 
+	Instance \game/tony/col_map/mux_35_i5 
 
-	Net \game/tony/col_map/y_platform_10__N_481[4] 
+	Net \game/tony/col_map/n347 
 
-	Instance \game/tony/col_map/mux_33_i5 
+	Instance \game/tony/col_map/mux_34_i5 
 
-Combinational loop found : 32
+Combinational loop found : 22
 
 	Net \game/tony/y_plat[3] 
 
 	Instance \game/tony/col_map/y_platform_10__I_0_i4 
 
-	Net \game/tony/col_map/y_platform_10__N_437[3] 
+	Net \game/tony/col_map/y_platform_10__N_502[3] 
 
-	Instance \game/tony/col_map/y_platform_10__I_39_i4 
+	Instance \game/tony/col_map/mux_35_i4 
 
-Combinational loop found : 33
+Combinational loop found : 23
 
 	Net \game/tony/y_plat[2] 
 
 	Instance \game/tony/col_map/y_platform_10__I_0_i3 
 
-Combinational loop found : 34
+Combinational loop found : 24
 
 	Net \game/tony/y_plat[1] 
 
 	Instance \game/tony/col_map/y_platform_10__I_0_i2 
 
-	Net \game/tony/col_map/y_platform_10__N_437[1] 
+	Net \game/tony/col_map/y_platform_10__N_502[1] 
 
-	Instance \game/tony/col_map/y_platform_10__I_39_i2 
+	Instance \game/tony/col_map/mux_35_i2 
 
-	Net \game/tony/col_map/y_platform_10__N_481[1] 
+	Net \game/tony/col_map/n350 
 
-	Instance \game/tony/col_map/mux_33_i2 
+	Instance \game/tony/col_map/mux_34_i2 
 
-WARNING - synthesis: z:/smash_buds-main/source/impl_1/game_state.vhd(67): Register \meta_state/sunil_win is stuck at Zero. VDB-5013
+Combinational loop found : 25
+
+	Net \game/sunil/y_plat[10] 
+
+	Instance \game/sunil/col_map/y_platform_10__I_0_i11 
+
+	Net \game/sunil/col_map/y_platform_10__N_502[10] 
+
+	Instance \game/sunil/col_map/mux_35_i11 
+
+	Net \game/sunil/col_map/n341 
+
+	Instance \game/sunil/col_map/mux_34_i11 
+
+Combinational loop found : 26
+
+	Net \game/sunil/y_plat[9] 
+
+	Instance \game/sunil/col_map/y_platform_10__I_0_i10 
+
+	Net \game/sunil/col_map/y_platform_10__N_502[9] 
+
+	Instance \game/sunil/col_map/mux_35_i10 
+
+Combinational loop found : 27
+
+	Net \game/sunil/y_plat[8] 
+
+	Instance \game/sunil/col_map/y_platform_10__I_0_i9 
+
+Combinational loop found : 28
+
+	Net \game/sunil/y_plat[7] 
+
+	Instance \game/sunil/col_map/y_platform_10__I_0_i8 
+
+	Net \game/sunil/col_map/y_platform_10__N_502[7] 
+
+	Instance \game/sunil/col_map/mux_35_i8 
+
+	Net \game/sunil/col_map/n344 
+
+	Instance \game/sunil/col_map/mux_34_i8 
+
+Combinational loop found : 29
+
+	Net \game/sunil/y_plat[6] 
+
+	Instance \game/sunil/col_map/y_platform_10__I_0_i7 
+
+	Net \game/sunil/col_map/y_platform_10__N_502[6] 
+
+	Instance \game/sunil/col_map/mux_35_i7 
+
+Combinational loop found : 30
+
+	Net \game/sunil/y_plat[5] 
+
+	Instance \game/sunil/col_map/y_platform_10__I_0_i6 
+
+Combinational loop found : 31
+
+	Net \game/sunil/y_plat[4] 
+
+	Instance \game/sunil/col_map/y_platform_10__I_0_i5 
+
+	Net \game/sunil/col_map/y_platform_10__N_502[4] 
+
+	Instance \game/sunil/col_map/mux_35_i5 
+
+	Net \game/sunil/col_map/n347 
+
+	Instance \game/sunil/col_map/mux_34_i5 
+
+Combinational loop found : 32
+
+	Net \game/sunil/y_plat[3] 
+
+	Instance \game/sunil/col_map/y_platform_10__I_0_i4 
+
+	Net \game/sunil/col_map/y_platform_10__N_502[3] 
+
+	Instance \game/sunil/col_map/mux_35_i4 
+
+Combinational loop found : 33
+
+	Net \game/sunil/y_plat[2] 
+
+	Instance \game/sunil/col_map/y_platform_10__I_0_i3 
+
+Combinational loop found : 34
+
+	Net \game/sunil/y_plat[1] 
+
+	Instance \game/sunil/col_map/y_platform_10__I_0_i2 
+
+	Net \game/sunil/col_map/y_platform_10__N_502[1] 
+
+	Instance \game/sunil/col_map/mux_35_i2 
+
+	Net \game/sunil/col_map/n350 
+
+	Instance \game/sunil/col_map/mux_34_i2 
+
 INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
 ################### Begin Area Report (top)######################
-Number of register bits => 222 of 5280 (4 % )
-EBR_B => 30
-CCU2 => 349
-FD1P3XZ => 222
+Number of register bits => 252 of 5280 (4 % )
+EBR_B => 22
+CCU2 => 399
+FD1P3XZ => 252
 IB => 3
 IOL_B => 4
-LUT4 => 1113
-OB => 14
+LUT4 => 2160
+OB => 12
 PLL_B => 1
 ################### End Area Report ##################
-Number of odd-length carry chains : 39
-Number of even-length carry chains : 20
+Number of odd-length carry chains : 41
+Number of even-length carry chains : 28
 
 ################### Begin Clock Report ######################
 Clock Nets
@@ -629,21 +655,21 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : meta_state/reset_players, loads : 66
-  Net : tony_controller/tony_controller_buttons_signal[0], loads : 35
-  Net : sunil_controller/sunil_controller_buttons_signal[0], loads : 35
-  Net : internalvga/internalrow[4], loads : 30
-  Net : internalvga/internalrow[3], loads : 30
-  Net : internalvga/internalrow[5], loads : 29
-  Net : game/sunil/phys_map/yv_gl[4], loads : 29
-  Net : internalvga/internalrow[6], loads : 27
-  Net : game/tony/phys_map/yv_gl[4], loads : 27
-  Net : game/tony/phys_map/n51, loads : 23
+  Net : patternmaker/col_vector[3], loads : 329
+  Net : patternmaker/col_vector[5], loads : 315
+  Net : patternmaker/col_vector[4], loads : 313
+  Net : patternmaker/col_vector[6], loads : 295
+  Net : patternmaker/col_vector[7], loads : 231
+  Net : patternmaker/col_vector[8], loads : 188
+  Net : internalvga/internalrow[3], loads : 121
+  Net : patternmaker/col_vector[2], loads : 100
+  Net : internalvga/internalrow[4], loads : 85
+  Net : patternmaker/col_vector[9], loads : 85
 ################### End Clock Report ##################
 
-Peak Memory Usage: 322 MB
+Peak Memory Usage: 987 MB
 
 --------------------------------------------------------------
-Total CPU Time: 10 secs 
-Total REAL Time: 15 secs 
+Total CPU Time: 33 secs 
+Total REAL Time: 39 secs 
 --------------------------------------------------------------

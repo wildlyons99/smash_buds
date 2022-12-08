@@ -35,9 +35,7 @@ entity collisions is
 		other_player_x : in signed(10 downto 0);
 	    other_player_y : in signed(10 downto 0);
 	    other_player_punching_left : in std_logic;
-		other_player_punching_right : in std_logic;
-		
-		in_hitbox : out std_logic
+		other_player_punching_right : in std_logic
 		
 	);
 end collisions; 
@@ -86,9 +84,12 @@ signal plat2_y	   : signed(10 downto 0);
 signal plat3_col_t : std_logic;
 signal plat3_y	   : signed(10 downto 0);
 
+signal plat4_col_t : std_logic;
+signal plat4_y : signed(10 downto 0);
+
 signal hitbox_x : signed(10 downto 0);
 signal hitbox_y : signed(10 downto 0);
---signal in_hitbox : std_logic;
+signal in_hitbox : std_logic;
 signal in_hitbox_x : std_logic;
 signal in_hitbox_y : std_logic;
 
@@ -113,11 +114,11 @@ begin
 	); 
 	
 	
-	plat_test : platform generic map (
-		plat_width => 11d"300", 
+	left_platform : platform generic map (
+		plat_width => 11d"148", 
 		plat_height => 11d"8",
-		corner_x => 11d"330",
-		corner_y => 11d"370"
+		corner_x => 11d"32",
+		corner_y => 11d"384"
 	)
 	port map(
 		--clk => clk,
@@ -133,11 +134,11 @@ begin
 	);
 	
 	
-	plat_test_2 : platform generic map (
-		plat_width => 11d"200", 
+	right_platform : platform generic map (
+		plat_width => 11d"148", 
 		plat_height => 11d"8",
-		corner_x => 11d"0",
-		corner_y => 11d"290"
+		corner_x => 11d"456",
+		corner_y => 11d"384"
 	)
 	port map(
 		--clk => clk,
@@ -150,6 +151,25 @@ begin
 		--col_b => plat3_col_b,
 		col_t => plat3_col_t,
 		y_pos_plat => plat3_y
+	);
+	
+	top_platform : platform generic map (
+		plat_width => 11d"220", 
+		plat_height => 11d"8",
+		corner_x => 11d"208",
+		corner_y => 11d"296"
+	)
+	port map(
+		--clk => clk,
+		player_x => x,
+		player_y => y,
+		player_yv => yv,
+		buttons => buttons,
+		--col_r => plat3_col_r,
+		--col_l => plat3_col_l,
+		--col_b => plat3_col_b,
+		col_t => plat4_col_t,
+		y_pos_plat => plat4_y
 	);
 	
 	punching_left <= '1' when is_punching and buttons(1) else '0';
@@ -176,11 +196,12 @@ begin
 	--coll_bottom <= '1' when plat1_col_b else '0';
 	--coll_left <= plat1_col_l or plat2_col_l or plat3_col_l;
 	--coll_right <= plat1_col_r or plat2_col_r or plat3_col_r;
-	coll_top <= plat1_col_t or plat2_col_t or plat3_col_t;
+	coll_top <= plat1_col_t or plat2_col_t or plat3_col_t or plat4_col_t;
 	--coll_bottom <= plat1_col_b or plat2_col_b or plat3_col_b;
 	y_platform <= plat1_y when plat1_col_t else
 	              plat2_y when plat2_col_t else
 				  plat3_y when plat3_col_t else
+				  plat4_y when plat4_col_t else
 				  y_platform;
 	
 end;

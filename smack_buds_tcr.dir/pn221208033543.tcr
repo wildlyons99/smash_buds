@@ -1,0 +1,246 @@
+#Start recording tcl command: 12/7/2022 19:11:58
+#Project Location: Z:/smash_buds-main; Project name: smack_buds
+prj_open "Z:/smash_buds-main/smack_buds.rdf"
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_add_source "Z:/smash_buds-main/source/impl_1/can_punch.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_add_source "Z:/smash_buds-main/source/impl_1/tony_run_rom1.vhd"
+prj_add_source "Z:/smash_buds-main/source/impl_1/sunil_idle_rom.vhd"
+prj_add_source "Z:/smash_buds-main/source/impl_1/tony_run_rom1.vhd"
+prj_add_source "Z:/smash_buds-main/source/impl_1/sunil_run_rom2.vhd"
+prj_add_source "Z:/smash_buds-main/source/impl_1/tony_run_rom1.vhd"
+prj_run Synthesis -impl impl_1
+prj_add_source "Z:/smash_buds-main/source/impl_1/sunil_run_rom1.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "Z:/smash_buds-main/source/impl_1/start_screen_rom.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_add_source "Z:/smash_buds-main/source/impl_1/pencil_rom.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "Z:/smash_buds-main/source/impl_1/win_area.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_add_source "Z:/smash_buds-main/source/impl_1/background_rom.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_add_source "Z:/smash_buds-main/source/impl_1/pencil_timer.vhd"
+prj_disable_source "Z:/smash_buds-main/source/impl_1/pencil_timer.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_remove_source "Z:/smash_buds-main/source/impl_1/pencil_timer.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/8/2022 03:35:44

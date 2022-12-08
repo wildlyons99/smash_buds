@@ -18,10 +18,7 @@ entity top is
 	  -- Sunil Player
 	  sunil_controller_in : in std_logic;
 	  sunil_controller_latch : out std_logic;
-	  sunil_controller_clock : out std_logic;
-	  
-	  tony_in_hitbox : out std_logic;
-	  sunil_in_hitbox : out std_logic
+	  sunil_controller_clock : out std_logic
 	  
       );
 end top;
@@ -63,6 +60,7 @@ architecture synth of top is
 	component pattern_gen is
 	port(
 	  clk : in std_logic;
+	  clk60 : in std_logic;
 	  row : in signed(10 downto 0); -- 0-1023
 	  col : in signed(10 downto 0); -- 0-1023
       valid : in std_logic;
@@ -81,6 +79,7 @@ architecture synth of top is
 	  
 	  -- Which game state we're in
 	  start_screen, tony_win, sunil_win : std_logic;
+	  win_timer : in signed(9 downto 0);
 	  
 	  -- Output
 	  rgb : out std_logic_vector(5 downto 0)
@@ -129,7 +128,9 @@ architecture synth of top is
 	  sunil_win : out std_logic;
 	  tony_win : out std_logic;
 	  
-	  reset_players : out std_logic
+	  reset_players : out std_logic;
+	  
+	  win_timer : out signed(9 downto 0)
       );
 	end component;
 	
@@ -158,6 +159,7 @@ architecture synth of top is
 	signal sunil_punching : std_logic;
 	signal start_screen, sunil_win, tony_win : std_logic;
 	signal reset_players : std_logic;
+	signal win_timer : signed(9 downto 0);
 	
 	-- Synchronize outputs
 	signal colors_from_pattern_gen : std_logic_vector(5 downto 0);
@@ -177,6 +179,7 @@ begin
    internalvga : vga port map(internal25clk, hsync_from_vga, vsync_from_vga, internalrow, internalcol, internalvalid);
    patternmaker : pattern_gen port map (
 									   clk => internal25clk,
+									   clk60 => internal60hzclk,
 									   row => internalrow,
 									   col => internalcol,
 									   tony_x => tony_xpos,
@@ -191,7 +194,8 @@ begin
 									   rgb => colors_from_pattern_gen,
 									   start_screen => start_screen,
 									   sunil_win => sunil_win,
-									   tony_win => tony_win
+									   tony_win => tony_win,
+									   win_timer => win_timer
 									   );
 
 	-- Game logic
@@ -205,10 +209,7 @@ begin
 							 sunil_controller_buttons => sunil_controller_buttons_signal,
 							 sunil_x => sunil_xpos,
 							 sunil_y => sunil_ypos,
-							 sunil_punching => sunil_punching,
-							 
-							 sunil_in_hitbox => sunil_in_hitbox,
-							 tony_in_hitbox => tony_in_hitbox
+							 sunil_punching => sunil_punching
 							 );
 	meta_state : game_state port map (
 								     clk => internal60hzclk,
@@ -224,8 +225,9 @@ begin
 									 sunil_win => sunil_win,
 									 tony_win => tony_win,
 									 
-									 reset_players => reset_players
+									 reset_players => reset_players,
 									 
+									 win_timer => win_timer
 									 );
 	
 	

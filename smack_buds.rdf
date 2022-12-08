@@ -60,6 +60,30 @@
         <Source name="source/impl_1/game_state.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
+        <Source name="source/impl_1/can_punch.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/sunil_idle_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/sunil_run_rom2.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/sunil_run_rom1.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/start_screen_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/pencil_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/win_area.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/background_rom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
         <Source name="smack_buds.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>
         </Source>

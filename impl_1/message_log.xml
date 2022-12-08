@@ -58,6 +58,40 @@
     </Task>
     <Task name="Map">
         <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>sunil_in_hitbox</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>sunil_in_hitbox</Dynamic>
+            <Dynamic>ldc_set_location -site {4} [get_ports sunil_in_hitbox]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>tony_in_hitbox</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>tony_in_hitbox</Dynamic>
+            <Dynamic>ldc_set_location -site {44} [get_ports tony_in_hitbox]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {4} [get_ports sunil_in_hitbox]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {44} [get_ports tony_in_hitbox]</Dynamic>
+        </Message>
+        <Message>
             <ID>70001944</ID>
             <Severity>16</Severity>
             <Dynamic>create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
@@ -651,10 +685,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/smash_buds-main/source/impl_1/top.vhd(29): </Dynamic>
+            <Dynamic>z:/smash_buds-main/source/impl_1/top.vhd(26): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/smash_buds-main/source/impl_1/top.vhd</Navigation>
-            <Navigation>29</Navigation>
+            <Navigation>26</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -667,10 +701,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/smash_buds-main/source/impl_1/pattern_gen.vhd(32): </Dynamic>
+            <Dynamic>z:/smash_buds-main/source/impl_1/pattern_gen.vhd(34): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/smash_buds-main/source/impl_1/pattern_gen.vhd</Navigation>
-            <Navigation>32</Navigation>
+            <Navigation>34</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -763,10 +797,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/smash_buds-main/source/impl_1/collisions.vhd(45): </Dynamic>
+            <Dynamic>z:/smash_buds-main/source/impl_1/collisions.vhd(43): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/smash_buds-main/source/impl_1/collisions.vhd</Navigation>
-            <Navigation>45</Navigation>
+            <Navigation>43</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -843,10 +877,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/smash_buds-main/source/impl_1/player.vhd(32): </Dynamic>
+            <Dynamic>z:/smash_buds-main/source/impl_1/player.vhd(29): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/smash_buds-main/source/impl_1/player.vhd</Navigation>
-            <Navigation>32</Navigation>
+            <Navigation>29</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -859,10 +893,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/smash_buds-main/source/impl_1/game_state.vhd(28): </Dynamic>
+            <Dynamic>z:/smash_buds-main/source/impl_1/game_state.vhd(29): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/smash_buds-main/source/impl_1/game_state.vhd</Navigation>
-            <Navigation>28</Navigation>
+            <Navigation>29</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -942,6 +976,54 @@
             <Dynamic>z:/smash_buds-main/source/impl_1/start_screen_rom.vhd(14): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/smash_buds-main/source/impl_1/start_screen_rom.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/pencil_rom.vhd(7): </Dynamic>
+            <Dynamic>pencil_rom</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/pencil_rom.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/pencil_rom.vhd(16): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/pencil_rom.vhd</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/win_area.vhd(5): </Dynamic>
+            <Dynamic>win_area</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/win_area.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/win_area.vhd(26): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/win_area.vhd</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/background_rom.vhd(5): </Dynamic>
+            <Dynamic>background_rom</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/background_rom.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/background_rom.vhd(14): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/background_rom.vhd</Navigation>
             <Navigation>14</Navigation>
         </Message>
         <Message>
@@ -1237,10 +1319,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/smash_buds-main/source/impl_1/top.vhd(29): </Dynamic>
+            <Dynamic>z:/smash_buds-main/source/impl_1/top.vhd(26): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/smash_buds-main/source/impl_1/top.vhd</Navigation>
-            <Navigation>29</Navigation>
+            <Navigation>26</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1253,10 +1335,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/smash_buds-main/source/impl_1/pattern_gen.vhd(32): </Dynamic>
+            <Dynamic>z:/smash_buds-main/source/impl_1/pattern_gen.vhd(34): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/smash_buds-main/source/impl_1/pattern_gen.vhd</Navigation>
-            <Navigation>32</Navigation>
+            <Navigation>34</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1349,10 +1431,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/smash_buds-main/source/impl_1/collisions.vhd(45): </Dynamic>
+            <Dynamic>z:/smash_buds-main/source/impl_1/collisions.vhd(43): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/smash_buds-main/source/impl_1/collisions.vhd</Navigation>
-            <Navigation>45</Navigation>
+            <Navigation>43</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1429,10 +1511,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/smash_buds-main/source/impl_1/player.vhd(32): </Dynamic>
+            <Dynamic>z:/smash_buds-main/source/impl_1/player.vhd(29): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/smash_buds-main/source/impl_1/player.vhd</Navigation>
-            <Navigation>32</Navigation>
+            <Navigation>29</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1445,10 +1527,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>z:/smash_buds-main/source/impl_1/game_state.vhd(28): </Dynamic>
+            <Dynamic>z:/smash_buds-main/source/impl_1/game_state.vhd(29): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>z:/smash_buds-main/source/impl_1/game_state.vhd</Navigation>
-            <Navigation>28</Navigation>
+            <Navigation>29</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1531,6 +1613,54 @@
             <Navigation>14</Navigation>
         </Message>
         <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/pencil_rom.vhd(7): </Dynamic>
+            <Dynamic>pencil_rom</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/pencil_rom.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/pencil_rom.vhd(16): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/pencil_rom.vhd</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/win_area.vhd(5): </Dynamic>
+            <Dynamic>win_area</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/win_area.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/win_area.vhd(26): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/win_area.vhd</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/background_rom.vhd(5): </Dynamic>
+            <Dynamic>background_rom</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/background_rom.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/background_rom.vhd(14): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/background_rom.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
@@ -1563,12 +1693,36 @@
             <Navigation>140</Navigation>
         </Message>
         <Message>
-            <ID>35935013</ID>
+            <ID>35001045</ID>
             <Severity>16</Severity>
-            <Dynamic>z:/smash_buds-main/source/impl_1/game_state.vhd(67): </Dynamic>
-            <Dynamic>\meta_state/sunil_win</Dynamic>
-            <Navigation>z:/smash_buds-main/source/impl_1/game_state.vhd</Navigation>
-            <Navigation>67</Navigation>
+        </Message>
+        <Message>
+            <ID>35001045</ID>
+            <Severity>16</Severity>
+        </Message>
+        <Message>
+            <ID>35001045</ID>
+            <Severity>16</Severity>
+        </Message>
+        <Message>
+            <ID>35001045</ID>
+            <Severity>16</Severity>
+        </Message>
+        <Message>
+            <ID>35001045</ID>
+            <Severity>16</Severity>
+        </Message>
+        <Message>
+            <ID>35001045</ID>
+            <Severity>16</Severity>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>16</Severity>
+            <Dynamic>z:/smash_buds-main/source/impl_1/win_area.vhd(60): </Dynamic>
+            <Dynamic>\meta_state/win_area_map/not_first_time</Dynamic>
+            <Navigation>z:/smash_buds-main/source/impl_1/win_area.vhd</Navigation>
+            <Navigation>60</Navigation>
         </Message>
         <Message>
             <ID>35002039</ID>

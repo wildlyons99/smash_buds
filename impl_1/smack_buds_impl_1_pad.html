@@ -48,7 +48,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Thu Dec  8 00:44:57 2022
+Thu Dec  8 03:32:34 2022
 
 Pinout by Port Name:
 +------------------------+----------+--------------+-------+--------------------+
@@ -66,11 +66,9 @@ Pinout by Port Name:
 | sunil_controller_clock | 28/0     | LVCMOS33_OUT | PR18A | DRIVE:8mA PULL:NA  |
 | sunil_controller_in    | 42/0     | LVCMOS33_IN  | PR9A  | PULL:100K          |
 | sunil_controller_latch | 38/0     | LVCMOS33_OUT | PR9B  | DRIVE:8mA PULL:NA  |
-| sunil_in_hitbox        | 4/2      | LVCMOS33_OUT | PL10A | DRIVE:8mA PULL:NA  |
 | tony_controller_clock  | 2/2      | LVCMOS33_OUT | PL9A  | DRIVE:8mA PULL:NA  |
 | tony_controller_in     | 47/2     | LVCMOS33_IN  | PL7A  | PULL:100K          |
 | tony_controller_latch  | 46/2     | LVCMOS33_OUT | PL6A  | DRIVE:8mA PULL:NA  |
-| tony_in_hitbox         | 44/2     | LVCMOS33_OUT | PL7B  | DRIVE:8mA PULL:NA  |
 +------------------------+----------+--------------+-------+--------------------+
 
 Vccio by Bank:
@@ -88,7 +86,7 @@ Vccio by Bank:
 +----------+------------------------+------------+--------------+-------+------------------+
 | 2/2      | tony_controller_clock  | LOCATED    | LVCMOS33_OUT | PL9A  |                  |
 | 3/2      |     unused, PULL:UP    |            |              | PL10B |                  |
-| 4/2      | sunil_in_hitbox        | LOCATED    | LVCMOS33_OUT | PL10A |                  |
+| 4/2      |     unused, PULL:UP    |            |              | PL10A |                  |
 | 6/1      |     unused, PULL:UP    |            |              | PL14B |                  |
 | 9/1      |     unused, PULL:UP    |            |              | PL16A |                  |
 | 10/1     |     unused, PULL:UP    |            |              | PL17A |                  |
@@ -120,7 +118,7 @@ Vccio by Bank:
 | 41/0     |                        |            |              | PR7A  | RGB2             |
 | 42/0     | sunil_controller_in    | LOCATED    | LVCMOS33_IN  | PR9A  |                  |
 | 43/0     |     unused, PULL:UP    |            |              | PR10A |                  |
-| 44/2     | tony_in_hitbox         | LOCATED    | LVCMOS33_OUT | PL7B  | PCLKT2_0         |
+| 44/2     |     unused, PULL:UP    |            |              | PL7B  | PCLKT2_0         |
 | 45/2     |     unused, PULL:UP    |            |              | PL8B  |                  |
 | 46/2     | tony_controller_latch  | LOCATED    | LVCMOS33_OUT | PL6A  |                  |
 | 47/2     | tony_controller_in     | LOCATED    | LVCMOS33_IN  | PL7A  |                  |
@@ -159,18 +157,16 @@ ldc_set_location -site {20} [ get_ports {ext12m} ]
 ldc_set_location -site {28} [ get_ports {sunil_controller_clock} ]
 ldc_set_location -site {42} [ get_ports {sunil_controller_in} ]
 ldc_set_location -site {38} [ get_ports {sunil_controller_latch} ]
-ldc_set_location -site {4} [ get_ports {sunil_in_hitbox} ]
 ldc_set_location -site {2} [ get_ports {tony_controller_clock} ]
 ldc_set_location -site {47} [ get_ports {tony_controller_in} ]
 ldc_set_location -site {46} [ get_ports {tony_controller_latch} ]
-ldc_set_location -site {44} [ get_ports {tony_in_hitbox} ]
 
 
 
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Thu Dec  8 00:44:57 2022
+Thu Dec  8 03:32:34 2022
 
 
 

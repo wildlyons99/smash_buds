@@ -47,7 +47,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Thu Dec  8 00:44:33 2022
+Mapped on: Thu Dec  8 03:31:58 2022
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -56,22 +56,21 @@ Command line:   map smack_buds_impl_1_syn.udb Z:/smash_buds-main/smack_buds.pdc
      -o smack_buds_impl_1_map.udb -mp smack_buds_impl_1.mrp -hierrpt -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers: 222 out of  5280 (4%)
+   Number of slice registers: 252 out of  5280 (5%)
    Number of I/O registers:      4 out of   117 (3%)
-   Number of LUT4s:           1847 out of  5280 (35%)
-      Number of logic LUT4s:             1114
-      Number of inserted feedthru LUT4s:  34
-      Number of replicated LUT4s:          1
-      Number of ripple logic:            349 (698 LUT4s)
-   Number of IO sites used:   17 out of 39 (44%)
-      Number of IO sites used for general PIO: 17
+   Number of LUT4s:           2988 out of  5280 (57%)
+      Number of logic LUT4s:             2158
+      Number of inserted feedthru LUT4s:  32
+      Number of ripple logic:            399 (798 LUT4s)
+   Number of IO sites used:   15 out of 39 (38%)
+      Number of IO sites used for general PIO: 15
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 17 out of 36 (47%)
+      Number of IO sites used for PIO+I3C: 15 out of 36 (42%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 17 out of 39 (44%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -82,74 +81,77 @@ Command line:   map smack_buds_impl_1_syn.udb Z:/smash_buds-main/smack_buds.pdc
    Number of SRAMs:            0 out of 4 (0%)
    Number of WARMBOOTs:        0 out of 1 (0%)
    Number of SPIs:             0 out of 2 (0%)
-   Number of EBRs:             30 out of 30 (100%)
+   Number of EBRs:             22 out of 30 (73%)
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  7
-      Net internal60hzclk: 80 loads, 80 rising, 0 falling (Driver: Pin
-     i16906_3_lut/OUT)
-      Net internal25clk: 86 loads, 86 rising, 0 falling (Driver: Pin
+      Net internal25clk: 88 loads, 88 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net sunil_controller.counter[20]: 14 loads, 14 rising, 0 falling (Driver:
-     Pin sunil_controller.counter_752__i21/Q)
-      Net sunil_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
-     sunil_controller.i3_4_lut_adj_139/OUT)
+      Net internal60hzclk: 96 loads, 96 rising, 0 falling (Driver: Pin
+     i33416_4_lut/OUT)
       Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
+      Net sunil_controller.counter[20]: 14 loads, 14 rising, 0 falling (Driver:
+     Pin sunil_controller.counter_776__i21/Q)
+      Net sunil_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
+     sunil_controller.i3_4_lut_adj_166/OUT)
       Net tony_controller.counter[20]: 14 loads, 14 rising, 0 falling (Driver:
-     Pin tony_controller.counter_751__i21/Q)
+     Pin tony_controller.counter_775__i21/Q)
       Net tony_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
-     tony_controller.i1_4_lut_adj_81/OUT)
-   Number of Clock Enables:  19
-      Net VCC_net: 90 loads, 0 SLICEs
+     tony_controller.i1_4_lut_adj_99/OUT)
+   Number of Clock Enables:  21
+      Net VCC_net: 66 loads, 0 SLICEs
+      Net patternmaker.n15138: 4 loads, 4 SLICEs
 
-      Net n16921: 1 loads, 1 SLICEs
-      Net n1372: 6 loads, 6 SLICEs
-      Net sunil_controller.n8123: 6 loads, 6 SLICEs
+      Net n15144: 4 loads, 4 SLICEs
+      Net sunil_controller.n15083: 6 loads, 6 SLICEs
       Net sunil_controller.n15: 8 loads, 8 SLICEs
-      Net game.tony.punch_logic.n8186: 4 loads, 4 SLICEs
-      Net game.tony.phys_map.n8148: 5 loads, 5 SLICEs
-      Net game.tony.phys_map.n18014: 1 loads, 1 SLICEs
-      Net game.tony.phys_map.n8170: 2 loads, 2 SLICEs
-      Net game.tony.phys_map.n18026: 1 loads, 1 SLICEs
-      Net game.tony.phys_map.n8135: 1 loads, 1 SLICEs
-      Net game.sunil.punch_logic.n8196: 4 loads, 4 SLICEs
-      Net game.sunil.phys_map.n8149: 5 loads, 5 SLICEs
-      Net game.sunil.phys_map.n8162: 2 loads, 2 SLICEs
-      Net game.sunil.phys_map.n18022: 1 loads, 1 SLICEs
-      Net game.sunil.phys_map.n6_adj_1053: 1 loads, 1 SLICEs
-      Net game.sunil.phys_map.n8130: 1 loads, 1 SLICEs
-      Net tony_controller.n8124: 6 loads, 6 SLICEs
+      Net meta_state.win_area_map.n15099: 6 loads, 6 SLICEs
+      Net n1490: 6 loads, 6 SLICEs
+      Net game.tony.punch_logic.n15169: 4 loads, 4 SLICEs
+      Net game.tony.phys_map.n33888: 1 loads, 1 SLICEs
+      Net game.tony.phys_map.n15186: 1 loads, 1 SLICEs
+      Net game.tony.phys_map.n15093: 1 loads, 1 SLICEs
+      Net game.n15105: 5 loads, 5 SLICEs
+      Net game.tony.phys_map.n15188: 2 loads, 2 SLICEs
+      Net game.sunil.punch_logic.n15154: 4 loads, 4 SLICEs
+      Net game.sunil.phys_map.n33890: 1 loads, 1 SLICEs
+      Net game.sunil.phys_map.n15106: 5 loads, 5 SLICEs
+      Net game.sunil.phys_map.n33866: 1 loads, 1 SLICEs
+      Net game.sunil.phys_map.n15233: 2 loads, 2 SLICEs
+      Net game.sunil.phys_map.n15088: 1 loads, 1 SLICEs
+      Net tony_controller.n15084: 6 loads, 6 SLICEs
       Net tony_controller.n15: 8 loads, 8 SLICEs
-   Number of LSRs:  14
-      Net meta_state.not_first_time_N_820: 1 loads, 1 SLICEs
-      Net tony_controller_buttons_signal[4]: 1 loads, 1 SLICEs
-      Net reset_players: 46 loads, 46 SLICEs
+   Number of LSRs:  15
+      Net reset_players: 52 loads, 52 SLICEs
       Net internalvalid: 6 loads, 6 SLICEs
+      Net patternmaker.n16302: 4 loads, 4 SLICEs
+      Net n16301: 4 loads, 4 SLICEs
+      Net sunil_controller.counter_19__N_1039: 11 loads, 11 SLICEs
+      Net tony_controller_buttons_signal[4]: 1 loads, 1 SLICEs
       Net col_10__N_34: 6 loads, 6 SLICEs
       Net row_10__N_46: 6 loads, 6 SLICEs
-      Net sunil_controller.counter_19__N_917: 11 loads, 11 SLICEs
-      Net game.tony.punch_logic.n8845: 4 loads, 4 SLICEs
-      Net game.tony.phys_map.n8839: 3 loads, 3 SLICEs
-      Net game.tony.phys_map.n16079: 1 loads, 1 SLICEs
-      Net game.sunil.punch_logic.n8850: 4 loads, 4 SLICEs
-      Net game.sunil.phys_map.n8840: 3 loads, 3 SLICEs
-      Net game.sunil.phys_map.n16073: 1 loads, 1 SLICEs
-      Net tony_controller.counter_19__N_917: 11 loads, 11 SLICEs
+      Net game.tony.punch_logic.n16320: 4 loads, 4 SLICEs
+      Net game.tony.phys_map.n30659: 1 loads, 1 SLICEs
+      Net game.n24009: 3 loads, 3 SLICEs
+      Net game.sunil.punch_logic.n16309: 4 loads, 4 SLICEs
+      Net game.sunil.phys_map.n16298: 3 loads, 3 SLICEs
+      Net game.sunil.phys_map.n30653: 1 loads, 1 SLICEs
+      Net tony_controller.counter_19__N_1039: 11 loads, 11 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net VCC_net: 289 loads
-      Net reset_players: 67 loads
-      Net sunil_controller_buttons_signal[0]: 42 loads
-      Net tony_controller_buttons_signal[0]: 42 loads
-      Net game.sunil.yv_gl[4]: 33 loads
-      Net internalrow[3]: 31 loads
-      Net internalrow[4]: 31 loads
-      Net game.tony.yv_gl[4]: 30 loads
-      Net internalrow[5]: 30 loads
-      Net internalrow[6]: 28 loads
+      Net patternmaker.col_vector[3]: 331 loads
+      Net patternmaker.col_vector[5]: 327 loads
+      Net patternmaker.col_vector[4]: 322 loads
+      Net patternmaker.col_vector[6]: 303 loads
+      Net VCC_net: 282 loads
+      Net patternmaker.col_vector[7]: 239 loads
+      Net col_vector[8]: 195 loads
+      Net internalrow[3]: 123 loads
+      Net patternmaker.col_vector[2]: 100 loads
+      Net col_vector[9]: 88 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  6
    Number of errors:    0
 
 
@@ -157,9 +159,17 @@ Command line:   map smack_buds_impl_1_syn.udb Z:/smash_buds-main/smack_buds.pdc
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-   No errors or warnings present.
+WARNING - map: No port matched 'sunil_in_hitbox'.
 
-
+WARNING - map: Can't resolve object 'sunil_in_hitbox' in constraint
+     'ldc_set_location -site {4} [get_ports sunil_in_hitbox]'.
+WARNING - map: No port matched 'tony_in_hitbox'.
+WARNING - map: Can't resolve object 'tony_in_hitbox' in constraint
+     'ldc_set_location -site {44} [get_ports tony_in_hitbox]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {4} [get_ports
+     sunil_in_hitbox]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {44} [get_ports
+     tony_in_hitbox]'.
 
 
 
@@ -169,14 +179,6 @@ Command line:   map smack_buds_impl_1_syn.udb Z:/smash_buds-main/smack_buds.pdc
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| sunil_controller_clock| OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| sunil_controller_latch| OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| tony_controller_clock| OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| tony_controller_latch| OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[0]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[1]              | OUTPUT    | LVCMOS33  |       |       |           |
@@ -184,8 +186,6 @@ Command line:   map smack_buds_impl_1_syn.udb Z:/smash_buds-main/smack_buds.pdc
 | RGB[2]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[3]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| tony_in_hitbox      | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGB[4]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -195,13 +195,19 @@ Command line:   map smack_buds_impl_1_syn.udb Z:/smash_buds-main/smack_buds.pdc
 +---------------------+-----------+-----------+-------+-------+-----------+
 | HSYNC               | OUTPUT    | LVCMOS33  | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| sunil_in_hitbox     | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| ext12m              | INPUT     | LVCMOS33  |       |       |           |
+| sunil_controller_in | INPUT     | LVCMOS33  | I     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | tony_controller_in  | INPUT     | LVCMOS33  | I     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| sunil_controller_in | INPUT     | LVCMOS33  | I     |       |           |
+| ext12m              | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sunil_controller_clock| OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sunil_controller_latch| OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tony_controller_clock| OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tony_controller_latch| OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 
@@ -216,6 +222,7 @@ Block i1 was optimized away.
 ---------------
 
 PLL 1:                                 Pin/Node Value
+
   PLL Instance Name:                            pll/lscc_pll_inst/u_PLL_B
   Input Reference Clock:               PIN      ext12m_c
   Output Clock(CoreA):                          NONE
@@ -224,7 +231,6 @@ PLL 1:                                 Pin/Node Value
   Output Clock(GlobalB):                        NONE
   Feedback input:                      NODE     pll.lscc_pll_inst.feedback_w
   Internal Feedback output:            NODE     pll.lscc_pll_inst.feedback_w
-
   BYPASS signal:                                GND
   LATCH signal:                                 GND
   Lock Signal:                                  NONE
@@ -251,75 +257,59 @@ PLL 1:                                 Pin/Node Value
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
-Instance Name: VSYNC_i1
-         Type: IOLOGIC
-Instance Name: patternmaker/tony_run_map2/mux_172
-         Type: EBR
 Instance Name: patternmaker/tony_run_map2/mux_171
          Type: EBR
 Instance Name: patternmaker/tony_run_map2/mux_170
          Type: EBR
-Instance Name: patternmaker/tony_run_map1/mux_169
+Instance Name: patternmaker/tony_run_map2/mux_169
          Type: EBR
 Instance Name: patternmaker/tony_run_map1/mux_168
          Type: EBR
 Instance Name: patternmaker/tony_run_map1/mux_167
          Type: EBR
-Instance Name: patternmaker/tony_idle_map/mux_166
+Instance Name: patternmaker/tony_run_map1/mux_166
+         Type: EBR
+Instance Name: patternmaker/tony_pencil_map/mux_182
+         Type: EBR
+Instance Name: patternmaker/tony_pencil_map/mux_181
          Type: EBR
 Instance Name: patternmaker/tony_idle_map/mux_165
          Type: EBR
 Instance Name: patternmaker/tony_idle_map/mux_164
          Type: EBR
-Instance Name: patternmaker/sunil_run_map2/mux_181
+Instance Name: patternmaker/tony_idle_map/mux_163
          Type: EBR
 Instance Name: patternmaker/sunil_run_map2/mux_180
          Type: EBR
 Instance Name: patternmaker/sunil_run_map2/mux_179
+
          Type: EBR
-Instance Name: patternmaker/sunil_run_map1/mux_178
+Instance Name: patternmaker/sunil_run_map2/mux_178
          Type: EBR
 Instance Name: patternmaker/sunil_run_map1/mux_177
          Type: EBR
 Instance Name: patternmaker/sunil_run_map1/mux_176
          Type: EBR
-Instance Name: patternmaker/sunil_idle_map/mux_175
-
+Instance Name: patternmaker/sunil_run_map1/mux_175
+         Type: EBR
+Instance Name: patternmaker/sunil_pencil_map/mux_184
+         Type: EBR
+Instance Name: patternmaker/sunil_pencil_map/mux_183
          Type: EBR
 Instance Name: patternmaker/sunil_idle_map/mux_174
          Type: EBR
 Instance Name: patternmaker/sunil_idle_map/mux_173
          Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_205
+Instance Name: patternmaker/sunil_idle_map/mux_172
          Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_204
-         Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_202
-         Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_201
-         Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_199
-         Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_198
-         Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_196
-         Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_195
-         Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_194
-         Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_203
-         Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_200
-         Type: EBR
-Instance Name: patternmaker/start_screen_map/mux_197
-         Type: EBR
-Instance Name: HSYNC_i0
-         Type: IOLOGIC
-Instance Name: sunil_controller/shift_i0
-         Type: IOLOGIC
 Instance Name: pll/lscc_pll_inst/u_PLL_B
          Type: PLL
+Instance Name: sunil_controller/shift_i0
+         Type: IOLOGIC
+Instance Name: HSYNC_i0
+         Type: IOLOGIC
+Instance Name: VSYNC_i1
+         Type: IOLOGIC
 Instance Name: tony_controller/shift_i0
          Type: IOLOGIC
 
@@ -328,9 +318,17 @@ Instance Name: tony_controller/shift_i0
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 -------------------------
 
-   Total CPU Time: 0 secs
-   Total REAL Time: 0 secs
-   Peak Memory Usage: 80 MB
+   Total CPU Time: 1 secs
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 94 MB
+
+
+
+
+
+
+
+
 
 
 

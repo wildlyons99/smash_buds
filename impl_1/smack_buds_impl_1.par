@@ -1,5 +1,5 @@
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Thu Dec  8 00:44:36 2022
+Thu Dec  8 03:32:01 2022
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	smack_buds_impl_1_map.udb smack_buds_impl_1.udb 
@@ -8,16 +8,16 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -2147483.648 0            -2147483.648 0            28           Completed
+5_1   *      0            -2147483.648 0            -2147483.648 0            48           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 28 secs 
+Total (real) run time for 1-seed: 48 secs 
 
 par done!
 
 Lattice Place and Route Report for Design "smack_buds_impl_1_map.udb"
-Thu Dec  8 00:44:36 2022
+Thu Dec  8 03:32:01 2022
 
 PAR: Place And Route Radiant Software (64-bit) 3.0.0.24.1.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
@@ -38,17 +38,17 @@ Performance Grade:   High-Performance_1.2V
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
-Number of Signals: 2694
-Number of Connections: 6900
+Number of Signals: 3920
+Number of Connections: 10941
 WARNING - par: Placement timing constraints are hard to meet. However, placement will continue. Use static timing analysis to identify errors. For more information, see online help subjects 'Place and Route Timing Report' or the 'Timing' application
 
 Device utilization summary:
 
-   SLICE (est.)     978/2640         37% used
-     LUT           1847/5280         34% used
-     REG            222/5280          4% used
-   PIO               17/56           30% used
-                     17/36           47% bonded
+   SLICE (est.)    1581/2640         59% used
+     LUT           2988/5280         56% used
+     REG            252/5280          4% used
+   PIO               15/56           26% used
+                     15/36           41% bonded
    IOLOGIC            4/56            7% used
    DSP                0/8             0% used
    I2C                0/2             0% used
@@ -60,49 +60,49 @@ Device utilization summary:
    SRAM               0/4             0% used
    WARMBOOT           0/1             0% used
    SPI                0/2             0% used
-   EBR               30/30          100% used
+   EBR               22/30           73% used
    PLL                1/1           100% used
    RGBOUTBUF          0/3             0% used
    I3C                0/2             0% used
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   17 out of 17 pins locked (100% locked).
+   15 out of 15 pins locked (100% locked).
 
-Finished Placer Phase 0 (HIER). CPU time: 3 secs , REAL time: 3 secs 
+Finished Placer Phase 0 (HIER). CPU time: 9 secs , REAL time: 9 secs 
 
 
 ................
-Finished Placer Phase 0 (AP).  CPU time: 4 secs , REAL time: 5 secs 
+Finished Placer Phase 0 (AP).  CPU time: 11 secs , REAL time: 12 secs 
 
-Starting Placer Phase 1. CPU time: 4 secs , REAL time: 5 secs 
+Starting Placer Phase 1. CPU time: 11 secs , REAL time: 12 secs 
 ..  ..
 ....................
 
-Placer score = 432498.
+Placer score = 672226.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE            969/2640         36% used
+   SLICE           1571/2640         59% used
 
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
-Finished Placer Phase 1. CPU time: 20 secs , REAL time: 20 secs 
+Finished Placer Phase 1. CPU time: 32 secs , REAL time: 32 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  524481
-Finished Placer Phase 2.  CPU time: 20 secs , REAL time: 20 secs 
+Placer score =  799253
+Finished Placer Phase 2.  CPU time: 32 secs , REAL time: 33 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clocks :
-  PRIMARY "internal25clk" from OUTGLOBAL on comp "pll.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 82, ce load = 0, sr load = 0
-  PRIMARY "internal60hzclk" from F0 on comp "SLICE_875" on site "R13C3B", clk load = 55, ce load = 0, sr load = 0
-  PRIMARY "sunil_controller.counter[20]" from Q1 on comp "sunil_controller.SLICE_133" on site "R12C31C", clk load = 7, ce load = 0, sr load = 0
-  PRIMARY "tony_controller.counter[20]" from Q1 on comp "tony_controller.SLICE_338" on site "R15C31C", clk load = 7, ce load = 0, sr load = 0
+  PRIMARY "internal25clk" from OUTGLOBAL on comp "pll.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 79, ce load = 0, sr load = 0
+  PRIMARY "internal60hzclk" from F1 on comp "SLICE_967" on site "R17C13C", clk load = 64, ce load = 0, sr load = 0
+  PRIMARY "sunil_controller.counter[20]" from Q1 on comp "sunil_controller.SLICE_145" on site "R12C31C", clk load = 7, ce load = 0, sr load = 0
+  PRIMARY "tony_controller.counter[20]" from Q1 on comp "tony_controller.SLICE_376" on site "R15C31C", clk load = 7, ce load = 0, sr load = 0
 
   PRIMARY  : 4 out of 8 (50%)
 
@@ -110,9 +110,9 @@ Global Clocks :
 
 
 I/O Usage Summary (final):
-   17 out of 56 (30.4%) I/O sites used.
-   17 out of 36 (47.2%) bonded I/O sites used.
-   Number of I/O comps: 17; differential: 0
+   15 out of 56 (26.8%) I/O sites used.
+   15 out of 36 (41.7%) bonded I/O sites used.
+   Number of I/O comps: 15; differential: 0
    Number of Vref pins used: 0
 
 I/O Bank Usage Summary:
@@ -121,15 +121,15 @@ I/O Bank Usage Summary:
 +----------+----------------+------------+------------+------------+
 | 0        | 11 / 14 ( 78%) | 3.3V       |            |            |
 | 1        | 1 / 14 (  7%)  | 3.3V       |            |            |
-| 2        | 5 / 8 ( 62%)   | 3.3V       |            |            |
+| 2        | 3 / 8 ( 37%)   | 3.3V       |            |            |
 +----------+----------------+------------+------------+------------+
 
-Total Placer CPU time: 20 secs , REAL time: 21 secs 
+Total Placer CPU time: 32 secs , REAL time: 33 secs 
 
 Writing design to file smack_buds_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 00:44:57 12/08/22
+Start NBR router at 03:32:34 12/08/22
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -147,30 +147,30 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-810 connections routed with dedicated routing resources
+924 connections routed with dedicated routing resources
 4 global clock signals routed
-961 connections routed (of 6811 total) (14.11%)
+1081 connections routed (of 10831 total) (9.98%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (4 used out of 8 available):
+#0  Signal "internal60hzclk"
+       Clock   loads: 64    out of    64 routed (100.00%)
 #1  Signal "tony_controller.counter[20]"
        Clock   loads: 7     out of     7 routed (100.00%)
        Data    loads: 0     out of     2 routed (  0.00%)
 #4  Signal "sunil_controller.counter[20]"
        Clock   loads: 7     out of     7 routed (100.00%)
        Data    loads: 0     out of     2 routed (  0.00%)
-#5  Signal "internal60hzclk"
-       Clock   loads: 55    out of    55 routed (100.00%)
 #7  Signal "internal25clk"
-       Clock   loads: 82    out of    82 routed (100.00%)
+       Clock   loads: 79    out of    79 routed (100.00%)
 Other clocks:
-    Signal "sunil_controller_clock_c"
-       Clock   loads: 0     out of     5 routed (  0.00%)
-       Data    loads: 0     out of     1 routed (  0.00%)
     Signal "ext12m_c"
        Clock   loads: 0     out of     1 routed (  0.00%)
     Signal "pll.lscc_pll_inst.feedback_w"
        Clock   loads: 1     out of     1 routed (100.00%)
+    Signal "sunil_controller_clock_c"
+       Clock   loads: 0     out of     5 routed (  0.00%)
+       Data    loads: 0     out of     1 routed (  0.00%)
     Signal "tony_controller_clock_c"
        Clock   loads: 0     out of     5 routed (  0.00%)
        Data    loads: 0     out of     1 routed (  0.00%)
@@ -181,22 +181,24 @@ WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
 
-Start NBR section for initial routing at 00:44:57 12/08/22
+Start NBR section for initial routing at 03:32:35 12/08/22
 Level 4, iteration 1
-140(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 5 secs 
+281(0.11%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 12 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 00:45:02 12/08/22
+Start NBR section for normal routing at 03:32:46 12/08/22
 Level 4, iteration 1
-6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 6 secs 
+12(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 12 secs 
 Level 4, iteration 2
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 6 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 12 secs 
 Level 4, iteration 3
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 6 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 12 secs 
+Level 4, iteration 4
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 12 secs 
 
-Start NBR section for post-routing at 00:45:03 12/08/22
+Start NBR section for post-routing at 03:32:46 12/08/22
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {internal25clk} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: Missing master pin for instance 'pll.lscc_pll_inst.u_PLL_B'.
@@ -215,10 +217,10 @@ Notes: The timing info is calculated for SETUP only.
 
 
 Starting full timing analysis...
-Total CPU time 7 secs 
-Total REAL time: 7 secs 
+Total CPU time 14 secs 
+Total REAL time: 15 secs 
 Completely routed.
-End of route.  6811 routed (100.00%); 0 unrouted.
+End of route.  10831 routed (100.00%); 0 unrouted.
 
 Writing design to file smack_buds_impl_1_par.dir/5_1.udb ...
 
@@ -234,9 +236,9 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = -2147483.648
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 28 secs 
-Total REAL Time: 28 secs 
-Peak Memory Usage: 158 MB
+Total CPU  Time: 47 secs 
+Total REAL Time: 48 secs 
+Peak Memory Usage: 173 MB
 
 
 par done!

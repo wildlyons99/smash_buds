@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Thu Dec  8 00:44:35 2022
+Thu Dec  8 03:32:00 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -65,70 +65,70 @@ Operating conditions:
 Combinational Loops
 -------------------
 ++++ Loop1
-game/tony/col_map/i8601_2_lut/A	->	game/tony/col_map/i8601_2_lut/Z
+game.tony.col_map.SLICE_880/D0	->	game.tony.col_map.SLICE_880/F0
 
 ++++ Loop2
-game/tony/col_map/i8594_2_lut/A	->	game/tony/col_map/i8594_2_lut/Z
+game.tony.col_map.SLICE_882/D0	->	game.tony.col_map.SLICE_882/F0
 
 ++++ Loop3
-game/tony/col_map/i8488_2_lut/A	->	game/tony/col_map/i8488_2_lut/Z
+game.tony.col_map.SLICE_884/D0	->	game.tony.col_map.SLICE_884/F0
 
 ++++ Loop4
-game/tony/col_map/i8593_2_lut/A	->	game/tony/col_map/i8593_2_lut/Z
+game.tony.col_map.SLICE_886/D0	->	game.tony.col_map.SLICE_886/F0
 
 ++++ Loop5
-game/tony/col_map/i8604_2_lut/A	->	game/tony/col_map/i8604_2_lut/Z
+game/tony/col_map/i19373_3_lut_4_lut/D	->	game/tony/col_map/i19373_3_lut_4_lut/Z
 
 ++++ Loop6
-game/tony/col_map/i14877_3_lut_4_lut/C	->	game/tony/col_map/i14877_3_lut_4_lut/Z
+game/tony/col_map/i19374_3_lut_4_lut/D	->	game/tony/col_map/i19374_3_lut_4_lut/Z
 
 ++++ Loop7
-game/tony/col_map/i8439_3_lut_4_lut/D	->	game/tony/col_map/i8439_3_lut_4_lut/Z
+game/tony/col_map/i56_3_lut_4_lut/D	->	game/tony/col_map/i56_3_lut_4_lut/Z
 
 ++++ Loop8
-game/tony/col_map/i8596_3_lut_4_lut/D	->	game/tony/col_map/i8596_3_lut_4_lut/Z
+game/tony/col_map/i1_3_lut_4_lut/D	->	game/tony/col_map/i1_3_lut_4_lut/Z
 
 ++++ Loop9
-game/tony/col_map/i16910_4_lut/B	->	game/tony/col_map/i16910_4_lut/Z
+game.tony.col_map.SLICE_902/D0	->	game.tony.col_map.SLICE_902/F0
 
 ++++ Loop10
-game/tony/col_map/i14949_3_lut_4_lut/C	->	game/tony/col_map/i14949_3_lut_4_lut/Z
+game/tony/col_map/i30348_3_lut_4_lut/D	->	game/tony/col_map/i30348_3_lut_4_lut/Z
 
 ++++ Loop11
-game/tony/col_map/i8438_3_lut_4_lut/D	->	game/tony/col_map/i8438_3_lut_4_lut/Z
+game/tony/col_map/i33422_4_lut/B	->	game/tony/col_map/i33422_4_lut/Z
 
 ++++ Loop12
-game/sunil/col_map/i8434_3_lut_4_lut/D	->	game/sunil/col_map/i8434_3_lut_4_lut/Z
+game.sunil.col_map.SLICE_920/D0	->	game.sunil.col_map.SLICE_920/F0
 
 ++++ Loop13
-game/sunil/col_map/i8433_3_lut_4_lut/D	->	game/sunil/col_map/i8433_3_lut_4_lut/Z
+game.sunil.col_map.SLICE_924/D0	->	game.sunil.col_map.SLICE_924/F0
 
 ++++ Loop14
-game/sunil/col_map/i8620_3_lut_4_lut/D	->	game/sunil/col_map/i8620_3_lut_4_lut/Z
+game.sunil.col_map.SLICE_932/D0	->	game.sunil.col_map.SLICE_932/F0
 
 ++++ Loop15
-game/sunil/col_map/i16918_4_lut/B	->	game/sunil/col_map/i16918_4_lut/Z
+game.sunil.col_map.SLICE_934/D0	->	game.sunil.col_map.SLICE_934/F0
 
 ++++ Loop16
-game/sunil/col_map/i14875_3_lut_4_lut/C	->	game/sunil/col_map/i14875_3_lut_4_lut/Z
+game/sunil/col_map/i19370_3_lut_4_lut/D	->	game/sunil/col_map/i19370_3_lut_4_lut/Z
 
 ++++ Loop17
-game/sunil/col_map/i14947_3_lut_4_lut/C	->	game/sunil/col_map/i14947_3_lut_4_lut/Z
+game/sunil/col_map/i1_3_lut_4_lut/D	->	game/sunil/col_map/i1_3_lut_4_lut/Z
 
 ++++ Loop18
-game/sunil/col_map/i8623_2_lut/A	->	game/sunil/col_map/i8623_2_lut/Z
+game/sunil/col_map/i19371_3_lut_4_lut/D	->	game/sunil/col_map/i19371_3_lut_4_lut/Z
 
 ++++ Loop19
-game/sunil/col_map/i8622_2_lut/A	->	game/sunil/col_map/i8622_2_lut/Z
+game/sunil/col_map/i19727_3_lut_4_lut/D	->	game/sunil/col_map/i19727_3_lut_4_lut/Z
 
 ++++ Loop20
-game/sunil/col_map/i8618_2_lut/A	->	game/sunil/col_map/i8618_2_lut/Z
+game.sunil.col_map.SLICE_944/D0	->	game.sunil.col_map.SLICE_944/F0
 
 ++++ Loop21
-game/sunil/col_map/i8513_2_lut/A	->	game/sunil/col_map/i8513_2_lut/Z
+game/sunil/col_map/i1_3_lut_4_lut_adj_111/D	->	game/sunil/col_map/i1_3_lut_4_lut_adj_111/Z
 
 ++++ Loop22
-game/sunil/col_map/i8617_2_lut/A	->	game/sunil/col_map/i8617_2_lut/Z
+game.sunil.col_map.SLICE_956/D0	->	game.sunil.col_map.SLICE_956/F0
 
 ==============================================
 2  CLOCK SUMMARY
@@ -200,20 +200,20 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-patternmaker/counter_750_865__i22/D     |    No arrival or required
-patternmaker/counter_750_865__i21/D     |    No arrival or required
-patternmaker/counter_750_865__i20/D     |    No arrival or required
-patternmaker/counter_750_865__i19/D     |    No arrival or required
-patternmaker/counter_750_865__i18/D     |    No arrival or required
-patternmaker/counter_750_865__i17/D     |    No arrival or required
-patternmaker/counter_750_865__i16/D     |    No arrival or required
-patternmaker/counter_750_865__i15/D     |    No arrival or required
-patternmaker/counter_750_865__i14/D     |    No arrival or required
-patternmaker/counter_750_865__i13/D     |    No arrival or required
+patternmaker/counter_772_898__i22/D     |    No arrival or required
+patternmaker/counter_772_898__i21/D     |    No arrival or required
+patternmaker/counter_772_898__i20/D     |    No arrival or required
+patternmaker/counter_772_898__i19/D     |    No arrival or required
+patternmaker/counter_772_898__i18/D     |    No arrival or required
+patternmaker/counter_772_898__i17/D     |    No arrival or required
+patternmaker/counter_772_898__i16/D     |    No arrival or required
+patternmaker/counter_772_898__i15/D     |    No arrival or required
+patternmaker/counter_772_898__i14/D     |    No arrival or required
+patternmaker/counter_772_898__i13/D     |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                       142
+ts                                      |                       152
                                         |                          
 -------------------------------------------------------------------
 
@@ -233,19 +233,19 @@ create_generated_clock,
 -------------------------------------------------------------------
      Listing 10 Start or End Points     |           Type           
 -------------------------------------------------------------------
-ext12m                                  |                     input
-tony_controller_in                      |                     input
 sunil_controller_in                     |                     input
-sunil_controller_clock                  |                    output
-sunil_controller_latch                  |                    output
-tony_controller_clock                   |                    output
-tony_controller_latch                   |                    output
+tony_controller_in                      |                     input
+ext12m                                  |                     input
 RGB[0]                                  |                    output
 RGB[1]                                  |                    output
 RGB[2]                                  |                    output
+RGB[3]                                  |                    output
+RGB[4]                                  |                    output
+RGB[5]                                  |                    output
+VSYNC                                   |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        17
+Number of I/O ports without constraint  |                        15
                                         |                          
 -------------------------------------------------------------------
 
@@ -254,27 +254,24 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
-game/tony/punch_logic/punch_cooldown_frame_count_756__i2                           
+meta_state/win_area_map/win_timer__i8   |                  No Clock
+meta_state/win_area_map/win_timer__i9   |                  No Clock
+meta_state/win_area_map/win_timer__i2   |                  No Clock
+meta_state/win_area_map/win_timer__i6   |                  No Clock
+meta_state/win_area_map/win_timer__i4   |                  No Clock
+meta_state/win_area_map/win_timer__i0   |                  No Clock
+game/tony/punch_logic/punch_cooldown_frame_count_780__i2                           
                                         |                  No Clock
-game/tony/punch_logic/punch_cooldown_frame_count_756__i4                           
+game/tony/punch_logic/punch_cooldown_frame_count_780__i5                           
                                         |                  No Clock
-game/tony/punch_logic/punch_cooldown_frame_count_756__i5                           
+game/tony/punch_logic/punch_cooldown_frame_count_780__i4                           
                                         |                  No Clock
-game/tony/phys_map/xVelocity_754__i3    |                  No Clock
-game/tony/punch_logic/punch_cooldown_frame_count_756__i0                           
-                                        |                  No Clock
-game/tony/phys_map/xVelocity_754__i2    |                  No Clock
-game/tony/phys_map/xVelocity_754__i0    |                  No Clock
-game/sunil/punch_logic/punch_cooldown_frame_count_755__i4                           
-                                        |                  No Clock
-game/sunil/punch_logic/punch_cooldown_frame_count_755__i5                           
-                                        |                  No Clock
-game/sunil/punch_logic/punch_cooldown_frame_count_755__i0                           
+game/tony/punch_logic/punch_cooldown_frame_count_780__i0                           
                                         |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
-ition                                   |                       596
+ition                                   |                       732
                                         |                          
 -------------------------------------------------------------------
 

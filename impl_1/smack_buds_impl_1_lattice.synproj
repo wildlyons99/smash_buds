@@ -59,6 +59,9 @@
 "Z:/smash_buds-main/source/impl_1/sunil_run_rom2.vhd"
 "Z:/smash_buds-main/source/impl_1/sunil_run_rom1.vhd"
 "Z:/smash_buds-main/source/impl_1/start_screen_rom.vhd"
+"Z:/smash_buds-main/source/impl_1/pencil_rom.vhd"
+"Z:/smash_buds-main/source/impl_1/win_area.vhd"
+"Z:/smash_buds-main/source/impl_1/background_rom.vhd"
 
 
 -path "Z:/smash_buds-main"

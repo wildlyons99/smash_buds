@@ -5,6 +5,7 @@ use IEEE.numeric_std.all;
 entity pattern_gen is
   port(
 	  clk : in std_logic;
+	  clk60 : in std_logic;
 	  row : in signed(10 downto 0); -- 0-1023
 	  col : in signed(10 downto 0); -- 0-1023
       valid : in std_logic;
@@ -23,6 +24,7 @@ entity pattern_gen is
 	  
 	  -- Which game state we're in
 	  start_screen, tony_win, sunil_win : std_logic;
+	  win_timer : in signed(9 downto 0);
 	  
 	  -- Output
 	  rgb : out std_logic_vector(5 downto 0)
@@ -108,6 +110,32 @@ signal tony_hitbox_y : signed(10 downto 0);
 signal sunil_hitbox_x : signed(10 downto 0);
 signal sunil_hitbox_y : signed(10 downto 0);
 
+-- Displaying pencil
+signal tony_pencil_diff_x_vector : std_logic_vector(10 downto 0);
+signal tony_pencil_diff_y_vector : std_logic_vector(10 downto 0);
+signal tony_xadr_to_pencil : unsigned(5 downto 0);
+signal tony_yadr_to_pencil : unsigned(3 downto 0);
+signal tony_pencil_pixel : std_logic_vector(5 downto 0);
+signal tony_pencil_pixel_pink : std_logic;
+
+signal sunil_pencil_diff_x_vector : std_logic_vector(10 downto 0);
+signal sunil_pencil_diff_y_vector : std_logic_vector(10 downto 0);
+signal sunil_xadr_to_pencil : unsigned(5 downto 0);
+signal sunil_yadr_to_pencil : unsigned(3 downto 0);
+signal sunil_pencil_pixel : std_logic_vector(5 downto 0);
+signal sunil_pencil_pixel_pink : std_logic;
+
+-- Displaying timer bar
+signal drawing_bar_x, drawing_bar_y : std_logic;
+signal timer_bar_pixel : std_logic_vector(5 downto 0);
+
+-- Drawing Pencil
+signal start_drawing_tony_pencil : std_logic;
+signal start_drawing_sunil_pencil : std_logic;
+signal drawing_tony_pencil : std_logic;
+signal drawing_sunil_pencil : std_logic;
+signal sunil_pencil_counter : unsigned(3 downto 0);
+signal tony_pencil_counter : unsigned(3 downto 0);
 
 -- Tony ROMs
 component tony_idle_rom is
@@ -175,6 +203,25 @@ component start_screen_rom is
       );
 end component;
 
+-- Pencil ROM
+component pencil_rom is
+  port(
+	  clk : in std_logic;
+	  xadr: in unsigned(5 downto 0);
+	  yadr : in unsigned(3 downto 0); 
+	  rgb : out std_logic_vector(5 downto 0)
+      );
+end component;
+
+component background_rom is
+  port(
+	  clk : in std_logic;
+	  xadr: in unsigned(7 downto 0);
+	  yadr : in unsigned(6 downto 0); -- 0-1023
+	  rgb : out std_logic_vector(5 downto 0)
+      );
+end component;
+
 begin
    -- Naming Signals
    tony_left_pressed <= tony_buttons(1);
@@ -226,6 +273,30 @@ begin
 									 rgb => sunil_color_run2
 							  		 );
    
+   -- PENCIL ROMs
+   tony_pencil_map : pencil_rom port map (
+									 clk => clk,
+									 xadr => tony_xadr_to_pencil,
+									 yadr => tony_yadr_to_pencil,
+									 rgb => tony_pencil_pixel
+									 );
+									 
+   -- PENCIL ROMs
+   sunil_pencil_map : pencil_rom port map (
+									 clk => clk,
+									 xadr => sunil_xadr_to_pencil,
+									 yadr => sunil_yadr_to_pencil,
+									 rgb => sunil_pencil_pixel
+									 );
+									 
+   -- Background ROM
+   
+   background_rom_map : background_rom port map (
+												clk => clk,
+												xadr => unsigned(col_vector(9 downto 2)),
+												yadr => unsigned(row_vector(8 downto 2)),
+												rgb => background
+												);
    
    process (clk) is
    begin
@@ -275,38 +346,85 @@ begin
    
    -- Drawing hitboxes 
    tony_hitbox_x <= tony_x + 15 when (tony_right_pressed) else
-                    tony_x + player_width - 15 - 35;
-   tony_hitbox_y <= tony_y + 20;
+                    tony_x + player_width - 15 - 39;
+   tony_hitbox_y <= tony_y + 14;
    
-   on_tony_hitbox_x <= '1' when ((col >= tony_hitbox_x) and (col <= tony_hitbox_x + 35)) else '0';
-   on_tony_hitbox_y <= '1' when ((row >= tony_hitbox_y) and (row <= tony_hitbox_y + 20)) else '0';
+   on_tony_hitbox_x <= '1' when ((col >= tony_hitbox_x) and (col < tony_hitbox_x + 39)) else '0';
+   on_tony_hitbox_y <= '1' when ((row >= tony_hitbox_y) and (row < tony_hitbox_y + 14)) else '0';
    
    sunil_hitbox_x <= sunil_x + 15 when (sunil_right_pressed) else
-                    sunil_x + player_width - 15 - 35;
-   sunil_hitbox_y <= sunil_y + 20;
+                    sunil_x + player_width - 15 - 39;
+   sunil_hitbox_y <= sunil_y + 14;
    
-   on_sunil_hitbox_x <= '1' when ((col >= sunil_hitbox_x) and (col <= sunil_hitbox_x + 35)) else '0';
-   on_sunil_hitbox_y <= '1' when ((row >= sunil_hitbox_y) and (row <= sunil_hitbox_y + 20)) else '0';
+   on_sunil_hitbox_x <= '1' when ((col >= sunil_hitbox_x) and (col < sunil_hitbox_x + 39)) else '0';
+   on_sunil_hitbox_y <= '1' when ((row >= sunil_hitbox_y) and (row < sunil_hitbox_y + 14)) else '0';
    
    on_tony_hitbox <= '1' when (on_tony_hitbox_x and on_tony_hitbox_y) else '0';
    on_sunil_hitbox <= '1' when (on_sunil_hitbox_x and on_sunil_hitbox_y) else '0';
    
+   tony_pencil_diff_x_vector <=  std_logic_vector(col - tony_hitbox_x + 1);
+   tony_pencil_diff_y_vector <= std_logic_vector(row - tony_hitbox_y);   
+   tony_xadr_to_pencil <= unsigned(tony_pencil_diff_x_vector(5 downto 0)) when (tony_right_pressed) else 
+						  39 - unsigned(tony_pencil_diff_x_vector(5 downto 0));
+   tony_yadr_to_pencil <= unsigned(tony_pencil_diff_y_vector(3 downto 0));
    
+   sunil_pencil_diff_x_vector <=  std_logic_vector(unsigned(col - sunil_hitbox_x + 1));
+   sunil_pencil_diff_y_vector <= std_logic_vector(unsigned(row - sunil_hitbox_y));   
+   sunil_xadr_to_pencil <= unsigned(sunil_pencil_diff_x_vector(5 downto 0)) when (sunil_right_pressed) else
+						   39 - unsigned(sunil_pencil_diff_x_vector(5 downto 0));
+   sunil_yadr_to_pencil <= unsigned(sunil_pencil_diff_y_vector(3 downto 0));
    
-   -- Drawing Background
-								-- X     								--    Y
-	background <= "001100" when ((col >= 11d"330" and col <= 11d"630") and (row > 11d"370" and row <= 11d"378")) or -- Bototm right platform
-								((col >= 11d"0" and col <= 11d"200") and (row > 11d"290" and row <= 11d"298")) or -- Top left platform
-								(row > 464) else -- Floor 
-								"110000" when ((col >= 11d"250" and col <= 11d"300") and (row > 11d"250" and row <= 11d"255")) else -- Win square for debugging
-								"111111";
+   tony_pencil_pixel_pink <= '1' when (tony_pencil_pixel = "110110") else '0';
+   sunil_pencil_pixel_pink <= '1' when (sunil_pencil_pixel = "110110") else '0';
+   
+   -- Drawing bar
+   drawing_bar_x <= '1' when (col >= 168 and col <= 472) else '0';
+   drawing_bar_y <= '1' when (row >= 32 and row <= 55) else '0';
+   timer_bar_pixel <= "110000" when (col <= 318 + (win_timer / 2)) else
+				      "000011";
+	
+	-- Drawing the pencil for more than one frame
+	start_drawing_tony_pencil <= tony_punching and (tony_right_pressed or tony_left_pressed); 
+	start_drawing_sunil_pencil <= sunil_punching and (sunil_right_pressed or sunil_left_pressed);
+	
+	process (clk60) is
+	begin
+		if rising_edge(clk60) then
+			if tony_pencil_counter = 0 then
+				if start_drawing_tony_pencil then
+					tony_pencil_counter <= 4d"5";
+				end if;
+			elsif tony_pencil_counter > 0 then
+				tony_pencil_counter <= tony_pencil_counter - 1;
+			end if;
+		end if;
+	end process;
+	
+	drawing_tony_pencil <= '1' when (tony_pencil_counter > 0) else '0';
+	
+	process (clk60) is
+	begin
+		if rising_edge(clk60) then
+			if sunil_pencil_counter = 0 then
+				if start_drawing_sunil_pencil then
+					sunil_pencil_counter <= 4d"5";
+				end if;
+			elsif sunil_pencil_counter > 0 then
+				sunil_pencil_counter <= sunil_pencil_counter - 1;
+			end if;
+		end if;
+	end process;
+	
+	drawing_sunil_pencil <= '1' when (sunil_pencil_counter > 0) else '0';
 	
 	
 	-- Drawing Level
-	level_pixels <= "000011" when ((on_tony_hitbox and tony_punching and (tony_right_pressed or tony_left_pressed)) or (on_sunil_hitbox and sunil_punching and (sunil_right_pressed or sunil_left_pressed))) else
+	level_pixels <= tony_pencil_pixel when (on_tony_hitbox and drawing_tony_pencil and (not tony_pencil_pixel_pink)) else
+					sunil_pencil_pixel when (on_sunil_hitbox and drawing_sunil_pencil and (not sunil_pencil_pixel_pink)) else
 				    tony_pixel when (drawing_tony_x and drawing_tony_y and (not tony_pixel_pink)) else
 					sunil_pixel when (drawing_sunil_x and drawing_sunil_y and (not sunil_pixel_pink)) else
-		            background;
+		            timer_bar_pixel when (drawing_bar_x and drawing_bar_y) else
+					background;
    
    
    -- Start Screen
