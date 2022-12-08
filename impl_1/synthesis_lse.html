@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec  8 03:31:16 2022
+Thu Dec  8 04:12:43 2022
 
 
 Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f smack_buds_impl_1_lattice.synproj -gui -msgset Z:/smash_buds-main/promote.xml 
@@ -166,6 +166,8 @@ VHDL library = work
 VHDL design file = Z:/smash_buds-main/source/impl_1/win_area.vhd
 VHDL library = work
 VHDL design file = Z:/smash_buds-main/source/impl_1/background_rom.vhd
+VHDL library = work
+VHDL design file = Z:/smash_buds-main/source/impl_1/game_over_rom.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Compile design.
 Compile Design Begin
@@ -318,6 +320,11 @@ Analyzing VHDL file z:/smash_buds-main/source/impl_1/background_rom.vhd
 
 INFO - synthesis: z:/smash_buds-main/source/impl_1/background_rom.vhd(5): analyzing entity background_rom. VHDL-1012
 INFO - synthesis: z:/smash_buds-main/source/impl_1/background_rom.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/smash_buds-main/source/impl_1/game_over_rom.vhd. VHDL-1481
+Analyzing VHDL file z:/smash_buds-main/source/impl_1/game_over_rom.vhd
+
+INFO - synthesis: z:/smash_buds-main/source/impl_1/game_over_rom.vhd(5): analyzing entity game_over_rom. VHDL-1012
+INFO - synthesis: z:/smash_buds-main/source/impl_1/game_over_rom.vhd(14): analyzing architecture synth. VHDL-1010
 INFO - synthesis: The default VHDL library search path is now "Z:/smash_buds-main/impl_1". VHDL-1504
 Top module language type = VHDL.
 unit top is not yet analyzed. VHDL-1485
@@ -364,75 +371,75 @@ WARNING - synthesis: No available RAMs found.
 WARNING - synthesis: z:/smash_buds-main/source/impl_1/win_area.vhd(60): Register \meta_state/win_area_map/not_first_time is stuck at One. VDB-5014
 Combinational loop found : 1
 
-	Net \patternmaker/sunil_pixel[0] 
+	Net \patternmaker/tony_pixel[5] 
 
-	Instance \patternmaker/sunil_pixel_5__I_0_27 
+	Instance \patternmaker/tony_pixel_5__I_0_26 
 
 Combinational loop found : 2
-
-	Net \patternmaker/sunil_pixel[1] 
-
-	Instance \patternmaker/sunil_pixel_5__I_0_28 
-
-Combinational loop found : 3
-
-	Net \patternmaker/sunil_pixel[2] 
-
-	Instance \patternmaker/sunil_pixel_5__I_0_29 
-
-Combinational loop found : 4
-
-	Net \patternmaker/sunil_pixel[3] 
-
-	Instance \patternmaker/sunil_pixel_5__I_0_210 
-
-Combinational loop found : 5
-
-	Net \patternmaker/sunil_pixel[4] 
-
-	Instance \patternmaker/sunil_pixel_5__I_0_211 
-
-Combinational loop found : 6
 
 	Net \patternmaker/sunil_pixel[5] 
 
 	Instance \patternmaker/sunil_pixel_5__I_0_212 
 
-Combinational loop found : 7
+Combinational loop found : 3
 
 	Net \patternmaker/tony_pixel[0] 
 
 	Instance \patternmaker/tony_pixel_5__I_0_21 
 
-Combinational loop found : 8
+Combinational loop found : 4
 
 	Net \patternmaker/tony_pixel[1] 
 
 	Instance \patternmaker/tony_pixel_5__I_0_22 
 
-Combinational loop found : 9
+Combinational loop found : 5
 
 	Net \patternmaker/tony_pixel[2] 
 
 	Instance \patternmaker/tony_pixel_5__I_0_23 
 
-Combinational loop found : 10
+Combinational loop found : 6
 
 	Net \patternmaker/tony_pixel[3] 
 
 	Instance \patternmaker/tony_pixel_5__I_0_24 
 
-Combinational loop found : 11
+Combinational loop found : 7
 
 	Net \patternmaker/tony_pixel[4] 
 
 	Instance \patternmaker/tony_pixel_5__I_0_25 
 
+Combinational loop found : 8
+
+	Net \patternmaker/sunil_pixel[0] 
+
+	Instance \patternmaker/sunil_pixel_5__I_0_27 
+
+Combinational loop found : 9
+
+	Net \patternmaker/sunil_pixel[1] 
+
+	Instance \patternmaker/sunil_pixel_5__I_0_28 
+
+Combinational loop found : 10
+
+	Net \patternmaker/sunil_pixel[2] 
+
+	Instance \patternmaker/sunil_pixel_5__I_0_29 
+
+Combinational loop found : 11
+
+	Net \patternmaker/sunil_pixel[3] 
+
+	Instance \patternmaker/sunil_pixel_5__I_0_210 
+
 Combinational loop found : 12
 
-	Net \patternmaker/tony_pixel[5] 
+	Net \patternmaker/sunil_pixel[4] 
 
-	Instance \patternmaker/tony_pixel_5__I_0_26 
+	Instance \patternmaker/sunil_pixel_5__I_0_211 
 
 Combinational loop found : 13
 
@@ -677,17 +684,17 @@ INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are s
 
 ################### Begin Area Report (top)######################
 Number of register bits => 252 of 5280 (4 % )
-EBR_B => 22
-CCU2 => 399
+EBR_B => 24
+CCU2 => 389
 FD1P3XZ => 252
 IB => 3
 IOL_B => 4
-LUT4 => 2160
+LUT4 => 2187
 OB => 12
 PLL_B => 1
 ################### End Area Report ##################
 Number of odd-length carry chains : 41
-Number of even-length carry chains : 28
+Number of even-length carry chains : 26
 
 
 <A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
@@ -704,23 +711,23 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : patternmaker/col_vector[3], loads : 329
-  Net : patternmaker/col_vector[5], loads : 315
+  Net : patternmaker/col_vector[3], loads : 322
+  Net : patternmaker/col_vector[5], loads : 319
   Net : patternmaker/col_vector[4], loads : 313
   Net : patternmaker/col_vector[6], loads : 295
-  Net : patternmaker/col_vector[7], loads : 231
-  Net : patternmaker/col_vector[8], loads : 188
-  Net : internalvga/internalrow[3], loads : 121
+  Net : patternmaker/col_vector[7], loads : 237
+  Net : patternmaker/col_vector[8], loads : 197
+  Net : internalvga/internalrow[3], loads : 123
   Net : patternmaker/col_vector[2], loads : 100
-  Net : internalvga/internalrow[4], loads : 85
-  Net : patternmaker/col_vector[9], loads : 85
+  Net : internalvga/internalrow[4], loads : 89
+  Net : patternmaker/col_vector[9], loads : 87
 ################### End Clock Report ##################
 
-Peak Memory Usage: 987 MB
+Peak Memory Usage: 1348 MB
 
 --------------------------------------------------------------
-Total CPU Time: 33 secs 
-Total REAL Time: 39 secs 
+Total CPU Time: 34 secs 
+Total REAL Time: 41 secs 
 --------------------------------------------------------------
 
 

@@ -61,8 +61,8 @@ begin
 
 	tony : player 
 	generic map (
-		reset_x => 11d"200",
-		reset_y => 11d"200"
+		reset_x => 11d"225",
+		reset_y => 11d"300"
 	)
 	port map (
 		clk => clk,
@@ -85,7 +85,7 @@ begin
 	sunil : player
 	generic map (
 		reset_x => 11d"400",
-		reset_y => 11d"100"
+		reset_y => 11d"300"
 	)
 	port map (
 		clk => clk,

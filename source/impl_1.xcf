@@ -18,7 +18,7 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>../../impl_1/smack_buds_impl_1.bin</File>
-			<FileTime>12/06/22 22:29:25</FileTime>
+			<FileTime>12/08/22 04:14:20</FileTime>
 			<JedecChecksum>0x254A</JedecChecksum>
 			<MemoryType>External SPI Flash Memory (SPI FLASH)</MemoryType>
 			<Operation>Erase,Program,Verify</Operation>

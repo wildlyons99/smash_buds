@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Thu Dec  8 03:32:54 2022
+Thu Dec  8 04:14:17 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -65,70 +65,70 @@ Operating conditions:
 Combinational Loops
 -------------------
 ++++ Loop1
-game.tony.col_map.i1_2_lut/D	->	game.tony.col_map.i1_2_lut/Z
+game.tony.col_map.i20810_2_lut/D	->	game.tony.col_map.i20810_2_lut/Z
 
 ++++ Loop2
-game.tony.col_map.i1_2_lut_adj_139/D	->	game.tony.col_map.i1_2_lut_adj_139/Z
+game.tony.col_map.i20663_2_lut/D	->	game.tony.col_map.i20663_2_lut/Z
 
 ++++ Loop3
-game.tony.col_map.i19336_2_lut/D	->	game.tony.col_map.i19336_2_lut/Z
+game.tony.col_map.i20660_2_lut/D	->	game.tony.col_map.i20660_2_lut/Z
 
 ++++ Loop4
-game.tony.col_map.i19337_2_lut/D	->	game.tony.col_map.i19337_2_lut/Z
+game.tony.col_map.i20661_2_lut/D	->	game.tony.col_map.i20661_2_lut/Z
 
 ++++ Loop5
-game/tony/col_map/i19373_3_lut_4_lut/D	->	game/tony/col_map/i19373_3_lut_4_lut/Z
+game/tony/col_map/i20702_3_lut_4_lut/D	->	game/tony/col_map/i20702_3_lut_4_lut/Z
 
 ++++ Loop6
-game/tony/col_map/i19374_3_lut_4_lut/D	->	game/tony/col_map/i19374_3_lut_4_lut/Z
+game/tony/col_map/i1_3_lut_4_lut_adj_132/D	->	game/tony/col_map/i1_3_lut_4_lut_adj_132/Z
 
 ++++ Loop7
-game/tony/col_map/i56_3_lut_4_lut/D	->	game/tony/col_map/i56_3_lut_4_lut/Z
+game/tony/col_map/i20703_3_lut_4_lut/D	->	game/tony/col_map/i20703_3_lut_4_lut/Z
 
 ++++ Loop8
-game/tony/col_map/i1_3_lut_4_lut/D	->	game/tony/col_map/i1_3_lut_4_lut/Z
+game/tony/col_map/i21073_3_lut_4_lut/D	->	game/tony/col_map/i21073_3_lut_4_lut/Z
 
 ++++ Loop9
-game.tony.col_map.i1_2_lut_adj_138/D	->	game.tony.col_map.i1_2_lut_adj_138/Z
+game.tony.col_map.i12756_4_lut/D	->	game.tony.col_map.i12756_4_lut/Z
 
 ++++ Loop10
-game/tony/col_map/i30348_3_lut_4_lut/D	->	game/tony/col_map/i30348_3_lut_4_lut/Z
+game/tony/col_map/i1_3_lut_4_lut/D	->	game/tony/col_map/i1_3_lut_4_lut/Z
 
 ++++ Loop11
-game/tony/col_map/i33422_4_lut/B	->	game/tony/col_map/i33422_4_lut/Z
+game.tony.col_map.i20662_2_lut/D	->	game.tony.col_map.i20662_2_lut/Z
 
 ++++ Loop12
-game.sunil.col_map.i19525_2_lut/D	->	game.sunil.col_map.i19525_2_lut/Z
+game.sunil.col_map.i20816_2_lut/D	->	game.sunil.col_map.i20816_2_lut/Z
 
 ++++ Loop13
-game.sunil.col_map.i19335_2_lut/D	->	game.sunil.col_map.i19335_2_lut/Z
+game.sunil.col_map.i20659_2_lut/D	->	game.sunil.col_map.i20659_2_lut/Z
 
 ++++ Loop14
-game.sunil.col_map.i19332_2_lut/D	->	game.sunil.col_map.i19332_2_lut/Z
+game.sunil.col_map.i20656_2_lut/D	->	game.sunil.col_map.i20656_2_lut/Z
 
 ++++ Loop15
-game.sunil.col_map.i19333_2_lut/D	->	game.sunil.col_map.i19333_2_lut/Z
+game.sunil.col_map.i20657_2_lut/D	->	game.sunil.col_map.i20657_2_lut/Z
 
 ++++ Loop16
-game/sunil/col_map/i19370_3_lut_4_lut/D	->	game/sunil/col_map/i19370_3_lut_4_lut/Z
+game/sunil/col_map/i20698_3_lut_4_lut/D	->	game/sunil/col_map/i20698_3_lut_4_lut/Z
 
 ++++ Loop17
 game/sunil/col_map/i1_3_lut_4_lut/D	->	game/sunil/col_map/i1_3_lut_4_lut/Z
 
 ++++ Loop18
-game/sunil/col_map/i19371_3_lut_4_lut/D	->	game/sunil/col_map/i19371_3_lut_4_lut/Z
+game/sunil/col_map/i20699_3_lut_4_lut/D	->	game/sunil/col_map/i20699_3_lut_4_lut/Z
 
 ++++ Loop19
-game/sunil/col_map/i19727_3_lut_4_lut/D	->	game/sunil/col_map/i19727_3_lut_4_lut/Z
+game/sunil/col_map/i21078_3_lut_4_lut/D	->	game/sunil/col_map/i21078_3_lut_4_lut/Z
 
 ++++ Loop20
-game.sunil.col_map.i12598_4_lut/D	->	game.sunil.col_map.i12598_4_lut/Z
+game/sunil/col_map/i33987_4_lut_4_lut/D	->	game/sunil/col_map/i33987_4_lut_4_lut/Z
 
 ++++ Loop21
-game/sunil/col_map/i1_3_lut_4_lut_adj_111/D	->	game/sunil/col_map/i1_3_lut_4_lut_adj_111/Z
+game/sunil/col_map/i1_3_lut_4_lut_adj_106/D	->	game/sunil/col_map/i1_3_lut_4_lut_adj_106/Z
 
 ++++ Loop22
-game.sunil.col_map.i19334_2_lut/D	->	game.sunil.col_map.i19334_2_lut/Z
+game.sunil.col_map.i20658_2_lut/D	->	game.sunil.col_map.i20658_2_lut/Z
 
 ==============================================
 2  CLOCK SUMMARY
@@ -200,16 +200,16 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-patternmaker/counter_772_898__i22/D     |    No arrival or required
-patternmaker/counter_772_898__i21/D     |    No arrival or required
-patternmaker/counter_772_898__i20/D     |    No arrival or required
-patternmaker/counter_772_898__i19/D     |    No arrival or required
-patternmaker/counter_772_898__i18/D     |    No arrival or required
-patternmaker/counter_772_898__i17/D     |    No arrival or required
-patternmaker/counter_772_898__i16/D     |    No arrival or required
-patternmaker/counter_772_898__i15/D     |    No arrival or required
-patternmaker/counter_772_898__i14/D     |    No arrival or required
-patternmaker/counter_772_898__i13/D     |    No arrival or required
+patternmaker/counter_759_887__i22/D     |    No arrival or required
+patternmaker/counter_759_887__i21/D     |    No arrival or required
+patternmaker/counter_759_887__i20/D     |    No arrival or required
+patternmaker/counter_759_887__i19/D     |    No arrival or required
+patternmaker/counter_759_887__i18/D     |    No arrival or required
+patternmaker/counter_759_887__i17/D     |    No arrival or required
+patternmaker/counter_759_887__i16/D     |    No arrival or required
+patternmaker/counter_759_887__i15/D     |    No arrival or required
+patternmaker/counter_759_887__i14/D     |    No arrival or required
+patternmaker/counter_759_887__i13/D     |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
@@ -254,23 +254,24 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
-game/tony/phys_map/xVelocity_779__i3    |                  No Clock
-meta_state/win_area_map/win_timer__i8   |                  No Clock
 meta_state/win_area_map/win_timer__i9   |                  No Clock
-meta_state/win_area_map/win_timer__i2   |                  No Clock
-meta_state/win_area_map/win_timer__i6   |                  No Clock
 meta_state/win_area_map/win_timer__i4   |                  No Clock
-game/tony/punch_logic/punch_cooldown_frame_count_780__i5                           
-                                        |                  No Clock
+meta_state/win_area_map/win_timer__i8   |                  No Clock
+meta_state/win_area_map/win_timer__i6   |                  No Clock
 meta_state/win_area_map/win_timer__i0   |                  No Clock
-game/tony/punch_logic/punch_cooldown_frame_count_780__i4                           
+meta_state/win_area_map/win_timer__i2   |                  No Clock
+game/tony/punch_logic/punch_cooldown_frame_count_767__i2                           
                                         |                  No Clock
-game/tony/punch_logic/punch_cooldown_frame_count_780__i2                           
+game/tony/punch_logic/punch_cooldown_frame_count_767__i5                           
+                                        |                  No Clock
+game/tony/punch_logic/punch_cooldown_frame_count_767__i4                           
+                                        |                  No Clock
+game/tony/punch_logic/punch_cooldown_frame_count_767__i0                           
                                         |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
-ition                                   |                       723
+ition                                   |                       732
                                         |                          
 -------------------------------------------------------------------
 

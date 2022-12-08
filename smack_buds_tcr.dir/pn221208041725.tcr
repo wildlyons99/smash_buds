@@ -1,0 +1,14 @@
+#Start recording tcl command: 12/8/2022 03:40:55
+#Project Location: Z:/smash_buds-main; Project name: smack_buds
+prj_open "Z:/smash_buds-main/smack_buds.rdf"
+prj_add_source "Z:/smash_buds-main/source/impl_1/game_over_rom.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/8/2022 04:17:25

@@ -39,8 +39,8 @@ signal toout : std_logic_vector(5 downto 0);
 -- Game over vs. level vs. winning screen
 signal level_pixels : std_logic_vector(5 downto 0);
 signal start_pixels: std_logic_vector(5 downto 0);
-signal tony_win_pixels: std_logic_vector(5 downto 0);
-signal sunil_win_pixels: std_logic_vector(5 downto 0);
+signal win_pixels: std_logic_vector(5 downto 0);
+
 --signal onsquarex : std_logic;
 --signal onsquarey : std_logic;
 
@@ -137,6 +137,18 @@ signal drawing_sunil_pencil : std_logic;
 signal sunil_pencil_counter : unsigned(3 downto 0);
 signal tony_pencil_counter : unsigned(3 downto 0);
 
+-- Displaying win screen
+signal win_pixels_pink : std_logic;
+signal on_win_screen_x : std_logic;
+signal on_win_screen_y : std_logic;
+signal win_screen_diff_x_vector : std_logic_vector(10 downto 0);
+signal win_screen_diff_y_vector : std_logic_vector(10 downto 0);
+signal win_screen_diff_x : signed(10 downto 0);
+signal win_screen_diff_y : signed(10 downto 0);
+
+
+
+
 -- Tony ROMs
 component tony_idle_rom is
   port(
@@ -218,6 +230,15 @@ component background_rom is
 	  clk : in std_logic;
 	  xadr: in unsigned(7 downto 0);
 	  yadr : in unsigned(6 downto 0); -- 0-1023
+	  rgb : out std_logic_vector(5 downto 0)
+      );
+end component;
+
+component game_over_rom is
+  port(
+	  clk : in std_logic;
+	  xadr: in unsigned(5 downto 0);
+	  yadr : in unsigned(3 downto 0); -- 0-1023
 	  rgb : out std_logic_vector(5 downto 0)
       );
 end component;
@@ -347,16 +368,16 @@ begin
    -- Drawing hitboxes 
    tony_hitbox_x <= tony_x + 15 when (tony_right_pressed) else
                     tony_x + player_width - 15 - 39;
-   tony_hitbox_y <= tony_y + 14;
+   tony_hitbox_y <= tony_y + 25;
    
-   on_tony_hitbox_x <= '1' when ((col >= tony_hitbox_x) and (col < tony_hitbox_x + 39)) else '0';
+   on_tony_hitbox_x <= '1' when ((col > tony_hitbox_x) and (col < tony_hitbox_x + 39)) else '0';
    on_tony_hitbox_y <= '1' when ((row >= tony_hitbox_y) and (row < tony_hitbox_y + 14)) else '0';
    
    sunil_hitbox_x <= sunil_x + 15 when (sunil_right_pressed) else
                     sunil_x + player_width - 15 - 39;
-   sunil_hitbox_y <= sunil_y + 14;
+   sunil_hitbox_y <= sunil_y + 25;
    
-   on_sunil_hitbox_x <= '1' when ((col >= sunil_hitbox_x) and (col < sunil_hitbox_x + 39)) else '0';
+   on_sunil_hitbox_x <= '1' when ((col > sunil_hitbox_x) and (col < sunil_hitbox_x + 39)) else '0';
    on_sunil_hitbox_y <= '1' when ((row >= sunil_hitbox_y) and (row < sunil_hitbox_y + 14)) else '0';
    
    on_tony_hitbox <= '1' when (on_tony_hitbox_x and on_tony_hitbox_y) else '0';
@@ -419,7 +440,8 @@ begin
 	
 	
 	-- Drawing Level
-	level_pixels <= tony_pencil_pixel when (on_tony_hitbox and drawing_tony_pencil and (not tony_pencil_pixel_pink)) else
+	level_pixels <= win_pixels when ((sunil_win or tony_win) and (not win_pixels_pink) and on_win_screen_x and on_win_screen_y) else
+					tony_pencil_pixel when (on_tony_hitbox and drawing_tony_pencil and (not tony_pencil_pixel_pink)) else
 					sunil_pencil_pixel when (on_sunil_hitbox and drawing_sunil_pencil and (not sunil_pencil_pixel_pink)) else
 				    tony_pixel when (drawing_tony_x and drawing_tony_y and (not tony_pixel_pink)) else
 					sunil_pixel when (drawing_sunil_x and drawing_sunil_y and (not sunil_pixel_pink)) else
@@ -441,14 +463,22 @@ begin
 											   rgb => start_pixels
 											   );
    
-   tony_win_pixels <= "001100";
-   sunil_win_pixels <= "110011";
-   
+   win_screen : game_over_rom port map (
+									   clk => clk,
+									   xadr => unsigned(win_screen_diff_x_vector(8 downto 3)),
+									   yadr => unsigned(win_screen_diff_y_vector(6 downto 3)),
+									   rgb => win_pixels
+									   );
+   win_screen_diff_x <= col - 160;
+   win_screen_diff_y <= row - 208;
+   win_screen_diff_x_vector <= std_logic_vector(win_screen_diff_x);
+   win_screen_diff_y_vector <= std_logic_vector(win_screen_diff_y);
+   on_win_screen_x <= '1' when (col > 160 and col < 320 + 160) else '0';
+   on_win_screen_y <= '1' when (row >= 240 - 32 and row < 240 + 32) else '0';
+   win_pixels_pink <= '1' when (win_pixels = "110110") else '0';
    
    -- What to output
    toout <= start_pixels when (start_screen) else
-			tony_win_pixels when (tony_win) else
-		    sunil_win_pixels when (sunil_win) else
 			level_pixels;
    
    

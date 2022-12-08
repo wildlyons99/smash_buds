@@ -40,7 +40,7 @@ begin
 				win_timer <= 10d"0";
 				not_first_time <= '1';
 			else 
-				if (win_timer = 10d"300" or win_timer <= 0 - 300) then
+				if (win_timer = 10d"308" or win_timer <= 0 - 308) then
 					game_over <= '1';
 				end if;
 				

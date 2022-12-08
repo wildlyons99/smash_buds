@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Thu Dec  8 03:31:58 2022
+Mapped on: Thu Dec  8 04:13:27 2022
 
 Design Information
 ------------------
@@ -18,10 +18,10 @@ Design Summary
 
    Number of slice registers: 252 out of  5280 (5%)
    Number of I/O registers:      4 out of   117 (3%)
-   Number of LUT4s:           2988 out of  5280 (57%)
-      Number of logic LUT4s:             2158
+   Number of LUT4s:           2996 out of  5280 (57%)
+      Number of logic LUT4s:             2186
       Number of inserted feedthru LUT4s:  32
-      Number of ripple logic:            399 (798 LUT4s)
+      Number of ripple logic:            389 (778 LUT4s)
    Number of IO sites used:   15 out of 39 (38%)
       Number of IO sites used for general PIO: 15
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -41,25 +41,25 @@ Design Summary
    Number of SRAMs:            0 out of 4 (0%)
    Number of WARMBOOTs:        0 out of 1 (0%)
    Number of SPIs:             0 out of 2 (0%)
-   Number of EBRs:             22 out of 30 (73%)
+   Number of EBRs:             24 out of 30 (80%)
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  7
-      Net internal25clk: 88 loads, 88 rising, 0 falling (Driver: Pin
+      Net internal25clk: 90 loads, 90 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net internal60hzclk: 96 loads, 96 rising, 0 falling (Driver: Pin
-     i33416_4_lut/OUT)
+     i3_4_lut/OUT)
       Net ext12m_c: 1 loads, 1 rising, 0 falling (Driver: Port ext12m)
-      Net sunil_controller.counter[20]: 14 loads, 14 rising, 0 falling (Driver:
-     Pin sunil_controller.counter_776__i21/Q)
-      Net sunil_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
-     sunil_controller.i3_4_lut_adj_166/OUT)
       Net tony_controller.counter[20]: 14 loads, 14 rising, 0 falling (Driver:
-     Pin tony_controller.counter_775__i21/Q)
+     Pin tony_controller.counter_762__i21/Q)
       Net tony_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
-     tony_controller.i1_4_lut_adj_99/OUT)
+     tony_controller.i1_4_lut/OUT)
+      Net sunil_controller_clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
+     sunil_controller.i1_4_lut/OUT)
+      Net sunil_controller.counter[20]: 14 loads, 14 rising, 0 falling (Driver:
+     Pin sunil_controller.counter_763__i21/Q)
    Number of Clock Enables:  21
-      Net VCC_net: 66 loads, 0 SLICEs
-      Net patternmaker.n15138: 4 loads, 4 SLICEs
+      Net VCC_net: 72 loads, 0 SLICEs
+      Net n1473: 6 loads, 6 SLICEs
 
                                     Page 1
 
@@ -69,52 +69,52 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net n15144: 4 loads, 4 SLICEs
-      Net sunil_controller.n15083: 6 loads, 6 SLICEs
-      Net sunil_controller.n15: 8 loads, 8 SLICEs
-      Net meta_state.win_area_map.n15099: 6 loads, 6 SLICEs
-      Net n1490: 6 loads, 6 SLICEs
-      Net game.tony.punch_logic.n15169: 4 loads, 4 SLICEs
-      Net game.tony.phys_map.n33888: 1 loads, 1 SLICEs
-      Net game.tony.phys_map.n15186: 1 loads, 1 SLICEs
-      Net game.tony.phys_map.n15093: 1 loads, 1 SLICEs
-      Net game.n15105: 5 loads, 5 SLICEs
-      Net game.tony.phys_map.n15188: 2 loads, 2 SLICEs
-      Net game.sunil.punch_logic.n15154: 4 loads, 4 SLICEs
-      Net game.sunil.phys_map.n33890: 1 loads, 1 SLICEs
-      Net game.sunil.phys_map.n15106: 5 loads, 5 SLICEs
-      Net game.sunil.phys_map.n33866: 1 loads, 1 SLICEs
-      Net game.sunil.phys_map.n15233: 2 loads, 2 SLICEs
-      Net game.sunil.phys_map.n15088: 1 loads, 1 SLICEs
-      Net tony_controller.n15084: 6 loads, 6 SLICEs
+      Net patternmaker.n15245: 4 loads, 4 SLICEs
+      Net patternmaker.n15251: 4 loads, 4 SLICEs
+      Net meta_state.win_area_map.n15206: 6 loads, 6 SLICEs
+      Net tony_controller.n15191: 6 loads, 6 SLICEs
       Net tony_controller.n15: 8 loads, 8 SLICEs
+      Net sunil_controller.n15: 8 loads, 8 SLICEs
+      Net sunil_controller.n15190: 6 loads, 6 SLICEs
+      Net game.tony.punch_logic.n15276: 4 loads, 4 SLICEs
+      Net game.tony.phys_map.n35374: 1 loads, 1 SLICEs
+      Net game.tony.phys_map.n35372: 1 loads, 1 SLICEs
+      Net game.tony.phys_map.n15212: 5 loads, 5 SLICEs
+      Net game.tony.phys_map.n15296: 2 loads, 2 SLICEs
+      Net game.tony.phys_map.n15200: 1 loads, 1 SLICEs
+      Net game.sunil.punch_logic.n15261: 4 loads, 4 SLICEs
+      Net game.sunil.phys_map.n35376: 1 loads, 1 SLICEs
+      Net game.sunil.phys_map.n15213: 5 loads, 5 SLICEs
+      Net game.sunil.phys_map.n35378: 1 loads, 1 SLICEs
+      Net game.sunil.phys_map.n15340: 2 loads, 2 SLICEs
+      Net game.sunil.phys_map.n15195: 1 loads, 1 SLICEs
    Number of LSRs:  15
+      Net n16393: 6 loads, 6 SLICEs
       Net reset_players: 52 loads, 52 SLICEs
-      Net internalvalid: 6 loads, 6 SLICEs
-      Net patternmaker.n16302: 4 loads, 4 SLICEs
-      Net n16301: 4 loads, 4 SLICEs
-      Net sunil_controller.counter_19__N_1039: 11 loads, 11 SLICEs
-      Net tony_controller_buttons_signal[4]: 1 loads, 1 SLICEs
       Net col_10__N_34: 6 loads, 6 SLICEs
       Net row_10__N_46: 6 loads, 6 SLICEs
-      Net game.tony.punch_logic.n16320: 4 loads, 4 SLICEs
-      Net game.tony.phys_map.n30659: 1 loads, 1 SLICEs
-      Net game.n24009: 3 loads, 3 SLICEs
-      Net game.sunil.punch_logic.n16309: 4 loads, 4 SLICEs
-      Net game.sunil.phys_map.n16298: 3 loads, 3 SLICEs
-      Net game.sunil.phys_map.n30653: 1 loads, 1 SLICEs
+      Net patternmaker.n16403: 4 loads, 4 SLICEs
+      Net patternmaker.n16402: 4 loads, 4 SLICEs
+      Net tony_controller_buttons_signal[4]: 1 loads, 1 SLICEs
       Net tony_controller.counter_19__N_1039: 11 loads, 11 SLICEs
+      Net sunil_controller.counter_19__N_1039: 11 loads, 11 SLICEs
+      Net game.tony.punch_logic.n16421: 4 loads, 4 SLICEs
+      Net game.tony.phys_map.n32115: 1 loads, 1 SLICEs
+      Net game.tony.phys_map.n16398: 3 loads, 3 SLICEs
+      Net game.sunil.punch_logic.n16410: 4 loads, 4 SLICEs
+      Net game.sunil.phys_map.n16399: 3 loads, 3 SLICEs
+      Net game.sunil.phys_map.n32113: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net patternmaker.col_vector[3]: 331 loads
-      Net patternmaker.col_vector[5]: 327 loads
-      Net patternmaker.col_vector[4]: 322 loads
-      Net patternmaker.col_vector[6]: 303 loads
-      Net VCC_net: 282 loads
-      Net patternmaker.col_vector[7]: 239 loads
-      Net col_vector[8]: 195 loads
-      Net internalrow[3]: 123 loads
-      Net patternmaker.col_vector[2]: 100 loads
-      Net col_vector[9]: 88 loads
+      Net patternmaker.col_vector[5]: 331 loads
+      Net col_vector[3]: 327 loads
+      Net patternmaker.col_vector[4]: 321 loads
+      Net patternmaker.col_vector[6]: 304 loads
+      Net VCC_net: 284 loads
+      Net patternmaker.col_vector[7]: 242 loads
+      Net patternmaker.col_vector[8]: 198 loads
+      Net internalrow[3]: 125 loads
+      Net patternmaker.col_vector[2]: 101 loads
+      Net col_vector[9]: 90 loads
 
 
 
@@ -233,6 +233,12 @@ PLL/DLL Summary (cont)
 ASIC Components
 ---------------
 
+Instance Name: VSYNC_i1
+         Type: IOLOGIC
+Instance Name: patternmaker/win_screen/mux_186
+         Type: EBR
+Instance Name: patternmaker/win_screen/mux_185
+         Type: EBR
 Instance Name: patternmaker/tony_run_map2/mux_171
          Type: EBR
 Instance Name: patternmaker/tony_run_map2/mux_170
@@ -252,12 +258,6 @@ Instance Name: patternmaker/tony_pencil_map/mux_181
 Instance Name: patternmaker/tony_idle_map/mux_165
          Type: EBR
 Instance Name: patternmaker/tony_idle_map/mux_164
-         Type: EBR
-Instance Name: patternmaker/tony_idle_map/mux_163
-         Type: EBR
-Instance Name: patternmaker/sunil_run_map2/mux_180
-         Type: EBR
-Instance Name: patternmaker/sunil_run_map2/mux_179
 
                                     Page 4
 
@@ -267,6 +267,12 @@ Instance Name: patternmaker/sunil_run_map2/mux_179
 
 ASIC Components (cont)
 ----------------------
+         Type: EBR
+Instance Name: patternmaker/tony_idle_map/mux_163
+         Type: EBR
+Instance Name: patternmaker/sunil_run_map2/mux_180
+         Type: EBR
+Instance Name: patternmaker/sunil_run_map2/mux_179
          Type: EBR
 Instance Name: patternmaker/sunil_run_map2/mux_178
          Type: EBR
@@ -288,13 +294,11 @@ Instance Name: patternmaker/sunil_idle_map/mux_172
          Type: EBR
 Instance Name: pll/lscc_pll_inst/u_PLL_B
          Type: PLL
-Instance Name: sunil_controller/shift_i0
+Instance Name: tony_controller/shift_i0
          Type: IOLOGIC
 Instance Name: HSYNC_i0
          Type: IOLOGIC
-Instance Name: VSYNC_i1
-         Type: IOLOGIC
-Instance Name: tony_controller/shift_i0
+Instance Name: sunil_controller/shift_i0
          Type: IOLOGIC
 
 Run Time and Memory Usage
@@ -302,11 +306,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 1 secs
    Total REAL Time: 2 secs
-   Peak Memory Usage: 94 MB
-
-
-
-
+   Peak Memory Usage: 95 MB
 
 
 

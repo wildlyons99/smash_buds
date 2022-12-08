@@ -83,9 +83,9 @@ begin
 					tony_win <= '0';
 					sunil_win <= '0';
 					reset_players <= '1';
-				elsif (win_timer = 10d"300") then 
+				elsif (win_timer = 10d"308") then 
 					tony_win <= '1';
-				elsif (win_timer = 0 - 300) then
+				elsif (win_timer = 0 - 308) then
 					sunil_win <= '1';
 				end if;
 			end if;
@@ -103,11 +103,11 @@ begin
 	
 	-- win_area port map
 	win_area_map : win_area generic map(
-		win_box_x => 11d"208",
+		win_box_x => 11d"208" - 25,
 		win_box_y => 11d"0",
 		
 		win_box_height => 11d"250",
-		win_box_width => 11d"220"
+		win_box_width => 11d"220" + 25
 	)
 	port map (
 		clk => clk,

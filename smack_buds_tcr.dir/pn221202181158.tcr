@@ -1,6 +1,0 @@
-#Start recording tcl command: 12/2/2022 17:06:26
-#Project Location: C:/Users/noahs/my_designs/smash_buds; Project name: smack_buds
-prj_open "C:/Users/noahs/my_designs/smash_buds/smack_buds.rdf"
-launch_programmer_prj "C:/lscc/radiant/3.2"
-prj_add_source "C:/Users/noahs/my_designs/smash_buds/source/impl_1/pllclock_to_60hz.vhd"
-#Stop recording: 12/2/2022 18:11:58

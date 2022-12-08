@@ -7,7 +7,7 @@ entity collisions is
 		player_width : signed(5 downto 0) := 6d"25";
 		player_height : signed(6 downto 0) := 7d"63";
 		relative_hitbox_x : signed(5 downto 0) := 6d"15";
-		relative_hitbox_y : signed(6 downto 0) := 7d"20";
+		relative_hitbox_y : signed(6 downto 0) := 7d"25";
 		hitbox_width : signed(10 downto 0) := 11d"50";
 		hitbox_height : signed(10 downto 0) := 11d"20"
 	);

@@ -62,6 +62,7 @@
 "Z:/smash_buds-main/source/impl_1/pencil_rom.vhd"
 "Z:/smash_buds-main/source/impl_1/win_area.vhd"
 "Z:/smash_buds-main/source/impl_1/background_rom.vhd"
+"Z:/smash_buds-main/source/impl_1/game_over_rom.vhd"
 
 
 -path "Z:/smash_buds-main"
