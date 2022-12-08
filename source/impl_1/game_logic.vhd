@@ -18,12 +18,21 @@ entity game_logic is
 	  sunil_controller_buttons : in std_logic_vector(7 downto 0);
 	  sunil_x : out signed(10 downto 0); 
 	  sunil_y : out signed(10 downto 0);
-	  sunil_punching : out std_logic
+	  sunil_punching : out std_logic;
+	  
+	  sunil_in_hitbox : out std_logic;
+	  tony_in_hitbox : out std_logic
+
       );
 end game_logic;
 
 architecture synth of game_logic is
 	
+	signal sunil_punching_left : std_logic;
+	signal sunil_punching_right : std_logic;
+	signal tony_punching_left : std_logic;
+	signal tony_punching_right : std_logic;
+
 	component player is
 	generic (
 		reset_x : signed(10 downto 0) := 11d"0";
@@ -36,15 +45,22 @@ architecture synth of game_logic is
 	  
 	  other_player_x : in signed(10 downto 0);
 	  other_player_y : in signed(10 downto 0);
-	  other_player_punching : in std_logic;
+	  other_player_punching_left : in std_logic;
+	  other_player_punching_right : in std_logic;
 	  
 	  x : out signed(10 downto 0); 
 	  y : out signed(10 downto 0);
-	  is_punching : out std_logic
+	  is_punching_left : out std_logic;
+	  is_punching_right : out std_logic;
+	  is_punching : out std_logic;
+	  
+	  in_hitbox : out std_logic
+
 	  );
 	end component;
 
 begin
+
 
 	tony : player 
 	generic map (
@@ -58,11 +74,16 @@ begin
 		
 		other_player_x => sunil_x,
 	    other_player_y => sunil_y,
-	    other_player_punching => sunil_punching,
+	    other_player_punching_left => sunil_punching_left,
+		other_player_punching_right => sunil_punching_right,
 		
 		x => tony_x,
 		y => tony_y,
-		is_punching => tony_punching
+		is_punching_left => tony_punching_left,
+		is_punching_right => tony_punching_right,
+		is_punching => tony_punching,
+		
+		in_hitbox => tony_in_hitbox
 	);
 	
 	sunil : player
@@ -77,11 +98,16 @@ begin
 		
 		other_player_x => tony_x,
 		other_player_y => tony_y,
-		other_player_punching => tony_punching,
+		other_player_punching_left => tony_punching_left,
+		other_player_punching_right => tony_punching_right,
 		
 		x => sunil_x,
 		y => sunil_y,
-		is_punching => sunil_punching
+		is_punching_left => sunil_punching_left,
+		is_punching_right => sunil_punching_right,
+		is_punching => sunil_punching,
+		
+		in_hitbox => sunil_in_hitbox
 	);
 
 end;

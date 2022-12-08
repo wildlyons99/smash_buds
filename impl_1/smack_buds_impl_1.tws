@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Tue Dec  6 22:29:02 2022
+Thu Dec  8 00:44:32 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -59,37 +59,70 @@ Package Status:                     Preliminary    Version 1.5
 Combinational Loops
 -------------------
 ++++ Loop1
-game/tony/col_map/i4950_3_lut/A	->	game/tony/col_map/i4950_3_lut/Z
+game/tony/col_map/i14877_3_lut_4_lut/C	->	game/tony/col_map/i14877_3_lut_4_lut/Z
 
 ++++ Loop2
-game/tony/col_map/i1_3_lut/A	->	game/tony/col_map/i1_3_lut/Z
+game/tony/col_map/i14949_3_lut_4_lut/C	->	game/tony/col_map/i14949_3_lut_4_lut/Z
 
 ++++ Loop3
-patternmaker/i1_3_lut_4_lut_adj_143/D	->	patternmaker/i1_3_lut_4_lut_adj_143/Z
+game/tony/col_map/i8596_3_lut_4_lut/D	->	game/tony/col_map/i8596_3_lut_4_lut/Z
 
 ++++ Loop4
-patternmaker/i1_3_lut_4_lut_adj_144/D	->	patternmaker/i1_3_lut_4_lut_adj_144/Z
+game/tony/col_map/i8438_3_lut_4_lut/D	->	game/tony/col_map/i8438_3_lut_4_lut/Z
 
 ++++ Loop5
-patternmaker/i1_3_lut_4_lut/D	->	patternmaker/i1_3_lut_4_lut/Z
+game/tony/col_map/i8439_3_lut_4_lut/D	->	game/tony/col_map/i8439_3_lut_4_lut/Z
 
 ++++ Loop6
-patternmaker/i1_3_lut_4_lut_adj_142/D	->	patternmaker/i1_3_lut_4_lut_adj_142/Z
+game/tony/col_map/i16910_4_lut/B	->	game/tony/col_map/i16910_4_lut/Z
 
 ++++ Loop7
-game/tony/col_map/i3057_3_lut/A	->	game/tony/col_map/i3057_3_lut/Z
+game/tony/col_map/i8604_2_lut/A	->	game/tony/col_map/i8604_2_lut/Z
 
 ++++ Loop8
-game/tony/col_map/i3010_3_lut/A	->	game/tony/col_map/i3010_3_lut/Z
+game/tony/col_map/i8601_2_lut/A	->	game/tony/col_map/i8601_2_lut/Z
 
 ++++ Loop9
-game/tony/col_map/i4996_2_lut/A	->	game/tony/col_map/i4996_2_lut/Z
+game/tony/col_map/i8594_2_lut/A	->	game/tony/col_map/i8594_2_lut/Z
 
 ++++ Loop10
-game/tony/col_map/i4995_2_lut/A	->	game/tony/col_map/i4995_2_lut/Z
+game/tony/col_map/i8593_2_lut/A	->	game/tony/col_map/i8593_2_lut/Z
 
 ++++ Loop11
-game/tony/col_map/i5009_2_lut/A	->	game/tony/col_map/i5009_2_lut/Z
+game/tony/col_map/i8488_2_lut/A	->	game/tony/col_map/i8488_2_lut/Z
+
+++++ Loop12
+game/sunil/col_map/i14947_3_lut_4_lut/C	->	game/sunil/col_map/i14947_3_lut_4_lut/Z
+
+++++ Loop13
+game/sunil/col_map/i14875_3_lut_4_lut/C	->	game/sunil/col_map/i14875_3_lut_4_lut/Z
+
+++++ Loop14
+game/sunil/col_map/i8620_3_lut_4_lut/D	->	game/sunil/col_map/i8620_3_lut_4_lut/Z
+
+++++ Loop15
+game/sunil/col_map/i8433_3_lut_4_lut/D	->	game/sunil/col_map/i8433_3_lut_4_lut/Z
+
+++++ Loop16
+game/sunil/col_map/i8434_3_lut_4_lut/D	->	game/sunil/col_map/i8434_3_lut_4_lut/Z
+
+++++ Loop17
+game/sunil/col_map/i16918_4_lut/B	->	game/sunil/col_map/i16918_4_lut/Z
+
+++++ Loop18
+game/sunil/col_map/i8623_2_lut/A	->	game/sunil/col_map/i8623_2_lut/Z
+
+++++ Loop19
+game/sunil/col_map/i8622_2_lut/A	->	game/sunil/col_map/i8622_2_lut/Z
+
+++++ Loop20
+game/sunil/col_map/i8618_2_lut/A	->	game/sunil/col_map/i8618_2_lut/Z
+
+++++ Loop21
+game/sunil/col_map/i8617_2_lut/A	->	game/sunil/col_map/i8617_2_lut/Z
+
+++++ Loop22
+game/sunil/col_map/i8513_2_lut/A	->	game/sunil/col_map/i8513_2_lut/Z
 
 ==============================================
 2  CLOCK SUMMARY
@@ -105,7 +138,8 @@ Single Clock Domain
 -------------------------------------------------------------------------------------------------------
  From internal25clk                     |             Target |               +INF |          0.000 MHz 
                                         | Actual (all paths) |           1.340 ns |        746.269 MHz 
-patternmaker/tony_map/mux_75/RCLK (MPW) |   (50% duty cycle) |           1.340 ns |        746.269 MHz 
+patternmaker/start_screen_map/mux_205/RCLK (MPW)                                                                
+                                        |   (50% duty cycle) |           1.340 ns |        746.269 MHz 
 -------------------------------------------------------------------------------------------------------
 
 Clock Domain Crossing
@@ -162,20 +196,20 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-RGB__i5/D                               |    No arrival or required
-RGB__i5/SR                              |    No arrival or required
-RGB__i6/D                               |    No arrival or required
-RGB__i6/SR                              |    No arrival or required
-meta_state/start_screen_c/D             |    No arrival or required
+meta_state/reset_c/D                    |    No arrival or required
+meta_state/reset_c/SR                   |    No arrival or required
+meta_state/tony_win_c/D                 |    No arrival or required
+meta_state/tony_win_c/SP                |    No arrival or required
+meta_state/tony_win_c/SR                |    No arrival or required
+meta_state/reset_players_c/D            |    No arrival or required
 meta_state/not_first_time_c/D           |    No arrival or required
-meta_state/tony_win/D                   |    No arrival or required
-meta_state/tony_win/SP                  |    No arrival or required
-meta_state/tony_win/SR                  |    No arrival or required
+meta_state/start_screen_c/D             |    No arrival or required
+meta_state/prev_reset_c/D               |    No arrival or required
 RGB__i4/D                               |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                       350
+ts                                      |                       770
                                         |                          
 -------------------------------------------------------------------
 
@@ -197,6 +231,7 @@ create_generated_clock,
 -------------------------------------------------------------------
 ext12m                                  |                     input
 tony_controller_in                      |                     input
+sunil_controller_in                     |                     input
 HSYNC                                   |                    output
 VSYNC                                   |                    output
 RGB[5]                                  |                    output
@@ -204,10 +239,9 @@ RGB[4]                                  |                    output
 RGB[3]                                  |                    output
 RGB[2]                                  |                    output
 RGB[1]                                  |                    output
-RGB[0]                                  |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        12
+Number of I/O ports without constraint  |                        17
                                         |                          
 -------------------------------------------------------------------
 

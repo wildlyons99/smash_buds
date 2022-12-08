@@ -1,5 +1,3 @@
-DRC: Design Rule Check Radiant Software (64-bit) 3.2.1.217.3
-Wed Dec  7 16:44:50 2022
+DRC: Design Rule Check Radiant Software (64-bit) 3.0.0.24.1
+Wed Dec  7 23:44:52 2022
 
-WARNING - No port matched 'a'.
-WARNING - Can't resolve object 'a' in constraint 'ldc_set_location -site {4} [get_ports a]'.

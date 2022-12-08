@@ -6,6 +6,7 @@ entity can_punch is
   port(
 	  clk : in std_logic;
 	  punch_button : in std_logic;
+	  moving_left, moving_right : in std_logic;
 	  is_punching : out std_logic
       );
 end can_punch;
@@ -16,9 +17,9 @@ begin
 	process (clk) begin
 		if rising_edge(clk) then
 			if (punch_cooldown_frame_count = 0) then
-				if (punch_button) then
+				if (punch_button and (moving_left or moving_right)) then
 					is_punching <= '1';
-					punch_cooldown_frame_count <= 6d"60";
+					punch_cooldown_frame_count <= 6d"40";
 				end if;
 			else 
 				is_punching <= '0';
@@ -26,6 +27,7 @@ begin
 			end if;
 		end if;
 	end process;
+	--is_punching <= punch_button;
 end;
 
 

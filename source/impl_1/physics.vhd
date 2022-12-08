@@ -21,7 +21,8 @@ entity physics is
             coll_top : in std_logic;
             --coll_bottom : in std_logic;
 			
-			was_punched : in std_logic;
+			was_punched_from_left : in std_logic;
+			was_punched_from_right : in std_logic;
 			
             y_platform : in signed(10 downto 0);
             buttons : in std_logic_vector(7 downto 0);
@@ -34,7 +35,7 @@ end physics;
 
 architecture synth of physics is
       signal yVelocity  : signed(4 downto 0);
-      signal xVelocity  : signed(3 downto 0);
+      signal xVelocity  : signed(5 downto 0);
       signal reset        : std_logic;
       signal left_pressed : std_logic;
       signal right_pressed : std_logic;
@@ -52,8 +53,8 @@ begin
       jump_pressed <= buttons(7);
 	  down_pressed <= buttons(2);
 
-	 at_maxspd_left <= '0' when (xVelocity > 4b"1100") else '1';
-	 at_maxspd_right <= '0' when (xVelocity < 4d"4") else '1';
+	 at_maxspd_left <= '0' when (xVelocity > 6b"111100") else '1';
+	 at_maxspd_right <= '0' when (xVelocity < 6d"4") else '1';
 	 falling <= '1' when yVelocity >= 0 else '0';
 	 
       process (clk) begin
@@ -62,22 +63,29 @@ begin
                   x <= reset_x;
                   y <= reset_y;
                   yVelocity <= 5d"0";
-                  xVelocity <= 4d"0";
+                  xVelocity <= 6d"0";
             else
-
+				  --Punch
+				  if (was_punched_from_left) then
+					xVelocity <= 6d"16";
+				  elsif (was_punched_from_right) then
+					xVelocity <= 6b"110000";
                   --horizontal movement
-                  if (left_pressed and not at_maxspd_left) then
+                  elsif (left_pressed and not at_maxspd_left) then
                         xVelocity <= xVelocity - accel;
                   elsif (right_pressed and not at_maxspd_right) then
                         xVelocity <= xVelocity + accel;
                   elsif (xVelocity /= 0) then
                         xVelocity <= xVelocity + friction when xVelocity(xVelocity'left) else
-                                           xVelocity - friction;
+                                           xVelocity - friction;							
                   end if;
                   x <= (x + xVelocity) mod 639;
                   
                   --vertical movement
-                  if (coll_top) then
+				  if(was_punched_from_right or was_punched_from_left) then
+						yVelocity <= 5b"10111";
+						y <= y - 2;
+                  elsif (coll_top) then
 					if(jump_pressed and falling) then
 						yVelocity <= 5b"10010";	
 						y <= y_platform - 2;
@@ -86,8 +94,9 @@ begin
 							yVelocity <= 5d"0";
 							y <= y_platform;
 						elsif (down_pressed and falling) then
-							if (y < 340) then
+							if (y < 360) then
 								y <= y_platform + 10;
+							else y <= y_platform;
 							end if;
 						else
 							yVelocity <= yVelocity + gravity;
@@ -95,7 +104,7 @@ begin
 						end if; 
 					end if;
                   else
-					  if (yVelocity < 5d"8") then
+					  if (yVelocity < 5d"9") then
 							yVelocity <= yVelocity + gravity;
 					  end if;				  
                   y <= (y + yVelocity) mod 479;

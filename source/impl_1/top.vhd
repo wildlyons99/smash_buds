@@ -18,7 +18,10 @@ entity top is
 	  -- Sunil Player
 	  sunil_controller_in : in std_logic;
 	  sunil_controller_latch : out std_logic;
-	  sunil_controller_clock : out std_logic
+	  sunil_controller_clock : out std_logic;
+	  
+	  tony_in_hitbox : out std_logic;
+	  sunil_in_hitbox : out std_logic
 	  
       );
 end top;
@@ -100,8 +103,11 @@ architecture synth of top is
 		  sunil_controller_buttons : in std_logic_vector(7 downto 0);
 		  sunil_x : out signed(10 downto 0); 
 		  sunil_y : out signed(10 downto 0);
-		  sunil_punching : out std_logic
-	  
+		  sunil_punching : out std_logic;
+		  
+		  sunil_in_hitbox : out std_logic;
+	      tony_in_hitbox : out std_logic
+		  
 		  );
 	end component;
 	
@@ -199,7 +205,10 @@ begin
 							 sunil_controller_buttons => sunil_controller_buttons_signal,
 							 sunil_x => sunil_xpos,
 							 sunil_y => sunil_ypos,
-							 sunil_punching => sunil_punching
+							 sunil_punching => sunil_punching,
+							 
+							 sunil_in_hitbox => sunil_in_hitbox,
+							 tony_in_hitbox => tony_in_hitbox
 							 );
 	meta_state : game_state port map (
 								     clk => internal60hzclk,

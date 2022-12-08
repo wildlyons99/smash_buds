@@ -25,8 +25,6 @@
 
 
 
-
-
 -use_io_reg auto
 -vh2008
 
@@ -37,32 +35,33 @@
 -use_io_insertion 1
 -resolve_mixed_drivers 0
 -sdc "smack_buds_impl_1_cpe.ldc"
--path "C:/Users/noahs/my_designs/smash_buds/my_pll"
--path "C:/lscc/radiant/3.2/ispfpga/ice40tp/data" "C:/Users/noahs/my_designs/smash_buds/impl_1" "C:/Users/noahs/my_designs/smash_buds"
--ver "C:/lscc/radiant/3.2/ip/pmi/pmi_iCE40UP.v"
--lib pmi -vhd "C:/lscc/radiant/3.2/ip/pmi/pmi_iCE40UP.vhd"
--lib "work" -vhd "C:/Users/noahs/my_designs/smash_buds/source/impl_1/top.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/pattern_gen.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/vga.vhd"
--ver "C:/Users/noahs/my_designs/smash_buds/my_pll/rtl/my_pll.v"
--lib "work" -vhd "C:/Users/noahs/my_designs/smash_buds/source/impl_1/pllclock_to_60hz.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/controller.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/game_logic.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/physics.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/collisions.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/tony_idle_rom.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/platform.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/tony_run_rom1.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/tony_run_rom2.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/player.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/game_state.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/sunil_idle_rom.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/sunil_run_rom1.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/sunil_run_rom2.vhd"
-"C:/Users/noahs/my_designs/smash_buds/source/impl_1/can_punch.vhd"
+-path "Z:/smash_buds-main/my_pll"
+-path "C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data" "Z:/smash_buds-main/impl_1" "Z:/smash_buds-main"
+-ver "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd"
+-lib "work" -vhd "Z:/smash_buds-main/source/impl_1/top.vhd"
+"Z:/smash_buds-main/source/impl_1/pattern_gen.vhd"
+"Z:/smash_buds-main/source/impl_1/vga.vhd"
+-ver "Z:/smash_buds-main/my_pll/rtl/my_pll.v"
+-lib "work" -vhd "Z:/smash_buds-main/source/impl_1/pllclock_to_60hz.vhd"
+"Z:/smash_buds-main/source/impl_1/controller.vhd"
+"Z:/smash_buds-main/source/impl_1/game_logic.vhd"
+"Z:/smash_buds-main/source/impl_1/physics.vhd"
+"Z:/smash_buds-main/source/impl_1/collisions.vhd"
+"Z:/smash_buds-main/source/impl_1/tony_idle_rom.vhd"
+"Z:/smash_buds-main/source/impl_1/platform.vhd"
+"Z:/smash_buds-main/source/impl_1/tony_run_rom1.vhd"
+"Z:/smash_buds-main/source/impl_1/tony_run_rom2.vhd"
+"Z:/smash_buds-main/source/impl_1/player.vhd"
+"Z:/smash_buds-main/source/impl_1/game_state.vhd"
+"Z:/smash_buds-main/source/impl_1/can_punch.vhd"
+"Z:/smash_buds-main/source/impl_1/sunil_idle_rom.vhd"
+"Z:/smash_buds-main/source/impl_1/sunil_run_rom2.vhd"
+"Z:/smash_buds-main/source/impl_1/sunil_run_rom1.vhd"
+"Z:/smash_buds-main/source/impl_1/start_screen_rom.vhd"
 
 
--path "C:/Users/noahs/my_designs/smash_buds"
+-path "Z:/smash_buds-main"
 -top top
 -udb "smack_buds_impl_1_rtl.udb"
 -output_hdl "smack_buds_impl_1.vm"
