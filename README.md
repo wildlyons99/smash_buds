@@ -1,7 +1,7 @@
 # ES4 Digital Electronics Final Project - smash_buds
 
-This project is in progress, but will be an Super Smash Bro's inspired king of the hill game built exclusively through sequential logic. Play as Tufts
-President Tony ROMico or President Elect Sunil Kumar (punny name pending) as they competete to rule the Tufts hill.
+This project is a Super Smash Bro's inspired king of the hill game built exclusively through sequential logic. Play as Tufts
+President Tony ROMico or President Elect Sunil Kumar as they competete to rule the Tufts hill.
 
 ## Authors
 
