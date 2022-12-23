@@ -9,19 +9,16 @@ Tom Lyons, Noah Stiegler, Drew Cohen, Cory Lemberg
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+An in-depth paragraph about our project can be found at the following [link](https://docs.google.com/document/d/1pdDHCBeJ7OltyXKyffs05i9YhL3T9oUcU9JTTQVEkgM/edit?usp=sharing). 
 
-## Getting Started
+The contents of this Github repository were pushed from a Radient project, but the VHDL files we wrote can be found at "source/impl_1". 
 
-### Dependencies
 
-The contents of this folder are uploaded from a Radient project, but the VHDL files we wrote can be found at "source/impl_1". 
-You would also need to create a pll module to produce a 25mHz clock. Pll files can be found in the pll directory
+<!-- ### Installing
 
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+Anyone can download and play Smash Buds by:
+* Opening the .rdf file in a new Radiant Project
+* Flashing the 
 
 ### Executing program
 
@@ -30,15 +27,6 @@ You would also need to create a pll module to produce a 25mHz clock. Pll files c
 ```
 code blocks for commands
 ```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-
 
 
 ## License
@@ -53,3 +41,4 @@ Inspiration, code snippets, etc.
 * [dbader](https://github.com/dbader/readme-template)
 * [zenorocha](https://gist.github.com/zenorocha/4526327)
 * [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+ -->
