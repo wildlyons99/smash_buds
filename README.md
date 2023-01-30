@@ -9,7 +9,7 @@ Tom Lyons, Noah Stiegler, Drew Cohen, Cory Lemberg
 
 ## Description
 
-An in-depth paragraph about our project can be found at the following [link](https://docs.google.com/document/d/1pdDHCBeJ7OltyXKyffs05i9YhL3T9oUcU9JTTQVEkgM/edit?usp=sharing). 
+An in-depth descrition of our project can be found [here](https://docs.google.com/document/d/1pdDHCBeJ7OltyXKyffs05i9YhL3T9oUcU9JTTQVEkgM/edit?usp=sharing). 
 
 The contents of this Github repository were pushed from a Radient project, but the VHDL files we wrote can be found at "source/impl_1". 
 
