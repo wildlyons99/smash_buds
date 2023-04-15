@@ -1,7 +1,8 @@
 # ES4 Digital Electronics Final Project - smash_buds
 
-This project is a Super Smash Bro's inspired king of the hill game built exclusively through sequential logic in VHDL. Play as Tufts
-President Tony ROMico or President Elect Sunil Kumar as they compete to rule the Tufts hill.
+This project was developed for ES-4, Digital Logic Circuits, at Tufts University.
+
+This project is a Super Smash Bro's inspired king of the hill game built exclusively through sequential logic in VHDL. Play as Tufts President Tony ROMico or President Elect Sunil Kumar as they compete to rule the Tufts hill. We used two NES controllers for input, and displayed output to 640x480 VGA. Code was written in Radiant and programmed to iCE40UP5k-SG48I FPGA
 
 ## Authors
 
@@ -19,26 +20,4 @@ The contents of this Github repository were pushed from a Radient project, but t
 Anyone can download and play Smash Buds by:
 * Opening the .rdf file in a new Radiant Project
 * Flashing the 
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
  -->
