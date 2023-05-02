@@ -12,7 +12,13 @@ Tom Lyons, Noah Stiegler, Drew Cohen, Cory Lemberg
 
 An in-depth descrition of our project can be found [here](https://docs.google.com/document/d/1pdDHCBeJ7OltyXKyffs05i9YhL3T9oUcU9JTTQVEkgM/edit?usp=sharing). 
 
-The contents of this Github repository were pushed from a Radient project, but the VHDL files we wrote can be found at "source/impl_1". 
+The contents of this Github repository were pushed from a Radiant project, but the VHDL files we wrote can be found at "source/impl_1". 
+
+
+## Pictures
+
+![smack buds title screen](https://user-images.githubusercontent.com/57906707/235787551-fbf5c5ef-47bd-43d5-8a20-9ccb9e1f6d52.PNG)
+![smack buds attack animation with movement](https://user-images.githubusercontent.com/57906707/235787576-75765699-efd2-4550-8ad3-f24663a7b052.png)
 
 
 <!-- ### Installing
